@@ -42,7 +42,7 @@ Come abbiamo tradotto i numeri: «59–66 giorni» sono le mediane riportate da 
 
 ## Testo alternativo (una riga per immagine)
 
-1. Copertina WeSelf: «Quanto tempo serve per creare un'abitudine? Molte persone cominciano con entusiasmo e dopo qualche settimana lasciano perdere, convinte di aver fallito. Una ricerca ha riunito 20 studi con 2.601 persone per capire quanto ci vuole davvero.»
+1. Copertina WeSelf: una griglia di 66 quadratini, uno per giorno; il giorno 21 è evidenziato in corallo («21 giorni: quello che si dice»), il giorno 66 in blu («59–66 giorni: quello che è risultato»). Testo: «Quanto tempo serve per creare un'abitudine? Molte persone cominciano con entusiasmo e dopo qualche settimana lasciano perdere, convinte di aver fallito. Una ricerca ha riunito 20 studi con 2.601 persone per capire quanto ci vuole davvero.»
 2. La ricerca: 20 studi con 2.601 partecipanti, con un'età media tra i 21 e i 73 anni. È una revisione sistematica con meta-analisi del 2024 su abitudini di salute come attività fisica, alimentazione, bere acqua, filo interdentale e stare meno seduti. Ha misurato quanto un gesto diventa automatico, con questionari compilati dai partecipanti.
 3. Quanto ci vuole: nei 4 studi che hanno misurato il tempo ci sono voluti in genere circa due mesi. A metà classifica, 59–66 giorni; da persona a persona, da 4 a 335 giorni. In uno studio sull'alimentazione, solo il 23% dei partecipanti è arrivato alla soglia di abitudine fissata dai ricercatori.
 4. I numeri, tradotti: alla fine degli interventi, la persona media aveva un'abitudine più forte del 75% dei punteggi registrati all'inizio. È un effetto medio-grande, emerso in 12 studi; il più alto per il filo interdentale, nessun effetto chiaro per lo stare meno seduti.
