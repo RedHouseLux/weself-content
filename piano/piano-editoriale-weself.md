@@ -2,20 +2,19 @@
 
 - **Periodo:** dicembre 2026 – maggio 2027 (6 mesi, un tema al mese)
 - **Pilastri ricorrenti:** Relazioni (amicizia e coppia) · Leadership · Umorismo, tutto l'anno (sezione 3bis)
-- **Canali:** Instagram (caroselli, Reels, Storie) · YouTube (video lunghi e Shorts) · sito WeSelf
+- **Canali:** Instagram (caroselli, Reels, Storie) · Facebook · TikTok (modalità foto e video) · YouTube (video lunghi e Shorts) · sito WeSelf
 - **Pubblico:** grande pubblico, adulti curiosi, in italiano semplice ma rigoroso
 - **Identità:** sistema di design WeSelf (colori, caratteri e modelli social)
 
-**Dove portano le call to action (sito WeSelf):**
+**Dove portano le call to action (sito WeSelf, https://www.weself.app):**
 
 | Obiettivo | Pagina |
 |---|---|
-| Provare l'app | `/manifesto/install.html` (IT: `/manifesto/it/install.html`) |
-| Capire valori e missione | `/manifesto/it.html#mission` |
-| Contribuire | `/manifesto/it.html#contribute` |
-| Discutere l'etica | `/manifesto/it.html#ethics` |
-| Lasciare un feedback | `/manifesto/it/landing.html#discussion` |
+| Provare l'app | `/it/install` |
+| Leggere gli articoli | `/it/articles` |
+| Capire che cos'è WeSelf | `/it` |
 
+I vecchi link `/manifesto/…` reindirizzano al nuovo sito. Le sezioni «contribuire», «etica» e «feedback» del vecchio manifesto sono da verificare sul nuovo sito prima di usarle in una call to action.
 ---
 
 ## 1. Perché questo piano
@@ -28,17 +27,21 @@ Il posizionamento che vogliamo trasmettere: *divulgazione seria, senza promesse 
 
 Ogni contenuto, dal post alla puntata YouTube, deve rispettare tutti questi punti prima di essere pubblicato:
 
-1. **Almeno 3 fonti autorevoli e verificabili**: riviste scientifiche con revisione paritaria, meta-analisi, revisioni Cochrane, OMS, ISS. Ogni fonte ha un link (DOI, PubMed o sito istituzionale), riportato nella descrizione del video YouTube e nel primo commento dei post Instagram.
-2. **Una sezione «Limiti»**: dimensione del campione, correlazione/causalità, replicazioni fallite, autovalutazioni, campioni poco rappresentativi. Sui social diventa il formato fisso **«Mito o realtà?»**.
-3. **Una «Nostra conclusione»** esplicita, in 2–3 frasi, che prende posizione.
-4. **Il collegamento a WeSelf** usa solo le 4 funzioni reali:
+Le regole complete, sempre aggiornate, sono nel `CLAUDE.md` del repository: se questo piano e il `CLAUDE.md` non coincidono, vale il `CLAUDE.md`.
+
+1. **Uno studio (o un sondaggio) per post.** Ogni carosello, Reel o articolo si basa su una sola fonte: si spiega che cosa è stato misurato e si traducono i numeri.
+2. **Solo numeri verificati.** La fonte si legge di persona (PubMed, Europe PMC). Se è disponibile solo l'abstract, si usa solo quello che dice l'abstract e lo si scrive nel kit. Se una fonte non si raggiunge, lo si dice: mai riempire i vuoti. Citazione completa e DOI nel primo commento.
+3. **Numeri leggibili:** percentuali invece di «x su 100» (per esempio «78%»). Le dimensioni dell'effetto (d, g, SMD) si convertono con l'indice U3 di Cohen, U3 = Φ(d), e il metodo si spiega nel primo commento.
+4. **Ogni post ha:** una slide «Mito o realtà?», una slide «I limiti» (campione, correlazione o causalità, misure autoriferite, studi non confrontabili…), la fonte su ogni slide e, nella didascalia, «Un'onestà necessaria» (lo studio non riguarda WeSelf).
+5. **Il collegamento a WeSelf** usa solo le 4 funzioni reali:
    - **Costruire abitudini sane**: un obiettivo diventa una settimana di piccole azioni, già in agenda.
    - **Trovare chi ha il tuo obiettivo**: vicino a te, o tra gli amici che hai già.
    - **Una comunità dove ci si sostiene**: piccoli gruppi, anche in forma anonima.
    - **Uno specialista, se serve**: chiedi tu il contatto e decidi tu cosa fargli vedere.
-5. **Niente promesse cliniche.** Non scriviamo mai che WeSelf «cura», «tratta» o «risolve». Gli studi riguardano i meccanismi, non WeSelf: lo diciamo esplicitamente («Un'onestà necessaria…»).
-6. **Temi sensibili** (dipendenze, ansia) includono sempre un rimando ai servizi: Telefono Verde ISS gioco d'azzardo 800 558 822, SerD della propria ASL, 112 per le emergenze.
-7. **Tono:** seconda persona, frasi brevi, nessun gergo senza spiegazione, niente colpevolizzazione («non hai poca volontà, hai un sistema poco favorevole»).
+6. **Niente promesse cliniche.** Non scriviamo mai che WeSelf «cura», «tratta» o «risolve». **Niente posizioni politiche.** Mai commenti sulla cronaca locale.
+7. **Temi sensibili** (ansia, solitudine, stress, dipendenze, violenza nella coppia) includono sempre un rimando di supporto, da verificare prima di pubblicare: medico di base, servizi universitari, Telefono Amico Italia, 1522 (antiviolenza e stalking), 112 per le emergenze; per il gioco d'azzardo Telefono Verde ISS 800 558 822 e SerD della propria ASL.
+8. **Tono e persona:** terza persona per le informazioni negative («molte persone», «c'è chi…», «chi da bambino era impulsivo»); «tu» solo per gli inviti e le azioni positive. Frasi complete e scorrevoli (sulle slide va bene anche più testo), nessun gergo senza spiegazione, niente colpevolizzazione.
+9. **Parole e tempi verbali:** «studi» (non «esperimenti») per gli studi di una meta-analisi, che è «la ricerca»; passato per i risultati («è risultato»), condizionale per ciò che era previsto, futuro per ciò che manca («serviranno»), presente solo per verità generali e per chi legge.
 
 ### Le situazioni WeSelf da richiamare
 
@@ -62,10 +65,10 @@ Ogni mese ha un tema. Il video lungo su YouTube è il contenuto pilastro: contie
 
 | Settimana | Instagram | YouTube | Sito WeSelf |
 |---|---|---|---|
-| 1 | Carosello A – «Cosa dice la ricerca» | **Video lungo** (8–12 min), fonti in descrizione | CTA verso la missione (`#mission`) |
+| 1 | Carosello A – «Cosa dice la ricerca» | **Video lungo** (8–12 min), fonti in descrizione | CTA verso `/it` |
 | 2 | Reel 1 – «Mito o realtà?» (i limiti) | Short dal video lungo | – |
-| 3 | Carosello B – «La nostra conclusione + WeSelf» | – | CTA verso l'installazione |
-| 4 | Reel 2 – «Una cosa da provare questa settimana» + Storie con sondaggio | – | CTA verso la discussione etica o il feedback |
+| 3 | Carosello B – «La nostra conclusione + WeSelf» | – | CTA verso `/it/install` |
+| 4 | Reel 2 – «Una cosa da provare questa settimana» + Storie con sondaggio | – | CTA verso `/it/articles` |
 
 Ogni mese escono quindi **1 video lungo, 1 Short, 2 caroselli e 2 Reel**, più le Storie. Le Storie della settimana 4 raccolgono domande per il tema successivo.
 
@@ -190,6 +193,8 @@ I temi mensili qui sopra guardano soprattutto al lato **Self** (regolazione, per
 ---
 
 ## 4. Schede tema
+
+> **Come leggere le schede.** Le schede sono state scritte prima delle regole attuali. Le fonti elencate per ogni tema sono un **serbatoio**: ogni carosello, Reel o articolo ne usa **una sola**, e la verifica alla fonte. Le scalette dei caroselli qui sotto sono idee di partenza: al momento di produrle si riscrivono con le regole della sezione 2 (una fonte per post, percentuali, terza persona per le informazioni negative, slide «I limiti»). Il video lungo di YouTube può raccontare più studi: va deciso (vedi sezione 8).
 
 Ogni scheda riassume il contenuto e fornisce i testi pronti per i social. Le fonti indicate vanno riportate con il link completo nella descrizione del video e nel primo commento dei post.
 
@@ -454,14 +459,14 @@ Ogni scheda riassume il contenuto e fornisce i testi pronti per i social. Le fon
 - **Badge «Mito o realtà?»**: pillola con parola + simbolo (MITO ✕ corallo, REALTÀ ✓ teal chiaro, DIPENDE ~ periwinkle chiaro), mai solo colore.
 - **Reel 1080×1920:** testo tra y 220 e y 1480, nulla negli ultimi 420 px; sottotitoli sempre attivi (Nunito, su riquadri chiari).
 - **Copertina YouTube 1280×720:** massimo 4–5 parole, una parola in corallo, il cuore piccolo in alto a sinistra; angolo in basso a destra libero.
-- **Tono:** «tu», frasi brevi, niente emoji decorative, niente punti esclamativi nei titoli.
+- **Tono:** terza persona per le informazioni negative, «tu» per inviti e azioni positive; niente emoji decorative, niente punti esclamativi nei titoli.
 
 ## 6. Flusso di lavoro
 
 1. **Settimana −2:** revisione scientifica dei contenuti del mese (fonti, numeri, limiti) e controllo che il collegamento a WeSelf descriva solo funzioni reali.
 2. **Settimana −1:** grafica dei caroselli con i modelli WeSelf, registrazione di Reel e video lungo.
 3. **Pubblicazione:** video lungo e Carosello A nella settimana 1, poi il resto secondo il calendario.
-4. **Moderazione:** risposte entro 24 h; nessun consiglio clinico individuale nei commenti, solo rimandi a professionisti e servizi. Le domande etiche si possono portare nella discussione del sito (`#ethics`).
+4. **Moderazione:** risposte entro 24 h; nessun consiglio clinico individuale nei commenti, solo rimandi a professionisti e servizi. Le domande etiche si raccolgono e si portano al fondatore.
 
 ## 7. Cosa misurare
 
@@ -475,7 +480,8 @@ Ogni scheda riassume il contenuto e fornisce i testi pronti per i social. Le fon
 
 ## 8. Punti aperti da decidere
 
-- **Link in bio:** quale pagina del sito WeSelf (manifesto o installazione), e se usare link tracciati.
+- **Link in bio:** quale pagina del sito WeSelf (`/it` o `/it/install`), e se usare link tracciati.
+- **Video lungo YouTube:** se anche il video segue la regola «uno studio per contenuto» o può raccontarne più di uno.
 - **Volto:** chi presenta i video (fondatore, uno specialista, solo voce).
 - **Revisione:** uno psicologo rivede i contenuti prima della pubblicazione, soprattutto il tema 6.
 - **Slogan:** confermare «Un'agenda per stare bene, insieme.»
