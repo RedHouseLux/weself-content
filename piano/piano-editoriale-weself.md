@@ -1,6 +1,7 @@
 # Piano editoriale social – WeSelf
 
 - **Periodo:** dicembre 2026 – maggio 2027 (6 mesi, un tema al mese)
+- **Pilastri ricorrenti:** Relazioni (amicizia e coppia) · Leadership · Umorismo, tutto l'anno (sezione 3bis)
 - **Canali:** Instagram (caroselli, Reels, Storie) · YouTube (video lunghi e Shorts) · sito WeSelf
 - **Pubblico:** grande pubblico, adulti curiosi, in italiano semplice ma rigoroso
 - **Identità:** sistema di design WeSelf (colori, caratteri e modelli social)
@@ -80,6 +81,111 @@ Ogni mese escono quindi **1 video lungo, 1 Short, 2 caroselli e 2 Reel**, più l
 | Mag 2027 | Rischio, divertimento e dipendenze | «Ogni videogioco è una droga» / «È solo un vizio» |
 
 Gennaio apre con «benessere e performance» perché si sposa con i buoni propositi di inizio anno, che dicembre prepara parlando di regolazione e abitudini.
+
+---
+
+## 3bis. Pilastri ricorrenti (decisi con il fondatore, novembre 2026)
+
+I temi mensili qui sopra guardano soprattutto al lato **Self** (regolazione, performance, personalità, emozioni). I tre pilastri riequilibrano il piano sul lato **We**: *con chi* stiamo (relazioni), *come* stiamo insieme (umorismo), *come funziona* un gruppo (leadership).
+
+**Come funzionano.** Un pilastro non è un mese: è un filone che torna durante tutto l'anno, accanto al tema del mese e ai temi della settimana (database Notion **Temi**).
+
+- **Frequenza indicativa:** ogni pilastro compare almeno **una volta ogni 3–4 settimane**. Se un pilastro manca da 4 settimane, si sceglie il tema della settimana più vicino a quel pilastro.
+- **Aggancio ai segnali:** ogni lunedì, quando si leggono i Temi, si guarda anche quali temi toccano un pilastro (per esempio «Fare amicizia, luoghi per incontrarsi» → Relazioni; «Non sapere che direzione prendere» → Leadership).
+- **Regole:** valgono tutte le regole editoriali del `CLAUDE.md` del repository (uno studio per post, numeri verificati, terza persona per le informazioni negative, «Mito o realtà?», limiti, «Un'onestà necessaria»). L'unica novità è il **tono leggero** del pilastro Umorismo, con le regole descritte sotto.
+- **Fonti:** gli studi elencati sono **candidati da verificare**: nessuno è stato ancora letto, quindi nessun numero va usato prima di averlo controllato alla fonte.
+
+### Pilastro A – Relazioni (amicizia e coppia)
+
+**Perché è WeSelf:** è la metà «We» del nome. Si collega a «Trovare chi ha il tuo obiettivo» e a «Una comunità dove ci si sostiene».
+
+**Perimetro:** amicizie, persone su cui contare, colleghi, vicini e **coppia**. Della coppia parliamo come di una relazione che si costruisce ogni giorno: gesti, attenzione, tempo insieme, come si affrontano i passaggi di vita. Non diamo consigli di seduzione, non giudichiamo modelli di coppia e non diamo per scontato il genere dei partner.
+
+**Angoli possibili:**
+- quanto tempo serve per diventare amici da adulti;
+- come si reagisce alle buone notizie dell'altra persona (amico o partner), che conta quanto il sostegno nei momenti difficili;
+- che cosa rende soddisfatta una coppia: le caratteristiche delle persone o il modo in cui vivono la relazione;
+- amicizia e coppia nei passaggi di vita (trasferimento, nuovo lavoro, figli).
+
+**Miti da smontare:** «Da adulti non si fanno più amicizie» · «In una coppia felice non si litiga» · «Basta trovare la persona giusta».
+
+**Fonti candidate (da verificare):**
+- Hall, 2019, *J. Soc. Pers. Relat.*: ore passate insieme e passaggio da conoscente ad amico.
+- Gable et al., 2004, *J. Pers. Soc. Psychol.*: condividere le buone notizie («capitalization»).
+- Joel et al., 2020, *PNAS*: che cosa predice la soddisfazione di coppia in decine di studi.
+- Holt-Lunstad et al., 2010, *PLoS Med.*: relazioni sociali e salute (meta-analisi).
+
+**Situazioni WeSelf:** Vivere da soli · Pochi luoghi dove incontrarsi · Un passaggio di vita · Lo schermo al posto delle persone.
+
+**Attenzioni:**
+- Conflitti, controllo, gelosia o violenza nella coppia sono **temi sensibili**: niente tono leggero, terza persona, e un rimando di supporto da verificare prima di pubblicare (**1522**, numero antiviolenza e stalking; **112** per le emergenze).
+- Separazioni e lutti: solo con un taglio di sostegno, mai di giudizio.
+- Mai consigli individuali sulla coppia nei commenti: si rimanda a professionisti e servizi.
+
+### Pilastro B – Leadership (guidare se stessi e un piccolo gruppo)
+
+**Perché è WeSelf, se lo riformuliamo:** WeSelf non è un coach di carriera. Per noi la leadership è **guidare la propria settimana** (Self: scegliere una direzione, decidere le priorità) e **far funzionare un piccolo gruppo** (We: tutti si sentono liberi di parlare, ci si sostiene alla pari, senza gerarchie). È come funzionano i gruppi di WeSelf.
+
+**Rapporto con il Tema 4 (marzo, «Potere»):** il pilastro resta indipendente e torna tutto l'anno. A marzo i due si parlano: il tema mensile racconta che cosa fa il potere, il pilastro che cosa fa funzionare un gruppo.
+
+**Angoli possibili:**
+- leader si nasce o si diventa;
+- la sicurezza psicologica: perché i gruppi in cui si può sbagliare imparano di più;
+- la leadership condivisa nei piccoli gruppi;
+- guidare se stessi: scegliere una direzione quando non è chiara.
+
+**Miti da smontare:** «Leader si nasce» · «Il leader è chi parla di più» · «Un gruppo funziona solo con un capo».
+
+**Fonti candidate (da verificare):**
+- Arvey et al., 2006, *Leadersh. Q.*: studi sui gemelli, quanto della leadership è ereditato.
+- Edmondson, 1999, *Adm. Sci. Q.*: sicurezza psicologica nei gruppi di lavoro.
+- Wang, Waldman & Zhang, 2014, *J. Appl. Psychol.*: leadership condivisa (meta-analisi).
+
+**Situazioni WeSelf:** Non sapere che direzione prendere · L'ansia da prestazione · Sentirsi ai margini.
+
+**Attenzioni:**
+- **Niente politica:** nessun leader politico, partito o governo come esempio, né positivo né negativo.
+- Niente aziende o imprenditori celebri come modelli, niente tono da «guru» o da cultura della fatica.
+- Leadership non significa dominare: niente «alfa», niente classifiche tra persone.
+
+### Pilastro C – Umorismo (tema e tono leggero)
+
+**Perché è WeSelf:** è il **corallo** del marchio, il calore umano tra il We e il Self. Rende WeSelf quello che vuole essere: un amico che sa le cose, non una clinica né un coach.
+
+**Due usi:**
+
+1. **Come tema**, con uno studio, come ogni post scientifico. Angoli possibili:
+   - ridere insieme e sentirsi più vicini;
+   - stili di umorismo: scherzare con gli altri non è come prendersi sempre in giro da soli;
+   - l'umorismo per affrontare una settimana pesante.
+
+   **Mito da smontare:** «Ridere è la migliore medicina»: aiuta, ma non cura (coerente con la regola sulle promesse cliniche).
+
+   **Fonti candidate (da verificare):**
+   - Martin et al., 2003, *J. Res. Pers.*: questionario sugli stili di umorismo.
+   - Kurtz & Algoe, 2015, *Pers. Relatsh.*: risate condivise nelle coppie (ponte con il pilastro Relazioni).
+   - Dunbar et al., 2012, *Proc. R. Soc. B*: ridere in gruppo e soglia del dolore.
+
+2. **Come tono leggero** per alcuni post (circa **uno ogni due settimane**), senza studio. Formati:
+   - le «situazioni WeSelf» raccontate con un sorriso (per esempio «Lunedì: il piano perfetto. Mercoledì: il piano realistico.»);
+   - Storie con sondaggi e domande;
+   - Reel «Una cosa da provare questa settimana» con un tono più giocoso.
+
+**Regole del tono leggero (per restare coerenti):**
+- Si **ride con**, mai **di** qualcuno: niente battute su corpi, origini, età, generi, città o persone reali.
+- **Mai** sui temi sensibili: ansia, solitudine, dipendenze, lutto, violenza, salute mentale. Lì il tono resta sempre quello abituale.
+- Valgono le regole di voce del marchio: niente emoji decorative, niente punti esclamativi nei titoli, niente frasi motivazionali fatte, terza persona per le difficoltà («c'è chi il lunedì…»).
+- **Nessun dato senza fonte.** Se un post leggero cita un numero, diventa un post scientifico e segue tutte le regole (uno studio, verifica, primo commento).
+- Grafica e meme **solo nostri**, con il sistema di design WeSelf: niente modelli di meme, immagini o audio di altri.
+- La chiusura resta WeSelf: una delle 4 funzioni, con le sue parole.
+
+### Pilastri e situazioni WeSelf
+
+| Pilastro | Funzione WeSelf principale | Situazioni |
+|---|---|---|
+| Relazioni | Trovare chi ha il tuo obiettivo · Una comunità dove ci si sostiene | Vivere da soli · Pochi luoghi dove incontrarsi · Un passaggio di vita |
+| Leadership | Costruire abitudini sane · Una comunità dove ci si sostiene | Non sapere che direzione prendere · Sentirsi ai margini |
+| Umorismo | Una comunità dove ci si sostiene | Cominciare e non continuare · Pochi soldi, poco tempo |
 
 ---
 
@@ -373,3 +479,4 @@ Ogni scheda riassume il contenuto e fornisce i testi pronti per i social. Le fon
 - **Volto:** chi presenta i video (fondatore, uno specialista, solo voce).
 - **Revisione:** uno psicologo rivede i contenuti prima della pubblicazione, soprattutto il tema 6.
 - **Slogan:** confermare «Un'agenda per stare bene, insieme.»
+- **Pilastri (sezione 3bis):** aggiungere nel database Notion **Temi** una proprietà «Pilastro» (Relazioni · Leadership · Umorismo) per vedere ogni lunedì quale pilastro manca da più tempo; verificare il numero 1522 prima del primo post sulla coppia.
