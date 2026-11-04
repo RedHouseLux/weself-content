@@ -15,7 +15,7 @@ Website: https://www.weself.app (Italian /it, articles /it/articles, download /i
 
 ## Editorial rules (agreed with the founder; all mandatory)
 
-- **One study (or one survey) per post.** Translate the numbers. Explain what was measured.
+- **One study (or one survey) per post.** Translate the numbers. Explain what was measured. Exception: a long YouTube video is built around one main study and may cite other studies in support (each verified the same way, all listed in the description).
 - **Only verified numbers.** Read the source yourself: PubMed via `eutils.ncbi.nlm.nih.gov` (esearch/efetch return abstracts), Europe PMC (`www.ebi.ac.uk/europepmc/webservices/rest/search`). Journal sites are paywalled; if only the abstract is available, use only what the abstract says and say so in the kit. If a source cannot be reached, say so; never fill gaps.
 - **Third person for negative information** («molte persone», «chi da bambino era impulsivo», «c'è chi…»). «Tu» only for invitations and positive actions.
 - **Percentages** rather than «x su 100» (e.g. «78%»). Effect sizes (d, g) are converted with Cohen's U3 = Φ(d) and the method is explained in the first comment.
