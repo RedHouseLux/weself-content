@@ -15,6 +15,7 @@
 | Capire che cos'è WeSelf | `/it` |
 
 I vecchi link `/manifesto/…` reindirizzano al nuovo sito. Le sezioni «contribuire», «etica» e «feedback» del vecchio manifesto sono da verificare sul nuovo sito prima di usarle in una call to action.
+
 ---
 
 ## 1. Perché questo piano
