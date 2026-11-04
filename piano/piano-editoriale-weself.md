@@ -30,7 +30,7 @@ Ogni contenuto, dal post alla puntata YouTube, deve rispettare tutti questi punt
 
 Le regole complete, sempre aggiornate, sono nel `CLAUDE.md` del repository: se questo piano e il `CLAUDE.md` non coincidono, vale il `CLAUDE.md`.
 
-1. **Uno studio (o un sondaggio) per post.** Ogni carosello, Reel o articolo si basa su una sola fonte: si spiega che cosa è stato misurato e si traducono i numeri.
+1. **Uno studio (o un sondaggio) per post.** Ogni carosello, Reel o articolo si basa su una sola fonte: si spiega che cosa è stato misurato e si traducono i numeri. **Eccezione: il video lungo di YouTube** ruota attorno a uno studio principale e può citare altri studi a sostegno; anche questi si verificano alla fonte e vanno tutti nella descrizione (deciso con il fondatore, novembre 2026).
 2. **Solo numeri verificati.** La fonte si legge di persona (PubMed, Europe PMC). Se è disponibile solo l'abstract, si usa solo quello che dice l'abstract e lo si scrive nel kit. Se una fonte non si raggiunge, lo si dice: mai riempire i vuoti. Citazione completa e DOI nel primo commento.
 3. **Numeri leggibili:** percentuali invece di «x su 100» (per esempio «78%»). Le dimensioni dell'effetto (d, g, SMD) si convertono con l'indice U3 di Cohen, U3 = Φ(d), e il metodo si spiega nel primo commento.
 4. **Ogni post ha:** una slide «Mito o realtà?», una slide «I limiti» (campione, correlazione o causalità, misure autoriferite, studi non confrontabili…), la fonte su ogni slide e, nella didascalia, «Un'onestà necessaria» (lo studio non riguarda WeSelf).
@@ -195,7 +195,7 @@ I temi mensili qui sopra guardano soprattutto al lato **Self** (regolazione, per
 
 ## 4. Schede tema
 
-> **Come leggere le schede.** Le schede sono state scritte prima delle regole attuali. Le fonti elencate per ogni tema sono un **serbatoio**: ogni carosello, Reel o articolo ne usa **una sola**, e la verifica alla fonte. Le scalette dei caroselli qui sotto sono idee di partenza: al momento di produrle si riscrivono con le regole della sezione 2 (una fonte per post, percentuali, terza persona per le informazioni negative, slide «I limiti»). Il video lungo di YouTube può raccontare più studi: va deciso (vedi sezione 8).
+> **Come leggere le schede.** Le schede sono state scritte prima delle regole attuali. Le fonti elencate per ogni tema sono un **serbatoio**: ogni carosello, Reel o articolo ne usa **una sola**, e la verifica alla fonte. Le scalette dei caroselli qui sotto sono idee di partenza: al momento di produrle si riscrivono con le regole della sezione 2 (una fonte per post, percentuali, terza persona per le informazioni negative, slide «I limiti»). Il video lungo di YouTube ha uno studio principale e può citarne altri a sostegno (regola 1).
 
 Ogni scheda riassume il contenuto e fornisce i testi pronti per i social. Le fonti indicate vanno riportate con il link completo nella descrizione del video e nel primo commento dei post.
 
@@ -482,7 +482,6 @@ Ogni scheda riassume il contenuto e fornisce i testi pronti per i social. Le fon
 ## 8. Punti aperti da decidere
 
 - **Link in bio:** quale pagina del sito WeSelf (`/it` o `/it/install`), e se usare link tracciati.
-- **Video lungo YouTube:** se anche il video segue la regola «uno studio per contenuto» o può raccontarne più di uno.
 - **Volto:** chi presenta i video (fondatore, uno specialista, solo voce).
 - **Revisione:** uno psicologo rivede i contenuti prima della pubblicazione, soprattutto il tema 6.
 - **Slogan:** confermare «Un'agenda per stare bene, insieme.»
