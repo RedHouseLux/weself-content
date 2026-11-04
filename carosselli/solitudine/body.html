@@ -20,18 +20,52 @@
 .dots{display:grid;grid-template-columns:repeat(10,1fr);gap:12px;margin-top:6px}
 .dots i{aspect-ratio:1;border-radius:50%;background:var(--sunk)}
 .dots i.on{background:var(--coral)}
+.net{display:block;margin-top:40px;align-self:center}
 </style>
 
 <section class="slide" id="s1">
-  <svg class="shape" style="right:0;top:0" width="520" height="620" viewBox="0 0 520 620">
-    <circle class="s-tint" cx="400" cy="120" r="200"/>
-    <path class="s-we" d="M180 300 h160 v160 a160 160 0 0 1 -160 -160 z"/>
-    <rect class="s-warm" x="300" y="380" width="180" height="180" rx="36"/>
-  </svg>
   <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/8</div></div>
-  <div style="margin-top:auto" class="stack">
+  <svg class="net" width="952" height="580" viewBox="0 0 952 580">
+    <line x1="150" y1="170" x2="290" y2="110" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="150" y1="170" x2="260" y2="260" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="290" y1="110" x2="260" y2="260" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="290" y1="110" x2="410" y2="210" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="260" y1="260" x2="410" y2="210" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="260" y1="260" x2="130" y2="360" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="260" y1="260" x2="380" y2="370" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="410" y1="210" x2="380" y2="370" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="410" y1="210" x2="540" y2="300" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="410" y1="210" x2="520" y2="140" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="380" y1="370" x2="540" y2="300" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="540" y1="300" x2="660" y2="200" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="520" y1="140" x2="660" y2="200" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="540" y1="300" x2="700" y2="360" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="660" y1="200" x2="700" y2="360" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="540" y1="300" x2="560" y2="450" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="380" y1="370" x2="560" y2="450" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="700" y1="360" x2="560" y2="450" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <line x1="130" y1="360" x2="380" y2="370" stroke="#C9CEF6" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="150" cy="170" r="34" fill="var(--peri)"/>
+    <circle cx="290" cy="110" r="26" fill="var(--teal)"/>
+    <circle cx="260" cy="260" r="40" fill="var(--peri)"/>
+    <circle cx="410" cy="210" r="30" fill="var(--teal)"/>
+    <circle cx="130" cy="360" r="26" fill="var(--teal)"/>
+    <circle cx="380" cy="370" r="28" fill="var(--peri)"/>
+    <circle cx="540" cy="300" r="36" fill="var(--teal)"/>
+    <circle cx="520" cy="140" r="24" fill="var(--peri)"/>
+    <circle cx="660" cy="200" r="28" fill="var(--peri)"/>
+    <circle cx="700" cy="360" r="24" fill="var(--teal)"/>
+    <circle cx="560" cy="450" r="26" fill="var(--peri)"/>
+    <circle cx="860" cy="110" r="48" fill="none" stroke="var(--coral)" stroke-width="3" stroke-dasharray="6 10" opacity=".7"/>
+    <circle cx="860" cy="110" r="26" fill="var(--coral)"/>
+    <circle cx="880" cy="470" r="52" fill="none" stroke="var(--coral)" stroke-width="3" stroke-dasharray="6 10" opacity=".7"/>
+    <circle cx="880" cy="470" r="30" fill="var(--coral)"/>
+    <circle cx="70" cy="520" r="44" fill="none" stroke="var(--coral)" stroke-width="3" stroke-dasharray="6 10" opacity=".7"/>
+    <circle cx="70" cy="520" r="22" fill="var(--coral)"/>
+    </svg>
+  <div style="margin-top:auto;gap:30px" class="stack">
     <p class="kicker">Solitudine · 1 sondaggio</p>
-    <h1 style="font-size:100px">Quasi 1 italiano su 2 si è sentito <span class="hl">solo</span></h1>
+    <h1 style="font-size:88px">Quasi 1 italiano su 2 si è sentito <span class="hl">solo</span></h1>
     <p class="mid muted">Nell'ultimo anno il <b style="color:var(--ink)">47%</b> delle persone intervistate ha detto di essersi sentito solo, isolato o escluso. Tra i giovani la quota è salita al <b style="color:var(--ink)">64%</b>.</p>
     <p style="font-weight:900;font-size:36px;color:var(--peri)">Scorri →</p>
   </div>

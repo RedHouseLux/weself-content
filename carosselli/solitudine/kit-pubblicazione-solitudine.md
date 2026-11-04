@@ -43,7 +43,7 @@ I dati sono autodichiarati e riferiti all'ultimo anno. L'esempio dell'autobus (1
 
 ## Testo alternativo (una riga per immagine)
 
-1. Copertina WeSelf: «Quasi 1 italiano su 2 si è sentito solo. Nell'ultimo anno il 47% delle persone intervistate ha detto di essersi sentito solo, isolato o escluso. Tra i giovani la quota è salita al 64%.»
+1. Copertina WeSelf: un'illustrazione con tanti cerchi blu e verdi collegati tra loro da linee, come una rete di persone, e tre cerchi arancioni ai margini, senza collegamenti. Testo: «Quasi 1 italiano su 2 si è sentito solo. Nell'ultimo anno il 47% delle persone intervistate ha detto di essersi sentito solo, isolato o escluso. Tra i giovani la quota è salita al 64%.»
 2. La ricerca: un sondaggio SWG sulla vita sociale degli italiani, realizzato per Acri e Assifero e presentato a inizio ottobre 2026. I dati raccontano come le persone si sono sentite, nelle loro parole.
 3. I numeri, pensando all'ultimo anno: il 47% si è sentito solo, isolato o escluso; il 48% ha sentito di non avere persone su cui contare; il 64% dei giovani si è sentito solo o isolato, la quota più alta.
 4. Detto in altre parole: su un autobus con 40 persone, circa 19 si sono sentite sole nell'ultimo anno; con soli giovani sarebbero quasi 2 su 3. Chi si sente solo è spesso seduto accanto a qualcuno che prova la stessa cosa.
