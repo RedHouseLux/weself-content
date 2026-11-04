@@ -45,7 +45,7 @@ Instagram non rende cliccabili i link nei commenti: il link serve a chi lo copia
 
 Per ogni immagine, prima di pubblicare: Impostazioni avanzate → Accessibilità → Scrivi testo alternativo.
 
-1. Copertina WeSelf: "L'autocontrollo da bambini dice qualcosa della vita da adulti? Uno studio ha seguito le stesse persone per 32 anni per scoprirlo."
+1. Copertina WeSelf: una linea curva che sale dalla nascita fino ai 32 anni, con tre punti arancioni a 3, 5 e 11 anni e un grande punto verde a 32 anni. Testo: "L'autocontrollo da bambini dice qualcosa della vita da adulti? Uno studio ha seguito le stesse persone per 32 anni per scoprirlo."
 2. Lo studio: 1.037 bambini nati nel 1972–73 a Dunedin, in Nuova Zelanda, seguiti dalla nascita fino ai 32 anni con controlli su salute, lavoro, soldi e vita sociale. Fonte: Moffitt e colleghi, PNAS 2011.
 3. Come hanno misurato l'autocontrollo: 5 comportamenti (aggressività impulsiva, iperattività, scarsa perseveranza, disattenzione, impulsività) valutati dai 5 agli 11 anni da genitori, insegnanti e bambini, più l'osservazione dei ricercatori a 3 e 5 anni. Nove misure in un unico punteggio.
 4. Cosa hanno trovato, a 32 anni su 100 persone con poco contro molto autocontrollo da bambine: più problemi di salute 27 contro 11; dipendenza da più sostanze 10 contro 3; reddito molto basso 32 contro 10; condanna penale 43 contro 13.
