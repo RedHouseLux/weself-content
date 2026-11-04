@@ -1,0 +1,127 @@
+<style>
+.stats{display:flex;flex-direction:column;gap:20px}
+.st{display:grid;grid-template-columns:240px 1fr;gap:28px;align-items:center;border-radius:28px;padding:26px 34px}
+.st .num{font-weight:900;font-size:104px;line-height:.9;letter-spacing:-.04em}
+.st p{font-weight:600;font-size:33px;line-height:1.3}
+.st.c{background:var(--coral-soft)}.st.c .num{color:var(--coral-text)}
+.st.p{background:var(--peri-soft)}.st.p .num{color:var(--peri)}
+.st.tl{background:var(--teal-soft)}.st.tl .num{color:var(--teal-text)}
+.bars{display:flex;flex-direction:column;gap:22px}
+.bar{display:flex;flex-direction:column;gap:10px}
+.blab{display:flex;justify-content:space-between;font-weight:800;font-size:34px}
+.blab span:last-child{font-weight:900}
+.bar .track{height:30px;border-radius:999px;background:var(--sunk);overflow:hidden}
+.bar .fill{height:100%;border-radius:999px}
+.mid{font-weight:600;font-size:38px;line-height:1.4}
+.lim{display:flex;flex-direction:column;gap:36px}
+.lim div{font-weight:600;font-size:40px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+.dots{display:grid;grid-template-columns:repeat(10,1fr);gap:12px;margin-top:6px}
+.dots i{aspect-ratio:1;border-radius:50%;background:var(--sunk)}
+.dots i.on{background:var(--coral)}
+</style>
+
+<section class="slide" id="s1">
+  <svg class="shape" style="right:0;top:0" width="520" height="620" viewBox="0 0 520 620">
+    <circle class="s-tint" cx="400" cy="120" r="200"/>
+    <path class="s-we" d="M180 300 h160 v160 a160 160 0 0 1 -160 -160 z"/>
+    <rect class="s-warm" x="300" y="380" width="180" height="180" rx="36"/>
+  </svg>
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/8</div></div>
+  <div style="margin-top:auto" class="stack">
+    <p class="kicker">Solitudine · 1 sondaggio</p>
+    <h1 style="font-size:100px">Quasi 1 italiano su 2 si è sentito <span class="hl">solo</span></h1>
+    <p class="mid muted">Nell'ultimo anno il <b style="color:var(--ink)">47%</b> delle persone intervistate ha detto di essersi sentito solo, isolato o escluso. Tra i giovani la quota è salita al <b style="color:var(--ink)">64%</b>.</p>
+    <p style="font-weight:900;font-size:36px;color:var(--peri)">Scorri →</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="kicker we">La ricerca</p><div class="count">2/8</div></div>
+  <div class="stack" style="margin-top:90px;gap:34px">
+    <h2 style="font-size:66px">Un <span class="hl tl">sondaggio SWG</span> sulla vita sociale degli italiani.</h2>
+    <p class="mid">È stato realizzato per <b>Acri e Assifero</b>, che riuniscono fondazioni ed enti filantropici italiani, e presentato a inizio ottobre 2026 in occasione della Giornata europea delle fondazioni.</p>
+    <p class="mid">Le persone hanno risposto a domande sulla propria vita sociale: i dati raccontano quindi <b>come si sono sentite</b>, nelle loro parole.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>SWG per Acri e Assifero</em> · ottobre 2026</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="kicker we">I numeri</p><div class="count">3/8</div></div>
+  <div class="stack" style="margin-top:50px;gap:28px">
+    <h2 style="font-size:54px">Che cosa hanno risposto, pensando all'ultimo anno</h2>
+    <div class="stats">
+      <div class="st c"><span class="num">47%</span><p>si è sentito solo, isolato o escluso.</p></div>
+      <div class="st p"><span class="num">48%</span><p>ha sentito di non avere persone su cui contare.</p></div>
+      <div class="st tl"><span class="num">64%</span><p>dei giovani si è sentito solo o isolato: la quota più alta.</p></div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>SWG per Acri e Assifero</em> · ottobre 2026</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="kicker we">Detto in altre parole</p><div class="count">4/8</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <h2 style="font-size:60px">Su un autobus con 40 persone, circa <span class="hl">19</span> si sono sentite sole nell'ultimo anno.</h2>
+    <div class="dots">
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i>
+      <i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+    </div>
+    <p class="mid">Se sull'autobus ci fossero solo giovani, sarebbero quasi <b>2 su 3</b>. Chi si sente solo, quindi, è spesso seduto accanto a qualcuno che prova la stessa cosa.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Elaborazione WeSelf</em> su SWG per Acri e Assifero</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="kicker">Che cosa ostacola la vita sociale</p><div class="count">5/8</div></div>
+  <div class="stack" style="margin-top:60px;gap:34px">
+    <h2 style="font-size:64px">L'ostacolo principale non sono i soldi: è <span class="hl">il tempo</span>.</h2>
+    <div class="bars">
+      <div class="bar"><div class="blab"><span>Poco tempo libero</span><span>37%</span></div><div class="track"><div class="fill" style="width:37%;background:var(--peri)"></div></div></div>
+      <div class="bar"><div class="blab"><span>Orari che non si conciliano</span><span>27%</span></div><div class="track"><div class="fill" style="width:27%;background:var(--peri)"></div></div></div>
+      <div class="bar"><div class="blab"><span>I costi</span><span>7%</span></div><div class="track"><div class="fill" style="width:7%;background:var(--teal)"></div></div></div>
+    </div>
+    <p class="mid">E il 73% degli intervistati ha associato la prevenzione proprio a una <b>vita sociale attiva</b>.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>SWG per Acri e Assifero</em> · ottobre 2026</span></div>
+</section>
+
+<section class="slide warmbg" id="s6">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">6/8</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«La solitudine è un problema che riguarda soprattutto gli anziani.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">In questo sondaggio la quota più alta è stata proprio quella dei giovani: <span class="hl">64%</span>, contro il 47% della media.</p>
+    <p class="body">La solitudine non ha un'età: può arrivare a vent'anni come a ottanta.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>SWG per Acri e Assifero</em> · ottobre 2026</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">7/8</div></div>
+  <div class="stack" style="margin-top:60px;gap:32px">
+    <h2 style="font-size:62px">Che cosa il sondaggio <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>Misura <b>come le persone si sono sentite</b>, non quanto tempo hanno passato da sole.</div>
+      <div><b>Non sappiamo quanto sia durata</b> quella sensazione: sentirsi soli in un momento dell'anno non significa vivere in solitudine.</div>
+      <div><b>Non ci sono dati per regione</b>: non sappiamo come cambino le cose tra un territorio e l'altro.</div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>SWG per Acri e Assifero</em> · ottobre 2026</span></div>
+</section>
+
+<section class="slide cta" id="s8">
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">8/8</div></div>
+  <div class="stack" style="margin-top:90px">
+    <h2 style="font-size:70px">Se il tempo è l'ostacolo, servono <span class="hl">occasioni facili</span> da cogliere.</h2>
+    <p class="body" style="opacity:.92">Con WeSelf trovi chi ha il tuo stesso obiettivo, vicino a te o tra gli amici che hai già, e l'appuntamento è subito in agenda. Nei piccoli gruppi, anche anonimi, ci si sostiene a vicenda.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>

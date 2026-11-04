@@ -1,0 +1,326 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-weight:400;src:url(../../fonts/literata-latin-400-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--raised:#fff;--sunk:#F3EEE8;--line:#EAE3DB;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8}
+*{box-sizing:border-box;margin:0}
+body{background:#999;font-family:Nunito,sans-serif;color:var(--ink)}
+.card{position:relative;overflow:hidden;background:var(--surface);display:flex;flex-direction:column;margin-bottom:20px}
+.v{width:1920px;height:1080px;padding:90px 120px}
+.r{width:1080px;height:1920px;padding:220px 80px 440px}
+.t{width:1280px;height:720px;padding:56px 64px}
+.top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:14px;font-weight:900;font-size:40px;letter-spacing:-.02em}
+.brand img{width:56px;height:56px}.we{color:var(--peri)}.self{color:var(--teal)}
+.kicker{font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.kicker.we{color:var(--peri)}.kicker.warm{color:var(--coral-text)}
+h1{font-weight:900;font-size:120px;line-height:.98;letter-spacing:-.03em}
+h2{font-weight:900;font-size:84px;line-height:1.04;letter-spacing:-.025em}
+.body{font-weight:600;font-size:48px;line-height:1.35}
+.muted{color:var(--muted)}
+.stack{display:flex;flex-direction:column;gap:36px;position:relative;z-index:2}
+.hl{background:linear-gradient(transparent 55%,var(--hl,#FBE3D8) 55%);font-weight:900;padding:0 4px;margin:0 -4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl.tl{--hl:#A8E6DD}.hl.p{--hl:#DDE0FB}
+.src{margin-top:auto;display:flex;gap:18px;align-items:baseline;position:relative;z-index:2}
+.src b{font-weight:800;font-size:22px;letter-spacing:.16em;color:var(--muted)}
+.src span{font-family:Literata,serif;font-size:28px;color:var(--muted)}.src em{font-style:normal;color:var(--ink)}
+svg.shape{position:absolute;z-index:1}
+.s-self{fill:var(--teal)}.s-we{fill:var(--peri)}.s-warm{fill:var(--coral)}.s-tint{fill:var(--teal-soft)}.s-tintwe{fill:var(--peri-soft)}
+.big{font-weight:900;font-size:260px;line-height:.9;letter-spacing:-.04em;color:var(--teal-text)}
+.chips{display:flex;flex-wrap:wrap;gap:18px}
+.chip{background:var(--raised);border:3px solid var(--line);border-radius:999px;padding:16px 30px;font-weight:800;font-size:36px}
+.chip.tl{background:var(--teal-soft);border-color:var(--teal-soft)}.chip.p{background:var(--peri-soft);border-color:var(--peri-soft)}.chip.c{background:var(--coral-soft);border-color:var(--coral-soft)}
+.vars{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.var{display:flex;align-items:center;gap:20px;background:var(--raised);border:3px solid var(--line);border-radius:24px;padding:30px;font-weight:900;font-size:42px;line-height:1.1}
+.var i{flex:0 0 auto;width:24px;height:24px;border-radius:50%;background:var(--teal)}
+.var:nth-child(2) i{background:var(--peri)}.var:nth-child(3) i{background:var(--coral)}.var:nth-child(5) i{background:var(--peri)}
+/* table */
+.cmp{display:flex;flex-direction:column;gap:14px}
+.cmp-head,.row{display:grid;grid-template-columns:1fr 260px 260px;gap:18px;align-items:center}
+.cmp-head{padding:0 28px}
+.row{background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:14px 28px}
+.row b{font-weight:800;font-size:40px;line-height:1.15}
+.n{font-weight:900;font-size:66px;line-height:1;text-align:center;border-radius:16px;padding:8px 0}
+.n.lo{background:var(--coral-soft);color:var(--coral-text)}.n.hi{background:var(--teal-soft);color:var(--teal-text)}
+.lab{display:flex;flex-direction:column;align-items:center;text-align:center;font-weight:800;font-size:24px;line-height:1.1;border-radius:16px;padding:14px 6px}.lab strong{font-weight:900;font-size:42px;letter-spacing:.04em}
+.lab.lo{background:var(--coral);color:var(--ink)}.lab.hi{background:var(--teal);color:#fff}
+/* stat pair */
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.stat{border-radius:36px;padding:56px;display:flex;flex-direction:column;gap:18px}
+.stat .num{font-weight:900;font-size:170px;line-height:.9;letter-spacing:-.04em}
+.stat p{font-weight:800;font-size:46px;line-height:1.2}
+.stat.c{background:var(--coral-soft)}.stat.c .num{color:var(--coral-text)}
+.stat.tl{background:var(--teal-soft)}.stat.tl .num{color:var(--teal-text)}
+.stat.p{background:var(--peri-soft)}.stat.p .num{color:var(--peri)}
+/* gradient */
+.grad{display:flex;align-items:flex-end;gap:22px;height:380px}
+.grad div{flex:1;border-radius:20px 20px 8px 8px}
+.axis{display:flex;justify-content:space-between;font-weight:800;font-size:34px;color:var(--muted)}
+/* list */
+.list{display:flex;flex-direction:column;gap:22px}
+.li{display:flex;gap:26px;align-items:flex-start;font-weight:600;font-size:42px;line-height:1.3}
+.li i{flex:0 0 auto;width:56px;height:56px;border-radius:16px;background:var(--peri-soft);color:var(--peri);font-style:normal;font-weight:900;font-size:32px;display:flex;align-items:center;justify-content:center;margin-top:2px}
+.li b{font-weight:900}
+.badge{display:inline-flex;align-items:center;gap:20px;font-weight:900;font-size:56px;letter-spacing:.08em;padding:22px 46px 22px 24px;border-radius:999px;align-self:flex-start}
+.badge i{font-style:normal;width:68px;height:68px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:38px}
+.mito{background:var(--coral);color:var(--ink)}.mito i{background:var(--ink);color:var(--coral)}
+.quote{font-family:Literata,serif;font-style:italic;font-size:72px;line-height:1.25}
+.warmbg{background:var(--coral-soft)}
+.cta{background:var(--peri);color:#fff}.cta .kicker{color:#fff}
+.cta .hl{background:none;text-decoration:underline;text-decoration-thickness:8px;text-underline-offset:12px;text-decoration-color:#F09B7C}
+.btn{align-self:flex-start;background:#fff;color:var(--ink);font-weight:900;font-size:46px;padding:30px 56px;border-radius:999px}
+.feat{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.f{background:rgba(255,255,255,.12);border-radius:28px;padding:36px 40px}
+.f b{display:block;font-weight:900;font-size:44px;margin-bottom:10px}
+.f span{font-weight:600;font-size:34px;line-height:1.3;opacity:.92}
+.whitebrand{display:flex;align-items:center;gap:20px;font-weight:900;font-size:64px;color:#fff}
+.whitebrand img{width:96px;height:96px;background:#fff;border-radius:26px;padding:10px}
+</style></head><body>
+
+<!-- ================= VIDEO 1920x1080 ================= -->
+<section class="card v" id="v01">
+  <svg class="shape" style="right:0;top:0" width="820" height="1080" viewBox="0 0 820 1080">
+    <circle class="s-warm" cx="640" cy="230" r="300"/>
+    <path class="s-self" d="M260 480 h260 v260 a260 260 0 0 1 -260 -260 z"/>
+    <rect class="s-tintwe" x="470" y="640" width="280" height="280" rx="56"/>
+  </svg>
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div></div>
+  <div class="stack" style="margin-top:auto;max-width:1150px">
+    <p class="kicker">Uno studio alla volta · Lo studio di Dunedin</p>
+    <h1>L'autocontrollo da bambini dice qualcosa della <span class="hl">vita da adulti</span>?</h1>
+  </div>
+</section>
+
+<section class="card v" id="v02">
+  <div class="top"><p class="kicker we">Lo studio</p></div>
+  <div class="stack" style="margin-top:80px">
+    <p class="big">1.037</p>
+    <p class="body" style="font-size:58px;font-weight:800">bambini nati tra il 1972 e il 1973 a Dunedin, in Nuova Zelanda</p>
+    <div class="chips"><span class="chip tl">dalla nascita ai 32 anni</span><span class="chip p">96% ancora nello studio a 32 anni</span><span class="chip c">visite, esami, interviste, archivi</span></div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS</span></div>
+</section>
+
+<section class="card v" id="v03">
+  <div class="top"><p class="kicker">Come hanno misurato l'autocontrollo</p></div>
+  <div class="stack" style="margin-top:60px">
+    <h2 style="font-size:76px">Non «quanta forza di volontà hai?», ma <span class="hl">5 comportamenti</span>:</h2>
+    <div class="vars">
+      <div class="var"><i></i>Aggressività impulsiva</div><div class="var"><i></i>Iperattività</div><div class="var"><i></i>Scarsa perseveranza</div>
+      <div class="var"><i></i>Disattenzione</div><div class="var"><i></i>Impulsività</div>
+    </div>
+    <p class="body muted" style="font-size:40px"><b style="color:var(--ink)">9 misure tra i 3 e gli 11 anni</b> · osservatori, genitori, insegnanti e i bambini stessi → un unico punteggio</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS</span></div>
+</section>
+
+<section class="card v" id="v04">
+  <div class="top"><p class="kicker we">I numeri, tradotti</p></div>
+  <div class="stack" style="margin-top:40px;gap:24px">
+    <h2 style="font-size:62px">A 32 anni, su <span class="hl">100 persone</span> che da bambine avevano…</h2>
+    <div class="cmp">
+      <div class="cmp-head"><span></span><span class="lab lo"><strong>POCO</strong>autocontrollo</span><span class="lab hi"><strong>MOLTO</strong>autocontrollo</span></div>
+      <div class="row"><b>…avevano più problemi di salute</b><span class="n lo">27</span><span class="n hi">11</span></div>
+      <div class="row"><b>…dipendevano da più sostanze</b><span class="n lo">10</span><span class="n hi">3</span></div>
+      <div class="row"><b>…avevano un reddito molto basso</b><span class="n lo">32</span><span class="n hi">10</span></div>
+      <div class="row"><b>…crescevano i figli da soli*</b><span class="n lo">58</span><span class="n hi">26</span></div>
+      <div class="row"><b>…avevano una condanna penale</b><span class="n lo">43</span><span class="n hi">13</span></div>
+    </div>
+  </div>
+  <div class="src"><b>*</b><span>solo tra chi aveva già figli · <em>Moffitt et al., 2011</em> · PNAS</span></div>
+</section>
+
+<section class="card v" id="v05">
+  <div class="top"><p class="kicker we">In parole semplici</p></div>
+  <div class="stack" style="margin-top:auto;margin-bottom:auto">
+    <p class="body muted">Chi aveva <b style="color:var(--coral-text)">POCO</b> autocontrollo, rispetto a chi ne aveva <b style="color:var(--teal-text)">MOLTO</b>:</p>
+    <div class="pair">
+      <div class="stat c"><span class="num">≈ 2,5×</span><p>problemi di salute</p></div>
+      <div class="stat c"><span class="num">&gt; 3×</span><p>dipendenze e condanne</p></div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS</span></div>
+</section>
+
+<section class="card v" id="v06">
+  <div class="top"><p class="kicker">Ma attenzione</p></div>
+  <div class="stack" style="margin-top:auto;margin-bottom:auto">
+    <p class="body muted">Anche nel gruppo con <b style="color:var(--coral-text)">POCO</b> autocontrollo:</p>
+    <div class="pair">
+      <div class="stat tl"><span class="num">73<small style="font-size:70px"> su 100</small></span><p>non avevano più problemi di salute</p></div>
+      <div class="stat tl"><span class="num">57<small style="font-size:70px"> su 100</small></span><p>non avevano condanne</p></div>
+    </div>
+    <h2 style="font-size:70px">Un <span class="hl">rischio più alto</span>, non un destino.</h2>
+  </div>
+</section>
+
+<section class="card v" id="v07">
+  <div class="top"><p class="kicker we">Un gradiente, non una soglia</p></div>
+  <div class="stack" style="margin-top:70px;gap:30px">
+    <h2 style="font-size:72px">Un po' più di autocontrollo, esiti <span class="hl tl">un po' migliori</span>. Lungo tutta la scala.</h2>
+    <div class="grad">
+      <div style="height:100%;background:var(--coral)"></div><div style="height:78%;background:#F4B79F"></div><div style="height:60%;background:#C9DCD6"></div><div style="height:45%;background:#7CC9BF"></div><div style="height:32%;background:var(--teal)"></div>
+    </div>
+    <div class="axis"><span>← meno autocontrollo</span><span>problemi a 32 anni (schema)</span><span>più autocontrollo →</span></div>
+  </div>
+</section>
+
+<section class="card v" id="v08">
+  <div class="top"><p class="kicker">Quanto conta l'ambiente? · 1</p></div>
+  <div class="stack" style="margin-top:60px">
+    <h2>La famiglia conta, ma <span class="hl">non spiega tutto</span>.</h2>
+    <p class="body muted" style="font-size:42px">Per ogni «gradino» in meno di autocontrollo, la probabilità di una condanna era:</p>
+    <div class="pair">
+      <div class="stat p"><span class="num">1,8×</span><p>più alta</p></div>
+      <div class="stat p"><span class="num">1,7×</span><p>tenendo conto di ceto sociale e QI</p></div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS · odds ratio 1,83 e 1,71</span></div>
+</section>
+
+<section class="card v" id="v09">
+  <svg class="shape" style="right:120px;top:200px" width="520" height="520" viewBox="0 0 520 520">
+    <rect class="s-self" x="20" y="60" width="220" height="400" rx="60"/><rect class="s-we" x="280" y="60" width="220" height="400" rx="60"/>
+    <circle class="s-warm" cx="130" cy="150" r="46"/><circle class="s-tint" cx="390" cy="150" r="46"/>
+  </svg>
+  <div class="top"><p class="kicker">Quanto conta l'ambiente? · 2</p></div>
+  <div class="stack" style="margin-top:80px;max-width:1080px">
+    <h2>Stessa casa, <span class="hl">stessa famiglia</span>.</h2>
+    <p class="body"><b>509 coppie di gemelli</b> britannici: chi aveva meno autocontrollo <b>a 5 anni</b>, <span class="hl tl">a 12 anni</span> fumava più spesso, andava peggio a scuola e aveva più comportamenti antisociali.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS (studio E-Risk)</span></div>
+</section>
+
+<section class="card v" id="v10">
+  <div class="top"><p class="kicker">Quanto conta l'ambiente? · 3</p></div>
+  <div class="stack" style="margin-top:50px;gap:30px">
+    <h2 style="font-size:76px">Le «trappole» dell'adolescenza</h2>
+    <div class="chips"><span class="chip c">fumare entro i 15 anni</span><span class="chip c">lasciare la scuola senza titolo</span><span class="chip c">diventare genitori da adolescenti</span></div>
+    <p class="body muted" style="font-size:40px">Quanta parte del legame spiegano:</p>
+    <div class="pair" style="grid-template-columns:1fr 1fr 1fr;gap:28px">
+      <div class="stat p" style="padding:40px"><span class="num" style="font-size:120px">32%</span><p style="font-size:38px">salute</p></div>
+      <div class="stat p" style="padding:40px"><span class="num" style="font-size:120px">42%</span><p style="font-size:38px">reati</p></div>
+      <div class="stat p" style="padding:40px"><span class="num" style="font-size:120px">61–63%</span><p style="font-size:38px">famiglia monoparentale e dipendenze</p></div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS</span></div>
+</section>
+
+<section class="card v" id="v11">
+  <svg class="shape" style="right:0;bottom:0" width="700" height="700" viewBox="0 0 700 700">
+    <path class="wire-ink" d="M120 560 C 260 560, 300 300, 600 200" style="stroke:var(--teal);stroke-width:14;fill:none;stroke-linecap:round"/>
+    <circle cx="120" cy="560" r="34" class="s-warm"/><circle cx="600" cy="200" r="34" class="s-self"/>
+  </svg>
+  <div class="top"><p class="kicker">Quanto conta l'ambiente? · 4</p></div>
+  <div class="stack" style="margin-top:110px;max-width:1150px">
+    <h2>L'autocontrollo <span class="hl tl">cambia</span>.</h2>
+    <p class="body">Molte persone hanno cambiato posizione crescendo. E chi è <b>migliorato nel tempo</b> aveva esiti migliori a 32 anni.</p>
+    <p class="body muted" style="font-size:38px">Gli autori avvertono: un cambiamento spontaneo non equivale a quello ottenuto con un intervento.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Moffitt et al., 2011</em> · PNAS</span></div>
+</section>
+
+<section class="card v" id="v12">
+  <div class="top"><p class="kicker warm">I limiti: cosa lo studio non dice</p></div>
+  <div class="list" style="margin-top:56px">
+    <div class="li"><i>1</i><span><b>Correlazione non è destino.</b> Studio osservazionale: una tendenza media.</span></div>
+    <div class="li"><i>2</i><span><b>Non solo volontà.</b> Iperattività e disattenzione dipendono anche da temperamento e contesto.</span></div>
+    <div class="li"><i>3</i><span><b>Valutazioni, non misure dirette.</b> Giudizi di adulti e dei bambini stessi.</span></div>
+    <div class="li"><i>4</i><span><b>Un luogo e un'epoca precisi.</b> Nuova Zelanda, anni '70.</span></div>
+    <div class="li"><i>5</i><span><b>A 3–5 anni da sole dicono poco.</b> Il quadro viene dalle misure fino agli 11 anni.</span></div>
+  </div>
+</section>
+
+<section class="card v warmbg" id="v13">
+  <div class="top"><p class="kicker warm">La nostra conclusione</p></div>
+  <div class="stack" style="margin:auto 0">
+    <p class="quote" style="color:var(--muted);font-size:60px">Non «come trovo più forza di volontà?»</p>
+    <p class="quote" style="font-size:84px">ma «come rendo <span class="hl" style="--hl:#fff;font-family:Literata,serif;font-weight:400">più facile</span> ciò che voglio fare?»</p>
+    <div class="chips"><span class="chip">meno distrazioni</span><span class="chip">piani più concreti</span><span class="chip">persone intorno</span></div>
+  </div>
+</section>
+
+<section class="card v cta" id="v14">
+  <div class="top"><p class="kicker">Come può aiutarti WeSelf</p></div>
+  <div class="feat" style="margin-top:70px">
+    <div class="f"><b>Costruire abitudini sane</b><span>Un obiettivo diventa una settimana di piccole azioni, già in agenda.</span></div>
+    <div class="f"><b>Trovare chi ha il tuo obiettivo</b><span>La costanza è più facile quando qualcuno ti aspetta.</span></div>
+    <div class="f"><b>Una comunità che sostiene</b><span>Piccoli gruppi, anche anonimi: se salti un giorno, si riparte.</span></div>
+    <div class="f"><b>Uno specialista, se serve</b><span>Chiedi tu il contatto e decidi tu cosa fargli vedere.</span></div>
+  </div>
+  <p style="margin-top:auto;font-family:Literata,serif;font-style:italic;font-size:30px;opacity:.85">Lo studio riguarda i meccanismi psicologici, non WeSelf in sé.</p>
+</section>
+
+<section class="card v cta" id="v15">
+  <div class="top"><div class="whitebrand"><img src="weself-mark.png"><span>WeSelf</span></div></div>
+  <div class="stack" style="margin-top:90px;max-width:860px">
+    <h2 style="font-size:78px">Numeri, ambiente e limiti: leggi l'<span class="hl">articolo completo</span>.</h2>
+    <span class="btn">www.weself.app</span>
+  </div>
+  <p style="margin-top:auto;font-weight:800;font-size:30px;opacity:.9">Fonte: Moffitt et al., 2011, PNAS · link nella descrizione</p>
+</section>
+
+<!-- ================= THUMBNAIL 1280x720 ================= -->
+<section class="card t" id="thumb">
+  <svg class="shape" style="right:0;top:0" width="560" height="720" viewBox="0 0 560 720">
+    <circle class="s-warm" cx="430" cy="170" r="220"/>
+    <path class="s-self" d="M150 330 h200 v200 a200 200 0 0 1 -200 -200 z"/>
+    <rect class="s-tintwe" x="330" y="440" width="200" height="200" rx="44"/>
+  </svg>
+  <div class="top"><div class="brand" style="font-size:34px"><img src="weself-mark.png" style="width:52px;height:52px"></div></div>
+  <div class="stack" style="margin-top:auto;margin-bottom:40px;gap:10px;max-width:820px">
+    <h1 style="font-size:118px;line-height:.95">Impulsivo da piccolo, <span style="color:var(--coral-text)">segnato</span> per sempre?</h1>
+  </div>
+</section>
+
+<!-- ================= REEL 1080x1920 ================= -->
+<section class="card r warmbg" id="r01">
+  <div class="stack" style="margin-top:auto;margin-bottom:auto;gap:60px">
+    <p class="kicker warm">Mito o realtà?</p>
+    <p class="quote" style="font-size:96px">«Chi da bambino era impulsivo è segnato per sempre.»</p>
+    <div class="chips"><span class="chip" style="font-size:50px;background:var(--coral);border-color:var(--coral)">✕ MITO</span><span class="chip" style="font-size:50px;font-weight:900">o</span><span class="chip" style="font-size:50px;background:var(--teal-soft);border-color:var(--teal-soft)">✓ REALTÀ</span></div>
+  </div>
+</section>
+
+<section class="card r" id="r02">
+  <div class="stack" style="margin-top:auto;margin-bottom:auto;gap:40px">
+    <p class="kicker we">Lo studio di Dunedin</p>
+    <p class="big" style="font-size:300px">1.037</p>
+    <h2 style="font-size:90px">persone seguite <span class="hl tl">per 32 anni</span>, dalla nascita.</h2>
+  </div>
+</section>
+
+<section class="card r" id="r03">
+  <div class="stack" style="margin-top:auto;margin-bottom:auto;gap:44px">
+    <h2 style="font-size:84px">Chi da bambino aveva <span class="hl">POCO autocontrollo</span> rischiava di più.</h2>
+    <div class="stat c" style="padding:50px"><span class="num" style="font-size:200px">43 <small style="font-size:70px">su 100</small></span><p>a 32 anni avevano una condanna</p></div>
+    <p class="body muted">contro <b style="color:var(--teal-text)">13 su 100</b> tra chi ne aveva <b style="color:var(--teal-text)">MOLTO</b></p>
+  </div>
+</section>
+
+<section class="card r warmbg" id="r04">
+  <div class="stack" style="margin-top:auto;margin-bottom:auto;gap:50px">
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <h2 style="font-size:96px">Ma <span class="hl" style="--hl:#fff">57 su 100</span> non ne hanno avuta nessuna.</h2>
+    <p class="body" style="font-size:56px">È un rischio più alto, <b>non un destino</b>.</p>
+  </div>
+</section>
+
+<section class="card r" id="r05">
+  <div class="stack" style="margin-top:auto;margin-bottom:auto;gap:50px">
+    <h2 style="font-size:96px">E chi è <span class="hl tl">migliorato nel tempo</span> stava meglio da adulto.</h2>
+    <p class="body muted" style="font-size:54px">L'autocontrollo non è una forza fissa: è fatto di attenzione, costanza e impulsi.</p>
+  </div>
+</section>
+
+<section class="card r cta" id="r06">
+  <div class="stack" style="margin-top:auto;margin-bottom:auto;gap:56px">
+    <div class="whitebrand"><img src="weself-mark.png"><span>WeSelf</span></div>
+    <h2 style="font-size:88px">Numeri, ambiente e limiti dello studio: <span class="hl">articolo completo</span>.</h2>
+    <span class="btn" style="font-size:52px">Link in bio</span>
+    <p style="font-weight:800;font-size:36px;opacity:.9">Fonte: Moffitt et al., 2011 · PNAS</p>
+  </div>
+</section>
+</body></html>
