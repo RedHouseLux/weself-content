@@ -44,6 +44,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Ansia da esame — Huntley et al. 2019 | `carosselli/ansia/` | Scheduled by the founder |
 | Solitudine — sondaggio SWG per Acri e Assifero (ott. 2026) | `carosselli/solitudine/` | Ready; before posting: check figures on the Acri press release, check Telefono Amico number/hours |
 | Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Ready (Stress Awareness Day was 4 Nov 2026) |
+| Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Ready (suggested Mon 9 Nov 2026) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania).
