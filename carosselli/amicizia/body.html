@@ -1,0 +1,134 @@
+<style>
+.stairs{display:block;margin-top:44px;align-self:flex-start}
+.mid{font-weight:600;font-size:38px;line-height:1.4}
+.lev{display:flex;flex-direction:column;gap:18px}
+.lv{display:grid;grid-template-columns:300px 1fr;gap:26px;align-items:center;border-radius:26px;padding:24px 32px}
+.lv .n{font-weight:900;font-size:58px;line-height:1;letter-spacing:-.03em}
+.lv p{font-weight:600;font-size:32px;line-height:1.3}
+.lv.a{background:var(--peri-soft)}.lv.a .n{color:var(--peri)}
+.lv.b{background:var(--teal-soft)}.lv.b .n{color:var(--teal-text)}
+.lv.c{background:var(--coral-soft)}.lv.c .n{color:var(--coral-text)}
+.stat2{border-radius:28px;padding:34px 40px;display:flex;flex-direction:column;gap:10px}
+.stat2 .k{font-weight:800;font-size:24px;letter-spacing:.16em;text-transform:uppercase}
+.stat2 .num{font-weight:900;font-size:140px;line-height:.9;letter-spacing:-.04em}
+.stat2 p{font-weight:600;font-size:35px;line-height:1.3}
+.stat2.tl{background:var(--teal-soft)}.stat2.tl .num,.stat2.tl .k{color:var(--teal-text)}
+.list2{display:flex;flex-direction:column;gap:20px}
+.li2{display:flex;flex-direction:column;gap:8px;align-items:flex-start;background:var(--raised);border:3px solid var(--line);border-radius:24px;padding:24px 32px}
+.li2 b{display:block;font-weight:900;font-size:40px;line-height:1.15}
+.li2 span{display:block;font-weight:600;font-size:32px;line-height:1.35;color:var(--muted);margin-top:4px}
+.lim{display:flex;flex-direction:column;gap:26px}
+.lim div{font-weight:600;font-size:35px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+</style>
+
+<section class="slide" id="s1">
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/8</div></div>
+  <svg class="stairs" width="952" height="560" viewBox="0 0 952 560">
+    <rect x="0" y="470" width="214" height="90" rx="28" fill="var(--peri-soft)"/>
+    <text x="6" y="412" font-family="Nunito" font-weight="900" font-size="38" fill="var(--ink)">0 ore</text>
+    <text x="6" y="450" font-family="Nunito" font-weight="800" font-size="25" fill="var(--muted)">conoscente</text>
+    <rect x="246" y="370" width="214" height="190" rx="28" fill="var(--peri)"/>
+    <text x="252" y="312" font-family="Nunito" font-weight="900" font-size="38" fill="var(--ink)">40–60 ore</text>
+    <text x="252" y="350" font-family="Nunito" font-weight="800" font-size="25" fill="var(--muted)">amico occasionale</text>
+    <rect x="492" y="270" width="214" height="290" rx="28" fill="var(--teal)"/>
+    <text x="498" y="212" font-family="Nunito" font-weight="900" font-size="38" fill="var(--ink)">80–100 ore</text>
+    <text x="498" y="250" font-family="Nunito" font-weight="800" font-size="25" fill="var(--muted)">amico</text>
+    <rect x="738" y="170" width="214" height="390" rx="28" fill="var(--coral)"/>
+    <text x="744" y="112" font-family="Nunito" font-weight="900" font-size="38" fill="var(--ink)">200+ ore</text>
+    <text x="744" y="150" font-family="Nunito" font-weight="800" font-size="25" fill="var(--muted)">amico stretto</text>
+    </svg>
+  <div style="margin-top:auto;gap:30px" class="stack">
+    <p class="kicker">Amicizia · 1 ricerca</p>
+    <h1 style="font-size:86px">Quante ore servono per <span class="hl">diventare amici</span>?</h1>
+    <p class="mid muted">Chi cambia città o comincia l'università spesso si chiede come nascano le nuove amicizie. Uno studioso ha provato a <b style="color:var(--ink)">contare le ore</b>.</p>
+    <p style="font-weight:900;font-size:36px;color:var(--peri)">Scorri →</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="kicker we">La ricerca</p><div class="count">2/8</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <h2 style="font-size:62px">Due studi sulle <span class="hl t">nuove amicizie</span>, negli Stati Uniti.</h2>
+    <p class="mid"><b>Il primo</b> ha coinvolto <b>355 adulti</b> che si erano trasferiti negli ultimi 6 mesi: ognuno ha pensato a una persona conosciuta dopo il trasloco e ha stimato quante ore aveva passato con lei.</p>
+    <p class="mid"><b>Il secondo</b> ha seguito <b>112 studenti</b> al primo anno di università, con tre questionari nelle prime 9 settimane.</p>
+    <p class="mid">Sono state misurate le ore passate insieme, che cosa si faceva e quanto ci si sentiva vicini.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Hall, 2019</em> · J. Soc. Pers. Relat.</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="kicker we">Quante ore</p><div class="count">3/8</div></div>
+  <div class="stack" style="margin-top:50px;gap:28px">
+    <h2 style="font-size:56px">Contano le ore passate insieme, non da quanto tempo ci si conosce.</h2>
+    <div class="lev">
+      <div class="lv a"><span class="n">40–60 ore</span><p>per passare da conoscenti ad amici occasionali, nelle prime 6 settimane.</p></div>
+      <div class="lv b"><span class="n">80–100 ore</span><p>per diventare amici.</p></div>
+      <div class="lv c"><span class="n">200+ ore</span><p>per diventare amici stretti.</p></div>
+    </div>
+    <p class="who">Sono le stime che l'autore ha ricavato mettendo insieme i due studi.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Hall, 2019</em> · J. Soc. Pers. Relat.</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="kicker we">I numeri, tradotti</p><div class="count">4/8</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <h2 style="font-size:58px">Che cosa vogliono dire 50 ore?</h2>
+    <div class="stat2 tl"><span class="k">Per farsi un'idea</span><span class="num">50 ore</span><p>sono, per esempio, un caffè di mezz'ora insieme ogni giorno per più di tre mesi.</p></div>
+    <p class="mid">Tra gli studenti, dopo circa <b>43 ore</b> nelle prime tre settimane, era più probabile che un conoscente fosse ormai considerato un amico occasionale. Gli adulti, che raccontavano rapporti di circa tre mesi, hanno indicato più ore.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Hall, 2019</em> · stima: soglia del 50%</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="kicker">Che cosa ha aiutato</p><div class="count">5/8</div></div>
+  <div class="stack" style="margin-top:44px;gap:20px">
+    <div class="list2">
+      <div class="li2"><b>Il tempo scelto</b><span>Le ore passate insieme per scelta hanno contato più di quelle obbligate, al lavoro o a lezione.</span></div>
+      <div class="li2"><b>Stare insieme senza un compito</b><span>Rilassarsi, uscire, guardare un film o giocare insieme è risultato legato a più vicinanza.</span></div>
+      <div class="li2"><b>Raccontarsi la giornata e scherzare</b><span>Aggiornarsi, parlare di cose importanti, scherzare e dimostrarsi affetto hanno fatto crescere l'amicizia nel tempo.</span></div>
+      <div class="li2"><b>Non solo chiacchiere di circostanza</b><span>Tra la 6ª e la 9ª settimana, chi parlava soprattutto di argomenti leggeri e di circostanza si è sentito meno vicino.</span></div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Hall, 2019</em> · J. Soc. Pers. Relat.</span></div>
+</section>
+
+<section class="slide warmbg" id="s6">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">6/8</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«Basta lavorare o studiare insieme per diventare amici.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">Nel primo studio, il tempo passato insieme al lavoro o a scuola è risultato legato a <span class="hl">meno</span> vicinanza, non a più.</p>
+    <p class="body">Le amicizie sono cresciute quando le persone hanno scelto di vedersi anche fuori, per il piacere di stare insieme.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Hall, 2019</em> · J. Soc. Pers. Relat.</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">7/8</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <h2 style="font-size:62px">Che cosa la ricerca <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>Le ore sono state <b>stimate a memoria</b> dai partecipanti: sono un ordine di grandezza, non un conto preciso.</div>
+      <div>Il primo studio ha guardato solo le amicizie <b>che erano durate</b>, non quelle finite.</div>
+      <div>I partecipanti erano <b>statunitensi</b>, e nel secondo studio solo studenti di un'università: per gli adulti potrebbero servire più ore.</div>
+      <div>Mostra un <b>legame</b>, non una ricetta: l'amicizia è reciproca e non si decide da soli.</div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Hall, 2019</em> · J. Soc. Pers. Relat.</span></div>
+</section>
+
+<section class="slide cta" id="s8">
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">8/8</div></div>
+  <div class="stack" style="margin-top:90px">
+    <h2 style="font-size:72px">Un'amicizia si costruisce <span class="hl">un'ora alla volta</span>, scelta insieme.</h2>
+    <p class="body" style="opacity:.92">Con WeSelf puoi trovare chi ha il tuo stesso obiettivo, vicino a te o tra gli amici che hai già, e mettere in agenda qualcosa da fare insieme: una camminata, un caffè, una partita.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>
