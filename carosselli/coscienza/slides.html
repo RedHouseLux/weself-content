@@ -118,10 +118,25 @@ svg.shape{position:absolute;z-index:1}
 .lim div{font-weight:600;font-size:35px;line-height:1.35;padding-left:34px;position:relative}
 .lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
 .lim b{font-weight:900}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.col{border-radius:26px;padding:26px 26px;display:flex;flex-direction:column;gap:12px}
+.col small{font-weight:800;font-size:21px;letter-spacing:.14em;text-transform:uppercase}
+.col > b{font-weight:900;font-size:36px;line-height:1.1}
+.col p{font-weight:600;font-size:29px;line-height:1.33}
+.col.cs{background:var(--coral-soft)}.col.cs small{color:var(--coral-text)}
+.col.cc{background:var(--peri-soft)}.col.cc small{color:var(--peri)}
+.route{background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:24px 30px;display:flex;flex-direction:column;gap:12px}
+.route small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.route.pain{border-color:var(--coral)}.route.pain small{color:var(--coral-text)}
+.route ol{list-style:none;padding:0;display:flex;flex-direction:column;gap:10px}
+.route li{display:block;position:relative;padding-left:58px;font-weight:600;font-size:31px;line-height:1.33}
+.route li span{position:absolute;left:0;top:0;width:42px;height:42px;border-radius:50%;background:var(--peri);color:#0E1430;font-weight:900;font-size:22px;display:flex;align-items:center;justify-content:center}
+.route.pain li span{background:var(--coral)}
+.who{font-weight:600;font-size:30px;color:var(--muted);line-height:1.35}
 </style>
 
 <section class="slide" id="s1">
-  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/8</div></div>
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/10</div></div>
   <div class="fig">
     <img src="cover-brain.png" alt="">
     <span class="lbl c" style="left:-10px;top:130px">corteccia →</span>
@@ -136,7 +151,7 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s2">
-  <div class="top"><p class="kicker we">L'ipotesi</p><div class="count">2/8</div></div>
+  <div class="top"><p class="kicker we">L'ipotesi</p><div class="count">2/10</div></div>
   <div class="stack" style="margin-top:56px;gap:30px">
     <h2 style="font-size:58px">Due cose diverse che chiamiamo «coscienza».</h2>
     <div class="two">
@@ -148,8 +163,43 @@ svg.shape{position:absolute;z-index:1}
   <div class="src"><b>FONTE</b><span><em>Devor &amp; Baron, 2026</em> · The Neuroscientist (ipotesi)</span></div>
 </section>
 
+<section class="slide" id="s2b">
+  <div class="top"><p class="kicker we">Chi fa che cosa</p><div class="count">3/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:22px">
+    <h2 style="font-size:52px">Secondo l'ipotesi, il lavoro sarebbe diviso così.</h2>
+    <div class="cols">
+      <div class="col cs"><small>Tronco encefalico</small><b>Decide e fa «sentire»</b>
+        <p>Riceverebbe i segnali del <b>dolore</b> direttamente dai nervi e li trasformerebbe nella sensazione di dolore.</p>
+        <p>Riceverebbe dalla corteccia una valutazione di <b>quanto conta</b> ciò che vediamo, sentiamo o ricordiamo.</p>
+        <p>Farebbe da <b>arbitro</b>: sceglierebbe a quale flusso di informazioni dare attenzione cosciente e lo renderebbe vissuto in prima persona.</p></div>
+      <div class="col cc"><small>Corteccia</small><b>Elabora e calcola</b>
+        <p>Elaborerebbe <b>vista, udito, olfatto, tatto, gusto e ricordi</b>: per esempio, capire se un'ombra è un animale o una nuvola, tenendo conto del contesto.</p>
+        <p>Calcolerebbe quanto quelle informazioni sono <b>importanti</b> e le manderebbe al tronco encefalico.</p>
+        <p>Farebbe i calcoli complessi, ma senza il «via libera» del tronco andrebbe avanti <b>in automatico</b>.</p></div>
+    </div>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Devor &amp; Baron, 2026</em> · The Neuroscientist (ipotesi)</span></div>
+</section>
+
+<section class="slide" id="s2c">
+  <div class="top"><p class="kicker we">Il percorso di un'informazione</p><div class="count">4/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <h2 style="font-size:52px">Due strade diverse, secondo gli autori.</h2>
+    <div class="route"><small>Qualcosa che si vede</small>
+      <ol><li><span>1</span>Gli occhi mandano il segnale alla <b>corteccia</b>.</li>
+      <li><span>2</span>La corteccia riconosce che cos'è e valuta <b>quanto conta</b>.</li>
+      <li><span>3</span>Il <b>tronco encefalico</b> decide se merita attenzione.</li>
+      <li><span>4</span>Se sì, lo si vive in prima persona; se no, resta in automatico.</li></ol></div>
+    <div class="route pain"><small>Il dolore</small>
+      <ol><li><span>1</span>I nervi mandano il segnale <b>direttamente al tronco encefalico</b>.</li>
+      <li><span>2</span>Lì diventerebbe dolore, <b>senza passare dalla corteccia</b>.</li></ol></div>
+    <p class="who">Per questo gli autori partono dal dolore: secondo loro, il tronco encefalico lo trasformava in esperienza già molto prima che, nell'evoluzione, comparisse la corteccia.</p>
+  </div>
+  <div class="src"><b>FONTE</b><span><em>Devor &amp; Baron, 2026</em> · The Neuroscientist (ipotesi)</span></div>
+</section>
+
 <section class="slide" id="s3">
-  <div class="top"><p class="kicker we">Prova adesso</p><div class="count">3/8</div></div>
+  <div class="top"><p class="kicker we">Prova adesso</p><div class="count">5/10</div></div>
   <div class="stack" style="margin-top:90px;gap:40px">
     <div class="try"><span class="k">Un piccolo esperimento</span><p>Chiudi gli occhi e copri le orecchie per qualche secondo.</p></div>
     <p class="mid">Gran parte di ciò di cui eri consapevole un attimo prima sparisce. Ma <b>tu ci sei ancora, per intero</b>.</p>
@@ -159,7 +209,7 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s4">
-  <div class="top"><p class="kicker">Gli indizi</p><div class="count">4/8</div></div>
+  <div class="top"><p class="kicker">Gli indizi</p><div class="count">6/10</div></div>
   <div class="stack" style="margin-top:44px;gap:20px">
     <h2 style="font-size:54px">Il punto di partenza è il <span class="hl">dolore</span>.</h2>
     <p class="mid muted" style="font-size:32px">Sono gli indizi che gli autori raccolgono da studi precedenti.</p>
@@ -173,7 +223,7 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s5">
-  <div class="top"><p class="kicker">Il pilota automatico</p><div class="count">5/8</div></div>
+  <div class="top"><p class="kicker">Il pilota automatico</p><div class="count">7/10</div></div>
   <div class="stack" style="margin-top:60px;gap:30px">
     <h2 style="font-size:60px">«Siamo robot <span class="hl t">senzienti</span>», scrivono gli autori.</h2>
     <p class="mid">Secondo l'ipotesi, il «me dentro» sceglierebbe a che cosa dare attenzione; tutto il resto andrebbe avanti <b>col pilota automatico</b>.</p>
@@ -183,7 +233,7 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide warmbg" id="s6">
-  <div class="top"><p class="kicker warm">Ipotesi o certezza?</p><div class="count">6/8</div></div>
+  <div class="top"><p class="kicker warm">Ipotesi o certezza?</p><div class="count">8/10</div></div>
   <div class="stack" style="margin-top:90px;gap:36px">
     <p class="quote">«Ormai si sa dove nasce la coscienza.»</p>
     <span class="badge dip"><i>~</i>DA VERIFICARE</span>
@@ -194,21 +244,21 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s7">
-  <div class="top"><p class="kicker warm">Perché è solo un'ipotesi</p><div class="count">7/8</div></div>
+  <div class="top"><p class="kicker warm">Perché è solo un'ipotesi</p><div class="count">9/10</div></div>
   <div class="stack" style="margin-top:60px;gap:30px">
     <h2 style="font-size:60px">Che cosa questo articolo <span class="hl">non dice</span></h2>
     <div class="lim">
       <div>È un articolo di <b>teoria</b>: non presenta dati nuovi, ma rilegge studi già esistenti.</div>
       <div>Va contro le teorie <b>più diffuse</b>, che mettono la corteccia al centro.</div>
       <div>Gli esperimenti degli autori sul tronco encefalico sono stati fatti sui <b>ratti</b>.</div>
-      <div>Ciò che si prova lo può raccontare solo chi lo vive: per questo la coscienza è <b>difficile da misurare</b>. Serviranno nuove ricerche.</div>
+      <div>Gli autori stessi scrivono che nessuna teoria, <b>compresa la loro</b>, spiega ancora come nasca l'esperienza in prima persona. Serviranno nuove ricerche.</div>
     </div>
   </div>
   <div class="src"><b>FONTE</b><span><em>Devor &amp; Baron, 2026</em> · The Neuroscientist (ipotesi)</span></div>
 </section>
 
 <section class="slide cta" id="s8">
-  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">8/8</div></div>
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">10/10</div></div>
   <div class="stack" style="margin-top:90px">
     <h2 style="font-size:70px">Lascia che il pilota automatico <span class="hl">lavori per te</span>.</h2>
     <p class="body">Gran parte di ciò che facciamo ogni giorno va avanti senza pensarci: per questo le abitudini contano. Con WeSelf un obiettivo diventa una settimana di piccole azioni, già in agenda, finché non diventano automatiche anche loro.</p>
