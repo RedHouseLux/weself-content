@@ -43,7 +43,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Dunedin study (self-control) — article IT/EN on weself.app, carousel 7 slides | `articoli/`, `carosselli/dunedin/` | Published |
 | Ansia da esame — Huntley et al. 2019 | `carosselli/ansia/` | Published |
 | Solitudine — sondaggio SWG per Acri e Assifero (ott. 2026) | `carosselli/solitudine/` | Published |
-| Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Ready, not published (suggested Mon 16 Nov 2026; new cover) |
+| Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Published |
 | Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Published |
 | Amicizia / quante ore per diventare amici — Hall 2019 (pillar Relazioni) | `carosselli/amicizia/` | Published |
 | Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Ready (Fri 13 Nov 2026, World Kindness Day) |
