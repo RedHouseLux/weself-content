@@ -59,7 +59,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Published |
 | Amicizia / quante ore per diventare amici — Hall 2019 (pillar Relazioni) | `carosselli/amicizia/` | Published |
 | Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Published |
-| Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Ready (suggested Sun 15 Nov 2026) |
+| Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Published |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania); it now has three recurring pillars (Relazioni incl. couples, Leadership, Umorismo with a lighter tone), see section 3bis.
