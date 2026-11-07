@@ -36,16 +36,17 @@ Website: https://www.weself.app (Italian /it, articles /it/articles, download /i
 
 Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal = Self, peri = We, coral = one warm accent per asset; Nunito + Literata). Logos in `brand/logo/`. Full design system: https://claude.ai/artifact/214XU3j96pZnVaHHELpgBa
 
-## Status (4 November 2026)
+## Status (7 November 2026)
 
 | Content | Folder | State |
 |---|---|---|
 | Dunedin study (self-control) — article IT/EN on weself.app, carousel 7 slides | `articoli/`, `carosselli/dunedin/` | Published |
-| Ansia da esame — Huntley et al. 2019 | `carosselli/ansia/` | Scheduled by the founder |
-| Solitudine — sondaggio SWG per Acri e Assifero (ott. 2026) | `carosselli/solitudine/` | Ready; before posting: check figures on the Acri press release, check Telefono Amico number/hours |
-| Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Ready (Stress Awareness Day was 4 Nov 2026) |
-| Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Ready (suggested Mon 9 Nov 2026) |
-| Amicizia / quante ore per diventare amici — Hall 2019 (pillar Relazioni) | `carosselli/amicizia/` | Ready (suggested Wed 11 Nov 2026) |
+| Ansia da esame — Huntley et al. 2019 | `carosselli/ansia/` | Published |
+| Solitudine — sondaggio SWG per Acri e Assifero (ott. 2026) | `carosselli/solitudine/` | Published |
+| Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Ready, not published (Stress Awareness Day was 4 Nov 2026; slides have no date) |
+| Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Published |
+| Amicizia / quante ore per diventare amici — Hall 2019 (pillar Relazioni) | `carosselli/amicizia/` | Published |
+| Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Chosen, to prepare |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania); it now has three recurring pillars (Relazioni incl. couples, Leadership, Umorismo with a lighter tone), see section 3bis.
