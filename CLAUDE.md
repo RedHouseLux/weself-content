@@ -22,6 +22,7 @@ Website: https://www.weself.app (Italian /it, articles /it/articles, download /i
 - **Words:** «studi» (not «esperimenti») for the studies in a meta-analysis; the meta-analysis itself is «la ricerca»; avoid «negli studi» for academic performance (use «rendimento», «risultati»).
 - **Verb tenses:** past for findings («è risultato», «ha mostrato»), conditional for what was planned («chi avrebbe seguito»), future for what is missing («serviranno»), present only for general truths and for the reader.
 - **Full, flowing sentences** on slides; more text is fine.
+- **Length:** 8 slides is the usual shape, but add slides whenever a concept needs more explanation to be understood (Instagram and Facebook allow up to 20). One idea per slide beats a crowded slide.
 - **Every post has:** a «Mito o realtà?» slide, a «limiti» slide, the source on each slide, «Un'onestà necessaria» in the caption (the study is not about WeSelf), and for sensitive topics (anxiety, loneliness, addiction, stress) a support reference to verify before publishing (medico di base, servizi universitari, Telefono Amico Italia, 112; gambling: Telefono Verde ISS 800 558 822).
 - **No clinical promises** (WeSelf never «cura», «tratta», «risolve»). **No political stances.** Never comment on local crime news.
 

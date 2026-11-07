@@ -42,6 +42,7 @@ Le regole complete, sempre aggiornate, sono nel `CLAUDE.md` del repository: se q
 6. **Niente promesse cliniche.** Non scriviamo mai che WeSelf «cura», «tratta» o «risolve». **Niente posizioni politiche.** Mai commenti sulla cronaca locale.
 7. **Temi sensibili** (ansia, solitudine, stress, dipendenze, violenza nella coppia) includono sempre un rimando di supporto, da verificare prima di pubblicare: medico di base, servizi universitari, Telefono Amico Italia, 1522 (antiviolenza e stalking), 112 per le emergenze; per il gioco d'azzardo Telefono Verde ISS 800 558 822 e SerD della propria ASL.
 8. **Tono e persona:** terza persona per le informazioni negative («molte persone», «c'è chi…», «chi da bambino era impulsivo»); «tu» solo per gli inviti e le azioni positive. Frasi complete e scorrevoli (sulle slide va bene anche più testo), nessun gergo senza spiegazione, niente colpevolizzazione.
+10. **Lunghezza:** 8 slide sono la forma abituale, ma si aggiungono slide ogni volta che un concetto ha bisogno di più spiegazione per essere capito (Instagram e Facebook arrivano a 20). Meglio un'idea per slide che una slide affollata.
 9. **Parole e tempi verbali:** «studi» (non «esperimenti») per gli studi di una meta-analisi, che è «la ricerca»; passato per i risultati («è risultato»), condizionale per ciò che era previsto, futuro per ciò che manca («serviranno»), presente solo per verità generali e per chi legge.
 
 ### Le situazioni WeSelf da richiamare
