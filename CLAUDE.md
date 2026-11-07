@@ -43,10 +43,10 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Dunedin study (self-control) — article IT/EN on weself.app, carousel 7 slides | `articoli/`, `carosselli/dunedin/` | Published |
 | Ansia da esame — Huntley et al. 2019 | `carosselli/ansia/` | Published |
 | Solitudine — sondaggio SWG per Acri e Assifero (ott. 2026) | `carosselli/solitudine/` | Published |
-| Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Ready, not published (Stress Awareness Day was 4 Nov 2026; slides have no date) |
+| Stress / staccare dal lavoro — Karabinski et al. 2021 | `carosselli/stress/` | Ready, not published (suggested Mon 16 Nov 2026; new cover) |
 | Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Published |
 | Amicizia / quante ore per diventare amici — Hall 2019 (pillar Relazioni) | `carosselli/amicizia/` | Published |
-| Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Chosen, to prepare |
+| Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Ready (Fri 13 Nov 2026, World Kindness Day) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania); it now has three recurring pillars (Relazioni incl. couples, Leadership, Umorismo with a lighter tone), see section 3bis.
