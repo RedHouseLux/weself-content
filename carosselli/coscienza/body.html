@@ -1,5 +1,10 @@
 <style>
 .cv{display:block;margin-top:20px;align-self:center}
+.fig{position:relative;margin:4px auto 0;width:480px;height:640px}
+.fig::before{content:"";position:absolute;left:-110px;top:-10px;width:700px;height:700px;border-radius:50%;background:radial-gradient(circle,rgba(214,219,248,.92) 0%,rgba(178,186,238,.75) 38%,rgba(139,147,232,.30) 58%,rgba(14,20,48,0) 72%)}
+.fig img{position:relative;width:100%;height:100%;object-fit:contain;display:block}
+.fig .lbl{position:absolute;font-weight:900;font-size:26px;color:#F5B49C;background:rgba(14,20,48,.8);padding:6px 14px;border-radius:999px;white-space:nowrap}
+.fig .lbl.c{color:#AAB3DD}
 .photo{position:relative;margin:18px auto 0;width:560px;height:560px;border-radius:40px;overflow:hidden;box-shadow:0 0 80px rgba(74,91,232,.35)}
 .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 52%;display:block}
 .photo .lbl{position:absolute;font-weight:900;font-size:26px;color:#F5B49C;background:rgba(14,20,48,.72);padding:6px 14px;border-radius:999px;white-space:nowrap}
@@ -25,10 +30,10 @@
 
 <section class="slide" id="s1">
   <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/8</div></div>
-  <div class="photo">
-    <img src="cover-brain.jpg" alt="">
-    <span class="lbl" style="left:278px;top:300px">← tronco encefalico</span>
-    <span class="lbl c" style="left:40px;top:150px">corteccia →</span>
+  <div class="fig">
+    <img src="cover-brain.png" alt="">
+    <span class="lbl c" style="left:-10px;top:130px">corteccia →</span>
+    <span class="lbl" style="left:372px;top:362px">← tronco encefalico</span>
   </div>
   <div style="margin-top:auto;gap:26px" class="stack">
     <span class="tag"><i></i>Curiosità · un'ipotesi, non un risultato</span>
