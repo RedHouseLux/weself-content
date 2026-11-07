@@ -34,6 +34,17 @@ Website: https://www.weself.app (Italian /it, articles /it/articles, download /i
 5. Write `kit-pubblicazione-<name>.md`: when to post, caption IG/FB (+ short TikTok), first comment with the full citation + DOI + how numbers were converted, one alt text per slide, reliability notes.
 6. Zip PNGs + kit and send them to the founder.
 
+## «Curiosità» format (hypotheses and theory papers)
+
+Agreed with the founder (Nov 2026) for papers with no data of their own to translate (hypotheses, theory, reviews of ideas). It is the exception to «translate the numbers»; every other rule still applies.
+
+- **Look:** brand dark theme. Build with `cat head.html dark.html body.html > slides.html`, copying `templates/curiosita/dark.html` next to `head.html` (night-navy background with a dotted texture, same fonts, colours and node motif; peri CTA with navy text). See `carosselli/coscienza/`.
+- **Label it:** cover pill `<span class="tag"><i></i>Curiosità · un'ipotesi, non un risultato</span>`; the caption opens with «Curiosità · un'ipotesi, non un risultato.»; the source line ends with «(ipotesi)».
+- **Wording:** the hypothesis in the conditional («nascerebbe», «sceglierebbe»); evidence the authors cite as theirs («gli indizi che gli autori raccolgono»); say plainly when it goes against the mainstream view and what that view is.
+- **Slides:** «Ipotesi o certezza?» replaces «Mito o realtà?» (badge `.badge.dip` «DA VERIFICARE»); «Perché è solo un'ipotesi» replaces «I limiti» (no new data, mainstream view, animal studies, what is hard to measure).
+- **Numbers:** none unless they are verified like any other number. Our link to WeSelf goes only on the CTA slide and is declared as ours in «Un'onestà necessaria».
+- **Frequency:** at most one every 2–3 weeks; never on clinical advice.
+
 Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal = Self, peri = We, coral = one warm accent per asset; Nunito + Literata). Logos in `brand/logo/`. Full design system: https://claude.ai/artifact/214XU3j96pZnVaHHELpgBa
 
 ## Status (7 November 2026)
@@ -47,6 +58,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Abitudini / quanto tempo serve — Singh et al. 2024 | `carosselli/abitudini/` | Published |
 | Amicizia / quante ore per diventare amici — Hall 2019 (pillar Relazioni) | `carosselli/amicizia/` | Published |
 | Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Published |
+| Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Ready (suggested Sun 15 Nov 2026) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania); it now has three recurring pillars (Relazioni incl. couples, Leadership, Umorismo with a lighter tone), see section 3bis.

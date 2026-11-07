@@ -193,6 +193,19 @@ I temi mensili qui sopra guardano soprattutto al lato **Self** (regolazione, per
 
 ---
 
+## 3ter. Formato «Curiosità» (deciso con il fondatore, novembre 2026)
+
+Per articoli che **non hanno dati propri da tradurre**: ipotesi, teorie, riflessioni di ricercatori. È l'unica eccezione alla regola «traduci i numeri»; tutte le altre regole restano valide.
+
+- **Aspetto:** tema scuro del brand (fondo blu notte con texture a puntini, stessi caratteri, colori e nodi). Il file è `templates/curiosita/dark.html`, da aggiungere dopo `head.html`. Esempio: `carosselli/coscienza/`.
+- **Etichetta chiara:** in copertina «Curiosità · un'ipotesi, non un risultato»; la didascalia si apre con la stessa frase; la fonte finisce con «(ipotesi)».
+- **Parole:** l'ipotesi al condizionale; gli indizi attribuiti agli autori; se va contro la visione più diffusa, lo si dice e si dice qual è.
+- **Slide:** «Ipotesi o certezza?» al posto di «Mito o realtà?» (badge «DA VERIFICARE»); «Perché è solo un'ipotesi» al posto di «I limiti».
+- **Numeri:** solo se verificati come sempre. Il collegamento a WeSelf va solo nella slide finale ed è dichiarato come nostro in «Un'onestà necessaria».
+- **Frequenza:** al massimo uno ogni 2–3 settimane; mai su consigli clinici.
+
+---
+
 ## 4. Schede tema
 
 > **Come leggere le schede.** Le schede sono state scritte prima delle regole attuali. Le fonti elencate per ogni tema sono un **serbatoio**: ogni carosello, Reel o articolo ne usa **una sola**, e la verifica alla fonte. Le scalette dei caroselli qui sotto sono idee di partenza: al momento di produrle si riscrivono con le regole della sezione 2 (una fonte per post, percentuali, terza persona per le informazioni negative, slide «I limiti»). Il video lungo di YouTube ha uno studio principale e può citarne altri a sostegno (regola 1).
