@@ -2,7 +2,7 @@
 
 **Immagini:** `weself-stress-01.png` … `weself-stress-08.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto, con un suono calmo.
 
-**Data:** lo Stress Awareness Day 2026 è **mercoledì 4 novembre** (il primo mercoledì di novembre), dentro la settimana internazionale di consapevolezza sullo stress, dal 2 al 6 novembre. Le slide non hanno date, quindi il carosello va bene anche nei giorni successivi. Se esce dopo il 6, togli dalla didascalia la riga sulla giornata.
+**Data:** lo Stress Awareness Day (4 novembre) è passato, ma le slide non hanno date: il carosello va bene in qualsiasi settimana. Proposta: **lunedì 16 novembre 2026**, l'inizio di una settimana di lavoro.
 
 **Orario consigliato:** tra le 18:00 e le 20:00, quando molte persone escono dal lavoro: è proprio il momento in cui si fatica a staccare.
 
@@ -11,7 +11,7 @@
 ```
 Staccare dal lavoro: si può imparare?
 
-Questa settimana è dedicata alla consapevolezza sullo stress. E c'è un'esperienza che accomuna moltissime persone: finire di lavorare e continuare a pensarci, alle mail, alle scadenze, a quello che è rimasto da fare.
+C'è un'esperienza che accomuna moltissime persone: finire di lavorare e continuare a pensarci, alle mail, alle scadenze, a quello che è rimasto da fare.
 
 Una meta-analisi pubblicata nel 2021 ha riunito 30 studi, con 34 interventi diversi e 3.725 partecipanti, per capire se il «distacco psicologico» dal lavoro si può migliorare. Gli autori partono da un paradosso: staccare è fondamentale per la salute, ma diventa più difficile proprio quando lo stress è alto e ci sarebbe più bisogno di recuperare.
 
@@ -40,7 +40,7 @@ Come abbiamo tradotto i numeri: l'effetto medio riportato (d = 0,36) è stato co
 
 ## Testo alternativo (una riga per immagine)
 
-1. Copertina WeSelf: «Staccare dal lavoro: si può imparare? C'è chi finisce di lavorare ma continua a pensarci: alle mail, alle scadenze, a quello che è rimasto da fare. Una ricerca ha riunito 30 studi con oltre 3.700 persone per scoprirlo.»
+1. Copertina WeSelf: una barra della giornata, con il lavoro dalle 9 alle 18 in verde e il tempo dopo il lavoro, fino alle 23, in azzurro; alcuni cerchi arancioni, «i pensieri di lavoro», escono dalla parte del lavoro e finiscono nella sera. Testo: «Staccare dal lavoro: si può imparare? C'è chi finisce di lavorare ma continua a pensarci: alle mail, alle scadenze, a quello che è rimasto da fare. Una ricerca ha riunito 30 studi con oltre 3.700 persone per scoprirlo.»
 2. La ricerca: 30 studi, con 34 interventi diversi e 3.725 partecipanti. È una meta-analisi pubblicata nel 2021, che ha riunito anche studi mai pubblicati, sul distacco psicologico: la capacità di non pensare al lavoro quando non si lavora.
 3. Perché conta: staccare nel tempo libero è fondamentale per la salute e il benessere. Ma c'è un paradosso: quando lo stress è alto e ci sarebbe più bisogno di recuperare, staccare diventa più difficile.
 4. I numeri, tradotti: in media, la persona che aveva seguito un intervento riusciva a staccare meglio del 64% di chi non l'aveva seguito. È un effetto piccolo-medio, emerso nell'insieme degli studi.
