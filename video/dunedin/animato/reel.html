@@ -1,0 +1,126 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8;--sunk:#F3EEE8}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-family:Nunito,sans-serif;color:var(--ink)}
+.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;background:var(--surface)}
+.brand{position:absolute;left:72px;top:150px;display:flex;align-items:center;gap:14px;font-weight:900;font-size:38px}
+.brand img{width:52px;height:52px}.we{color:var(--peri)}.self{color:var(--teal)}
+.kick{position:absolute;left:72px;top:250px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.big{font-weight:900;letter-spacing:-.03em;line-height:1}
+.cap{position:absolute;left:72px;right:72px;top:1210px;font-weight:800;font-size:46px;line-height:1.3;background:#fff;border-radius:28px;padding:30px 36px;box-shadow:0 6px 0 rgba(30,43,92,.06)}
+.cap b{color:var(--peri)}
+.src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:16px;font-weight:900;font-size:56px;letter-spacing:.06em;padding:22px 44px 22px 24px;border-radius:999px}
+.chip i{font-style:normal;width:66px;height:66px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:36px}
+.mito{background:var(--coral)}.mito i{background:var(--ink);color:var(--coral)}
+.real{background:var(--teal-soft)}.real i{background:var(--ink);color:var(--teal-soft)}
+.bar{position:absolute;left:72px;width:936px;height:110px;border-radius:999px;background:var(--sunk)}
+.fill{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:30px;font-weight:900;font-size:56px}
+.lbl{position:absolute;left:72px;font-weight:800;font-size:36px;color:var(--muted)}
+.dots{position:absolute;left:200px;top:360px;display:grid;grid-template-columns:repeat(10,54px);gap:14px}
+.dots i{width:54px;height:54px;border-radius:50%;background:var(--sunk);display:block}
+.cta{background:var(--peri);color:#fff}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:46px;padding:34px 60px;border-radius:999px}
+</style></head><body>
+
+<!-- S1 hook 0-4.5 -->
+<div class="sc" id="s1">
+  <div class="kick" style="top:300px">Mito o realtà?</div>
+  <div class="big" id="s1q" style="position:absolute;left:72px;right:72px;top:380px;font-size:104px">Chi da bambino era impulsivo è segnato per sempre?</div>
+  <div style="position:absolute;left:72px;top:960px;display:flex;gap:28px">
+    <span class="chip mito" id="s1a"><i>✕</i>MITO</span><span class="chip real" id="s1b"><i>✓</i>REALTÀ</span>
+  </div>
+</div>
+
+<!-- S2 study 4.5-10.5 -->
+<div class="sc" id="s2">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="kick">Lo studio di Dunedin</div>
+  <div class="big" id="s2n" style="position:absolute;left:72px;top:340px;font-size:250px;color:var(--teal-text)">0</div>
+  <div style="position:absolute;left:72px;top:610px;font-weight:900;font-size:56px">persone, seguite per <span style="color:var(--coral-text)">32 anni</span></div>
+  <svg style="position:absolute;left:72px;top:760px" width="970" height="300" viewBox="0 0 970 300">
+    <line x1="30" y1="150" x2="906" y2="150" stroke="#EAE3DB" stroke-width="18" stroke-linecap="round"/>
+    <line id="s2l" x1="30" y1="150" x2="30" y2="150" stroke="#1E9E9E" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="30" cy="150" r="26" fill="#4A5BE8"/><text x="4" y="230" text-anchor="start" font-family="Nunito" font-weight="900" font-size="34" fill="#5A6488">nascita</text>
+    <circle id="s2e" cx="906" cy="150" r="34" fill="#F09B7C" opacity="0"/><text id="s2t" x="906" y="230" text-anchor="end" font-family="Nunito" font-weight="900" font-size="34" fill="#A64A30" opacity="0">32 anni</text>
+  </svg>
+  <div class="cap" id="s2c">Uno studio ha seguito <b>1.037 persone</b> per 32 anni, dalla nascita.</div>
+  <div class="src">Moffitt et al., 2011 · PNAS</div>
+</div>
+
+<!-- S3 bars 10.5-18.5 -->
+<div class="sc" id="s3">
+  <div class="kick" style="top:250px">A 32 anni, aveva una condanna penale</div>
+  <div class="lbl" style="top:380px">chi da bambino aveva <b style="color:var(--coral-text)">poco</b> autocontrollo</div>
+  <div class="bar" style="top:440px"><div class="fill" id="s3a" style="width:0;background:var(--coral);color:var(--ink)"></div></div>
+  <div class="lbl" style="top:640px">chi ne aveva <b style="color:var(--teal-text)">molto</b></div>
+  <div class="bar" style="top:700px"><div class="fill" id="s3b" style="width:0;background:var(--teal);color:#fff"></div></div>
+  <div class="cap" id="s3c">Da adulti, aveva una condanna il <b>43%</b> di chi da bambino aveva poco autocontrollo, contro il <b>13%</b>.</div>
+  <div class="src">Moffitt et al., 2011 · PNAS</div>
+</div>
+
+<!-- S4 dots 18.5-25 -->
+<div class="sc" id="s4">
+  <div class="kick" style="top:250px">Nel gruppo con poco autocontrollo</div>
+  <div class="dots" id="s4d"></div>
+  <div class="big" id="s4n" style="position:absolute;left:72px;top:1062px;font-size:110px;color:var(--teal-text)">57%</div>
+  <div style="position:absolute;left:330px;top:1084px;font-weight:900;font-size:46px;line-height:1.2" id="s4t">nessuna condanna</div>
+  <div class="cap" id="s4c">Ma anche in quel gruppo, il <b>57%</b> non ha mai avuto una condanna.</div>
+  <div class="src">Moffitt et al., 2011 · PNAS</div>
+</div>
+
+<!-- S5 myth 25-31 -->
+<div class="sc" id="s5" style="background:var(--coral-soft)">
+  <div class="kick" style="top:250px;color:var(--coral-text)">Mito o realtà?</div>
+  <div style="position:absolute;left:72px;right:72px;top:340px;font-family:Literata,serif;font-style:italic;font-size:76px;line-height:1.25">«Chi da bambino era impulsivo è segnato per sempre.»</div>
+  <span class="chip mito" id="s5m" style="position:absolute;left:72px;top:720px"><i>✕</i>MITO</span>
+  <div class="big" id="s5t" style="position:absolute;left:72px;right:72px;top:900px;font-size:84px">Un rischio più alto, <span style="color:var(--teal-text)">non un destino</span>.</div>
+  <div class="cap" id="s5c">E chi è migliorato nel tempo, da adulto stava meglio.</div>
+</div>
+
+<!-- S6 CTA 31-36 -->
+<div class="sc cta" id="s6">
+  <div style="position:absolute;left:72px;right:72px;top:380px;font-weight:900;font-size:84px;line-height:1.08" id="s6t">L'autocontrollo si costruisce, un piccolo passo alla volta.</div>
+  <div style="position:absolute;left:72px;right:72px;top:780px;font-weight:600;font-size:46px;line-height:1.35;opacity:.95" id="s6b">Con WeSelf un obiettivo diventa una settimana di piccole azioni, già in agenda.</div>
+  <div style="position:absolute;left:72px;top:1080px" id="s6btn"><span class="btn">Articolo completo · link in bio</span></div>
+  <div style="position:absolute;left:72px;top:1300px;display:flex;align-items:center;gap:20px;font-weight:900;font-size:64px"><img src="weself-mark.png" style="width:96px;height:96px;background:#fff;border-radius:26px;padding:10px"><span>WeSelf</span></div>
+</div>
+
+<script>
+const D=36;
+const dots=document.getElementById('s4d');for(let i=0;i<100;i++){const e=document.createElement('i');dots.appendChild(e)}
+const $=id=>document.getElementById(id);
+const cl=(x)=>Math.max(0,Math.min(1,x));
+const ease=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
+const win=(t,a,b,f=.35)=>Math.min(ease((t-a)/f),ease((b-t)/f)); // fade in/out
+function pop(el,t,start,dur=.45){const k=ease((t-start)/dur);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*40}px)`}
+window.render=function(t){
+  const S=[['s1',0,4.5],['s2',4.5,10.5],['s3',10.5,18.5],['s4',18.5,25],['s5',25,31],['s6',31,36.2]];
+  S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3; const fin=a===0?1:cl((t-(a-0.25))/0.3); $(id).style.opacity=vis?fin:0; $(id).style.zIndex=i+1;});
+  pop($('s1q'),t,0.05,.5); pop($('s1a'),t,1.4); pop($('s1b'),t,1.8);
+  // s2
+  const k2=ease((t-5)/2.2); {const v=Math.round(1037*k2);$('s2n').textContent=v>=1000?Math.floor(v/1000)+'.'+String(v%1000).padStart(3,'0'):String(v);}
+  const lx=30+876*ease((t-5.6)/3); $('s2l').setAttribute('x2',lx);
+  $('s2e').setAttribute('opacity',ease((t-8.4)/.4)); $('s2t').setAttribute('opacity',ease((t-8.4)/.4));
+  pop($('s2c'),t,5.0);
+  // s3
+  const a=ease((t-11.2)/1.6)*43, b=ease((t-12.6)/1.4)*13;
+  $('s3a').style.width=(a/43*43)+'%'; $('s3a').textContent=a>8?Math.round(a)+'%':'';
+  $('s3b').style.width=Math.max(b,0)+'%'; $('s3b').style.minWidth=b>0.5?'190px':'0'; $('s3b').textContent=b>1?Math.round(b)+'%':'';
+  pop($('s3c'),t,11.0);
+  // s4
+  const n=Math.round(ease((t-19.2)/2.6)*57); const ds=dots.children;
+  for(let i=0;i<100;i++) ds[i].style.background = i<n ? 'var(--teal)' : (i>=57 && t>19.2 ? 'var(--coral-soft)' : 'var(--sunk)');
+  $('s4n').textContent=n+'%'; pop($('s4t'),t,21.5); pop($('s4c'),t,19.0);
+  // s5
+  const m=ease((t-26)/.35); $('s5m').style.opacity=m; $('s5m').style.transform=`scale(${1.6-0.6*m}) rotate(${-8*m}deg)`;
+  pop($('s5t'),t,27.2); pop($('s5c'),t,28.6);
+  // s6
+  pop($('s6t'),t,31.2); pop($('s6b'),t,32.2); pop($('s6btn'),t,33.4);
+};
+render(0);
+</script></body></html>

@@ -35,6 +35,10 @@ Website: https://www.weself.app (Italian /it, articles /it/articles, download /i
 5. Write `kit-pubblicazione-<name>.md`: when to post, caption IG/FB (+ short TikTok), first comment with the full citation + DOI + how numbers were converted, one alt text per slide, reliability notes.
 6. Zip PNGs + kit and send them to the founder.
 
+## Animated Reels (no face)
+
+Build the Reel as a 1080×1920 HTML page that exposes `window.render(t)` (draw the frame at second t; opaque scenes with cross-dissolves), then `node tools/render-video.cjs <page.html> <out.mp4> <seconds> 30` (Playwright screenshots + ffmpeg). On-screen text = voice-over script, so it doubles as subtitles; keep text between 220 and 1480 px from the top. See `video/dunedin/animato/`.
+
 ## «Curiosità» format (hypotheses and theory papers)
 
 Agreed with the founder (Nov 2026) for papers with no data of their own to translate (hypotheses, theory, reviews of ideas). It is the exception to «translate the numbers»; every other rule still applies.
@@ -62,5 +66,6 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Published |
 | Coppia / una coppia felice si costruisce — Joel et al. 2020 (pillar Relazioni, first couples post) | `carosselli/coppia/` | Ready (suggested Wed 11 Nov 2026; check 1522 before posting) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
+| Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Video ready (36 s, no audio); founder records voice-over |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania); it now has three recurring pillars (Relazioni incl. couples, Leadership, Umorismo with a lighter tone), see section 3bis.
