@@ -4,7 +4,7 @@
 
 **Come è fatto:** animazione in HTML (`reel.html`) trasformata in video con `node tools/render-video.cjs video/dunedin/animato/reel.html video/dunedin/animato/weself-dunedin-reel-animato.mp4 36 30`. Per cambiare tempi o testi si modifica `reel.html` e si rigenera.
 
-**Numeri:** gli stessi del carosello e dell'articolo pubblicati (Moffitt et al., 2011, *PNAS*), scritti in percentuale come da regola: 1.037 persone, 32 anni, condanna penale 43% contro 13%, 57% senza condanne nel gruppo con poco autocontrollo.
+**Numeri e taglio:** dallo studio (Moffitt et al., 2011, *PNAS*) usiamo solo 1.037 persone e 32 anni. Niente percentuali sulle condanne: il Reel non divide le persone in «poco» e «molto» autocontrollo, ma racconta che l'autocontrollo è una scala continua (il titolo dello studio parla di «gradient») e che può cambiare (chi è migliorato nel tempo, da adulto stava meglio). Il messaggio: non serve entrare in uno stampo, servono condizioni migliori.
 
 ## 1. Il copione per la voce (circa 36 secondi)
 
@@ -12,12 +12,12 @@ Leggi con calma, come se lo raccontassi a un amico. Le pause tra una scena e l'a
 
 | Secondi | Scena | Voce |
 |---|---|---|
-| 0–4,5 | Domanda + MITO / REALTÀ | «Chi da bambino era impulsivo è segnato per sempre? Mito o realtà?» |
-| 4,5–10,5 | 1.037 persone, linea dalla nascita ai 32 anni | «Uno studio ha seguito mille e trentasette persone per trentadue anni, dalla nascita.» |
-| 10,5–18,5 | Due barre: 43% e 13% | «Da adulti, aveva una condanna il quarantatré per cento di chi da bambino aveva poco autocontrollo, contro il tredici per cento di chi ne aveva molto.» |
-| 18,5–25 | 100 puntini, 57 si colorano | «Ma anche in quel gruppo, il cinquantasette per cento non ha mai avuto una condanna.» |
-| 25–31 | Timbro MITO | «È un mito: è un rischio più alto, non un destino. E chi è migliorato nel tempo, da adulto stava meglio.» |
-| 31–36 | Finale WeSelf | «L'autocontrollo si costruisce, un piccolo passo alla volta. L'articolo completo è nel link in bio.» |
+| 0–5 | Frase d'apertura e una linea che parte | «Com'eri da bambino non decide chi diventerai.» |
+| 5–11 | 1.037 persone, linea dalla nascita ai 32 anni | «Uno studio ha seguito mille e trentasette persone per trentadue anni, dalla nascita.» |
+| 11–18 | Puntini sparsi lungo una scala | «Non ha trovato due tipi di persone, ma una scala continua: attenzione, costanza e impulsi, un po' diversi in ognuno.» |
+| 18–25 | Una linea che sale dall'infanzia all'età adulta | «E l'autocontrollo può cambiare: chi è migliorato nel tempo, da adulto stava meglio.» |
+| 25–31 | «Com'eri da bambino è il tuo destino.» Timbro MITO | «È un mito. L'autocontrollo non è una dote fissa: dipende anche dalle condizioni in cui si vive.» |
+| 31–36 | Finale WeSelf | «Non serve entrare in uno stampo: servono condizioni migliori. L'articolo completo è nel link in bio.» |
 
 ## 2. Registrare la voce (solo audio, niente volto)
 
@@ -38,18 +38,18 @@ Leggi con calma, come se lo raccontassi a un amico. Le pause tra una scena e l'a
 
 ## 4. Pubblicazione
 
-**Copertina del Reel:** il fotogramma a circa 2 secondi (la domanda con MITO / REALTÀ), oppure `../reel-01.png`.
+**Copertina del Reel:** il fotogramma a circa 3 secondi (la frase d'apertura).
 
 **Didascalia:**
 
 ```
-«Chi da bambino era impulsivo è segnato per sempre.» Mito o realtà?
+Com'eri da bambino non decide chi diventerai.
 
-Lo studio di Dunedin ha seguito 1.037 persone per 32 anni, dalla nascita. Da adulti aveva una condanna il 43% di chi da bambino aveva poco autocontrollo, contro il 13% di chi ne aveva molto. Ma anche in quel gruppo, il 57% non ne ha mai avuta una. E chi è migliorato nel tempo, da adulto stava meglio.
+Lo studio di Dunedin ha seguito 1.037 persone per 32 anni, dalla nascita. Non ha trovato due tipi di persone, «con» o «senza» autocontrollo, ma una scala continua: attenzione, costanza e impulsi, un po' diversi in ognuno. E chi è migliorato nel tempo, da adulto stava meglio.
 
-Un rischio più alto, non un destino.
+L'autocontrollo non è una dote fissa: dipende anche dalle condizioni in cui si vive. Non serve entrare in uno stampo: servono condizioni migliori.
 
-Un'onestà necessaria: lo studio riguarda l'autocontrollo in generale, non WeSelf.
+Un'onestà necessaria: lo studio riguarda l'autocontrollo in generale, non WeSelf. Con WeSelf scegli tu il tuo obiettivo, e diventa una settimana di piccole azioni, già in agenda.
 
 📖 Articolo completo con numeri, ambiente e limiti: link in bio.
 
@@ -58,6 +58,6 @@ Un'onestà necessaria: lo studio riguarda l'autocontrollo in generale, non WeSel
 
 **Primo commento:** `📚 Fonte: Moffitt T.E. et al. (2011). A gradient of childhood self-control predicts health, wealth, and public safety. PNAS, 108(7), 2693–2698. https://doi.org/10.1073/pnas.1010076108`
 
-**Testo alternativo:** «Animazione: Mito o realtà, chi da bambino era impulsivo è segnato per sempre? Lo studio di Dunedin su 1.037 persone per 32 anni: da adulti aveva una condanna il 43% di chi da bambino aveva poco autocontrollo, contro il 13%; ma nel primo gruppo il 57% non ne ha mai avuta. È un mito: un rischio più alto, non un destino.»
+**Testo alternativo:** «Animazione: com'eri da bambino non decide chi diventerai. Lo studio di Dunedin ha seguito 1.037 persone per 32 anni: l'autocontrollo è risultato una scala continua, non due tipi di persone, e chi è migliorato nel tempo da adulto stava meglio. Mito o realtà: com'eri da bambino è il tuo destino? È un mito. Non serve entrare in uno stampo: servono condizioni migliori.»
 
 **Quando:** in un giorno senza altri post, la sera tra le 19:00 e le 21:00. Condividilo anche nella storia con lo sticker Link all'articolo.

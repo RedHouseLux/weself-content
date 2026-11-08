@@ -25,15 +25,17 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
 .dots i{width:54px;height:54px;border-radius:50%;background:var(--sunk);display:block}
 .cta{background:var(--peri);color:#fff}
 .btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:46px;padding:34px 60px;border-radius:999px}
+.tg{font-weight:800;font-size:38px;padding:14px 28px;border-radius:999px;background:var(--peri-soft);color:var(--ink)}
 </style></head><body>
 
-<!-- S1 hook 0-4.5 -->
+<!-- S1 hook 0-5 -->
 <div class="sc" id="s1">
-  <div class="kick" style="top:300px">Mito o realtà?</div>
-  <div class="big" id="s1q" style="position:absolute;left:72px;right:72px;top:380px;font-size:104px">Chi da bambino era impulsivo è segnato per sempre?</div>
-  <div style="position:absolute;left:72px;top:960px;display:flex;gap:28px">
-    <span class="chip mito" id="s1a"><i>✕</i>MITO</span><span class="chip real" id="s1b"><i>✓</i>REALTÀ</span>
-  </div>
+  <div class="kick" style="top:300px">Lo studio di Dunedin</div>
+  <div class="big" id="s1q" style="position:absolute;left:72px;right:72px;top:380px;font-size:112px">Com'eri da bambino <span style="color:var(--teal-text)">non decide</span> chi diventerai.</div>
+  <svg id="s1v" style="position:absolute;left:72px;top:1000px" width="936" height="160" viewBox="0 0 936 160">
+    <path id="s1p" d="M20 120 C220 120 300 40 480 60 C660 80 740 20 916 30" fill="none" stroke="#4A5BE8" stroke-width="14" stroke-linecap="round" stroke-dasharray="1100" stroke-dashoffset="1100"/>
+    <circle cx="20" cy="120" r="22" fill="#1E9E9E"/>
+  </svg>
 </div>
 
 <!-- S2 study 4.5-10.5 -->
@@ -52,75 +54,78 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <div class="src">Moffitt et al., 2011 · PNAS</div>
 </div>
 
-<!-- S3 bars 10.5-18.5 -->
+<!-- S3 continuum 11-18 -->
 <div class="sc" id="s3">
-  <div class="kick" style="top:250px">A 32 anni, aveva una condanna penale</div>
-  <div class="lbl" style="top:380px">chi da bambino aveva <b style="color:var(--coral-text)">poco</b> autocontrollo</div>
-  <div class="bar" style="top:440px"><div class="fill" id="s3a" style="width:0;background:var(--coral);color:var(--ink)"></div></div>
-  <div class="lbl" style="top:640px">chi ne aveva <b style="color:var(--teal-text)">molto</b></div>
-  <div class="bar" style="top:700px"><div class="fill" id="s3b" style="width:0;background:var(--teal);color:#fff"></div></div>
-  <div class="cap" id="s3c">Da adulti, aveva una condanna il <b>43%</b> di chi da bambino aveva poco autocontrollo, contro il <b>13%</b>.</div>
+  <div class="kick" style="top:250px">Che cosa ha misurato</div>
+  <div class="big" id="s3h" style="position:absolute;left:72px;right:72px;top:320px;font-size:84px">Non due tipi di persone, ma <span style="color:var(--peri)">una scala continua</span>.</div>
+  <div id="s3g" style="position:absolute;left:72px;top:720px;width:936px;height:40px;border-radius:999px;background:linear-gradient(90deg,var(--coral-soft),var(--teal-soft),var(--peri-soft))"></div>
+  <div id="s3d" style="position:absolute;left:72px;top:640px;width:936px;height:200px"></div>
+  <div id="s3w" style="position:absolute;left:72px;right:72px;top:900px;display:flex;gap:16px;flex-wrap:wrap">
+    <span class="tg">attenzione</span><span class="tg">costanza</span><span class="tg">impulsi</span><span class="tg">iperattività</span><span class="tg">aggressività impulsiva</span>
+  </div>
+  <div class="cap" id="s3c">L'autocontrollo è stato misurato su una <b>scala</b>: attenzione, costanza, impulsi, un po' diversi in ognuno.</div>
   <div class="src">Moffitt et al., 2011 · PNAS</div>
 </div>
 
-<!-- S4 dots 18.5-25 -->
+<!-- S4 change 18-25 -->
 <div class="sc" id="s4">
-  <div class="kick" style="top:250px">Nel gruppo con poco autocontrollo</div>
-  <div class="dots" id="s4d"></div>
-  <div class="big" id="s4n" style="position:absolute;left:72px;top:1062px;font-size:110px;color:var(--teal-text)">57%</div>
-  <div style="position:absolute;left:330px;top:1084px;font-weight:900;font-size:46px;line-height:1.2" id="s4t">nessuna condanna</div>
-  <div class="cap" id="s4c">Ma anche in quel gruppo, il <b>57%</b> non ha mai avuto una condanna.</div>
+  <div class="kick" style="top:250px">E nel tempo?</div>
+  <div class="big" id="s4h" style="position:absolute;left:72px;right:72px;top:320px;font-size:96px">Può <span style="color:var(--teal-text)">cambiare</span>.</div>
+  <svg style="position:absolute;left:72px;top:540px" width="936" height="560" viewBox="0 0 936 560">
+    <line x1="40" y1="500" x2="900" y2="500" stroke="#EAE3DB" stroke-width="6"/>
+    <text x="40" y="545" font-family="Nunito" font-weight="900" font-size="32" fill="#5A6488">infanzia</text>
+    <text x="900" y="545" text-anchor="end" font-family="Nunito" font-weight="900" font-size="32" fill="#5A6488">età adulta</text>
+    <path id="s4p" d="M60 420 C260 410 360 330 480 260 C620 180 740 120 880 80" fill="none" stroke="#1E9E9E" stroke-width="14" stroke-linecap="round" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+    <circle id="s4c0" cx="60" cy="420" r="26" fill="#F09B7C"/>
+    <circle id="s4dot" cx="60" cy="420" r="30" fill="#1E9E9E" opacity="0"/>
+  </svg>
+  <div class="cap" id="s4cap">Chi è <b>migliorato</b> nel tempo, da adulto stava meglio.</div>
   <div class="src">Moffitt et al., 2011 · PNAS</div>
 </div>
 
 <!-- S5 myth 25-31 -->
 <div class="sc" id="s5" style="background:var(--coral-soft)">
   <div class="kick" style="top:250px;color:var(--coral-text)">Mito o realtà?</div>
-  <div style="position:absolute;left:72px;right:72px;top:340px;font-family:Literata,serif;font-style:italic;font-size:76px;line-height:1.25">«Chi da bambino era impulsivo è segnato per sempre.»</div>
-  <span class="chip mito" id="s5m" style="position:absolute;left:72px;top:720px"><i>✕</i>MITO</span>
-  <div class="big" id="s5t" style="position:absolute;left:72px;right:72px;top:900px;font-size:84px">Un rischio più alto, <span style="color:var(--teal-text)">non un destino</span>.</div>
-  <div class="cap" id="s5c">E chi è migliorato nel tempo, da adulto stava meglio.</div>
+  <div style="position:absolute;left:72px;right:72px;top:340px;font-family:Literata,serif;font-style:italic;font-size:80px;line-height:1.25">«Com'eri da bambino è il tuo destino.»</div>
+  <span class="chip mito" id="s5m" style="position:absolute;left:72px;top:640px"><i>✕</i>MITO</span>
+  <div class="big" id="s5t" style="position:absolute;left:72px;right:72px;top:830px;font-size:80px">L'autocontrollo <span style="color:var(--teal-text)">non è una dote fissa</span>: può cambiare.</div>
+  <div class="cap" id="s5c">È fatto di attenzione, costanza e impulsi, e dipende anche dalle condizioni in cui si vive.</div>
 </div>
 
 <!-- S6 CTA 31-36 -->
 <div class="sc cta" id="s6">
-  <div style="position:absolute;left:72px;right:72px;top:380px;font-weight:900;font-size:84px;line-height:1.08" id="s6t">L'autocontrollo si costruisce, un piccolo passo alla volta.</div>
-  <div style="position:absolute;left:72px;right:72px;top:780px;font-weight:600;font-size:46px;line-height:1.35;opacity:.95" id="s6b">Con WeSelf un obiettivo diventa una settimana di piccole azioni, già in agenda.</div>
+  <div style="position:absolute;left:72px;right:72px;top:360px;font-weight:900;font-size:84px;line-height:1.08" id="s6t">Non serve entrare in uno stampo. Servono condizioni migliori.</div>
+  <div style="position:absolute;left:72px;right:72px;top:780px;font-weight:600;font-size:46px;line-height:1.35;opacity:.95" id="s6b">Con WeSelf scegli tu il tuo obiettivo, e diventa una settimana di piccole azioni, già in agenda.</div>
   <div style="position:absolute;left:72px;top:1080px" id="s6btn"><span class="btn">Articolo completo · link in bio</span></div>
   <div style="position:absolute;left:72px;top:1300px;display:flex;align-items:center;gap:20px;font-weight:900;font-size:64px"><img src="weself-mark.png" style="width:96px;height:96px;background:#fff;border-radius:26px;padding:10px"><span>WeSelf</span></div>
 </div>
 
 <script>
-const D=36;
-const dots=document.getElementById('s4d');for(let i=0;i<100;i++){const e=document.createElement('i');dots.appendChild(e)}
 const $=id=>document.getElementById(id);
 const cl=(x)=>Math.max(0,Math.min(1,x));
 const ease=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
-const win=(t,a,b,f=.35)=>Math.min(ease((t-a)/f),ease((b-t)/f)); // fade in/out
 function pop(el,t,start,dur=.45){const k=ease((t-start)/dur);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*40}px)`}
+// continuum dots
+const D3=$('s3d'); const xs=[];for(let i=0;i<34;i++){const e=document.createElement('i');const x=10+ (i/33)*900 + (Math.sin(i*7.3)*12);const y=60+((i*37)%5)*26;e.style.cssText=`position:absolute;left:${x}px;top:${y}px;width:30px;height:30px;border-radius:50%;background:${i%3==0?'#F09B7C':(i%3==1?'#1E9E9E':'#4A5BE8')};opacity:0`;D3.appendChild(e);xs.push(e)}
 window.render=function(t){
-  const S=[['s1',0,4.5],['s2',4.5,10.5],['s3',10.5,18.5],['s4',18.5,25],['s5',25,31],['s6',31,36.2]];
+  const S=[['s1',0,5],['s2',5,11],['s3',11,18],['s4',18,25],['s5',25,31],['s6',31,36.2]];
   S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3; const fin=a===0?1:cl((t-(a-0.25))/0.3); $(id).style.opacity=vis?fin:0; $(id).style.zIndex=i+1;});
-  pop($('s1q'),t,0.05,.5); pop($('s1a'),t,1.4); pop($('s1b'),t,1.8);
-  // s2
-  const k2=ease((t-5)/2.2); {const v=Math.round(1037*k2);$('s2n').textContent=v>=1000?Math.floor(v/1000)+'.'+String(v%1000).padStart(3,'0'):String(v);}
-  const lx=30+876*ease((t-5.6)/3); $('s2l').setAttribute('x2',lx);
-  $('s2e').setAttribute('opacity',ease((t-8.4)/.4)); $('s2t').setAttribute('opacity',ease((t-8.4)/.4));
-  pop($('s2c'),t,5.0);
+  pop($('s1q'),t,0.05,.5); $('s1p').setAttribute('stroke-dashoffset',1100*(1-ease((t-1.4)/2.4)));
+  // s2 (study)
+  const k2=ease((t-5.5)/2.2);{const v=Math.round(1037*k2);$('s2n').textContent=v>=1000?Math.floor(v/1000)+'.'+String(v%1000).padStart(3,'0'):String(v);}
+  $('s2l').setAttribute('x2',30+876*ease((t-6.1)/3)); $('s2e').setAttribute('opacity',ease((t-8.9)/.4)); $('s2t').setAttribute('opacity',ease((t-8.9)/.4));
+  pop($('s2c'),t,5.5);
   // s3
-  const a=ease((t-11.2)/1.6)*43, b=ease((t-12.6)/1.4)*13;
-  $('s3a').style.width=(a/43*43)+'%'; $('s3a').textContent=a>8?Math.round(a)+'%':'';
-  $('s3b').style.width=Math.max(b,0)+'%'; $('s3b').style.minWidth=b>0.5?'190px':'0'; $('s3b').textContent=b>1?Math.round(b)+'%':'';
-  pop($('s3c'),t,11.0);
+  pop($('s3h'),t,11.1); xs.forEach((e,i)=>{e.style.opacity=ease((t-11.8-i*0.05)/.3)}); pop($('s3w'),t,13.6); pop($('s3c'),t,12.4);
   // s4
-  const n=Math.round(ease((t-19.2)/2.6)*57); const ds=dots.children;
-  for(let i=0;i<100;i++) ds[i].style.background = i<n ? 'var(--teal)' : (i>=57 && t>19.2 ? 'var(--coral-soft)' : 'var(--sunk)');
-  $('s4n').textContent=n+'%'; pop($('s4t'),t,21.5); pop($('s4c'),t,19.0);
+  pop($('s4h'),t,18.1); const kk=ease((t-19)/3.4); $('s4p').setAttribute('stroke-dashoffset',1000*(1-kk));
+  const P=$('s4p'); const L=P.getTotalLength(); const pt=P.getPointAtLength(L*kk); $('s4dot').setAttribute('cx',pt.x); $('s4dot').setAttribute('cy',pt.y); $('s4dot').setAttribute('opacity',t>19?1:0);
+  pop($('s4cap'),t,20.5);
   // s5
   const m=ease((t-26)/.35); $('s5m').style.opacity=m; $('s5m').style.transform=`scale(${1.6-0.6*m}) rotate(${-8*m}deg)`;
-  pop($('s5t'),t,27.2); pop($('s5c'),t,28.6);
+  pop($('s5t'),t,27.0); pop($('s5c'),t,28.4);
   // s6
-  pop($('s6t'),t,31.2); pop($('s6b'),t,32.2); pop($('s6btn'),t,33.4);
+  pop($('s6t'),t,31.2); pop($('s6b'),t,32.4); pop($('s6btn'),t,33.6);
 };
 render(0);
 </script></body></html>
