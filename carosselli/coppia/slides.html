@@ -1,0 +1,246 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-weight:400;src:url(../../fonts/literata-latin-400-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--raised:#fff;--sunk:#F3EEE8;--line:#EAE3DB;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8}
+*{box-sizing:border-box;margin:0}
+body{background:#ccc;font-family:Nunito,sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--surface);padding:64px;display:flex;flex-direction:column;margin-bottom:20px}
+.top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px;letter-spacing:-.02em}
+.brand img{width:46px;height:46px}.we{color:var(--peri)}.self{color:var(--teal)}
+.count{font-weight:800;font-size:24px;color:var(--muted);letter-spacing:.08em}
+.kicker{font-weight:800;font-size:26px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.kicker.we{color:var(--peri)}.kicker.warm{color:var(--coral-text)}
+h1{font-weight:900;font-size:112px;line-height:.95;letter-spacing:-.03em}
+h2{font-weight:900;font-size:76px;line-height:1.02;letter-spacing:-.025em}
+.body{font-weight:600;font-size:44px;line-height:1.35}
+.muted{color:var(--muted)}
+.big{font-weight:900;font-size:200px;line-height:.9;letter-spacing:-.04em;color:var(--teal-text)}
+.biglabel{font-weight:800;font-size:44px;line-height:1.2}
+.quote{font-family:Literata,serif;font-style:italic;font-size:62px;line-height:1.25}
+.src{margin-top:auto;display:flex;gap:18px;align-items:baseline;background:var(--sunk);border-radius:14px;padding:26px 30px;position:relative;z-index:2}
+.src b{font-weight:800;font-size:22px;letter-spacing:.16em;color:var(--muted);flex:0 0 auto}
+.src span{font-family:Literata,serif;font-size:30px;color:var(--muted)}.src em{font-style:normal;color:var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:18px;font-weight:900;font-size:46px;letter-spacing:.08em;padding:20px 40px 20px 22px;border-radius:999px;align-self:flex-start}
+.badge i{font-style:normal;width:58px;height:58px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:32px}
+.mito{background:var(--coral);color:var(--ink)}.mito i{background:var(--ink);color:var(--coral)}
+.dip{background:var(--peri-soft);color:var(--ink)}.dip i{background:var(--ink);color:var(--peri-soft)}
+.stack{display:flex;flex-direction:column;gap:40px}
+.plan{background:var(--raised);border:3px solid var(--line);border-radius:28px;padding:44px 48px;display:flex;flex-direction:column;gap:14px}
+.plan .lbl{font-weight:800;font-size:24px;letter-spacing:.16em;color:var(--peri)}
+.plan p{font-weight:900;font-size:58px;line-height:1.1}
+.plan .if{color:var(--peri)}.plan .then{color:var(--teal-text)}
+svg.shape{position:absolute;z-index:1}
+.s-self{fill:var(--teal)}.s-we{fill:var(--peri)}.s-warm{fill:var(--coral)}.s-tint{fill:var(--teal-soft)}.s-tintwe{fill:var(--peri-soft)}
+.wire{stroke:var(--surface);stroke-width:8;fill:none;stroke-linecap:round}.node{fill:var(--surface)}
+.wire-ink{stroke:var(--ink);stroke-width:6;fill:none;stroke-linecap:round}.node-ink{fill:var(--ink)}
+/* warm slide */
+.warmbg{background:var(--coral-soft)}
+.warmbg .src{background:rgba(255,255,255,.6)}
+/* CTA slide */
+.cta{background:var(--peri);color:#fff}
+.cta .count{color:rgba(255,255,255,.75)}
+.cta .kicker{color:#fff}
+.btn{align-self:flex-start;background:#fff;color:var(--ink);font-weight:900;font-size:40px;padding:30px 52px;border-radius:999px}
+.ctafoot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end}
+.ctafoot .brand{font-size:56px;color:#fff}.ctafoot .brand img{width:84px;height:84px;background:#fff;border-radius:24px;padding:8px}
+.ctafoot .brand .we,.ctafoot .brand .self{color:#fff}
+.ctafoot small{font-weight:800;font-size:26px;opacity:.9}
+
+.hl{background:linear-gradient(transparent 55%,var(--hl,#FBE3D8) 55%);font-weight:900;padding:0 4px;margin:0 -4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl.t{--hl:#A8E6DD}.hl.p{--hl:#DDE0FB}
+.cta .hl{background:none;text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:10px;text-decoration-color:#F09B7C}
+.vars{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.var{display:flex;align-items:center;gap:18px;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:24px 26px;font-weight:900;font-size:38px;line-height:1.1}
+.var i{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--teal)}
+.var:nth-child(2) i{background:var(--peri)}.var:nth-child(3) i{background:var(--coral)}.var:nth-child(4) i{background:var(--teal)}.var:nth-child(5) i{background:var(--peri)}
+.var:nth-child(5){grid-column:1/-1}
+.who{font-weight:600;font-size:32px;color:var(--muted);line-height:1.35}
+.outcomes{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.out{background:var(--teal-soft);border-radius:24px;padding:30px 30px;font-weight:900;font-size:44px;line-height:1.1}
+.out:nth-child(2){background:var(--peri-soft)}.out:nth-child(3){background:var(--coral-soft)}
+.out small{display:block;font-weight:600;font-size:26px;margin-bottom:8px;color:var(--muted)}
+
+.cmp{display:flex;flex-direction:column;gap:14px}
+.cmp-head{display:grid;grid-template-columns:1fr 190px 190px;gap:14px;align-items:end;padding:0 24px}
+.cmp-head span:nth-child(n+2){text-align:center}
+.row{display:grid;grid-template-columns:1fr 190px 190px;gap:14px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.row b{font-weight:800;font-size:34px;line-height:1.15}
+.n{font-weight:900;font-size:64px;line-height:1;text-align:center;border-radius:16px;padding:10px 0}
+.n.lo{background:var(--coral-soft);color:var(--coral-text)}.n.hi{background:var(--teal-soft);color:var(--teal-text)}
+.lab{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;font-weight:800;font-size:21px;line-height:1.1;border-radius:16px;padding:14px 6px}.lab strong{font-weight:900;font-size:38px;letter-spacing:.04em}
+.lab.lo{background:var(--coral);color:var(--ink)}.lab.hi{background:var(--teal);color:#fff}
+</style></head><body><style>
+.cv{display:block;margin-top:40px;align-self:center}
+.mid{font-weight:600;font-size:38px;line-height:1.4}
+.next{margin-top:auto;margin-bottom:22px;font-weight:800;font-size:31px;line-height:1.3;color:var(--peri)}
+.next + .src{margin-top:0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.two div{border-radius:26px;padding:28px 30px;display:flex;flex-direction:column;gap:12px}
+.two small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase}
+.two b{font-weight:900;font-size:40px;line-height:1.1}
+.two p{font-weight:600;font-size:30px;line-height:1.35}
+.two .a{background:var(--peri-soft)}.two .a small{color:var(--peri)}
+.two .b{background:var(--teal-soft)}.two .b small{color:var(--teal-text)}
+.cmpb{display:flex;flex-direction:column;gap:14px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:30px 34px}
+.cmpb .lb{font-weight:800;font-size:30px}
+.cmpb .tr{height:60px;border-radius:999px;background:var(--sunk)}
+.cmpb .fl{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:22px;font-weight:900;font-size:36px}
+.list2{display:flex;flex-direction:column;gap:18px}
+.li2{display:flex;flex-direction:column;gap:6px;background:var(--raised);border:3px solid var(--line);border-radius:24px;padding:22px 30px}
+.li2 b{font-weight:900;font-size:38px;line-height:1.15}
+.li2 span{font-weight:600;font-size:31px;line-height:1.33;color:var(--muted)}
+.rank{display:flex;flex-direction:column;gap:16px}
+.rk{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 26px}
+.rk i{font-style:normal;width:56px;height:56px;border-radius:50%;background:var(--teal);color:#fff;font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center}
+.rk b{font-weight:900;font-size:36px;line-height:1.15}.rk span{display:block;font-weight:600;font-size:28px;color:var(--muted);line-height:1.3;margin-top:4px}
+.lim{display:flex;flex-direction:column;gap:26px}
+.lim div{font-weight:600;font-size:35px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+</style>
+
+<section class="slide" id="s1">
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/10</div></div>
+  <svg class="cv" width="952" height="520" viewBox="0 0 952 520">
+    <path d="M40 430 L55 425 L70 416 L84 403 L99 388 L114 371 L129 352 L144 332 L158 311 L173 290 L188 270 L203 251 L218 233 L232 217 L247 203 L262 192 L277 184 L292 178 L306 174 L321 174 L336 176 L351 180 L366 186 L380 194 L395 203 L410 214 L425 225 L440 237 L454 248 L469 259 L484 270 L499 280 L514 288 L528 296 L543 302 L558 306 L573 309 L588 311 L602 311 L617 310 L632 308 L647 305 L662 302 L676 298 L691 293 L706 289 L721 284 L736 280 L750 276 L765 273 L780 270 L795 268 L810 266 L824 266 L839 265 L854 266 L869 266 L884 267 L898 268 L913 269 L928 270" fill="none" stroke="var(--teal)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M40 110 L55 115 L70 124 L84 137 L99 152 L114 169 L129 188 L144 208 L158 229 L173 250 L188 270 L203 289 L218 307 L232 323 L247 337 L262 348 L277 356 L292 362 L306 366 L321 366 L336 364 L351 360 L366 354 L380 346 L395 337 L410 326 L425 315 L440 303 L454 292 L469 281 L484 270 L499 260 L514 252 L528 244 L543 238 L558 234 L573 231 L588 229 L602 229 L617 230 L632 232 L647 235 L662 238 L676 242 L691 247 L706 251 L721 256 L736 260 L750 264 L765 267 L780 270 L795 272 L810 274 L824 274 L839 275 L854 274 L869 274 L884 273 L898 272 L913 271 L928 270" fill="none" stroke="var(--peri)" stroke-width="16" stroke-linecap="round"/>
+    <circle cx="40" cy="430" r="28" fill="var(--teal)"/>
+    <circle cx="40" cy="110" r="28" fill="var(--peri)"/>
+    <circle cx="292" cy="178" r="13" fill="var(--coral)" stroke="var(--surface)" stroke-width="5"/>
+    <circle cx="469" cy="281" r="13" fill="var(--coral)" stroke="var(--surface)" stroke-width="5"/>
+    <circle cx="647" cy="305" r="13" fill="var(--coral)" stroke="var(--surface)" stroke-width="5"/>
+    <circle cx="810" cy="274" r="13" fill="var(--coral)" stroke="var(--surface)" stroke-width="5"/>
+    </svg>
+  <div style="margin-top:auto;gap:28px" class="stack">
+    <p class="kicker">Coppia · 1 ricerca</p>
+    <h1 style="font-size:84px">Una coppia felice <span class="hl">si costruisce</span>, giorno per giorno.</h1>
+    <p class="mid muted">Molte persone pensano che tutto dipenda dal trovare la persona giusta. Una ricerca su oltre <b style="color:var(--ink)">11.000 coppie</b> ha guardato che cosa conta davvero.</p>
+    <p style="font-weight:900;font-size:36px;color:var(--peri)">Scorri →</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="kicker we">La ricerca</p><div class="count">2/10</div></div>
+  <div class="stack" style="margin-top:56px;gap:28px">
+    <p class="big" style="font-size:170px">11.196</p>
+    <p class="biglabel">coppie, da <span class="hl t">43 studi</span> di 29 laboratori in 6 paesi.</p>
+    <p class="mid">Stati Uniti, Canada, Svizzera, Nuova Zelanda, Paesi Bassi e Israele. Ogni persona aveva detto quanto era <b>soddisfatta</b> della propria relazione e aveva risposto a domande su centinaia di possibili fattori.</p>
+    <p class="mid">Un algoritmo di apprendimento automatico ha cercato quali fattori permettevano di <b>prevedere</b> meglio la soddisfazione.</p>
+  </div>
+  <p class="next">Due tipi di fattori, messi a confronto →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="kicker we">Che cosa hanno confrontato</p><div class="count">3/10</div></div>
+  <div class="stack" style="margin-top:56px;gap:30px">
+    <h2 style="font-size:58px">Le persone, o il modo in cui vivono la relazione?</h2>
+    <div class="two">
+      <div class="a"><small>Chi sei</small><b>Le caratteristiche personali</b><p>Personalità, età, genere, umore, soddisfazione per la propria vita, il modo di legarsi agli altri.</p></div>
+      <div class="b"><small>Come la vivi</small><b>La relazione, vista da dentro</b><p>Quanto ci si sente apprezzati e si apprezza l'altro, quanto lo si sente impegnato, i conflitti, l'intimità.</p></div>
+    </div>
+  </div>
+  <p class="next">Quale dei due ha contato di più? →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="kicker we">I numeri</p><div class="count">4/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:28px">
+    <h2 style="font-size:56px">Ha contato di più <span class="hl t">come si vive la relazione</span>.</h2>
+    <div class="cmpb">
+      <span class="lb">Quanta parte delle differenze di soddisfazione hanno permesso di prevedere, al massimo</span>
+      <span class="lb" style="font-size:27px;color:var(--muted)">come si vive la relazione</span>
+      <div class="tr"><div class="fl" style="width:45%;background:var(--teal-soft);color:var(--teal-text)">45%</div></div>
+      <span class="lb" style="font-size:27px;color:var(--muted)">le caratteristiche personali</span>
+      <div class="tr"><div class="fl" style="width:21%;background:var(--peri-soft);color:var(--peri)">21%</div></div>
+    </div>
+    <p class="mid">In altre parole: sapere come una persona vive la relazione dice molto di più su quanto è felice in coppia che sapere com'è fatta.</p>
+  </div>
+  <p class="next">E unire le due cose non ha aggiunto niente →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="kicker we">Le sorprese</p><div class="count">5/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:20px">
+    <div class="list2">
+      <div class="li2"><b>Le caratteristiche personali non hanno aggiunto nulla</b><span>Una volta noto come si viveva la relazione, sapere com'era fatta la persona non ha migliorato la previsione.</span></div>
+      <div class="li2"><b>Contava il proprio sguardo</b><span>Le risposte del partner non hanno aggiunto nulla: le proprie percezioni hanno contato da due a quattro volte di più.</span></div>
+      <div class="li2"><b>I dati «oggettivi» hanno contato poco</b><span>Avere figli, vivere insieme, essere sposati o fidanzati, ma anche genere, origine etnica e istruzione: hanno contato poco. Faceva eccezione la durata della relazione.</span></div>
+    </div>
+  </div>
+  <p class="next">Quali aspetti della relazione hanno contato di più? →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide" id="s6">
+  <div class="top"><p class="kicker">Che cosa ha contato di più</p><div class="count">6/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:22px">
+    <h2 style="font-size:50px">I cinque aspetti più legati alla soddisfazione, con le domande poste</h2>
+    <div class="rank">
+      <div class="rk"><i>1</i><div><b>Sentire l'altro impegnato</b><span>«Il mio partner vuole che la nostra relazione duri per sempre.»</span></div></div>
+      <div class="rk"><i>2</i><div><b>L'apprezzamento</b><span>«Mi sento molto fortunato/a ad avere il mio partner nella mia vita.»</span></div></div>
+      <div class="rk"><i>3</i><div><b>La soddisfazione sessuale</b><span>«Quanto sei soddisfatto/a della vostra vita sessuale?»</span></div></div>
+      <div class="rk"><i>4</i><div><b>Sentire l'altro soddisfatto</b><span>«La nostra relazione rende il mio partner molto felice.»</span></div></div>
+      <div class="rk"><i>5</i><div><b>Il conflitto</b><span>«Quanto spesso litigate?»</span></div></div>
+    </div>
+  </div>
+  <p class="next">Ma tutto questo permette di prevedere il futuro della coppia? →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="kicker we">E il futuro?</p><div class="count">7/10</div></div>
+  <div class="stack" style="margin-top:70px;gap:32px">
+    <h2 style="font-size:62px">Il futuro della coppia <span class="hl">non era scritto</span> in partenza.</h2>
+    <p class="mid">Nessuna combinazione di risposte ha permesso di prevedere se la soddisfazione sarebbe <b>aumentata o diminuita</b> nei mesi o negli anni successivi.</p>
+    <p class="mid">Secondo gli autori, i cambiamenti dipenderebbero piuttosto da ciò che accade lungo la strada: i comportamenti di ogni giorno, il contesto, gli eventi, come l'arrivo di un figlio.</p>
+  </div>
+  <p class="next">Quindi, è vero che basta trovare la persona giusta? →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide warmbg" id="s8">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">8/10</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«Basta trovare la persona giusta.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">Le caratteristiche delle persone hanno contato meno di <span class="hl">come vivevano la relazione</span>.</p>
+    <p class="body">E come sarebbe andata nel tempo non si poteva prevedere all'inizio: una coppia felice si costruisce strada facendo.</p>
+  </div>
+  <p class="next">Prima di concludere, i limiti →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide" id="s9">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">9/10</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <h2 style="font-size:62px">Che cosa la ricerca <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>Quasi tutto era misurato con <b>questionari</b>: il 99,4% dei fattori sulla relazione erano autovalutazioni, non comportamenti osservati.</div>
+      <div><b>Prevedere non è spiegare</b>: la ricerca mostra legami, non che cosa causa che cosa.</div>
+      <div>Tutti i dati vengono da <b>paesi occidentali</b>: serviranno studi in altri contesti.</div>
+      <div>Il 45% è il <b>massimo</b> raggiunto, non il risultato di ogni studio.</div>
+    </div>
+  </div>
+  <p class="next">E allora, che cosa ce ne facciamo? →</p>
+  <div class="src"><b>FONTE</b><span><em>Joel et al., 2020</em> · PNAS</span></div>
+</section>
+
+<section class="slide cta" id="s10">
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">10/10</div></div>
+  <div class="stack" style="margin-top:90px">
+    <h2 style="font-size:68px">Una coppia si costruisce nei <span class="hl">piccoli gesti</span> di ogni giorno.</h2>
+    <p class="body" style="opacity:.92">Con WeSelf puoi mettere in agenda un piccolo gesto di apprezzamento o un po' di tempo insieme, ogni settimana. E se qualcosa pesa, puoi chiedere tu il contatto di uno specialista.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>
