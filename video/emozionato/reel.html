@@ -1,0 +1,153 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8;--sunk:#F3EEE8}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-family:Nunito,sans-serif;color:var(--ink)}
+.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;background:var(--surface)}
+.brand{position:absolute;left:72px;top:150px;display:flex;align-items:center;gap:14px;font-weight:900;font-size:38px}
+.brand img{width:52px;height:52px}.we{color:var(--peri)}.self{color:var(--teal)}
+.kick{position:absolute;left:72px;top:250px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.big{font-weight:900;letter-spacing:-.03em;line-height:1}
+.cap{position:absolute;left:72px;right:72px;top:1210px;font-weight:800;font-size:46px;line-height:1.3;background:#fff;border-radius:28px;padding:30px 36px;box-shadow:0 6px 0 rgba(30,43,92,.06)}
+.cap b{color:var(--peri)}
+.src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted)}
+.chip{display:inline-flex;align-items:center;gap:16px;font-weight:900;font-size:56px;letter-spacing:.06em;padding:22px 44px 22px 24px;border-radius:999px}
+.chip i{font-style:normal;width:66px;height:66px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:36px}
+.mito{background:var(--coral)}.mito i{background:var(--ink);color:var(--coral)}
+.real{background:var(--teal-soft)}.real i{background:var(--ink);color:var(--teal-soft)}
+.bar{position:absolute;left:72px;width:936px;height:110px;border-radius:999px;background:var(--sunk)}
+.fill{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:30px;font-weight:900;font-size:56px}
+.lbl{position:absolute;left:72px;font-weight:800;font-size:36px;color:var(--muted)}
+.dots{position:absolute;left:200px;top:360px;display:grid;grid-template-columns:repeat(10,54px);gap:14px}
+.dots i{width:54px;height:54px;border-radius:50%;background:var(--sunk);display:block}
+.cta{background:var(--peri);color:#fff}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:46px;padding:34px 60px;border-radius:999px}
+.tg{font-weight:800;font-size:38px;padding:14px 28px;border-radius:999px;background:var(--peri-soft);color:var(--ink)}
+.tg{font-weight:800;font-size:38px;padding:14px 28px;border-radius:999px;background:var(--peri-soft);color:var(--ink)}
+.say{display:inline-block;font-family:Literata,serif;font-style:italic;font-size:92px;line-height:1.1}
+.strike{position:absolute;height:12px;background:var(--coral);border-radius:6px;left:0;top:52%}
+.box8{display:grid;grid-template-columns:repeat(8,96px);gap:16px}
+.box8 i{width:96px;height:96px;border-radius:20px;background:var(--sunk);display:block}
+</style></head><body>
+
+<div class="sc" id="a1">
+  <div class="kick" style="top:300px">Prima di una prova</div>
+  <div style="position:absolute;left:72px;top:400px"><span class="say" id="a1x" style="position:relative">«Calmati.»<span class="strike" id="a1s" style="width:0"></span></span></div>
+  <div style="position:absolute;left:72px;top:600px"><span class="say" id="a1y" style="color:var(--teal-text)">«Sono emozionato.»</span></div>
+  <div class="cap" id="a1c">Prima di una prova ti dici «calmati»? Una ricerca suggerisce un'alternativa.</div>
+</div>
+
+<div class="sc" id="a2">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="kick">Che cosa pensano le persone</div>
+  <div class="big" id="a2n" style="position:absolute;left:72px;top:360px;font-size:260px;color:var(--peri)">0%</div>
+  <div id="a2t" style="position:absolute;left:72px;top:660px;right:72px;font-weight:900;font-size:56px;line-height:1.15">pensa che la cosa migliore sia <span style="color:var(--peri)">cercare di calmarsi</span>.</div>
+  <div class="cap" id="a2c">In un sondaggio, <b>più del 90%</b> delle persone ha detto che, prima di una prova, la cosa migliore è calmarsi.</div>
+  <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
+</div>
+
+<div class="sc" id="a3">
+  <div class="kick" style="top:250px">Karaoke davanti a uno sconosciuto</div>
+  <div class="lbl" style="top:360px">«Sono emozionato»</div>
+  <div class="bar" style="top:420px"><div class="fill" id="a3a" style="width:0;background:var(--teal);color:#fff"></div></div>
+  <div class="lbl" style="top:590px">nessuna frase</div>
+  <div class="bar" style="top:650px"><div class="fill" id="a3b" style="width:0;background:var(--peri-soft);color:var(--peri)"></div></div>
+  <div class="lbl" style="top:820px">«Sono in ansia»</div>
+  <div class="bar" style="top:880px"><div class="fill" id="a3c" style="width:0;background:var(--coral);color:var(--ink)"></div></div>
+  <div class="cap" id="a3t" style="top:1130px">113 studenti, prima di cantare: precisione dell'<b>81%</b> con «sono emozionato», del <b>53%</b> con «sono in ansia».</div>
+  <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
+</div>
+
+<div class="sc" id="a4">
+  <div class="kick" style="top:250px">Un discorso davanti a una telecamera</div>
+  <div class="big" style="position:absolute;left:72px;top:330px;font-size:72px">Chi ha detto «sono emozionato» ha parlato <span style="color:var(--teal-text)">più a lungo</span>.</div>
+  <div class="lbl" style="top:600px">«Sono emozionato»</div>
+  <div class="bar" style="top:660px"><div class="fill" id="a4a" style="width:0;background:var(--teal);color:#fff"></div></div>
+  <div class="lbl" style="top:830px">«Sono calmo»</div>
+  <div class="bar" style="top:890px"><div class="fill" id="a4b" style="width:0;background:var(--peri-soft);color:var(--peri)"></div></div>
+  <div class="cap" id="a4t">140 studenti: con «sono emozionato», giudicati <b>più convincenti e sicuri</b>, e 167 secondi di discorso contro 132.</div>
+  <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
+</div>
+
+<div class="sc" id="a5">
+  <div class="kick" style="top:250px">Un test di matematica</div>
+  <div class="big" style="position:absolute;left:72px;top:330px;font-size:72px">Bastava leggere: <span style="color:var(--teal-text)">«Cerca di emozionarti.»</span></div>
+  <div class="lbl" style="top:600px">risposte giuste su 8, in media</div>
+  <div class="box8" id="a5x" style="position:absolute;left:72px;top:660px"></div>
+  <div class="box8" id="a5y" style="position:absolute;left:72px;top:850px"></div>
+  <div style="position:absolute;left:72px;top:790px;font-weight:800;font-size:30px;color:var(--teal-text)" id="a5l1">«Cerca di emozionarti» · 3,6</div>
+  <div style="position:absolute;left:72px;top:980px;font-weight:800;font-size:30px;color:var(--muted)" id="a5l2">«Cerca di restare calmo» · 2,9</div>
+  <div class="cap" id="a5t">188 studenti, un test difficile e a tempo: <b>3,6</b> risposte giuste su 8 contro <b>2,9</b>.</div>
+  <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
+</div>
+
+<div class="sc" id="a6">
+  <div class="kick" style="top:250px">Il punto chiave</div>
+  <div class="big" id="a6h" style="position:absolute;left:72px;right:72px;top:330px;font-size:84px">L'ansia <span style="color:var(--coral-text)">non è sparita</span>. È cambiato il modo di leggerla.</div>
+  <div id="a6p" style="position:absolute;left:72px;right:72px;top:720px;font-weight:600;font-size:44px;line-height:1.35">Agitazione ed entusiasmo fanno battere il cuore allo stesso modo. Secondo l'autrice, calmarsi è difficile; dare un altro nome a quell'energia è più facile.</div>
+  <div class="cap" id="a6c">Nel karaoke, l'ansia dichiarata è rimasta <b>uguale</b> nei tre gruppi: è cresciuto l'entusiasmo.</div>
+  <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
+</div>
+
+<div class="sc" id="a7" style="background:var(--coral-soft)">
+  <div class="kick" style="top:250px;color:var(--coral-text)">Mito o realtà?</div>
+  <div style="position:absolute;left:72px;right:72px;top:340px;font-family:Literata,serif;font-style:italic;font-size:76px;line-height:1.25">«Prima di una prova, la cosa migliore è calmarsi.»</div>
+  <span class="chip mito" id="a7m" style="position:absolute;left:72px;top:720px"><i>✕</i>MITO</span>
+  <div class="big" id="a7t" style="position:absolute;left:72px;right:72px;top:900px;font-size:66px">In questi studi, «sono emozionato» ha funzionato <span style="color:var(--teal-text)">meglio</span> di «sono calmo».</div>
+</div>
+
+<div class="sc" id="a8">
+  <div class="kick" style="top:250px;color:var(--coral-text)">I limiti</div>
+  <div id="a8h" style="position:absolute;left:72px;right:72px;top:330px;font-weight:900;font-size:64px;line-height:1.1">Prove brevi, in laboratorio.</div>
+  <div id="a8p" style="position:absolute;left:72px;right:72px;top:470px;font-weight:600;font-size:42px;line-height:1.4">Hanno partecipato soprattutto studenti di un'università degli Stati Uniti, e gli effetti sono stati misurati subito dopo. Serviranno conferme nella vita reale.</div>
+  <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
+</div>
+
+<div class="sc" id="a9" style="background:var(--peri-soft)">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="kick" style="color:var(--peri)">Il mio punto di vista</div>
+  <div id="a9h" style="position:absolute;left:72px;right:72px;top:320px;font-weight:900;font-size:64px;line-height:1.1">Il fondatore di WeSelf</div>
+  <div id="a9n" style="position:absolute;left:72px;right:72px;top:410px;font-weight:600;font-size:34px;color:var(--muted)">Un'opinione personale, non un risultato dello studio.</div>
+  <svg style="position:absolute;left:140px;top:520px" width="800" height="620" viewBox="0 0 800 620">
+    <circle id="q1" cx="400" cy="310" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle id="q2" cx="400" cy="310" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/>
+    <circle id="q3" cx="400" cy="310" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="310" r="58" fill="#4A5BE8"/><circle cx="400" cy="310" r="20" fill="#F09B7C"/>
+  </svg>
+</div>
+
+<div class="sc cta" id="a10">
+  <div style="position:absolute;left:72px;right:72px;top:360px;font-weight:900;font-size:80px;line-height:1.1" id="a10t">La prossima volta che il cuore batte forte, prova a dirti: «Sono emozionato.»</div>
+  <div style="position:absolute;left:72px;right:72px;top:820px;font-weight:600;font-size:44px;line-height:1.35;opacity:.95" id="a10b">Con WeSelf ti avvicini alla tua prova a piccoli passi, già in agenda, insieme a chi ha il tuo stesso obiettivo.</div>
+  <div style="position:absolute;left:72px;top:1100px" id="a10btn"><span class="btn">Scopri WeSelf · link in bio</span></div>
+  <div style="position:absolute;left:72px;top:1300px;display:flex;align-items:center;gap:20px;font-weight:900;font-size:64px"><img src="weself-mark.png" style="width:96px;height:96px;background:#fff;border-radius:26px;padding:10px"><span>WeSelf</span></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=x=>Math.max(0,Math.min(1,x));
+const ease=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
+function pop(el,t,s,d=.45){const k=ease((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*40}px)`}
+for(const id of ['a5x','a5y'])for(let i=0;i<8;i++){const e=document.createElement('i');$(id).appendChild(e)}
+function bar(el,t,s,v,lab){const k=ease((t-s)/1.4);el.style.width=(v*k)+'%';el.style.minWidth=k>0.02?'170px':'0';el.textContent=k>0.05?lab(k):''}
+window.render=function(t){
+  const S=[['a1',0,5],['a2',5,11],['a3',11,19],['a4',19,26],['a5',26,32],['a6',32,38],['a7',38,43],['a8',43,49],['a9',49,63],['a10',63,68.2]];
+  S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3; $(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0; $(id).style.zIndex=i+1;});
+  pop($('a1x'),t,0.05,.4); $('a1s').style.width=(ease((t-1.2)/.5)*100)+'%'; $('a1x').style.color=t>1.2?'var(--muted)':'var(--ink)'; pop($('a1y'),t,1.8); pop($('a1c'),t,0.4);
+  $('a2n').textContent=Math.round(91*ease((t-5.4)/1.8))+'%'; pop($('a2t'),t,6.2); pop($('a2c'),t,5.4);
+  bar($('a3a'),t,11.6,81,k=>Math.round(81*k)+'%'); bar($('a3b'),t,12.3,69,k=>Math.round(69*k)+'%'); bar($('a3c'),t,13.0,53,k=>Math.round(53*k)+'%'); pop($('a3t'),t,11.4);
+  bar($('a4a'),t,20.0,167/180*100,k=>Math.round(167*k)+' s'); bar($('a4b'),t,20.8,132/180*100,k=>Math.round(132*k)+' s'); pop($('a4t'),t,19.6);
+  const xa=$('a5x').children, ya=$('a5y').children, f1=3.6*ease((t-27)/1.6), f2=2.94*ease((t-27.6)/1.6);
+  for(let i=0;i<8;i++){xa[i].style.background=`linear-gradient(90deg,var(--teal) ${cl(f1-i)*100}%,var(--sunk) ${cl(f1-i)*100}%)`; ya[i].style.background=`linear-gradient(90deg,var(--peri) ${cl(f2-i)*100}%,var(--sunk) ${cl(f2-i)*100}%)`;}
+  pop($('a5l1'),t,28.4); pop($('a5l2'),t,28.8); pop($('a5t'),t,26.4);
+  pop($('a6h'),t,32.2); pop($('a6p'),t,33.4); pop($('a6c'),t,34.6);
+  const m=ease((t-38.8)/.35); $('a7m').style.opacity=m; $('a7m').style.transform=`scale(${1.6-0.6*m}) rotate(${-8*m}deg)`; pop($('a7t'),t,39.8);
+  pop($('a8h'),t,43.2); pop($('a8p'),t,44.0);
+  pop($('a9h'),t,49.3); pop($('a9n'),t,49.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((t-49+j*1.4)%4.2)/4.2; $(id).setAttribute('r',120+170*ph); $(id).setAttribute('opacity',t>49?(1-ph)*0.8:0);});
+  pop($('a10t'),t,63.2); pop($('a10b'),t,64.4); pop($('a10btn'),t,65.6);
+};
+render(0);
+</script></body></html>
