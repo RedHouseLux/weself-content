@@ -2,6 +2,8 @@
 
 **File video:** `weself-emozionato-reel.mp4` (1080×1920, 30 fps, 68 secondi, senza audio). Le scritte sullo schermo coincidono con la voce e fanno da sottotitoli; restano nella zona sicura (220–1480 pixel dall'alto).
 
+**Grafica:** illustrazioni animate nei colori del brand (cuori, anello, microfono, cronometri, carte, icone), forme morbide che si muovono sullo sfondo e una barra sottile in alto che mostra l'avanzamento.
+
 **Come è fatto:** `reel.html`, trasformato in video con `node tools/render-video.cjs video/emozionato/reel.html video/emozionato/weself-emozionato-reel.mp4 68 30`.
 
 **Collegamento:** è il seguito del carosello sull'ansia da prestazione (Yeager et al., 2022). Pubblicalo qualche giorno dopo il carosello.
@@ -12,14 +14,14 @@
 
 | Secondi | Scena | Voce |
 |---|---|---|
-| 0–5 | «Calmati.» barrato, poi «Sono emozionato.» | «Prima di una prova ti dici "calmati"? Una ricerca suggerisce un'alternativa.» |
-| 5–11 | Contatore fino al 91% | «In un sondaggio, più del novanta per cento delle persone ha detto che, prima di una prova, la cosa migliore è calmarsi.» |
-| 11–19 | Tre barre: 81%, 69%, 53% | «Ma al karaoke, davanti a uno sconosciuto, chi prima di cantare ha detto "sono emozionato" ha avuto una precisione dell'ottantuno per cento; chi ha detto "sono in ansia", del cinquantatré.» |
-| 19–26 | Due barre: 167 e 132 secondi | «Prima di un discorso, chi ha detto "sono emozionato" invece di "sono calmo" è stato giudicato più convincente e sicuro, e ha parlato più a lungo.» |
-| 26–32 | Quadratini: 3,6 e 2,9 su 8 | «E in un test di matematica, bastava leggere "cerca di emozionarti": tre virgola sei risposte giuste su otto, contro due virgola nove.» |
-| 32–38 | «L'ansia non è sparita» | «L'ansia non è sparita: è cambiato il modo di leggerla. Agitazione ed entusiasmo fanno battere il cuore allo stesso modo, ed è più facile dare un altro nome a quell'energia che spegnerla.» |
+| 0–5 | Un cuore che batte e una linea del battito; «Calmati.» barrato, il cuore diventa verde con «Sono emozionato.» | «Prima di una prova ti dici "calmati"? Una ricerca suggerisce un'alternativa.» |
+| 5–11 | Un anello che si riempie fino al 91% | «In un sondaggio, più del novanta per cento delle persone ha detto che, prima di una prova, la cosa migliore è calmarsi.» |
+| 11–19 | Microfono con onde sonore; tre barre: 81%, 69%, 53% | «Ma al karaoke, davanti a uno sconosciuto, chi prima di cantare ha detto "sono emozionato" ha avuto una precisione dell'ottantuno per cento; chi ha detto "sono in ansia", del cinquantatré.» |
+| 19–26 | Due cronometri: 167 e 132 secondi | «Prima di un discorso, chi ha detto "sono emozionato" invece di "sono calmo" è stato giudicato più convincente e sicuro, e ha parlato più a lungo.» |
+| 26–32 | Otto carte che si girano e si riempiono: 3,6 e 2,9 su 8 | «E in un test di matematica, bastava leggere "cerca di emozionarti": tre virgola sei risposte giuste su otto, contro due virgola nove.» |
+| 32–38 | Due cuori che battono insieme: «agitazione» = «entusiasmo» | «L'ansia non è sparita: è cambiato il modo di leggerla. Agitazione ed entusiasmo fanno battere il cuore allo stesso modo, ed è più facile dare un altro nome a quell'energia che spegnerla.» |
 | 38–43 | Mito o realtà? Timbro MITO | «Prima di una prova, la cosa migliore è calmarsi? In questi studi, no.» |
-| 43–49 | I limiti | «Erano prove brevi, in laboratorio, soprattutto con studenti negli Stati Uniti: serviranno conferme nella vita reale.» |
+| 43–49 | I limiti, con tre icone (laboratorio, cronometro, luogo) | «Erano prove brevi, in laboratorio, soprattutto con studenti negli Stati Uniti: serviranno conferme nella vita reale.» |
 | 49–63 | **Il tuo punto di vista** (sfondo lilla, «Un'opinione personale, non un risultato dello studio») | **Parole tue, fino a 14 secondi.** I sottotitoli qui non sono nel video: aggiungili in CapCut con «Sottotitoli automatici», oppure mandami il testo e li inserisco io. |
 | 63–68 | Finale WeSelf | «La prossima volta che il cuore batte forte, prova a dirti: "sono emozionato". Link in bio.» |
 

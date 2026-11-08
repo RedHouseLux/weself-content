@@ -6,148 +6,226 @@
 :root{--surface:#FBF8F5;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8;--sunk:#F3EEE8}
 *{box-sizing:border-box;margin:0}
 body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-family:Nunito,sans-serif;color:var(--ink)}
-.sc{position:absolute;left:0;top:0;width:1080px;height:1920px;opacity:0;background:var(--surface)}
-.brand{position:absolute;left:72px;top:150px;display:flex;align-items:center;gap:14px;font-weight:900;font-size:38px}
-.brand img{width:52px;height:52px}.we{color:var(--peri)}.self{color:var(--teal)}
+.sc{position:absolute;inset:0;opacity:0;background:var(--surface);overflow:hidden}
+.blobs{position:absolute;inset:0;pointer-events:none}
+.brand{position:absolute;left:72px;top:250px;display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px}
+.brand img{width:46px;height:46px}.we{color:var(--peri)}.self{color:var(--teal)}
 .kick{position:absolute;left:72px;top:250px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
-.big{font-weight:900;letter-spacing:-.03em;line-height:1}
-.cap{position:absolute;left:72px;right:72px;top:1210px;font-weight:800;font-size:46px;line-height:1.3;background:#fff;border-radius:28px;padding:30px 36px;box-shadow:0 6px 0 rgba(30,43,92,.06)}
+.h{position:absolute;left:72px;right:72px;font-weight:900;letter-spacing:-.02em;line-height:1.08}
+.cap{position:absolute;left:72px;right:72px;top:1200px;font-weight:800;font-size:44px;line-height:1.3;background:#fff;border-radius:28px;padding:28px 34px;box-shadow:0 10px 30px rgba(30,43,92,.08)}
 .cap b{color:var(--peri)}
 .src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted)}
-.chip{display:inline-flex;align-items:center;gap:16px;font-weight:900;font-size:56px;letter-spacing:.06em;padding:22px 44px 22px 24px;border-radius:999px}
-.chip i{font-style:normal;width:66px;height:66px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:36px}
+.say{font-family:Literata,serif;font-style:italic;font-size:96px;line-height:1.1;position:absolute;left:72px}
+.chip{display:inline-flex;align-items:center;gap:16px;font-weight:900;font-size:60px;letter-spacing:.06em;padding:22px 46px 22px 24px;border-radius:999px}
+.chip i{font-style:normal;width:70px;height:70px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:38px}
 .mito{background:var(--coral)}.mito i{background:var(--ink);color:var(--coral)}
-.real{background:var(--teal-soft)}.real i{background:var(--ink);color:var(--teal-soft)}
-.bar{position:absolute;left:72px;width:936px;height:110px;border-radius:999px;background:var(--sunk)}
-.fill{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:30px;font-weight:900;font-size:56px}
-.lbl{position:absolute;left:72px;font-weight:800;font-size:36px;color:var(--muted)}
-.dots{position:absolute;left:200px;top:360px;display:grid;grid-template-columns:repeat(10,54px);gap:14px}
-.dots i{width:54px;height:54px;border-radius:50%;background:var(--sunk);display:block}
+.bar{position:absolute;left:72px;width:936px;height:96px;border-radius:999px;background:var(--sunk)}
+.fill{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:28px;font-weight:900;font-size:52px;min-width:0}
+.lbl{position:absolute;left:72px;font-weight:800;font-size:34px;color:var(--muted)}
+.card{position:absolute;width:100px;height:120px;border-radius:20px;background:var(--sunk);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:56px;color:#fff;overflow:hidden}
+.card s{position:absolute;left:0;top:0;bottom:0;background:var(--teal);text-decoration:none}
+.card b{position:relative}
+.lim{position:absolute;left:72px;right:72px;display:flex;gap:30px;align-items:center;font-weight:700;font-size:42px;line-height:1.3}
+.lim .ic{flex:0 0 120px;height:120px;border-radius:30px;background:var(--coral-soft);display:flex;align-items:center;justify-content:center}
 .cta{background:var(--peri);color:#fff}
-.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:46px;padding:34px 60px;border-radius:999px}
-.tg{font-weight:800;font-size:38px;padding:14px 28px;border-radius:999px;background:var(--peri-soft);color:var(--ink)}
-.tg{font-weight:800;font-size:38px;padding:14px 28px;border-radius:999px;background:var(--peri-soft);color:var(--ink)}
-.say{display:inline-block;font-family:Literata,serif;font-style:italic;font-size:92px;line-height:1.1}
-.strike{position:absolute;height:12px;background:var(--coral);border-radius:6px;left:0;top:52%}
-.box8{display:grid;grid-template-columns:repeat(8,96px);gap:16px}
-.box8 i{width:96px;height:96px;border-radius:20px;background:var(--sunk);display:block}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:44px;padding:32px 56px;border-radius:999px}
+#prog{position:absolute;left:72px;right:72px;top:214px;height:8px;border-radius:4px;background:rgba(30,43,92,.08);z-index:50}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--peri);width:0}
 </style></head><body>
+<div id="prog"><i id="progi"></i></div>
 
+<!-- 1 hook 0-5 -->
 <div class="sc" id="a1">
-  <div class="kick" style="top:300px">Prima di una prova</div>
-  <div style="position:absolute;left:72px;top:400px"><span class="say" id="a1x" style="position:relative">«Calmati.»<span class="strike" id="a1s" style="width:0"></span></span></div>
-  <div style="position:absolute;left:72px;top:600px"><span class="say" id="a1y" style="color:var(--teal-text)">«Sono emozionato.»</span></div>
-  <div class="cap" id="a1c">Prima di una prova ti dici «calmati»? Una ricerca suggerisce un'alternativa.</div>
+  <svg style="position:absolute;left:0;top:300px" width="1080" height="560" viewBox="0 0 1080 560">
+    <polyline id="a1ecg" points="60,430 300,430 340,430 370,360 400,500 430,320 460,470 490,430 1020,430" fill="none" stroke="#F09B7C" stroke-width="10" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="1400" stroke-dashoffset="1400"/>
+    <g id="a1heart" transform="translate(540 220)"><path id="a1hp" d="M0 70 C-90 10 -120 -60 -70 -100 C-35 -128 0 -105 0 -70 C0 -105 35 -128 70 -100 C120 -60 90 10 0 70Z" fill="#F09B7C"/></g>
+  </svg>
+  <div class="say" id="a1x" style="top:880px">«Calmati.»<span id="a1s" style="position:absolute;left:0;top:54%;height:12px;border-radius:6px;background:#F09B7C;width:0"></span></div>
+  <div class="say" id="a1y" style="top:1010px;color:var(--teal-text)">«Sono emozionato.»</div>
+  <div class="cap" id="a1c" style="top:1240px">Prima di una prova ti dici «calmati»? Una ricerca suggerisce un'alternativa.</div>
 </div>
 
+<!-- 2 survey 5-11 -->
 <div class="sc" id="a2">
-  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
   <div class="kick">Che cosa pensano le persone</div>
-  <div class="big" id="a2n" style="position:absolute;left:72px;top:360px;font-size:260px;color:var(--peri)">0%</div>
-  <div id="a2t" style="position:absolute;left:72px;top:660px;right:72px;font-weight:900;font-size:56px;line-height:1.15">pensa che la cosa migliore sia <span style="color:var(--peri)">cercare di calmarsi</span>.</div>
+  <svg style="position:absolute;left:240px;top:330px" width="600" height="600" viewBox="0 0 600 600">
+    <circle cx="300" cy="300" r="230" fill="none" stroke="#F3EEE8" stroke-width="54"/>
+    <circle id="a2r" cx="300" cy="300" r="230" fill="none" stroke="#4A5BE8" stroke-width="54" stroke-linecap="round" stroke-dasharray="1445" stroke-dashoffset="1445" transform="rotate(-90 300 300)"/>
+    <text id="a2n" x="300" y="335" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="150" fill="#4A5BE8">0%</text>
+  </svg>
+  <div class="h" id="a2t" style="top:960px;font-size:56px;text-align:center">pensa che la cosa migliore sia <span style="color:var(--peri)">cercare di calmarsi</span>.</div>
   <div class="cap" id="a2c">In un sondaggio, <b>più del 90%</b> delle persone ha detto che, prima di una prova, la cosa migliore è calmarsi.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
+<!-- 3 karaoke 11-19 -->
 <div class="sc" id="a3">
-  <div class="kick" style="top:250px">Karaoke davanti a uno sconosciuto</div>
-  <div class="lbl" style="top:360px">«Sono emozionato»</div>
-  <div class="bar" style="top:420px"><div class="fill" id="a3a" style="width:0;background:var(--teal);color:#fff"></div></div>
-  <div class="lbl" style="top:590px">nessuna frase</div>
-  <div class="bar" style="top:650px"><div class="fill" id="a3b" style="width:0;background:var(--peri-soft);color:var(--peri)"></div></div>
-  <div class="lbl" style="top:820px">«Sono in ansia»</div>
-  <div class="bar" style="top:880px"><div class="fill" id="a3c" style="width:0;background:var(--coral);color:var(--ink)"></div></div>
-  <div class="cap" id="a3t" style="top:1130px">113 studenti, prima di cantare: precisione dell'<b>81%</b> con «sono emozionato», del <b>53%</b> con «sono in ansia».</div>
+  <div class="kick">Karaoke davanti a uno sconosciuto</div>
+  <svg style="position:absolute;left:72px;top:310px" width="936" height="230" viewBox="0 0 936 230">
+    <rect x="40" y="20" width="90" height="140" rx="45" fill="#1E2B5C"/>
+    <path d="M20 110 a65 65 0 0 0 130 0" fill="none" stroke="#1E2B5C" stroke-width="12" stroke-linecap="round"/>
+    <rect x="79" y="175" width="12" height="40" fill="#1E2B5C"/><rect x="45" y="210" width="80" height="12" rx="6" fill="#1E2B5C"/>
+    <g id="a3eq"></g>
+  </svg>
+  <div class="lbl" style="top:570px">«Sono emozionato»</div>
+  <div class="bar" style="top:620px"><div class="fill" id="a3a" style="width:0;background:var(--teal);color:#fff"></div></div>
+  <div class="lbl" style="top:760px">nessuna frase</div>
+  <div class="bar" style="top:810px"><div class="fill" id="a3b" style="width:0;background:var(--peri-soft);color:var(--peri)"></div></div>
+  <div class="lbl" style="top:950px">«Sono in ansia»</div>
+  <div class="bar" style="top:1000px"><div class="fill" id="a3c" style="width:0;background:var(--coral);color:var(--ink)"></div></div>
+  <div class="cap" id="a3t" style="top:1150px">113 studenti, prima di cantare: precisione dell'<b>81%</b> con «sono emozionato», del <b>53%</b> con «sono in ansia».</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
+<!-- 4 speech 19-26 -->
 <div class="sc" id="a4">
-  <div class="kick" style="top:250px">Un discorso davanti a una telecamera</div>
-  <div class="big" style="position:absolute;left:72px;top:330px;font-size:72px">Chi ha detto «sono emozionato» ha parlato <span style="color:var(--teal-text)">più a lungo</span>.</div>
-  <div class="lbl" style="top:600px">«Sono emozionato»</div>
-  <div class="bar" style="top:660px"><div class="fill" id="a4a" style="width:0;background:var(--teal);color:#fff"></div></div>
-  <div class="lbl" style="top:830px">«Sono calmo»</div>
-  <div class="bar" style="top:890px"><div class="fill" id="a4b" style="width:0;background:var(--peri-soft);color:var(--peri)"></div></div>
+  <div class="kick">Un discorso davanti a una telecamera</div>
+  <div class="h" id="a4h" style="top:320px;font-size:66px">Chi ha detto «sono emozionato» ha parlato <span style="color:var(--teal-text)">più a lungo</span>.</div>
+  <svg style="position:absolute;left:72px;top:560px" width="936" height="520" viewBox="0 0 936 520">
+    <g transform="translate(234 230)"><rect x="-26" y="-215" width="52" height="34" rx="10" fill="#1E9E9E"/><circle r="180" fill="#fff" stroke="#A8E6DD" stroke-width="18"/><path id="a4wa" d="" fill="#A8E6DD"/><line id="a4ha" x1="0" y1="0" x2="0" y2="-150" stroke="#1E9E9E" stroke-width="12" stroke-linecap="round"/><circle r="16" fill="#1E9E9E"/>
+      <text id="a4na" y="80" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="64" fill="#0F6F6F">0 s</text></g>
+    <g transform="translate(702 230)"><rect x="-26" y="-215" width="52" height="34" rx="10" fill="#4A5BE8"/><circle r="180" fill="#fff" stroke="#DDE0FB" stroke-width="18"/><path id="a4wb" d="" fill="#DDE0FB"/><line id="a4hb" x1="0" y1="0" x2="0" y2="-150" stroke="#4A5BE8" stroke-width="12" stroke-linecap="round"/><circle r="16" fill="#4A5BE8"/>
+      <text id="a4nb" y="80" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="64" fill="#4A5BE8">0 s</text></g>
+    <text x="234" y="490" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#0F6F6F">«Sono emozionato»</text>
+    <text x="702" y="490" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#5A6488">«Sono calmo»</text>
+  </svg>
   <div class="cap" id="a4t">140 studenti: con «sono emozionato», giudicati <b>più convincenti e sicuri</b>, e 167 secondi di discorso contro 132.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
+<!-- 5 math 26-32 -->
 <div class="sc" id="a5">
-  <div class="kick" style="top:250px">Un test di matematica</div>
-  <div class="big" style="position:absolute;left:72px;top:330px;font-size:72px">Bastava leggere: <span style="color:var(--teal-text)">«Cerca di emozionarti.»</span></div>
-  <div class="lbl" style="top:600px">risposte giuste su 8, in media</div>
-  <div class="box8" id="a5x" style="position:absolute;left:72px;top:660px"></div>
-  <div class="box8" id="a5y" style="position:absolute;left:72px;top:850px"></div>
-  <div style="position:absolute;left:72px;top:790px;font-weight:800;font-size:30px;color:var(--teal-text)" id="a5l1">«Cerca di emozionarti» · 3,6</div>
-  <div style="position:absolute;left:72px;top:980px;font-weight:800;font-size:30px;color:var(--muted)" id="a5l2">«Cerca di restare calmo» · 2,9</div>
+  <div class="kick">Un test di matematica</div>
+  <div class="h" id="a5h" style="top:320px;font-size:66px">Bastava leggere: <span style="color:var(--teal-text)">«Cerca di emozionarti.»</span></div>
+  <div class="lbl" id="a5l1" style="top:590px;color:var(--teal-text)">«Cerca di emozionarti» · 3,6 su 8</div>
+  <div id="a5x"></div>
+  <div class="lbl" id="a5l2" style="top:830px">«Cerca di restare calmo» · 2,9 su 8</div>
+  <div id="a5y"></div>
   <div class="cap" id="a5t">188 studenti, un test difficile e a tempo: <b>3,6</b> risposte giuste su 8 contro <b>2,9</b>.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
+<!-- 6 key 32-38 -->
 <div class="sc" id="a6">
-  <div class="kick" style="top:250px">Il punto chiave</div>
-  <div class="big" id="a6h" style="position:absolute;left:72px;right:72px;top:330px;font-size:84px">L'ansia <span style="color:var(--coral-text)">non è sparita</span>. È cambiato il modo di leggerla.</div>
-  <div id="a6p" style="position:absolute;left:72px;right:72px;top:720px;font-weight:600;font-size:44px;line-height:1.35">Agitazione ed entusiasmo fanno battere il cuore allo stesso modo. Secondo l'autrice, calmarsi è difficile; dare un altro nome a quell'energia è più facile.</div>
-  <div class="cap" id="a6c">Nel karaoke, l'ansia dichiarata è rimasta <b>uguale</b> nei tre gruppi: è cresciuto l'entusiasmo.</div>
+  <div class="kick">Il punto chiave</div>
+  <div class="h" id="a6h" style="top:320px;font-size:70px">L'ansia <span style="color:var(--coral-text)">non è sparita</span>. È cambiato il modo di leggerla.</div>
+  <svg style="position:absolute;left:0;top:560px" width="1080" height="560" viewBox="0 0 1080 560">
+    <g id="a6l" transform="translate(290 170)"><path d="M0 70 C-90 10 -120 -60 -70 -100 C-35 -128 0 -105 0 -70 C0 -105 35 -128 70 -100 C120 -60 90 10 0 70Z" fill="#F09B7C"/></g>
+    <g id="a6r" transform="translate(790 170)"><path d="M0 70 C-90 10 -120 -60 -70 -100 C-35 -128 0 -105 0 -70 C0 -105 35 -128 70 -100 C120 -60 90 10 0 70Z" fill="#1E9E9E"/></g>
+    <polyline id="a6e1" points="120,350 200,350 225,300 250,400 275,280 300,380 325,350 460,350" fill="none" stroke="#F09B7C" stroke-width="8" stroke-linejoin="round" stroke-dasharray="700" stroke-dashoffset="700"/>
+    <polyline id="a6e2" points="620,350 700,350 725,300 750,400 775,280 800,380 825,350 960,350" fill="none" stroke="#1E9E9E" stroke-width="8" stroke-linejoin="round" stroke-dasharray="700" stroke-dashoffset="700"/>
+    <text x="290" y="470" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="46" fill="#A64A30">agitazione</text>
+    <text x="790" y="470" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="46" fill="#0F6F6F">entusiasmo</text>
+    <text id="a6eq" x="540" y="190" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="90" fill="#4A5BE8" opacity="0">=</text>
+  </svg>
+  <div class="cap" id="a6c">Stesso battito, un altro nome. Nel karaoke l'ansia dichiarata è rimasta <b>uguale</b>: è cresciuto l'entusiasmo.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
+<!-- 7 myth 38-43 -->
 <div class="sc" id="a7" style="background:var(--coral-soft)">
-  <div class="kick" style="top:250px;color:var(--coral-text)">Mito o realtà?</div>
-  <div style="position:absolute;left:72px;right:72px;top:340px;font-family:Literata,serif;font-style:italic;font-size:76px;line-height:1.25">«Prima di una prova, la cosa migliore è calmarsi.»</div>
-  <span class="chip mito" id="a7m" style="position:absolute;left:72px;top:720px"><i>✕</i>MITO</span>
-  <div class="big" id="a7t" style="position:absolute;left:72px;right:72px;top:900px;font-size:66px">In questi studi, «sono emozionato» ha funzionato <span style="color:var(--teal-text)">meglio</span> di «sono calmo».</div>
+  <div class="kick" style="color:var(--coral-text)">Mito o realtà?</div>
+  <div class="say" id="a7q" style="top:340px;right:72px;font-size:78px;line-height:1.25">«Prima di una prova, la cosa migliore è calmarsi.»</div>
+  <div style="position:absolute;left:72px;top:720px"><span class="chip mito" id="a7m"><i>✕</i>MITO</span></div>
+  <div class="h" id="a7t" style="top:900px;font-size:66px">In questi studi, «sono emozionato» ha funzionato <span style="color:var(--teal-text)">meglio</span> di «sono calmo».</div>
 </div>
 
+<!-- 8 limits 43-49 -->
 <div class="sc" id="a8">
-  <div class="kick" style="top:250px;color:var(--coral-text)">I limiti</div>
-  <div id="a8h" style="position:absolute;left:72px;right:72px;top:330px;font-weight:900;font-size:64px;line-height:1.1">Prove brevi, in laboratorio.</div>
-  <div id="a8p" style="position:absolute;left:72px;right:72px;top:470px;font-weight:600;font-size:42px;line-height:1.4">Hanno partecipato soprattutto studenti di un'università degli Stati Uniti, e gli effetti sono stati misurati subito dopo. Serviranno conferme nella vita reale.</div>
+  <div class="kick" style="color:var(--coral-text)">I limiti</div>
+  <div class="h" id="a8h" style="top:320px;font-size:66px">Che cosa la ricerca non dice ancora</div>
+  <div class="lim" id="a8a" style="top:560px"><div class="ic"><svg width="70" height="80" viewBox="0 0 70 80"><path d="M24 4h22M28 4v24L6 70a6 6 0 0 0 5 8h48a6 6 0 0 0 5-8L42 28V4" fill="none" stroke="#A64A30" stroke-width="6" stroke-linejoin="round"/><path d="M14 56h42" stroke="#A64A30" stroke-width="6"/></svg></div><div>Prove <b>brevi</b>, in laboratorio.</div></div>
+  <div class="lim" id="a8b" style="top:740px"><div class="ic"><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="44" r="30" fill="none" stroke="#A64A30" stroke-width="6"/><path d="M40 44V26M32 6h16" stroke="#A64A30" stroke-width="6" stroke-linecap="round"/></svg></div><div>Effetti misurati <b>subito dopo</b>.</div></div>
+  <div class="lim" id="a8c" style="top:920px"><div class="ic"><svg width="70" height="80" viewBox="0 0 70 80"><path d="M35 76S8 46 8 30a27 27 0 0 1 54 0c0 16-27 46-27 46z" fill="none" stroke="#A64A30" stroke-width="6"/><circle cx="35" cy="30" r="9" fill="#A64A30"/></svg></div><div>Soprattutto <b>studenti</b> negli Stati Uniti.</div></div>
+  <div class="cap" id="a8p">Serviranno conferme nella vita reale.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
+<!-- 9 opinion 49-63 -->
 <div class="sc" id="a9" style="background:var(--peri-soft)">
   <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
-  <div class="kick" style="color:var(--peri)">Il mio punto di vista</div>
-  <div id="a9h" style="position:absolute;left:72px;right:72px;top:320px;font-weight:900;font-size:64px;line-height:1.1">Il fondatore di WeSelf</div>
-  <div id="a9n" style="position:absolute;left:72px;right:72px;top:410px;font-weight:600;font-size:34px;color:var(--muted)">Un'opinione personale, non un risultato dello studio.</div>
-  <svg style="position:absolute;left:140px;top:520px" width="800" height="620" viewBox="0 0 800 620">
-    <circle id="q1" cx="400" cy="310" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
-    <circle id="q2" cx="400" cy="310" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/>
-    <circle id="q3" cx="400" cy="310" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
-    <circle cx="400" cy="310" r="58" fill="#4A5BE8"/><circle cx="400" cy="310" r="20" fill="#F09B7C"/>
+  <div class="h" id="a9h" style="top:330px;font-size:64px">Il mio punto di vista</div>
+  <div class="h" id="a9n" style="top:420px;font-size:34px;font-weight:600;color:var(--muted)">Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.</div>
+  <svg style="position:absolute;left:140px;top:540px" width="800" height="600" viewBox="0 0 800 600">
+    <circle id="q1" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/><circle id="q2" cx="400" cy="300" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/><circle id="q3" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="300" r="58" fill="#4A5BE8"/><circle cx="400" cy="300" r="20" fill="#F09B7C"/>
   </svg>
 </div>
 
+<!-- 10 CTA 63-68 -->
 <div class="sc cta" id="a10">
-  <div style="position:absolute;left:72px;right:72px;top:360px;font-weight:900;font-size:80px;line-height:1.1" id="a10t">La prossima volta che il cuore batte forte, prova a dirti: «Sono emozionato.»</div>
-  <div style="position:absolute;left:72px;right:72px;top:820px;font-weight:600;font-size:44px;line-height:1.35;opacity:.95" id="a10b">Con WeSelf ti avvicini alla tua prova a piccoli passi, già in agenda, insieme a chi ha il tuo stesso obiettivo.</div>
-  <div style="position:absolute;left:72px;top:1100px" id="a10btn"><span class="btn">Scopri WeSelf · link in bio</span></div>
-  <div style="position:absolute;left:72px;top:1300px;display:flex;align-items:center;gap:20px;font-weight:900;font-size:64px"><img src="weself-mark.png" style="width:96px;height:96px;background:#fff;border-radius:26px;padding:10px"><span>WeSelf</span></div>
+  <svg style="position:absolute;left:0;top:260px" width="1080" height="360" viewBox="0 0 1080 360">
+    <polyline id="a10e" points="60,260 220,260 250,200 280,320 310,170 340,290 370,260 420,260" fill="none" stroke="#F09B7C" stroke-width="12" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="700" stroke-dashoffset="700"/>
+    <path id="a10a" d="M420 260 C560 260 660 220 780 140 C860 90 920 60 990 40" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-dasharray="700" stroke-dashoffset="700"/>
+    <path id="a10h" d="M950 26 L996 36 L978 82" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
+  </svg>
+  <div class="h" id="a10t" style="top:660px;font-size:72px">La prossima volta che il cuore batte forte, prova a dirti: «Sono emozionato.»</div>
+  <div class="h" id="a10b" style="top:1000px;font-size:42px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf ti avvicini alla tua prova a piccoli passi, già in agenda, insieme a chi ha il tuo stesso obiettivo.</div>
+  <div style="position:absolute;left:72px;top:1240px" id="a10btn"><span class="btn">Scopri WeSelf · link in bio</span></div>
 </div>
 
 <script>
 const $=id=>document.getElementById(id);
 const cl=x=>Math.max(0,Math.min(1,x));
-const ease=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
-function pop(el,t,s,d=.45){const k=ease((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-k)*40}px)`}
-for(const id of ['a5x','a5y'])for(let i=0;i<8;i++){const e=document.createElement('i');$(id).appendChild(e)}
-function bar(el,t,s,v,lab){const k=ease((t-s)/1.4);el.style.width=(v*k)+'%';el.style.minWidth=k>0.02?'170px':'0';el.textContent=k>0.05?lab(k):''}
+const eo=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
+const back=x=>{x=cl(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+function pop(el,t,s,d=.5){const k=eo((t-s)/d),b=back((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-b)*50}px)`}
+function zoom(el,t,s,d=.5){const k=eo((t-s)/d),b=back((t-s)/d);el.style.opacity=k;el.style.transform=`scale(${0.6+0.4*b})`;el.style.transformOrigin='left center'}
+// background blobs in each scene
+const COLS=[['#A8E6DD','#DDE0FB'],['#DDE0FB','#FBE3D8'],['#FBE3D8','#A8E6DD']];
+const BL=[];document.querySelectorAll('.sc').forEach((sc,i)=>{if(sc.classList.contains('cta'))return;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('class','blobs');s.setAttribute('width','1080');s.setAttribute('height','1920');const c=COLS[i%3];s.innerHTML=`<circle r="300" fill="${c[0]}" opacity=".35"/><circle r="220" fill="${c[1]}" opacity=".45"/>`;sc.insertBefore(s,sc.firstChild);BL.push([s,i])});
+// equalizer
+let eq='';for(let i=0;i<16;i++)eq+=`<rect class="eqb" x="${220+i*44}" y="60" width="26" height="100" rx="13" fill="${i%3==0?'#F09B7C':(i%3==1?'#1E9E9E':'#4A5BE8')}"/>`;$('a3eq').innerHTML=eq;const EQ=[...document.querySelectorAll('.eqb')];
+// math cards
+function mk(id,top,col){const box=$(id);const arr=[];for(let i=0;i<8;i++){const c=document.createElement('div');c.className='card';c.style.left=(72+i*116)+'px';c.style.top=top+'px';c.innerHTML=`<s style="width:0;background:${col}"></s><b>✓</b>`;box.appendChild(c);arr.push(c)}return arr}
+const CX=mk('a5x',640,'#1E9E9E'),CY=mk('a5y',880,'#4A5BE8');
+function arc(r,f){const a=f*2*Math.PI;const x=r*Math.sin(a),y=-r*Math.cos(a);return f<=0?'':`M0 0 L0 ${-r} A${r} ${r} 0 ${a>Math.PI?1:0} 1 ${x.toFixed(1)} ${y.toFixed(1)} Z`}
+function beat(t,rate){const p=(t*rate)%1;return 1+0.12*Math.exp(-Math.pow((p-0.1)/0.06,2))+0.07*Math.exp(-Math.pow((p-0.3)/0.06,2))}
 window.render=function(t){
   const S=[['a1',0,5],['a2',5,11],['a3',11,19],['a4',19,26],['a5',26,32],['a6',32,38],['a7',38,43],['a8',43,49],['a9',49,63],['a10',63,68.2]];
-  S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3; $(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0; $(id).style.zIndex=i+1;});
-  pop($('a1x'),t,0.05,.4); $('a1s').style.width=(ease((t-1.2)/.5)*100)+'%'; $('a1x').style.color=t>1.2?'var(--muted)':'var(--ink)'; pop($('a1y'),t,1.8); pop($('a1c'),t,0.4);
-  $('a2n').textContent=Math.round(91*ease((t-5.4)/1.8))+'%'; pop($('a2t'),t,6.2); pop($('a2c'),t,5.4);
-  bar($('a3a'),t,11.6,81,k=>Math.round(81*k)+'%'); bar($('a3b'),t,12.3,69,k=>Math.round(69*k)+'%'); bar($('a3c'),t,13.0,53,k=>Math.round(53*k)+'%'); pop($('a3t'),t,11.4);
-  bar($('a4a'),t,20.0,167/180*100,k=>Math.round(167*k)+' s'); bar($('a4b'),t,20.8,132/180*100,k=>Math.round(132*k)+' s'); pop($('a4t'),t,19.6);
-  const xa=$('a5x').children, ya=$('a5y').children, f1=3.6*ease((t-27)/1.6), f2=2.94*ease((t-27.6)/1.6);
-  for(let i=0;i<8;i++){xa[i].style.background=`linear-gradient(90deg,var(--teal) ${cl(f1-i)*100}%,var(--sunk) ${cl(f1-i)*100}%)`; ya[i].style.background=`linear-gradient(90deg,var(--peri) ${cl(f2-i)*100}%,var(--sunk) ${cl(f2-i)*100}%)`;}
-  pop($('a5l1'),t,28.4); pop($('a5l2'),t,28.8); pop($('a5t'),t,26.4);
-  pop($('a6h'),t,32.2); pop($('a6p'),t,33.4); pop($('a6c'),t,34.6);
-  const m=ease((t-38.8)/.35); $('a7m').style.opacity=m; $('a7m').style.transform=`scale(${1.6-0.6*m}) rotate(${-8*m}deg)`; pop($('a7t'),t,39.8);
-  pop($('a8h'),t,43.2); pop($('a8p'),t,44.0);
-  pop($('a9h'),t,49.3); pop($('a9n'),t,49.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((t-49+j*1.4)%4.2)/4.2; $(id).setAttribute('r',120+170*ph); $(id).setAttribute('opacity',t>49?(1-ph)*0.8:0);});
-  pop($('a10t'),t,63.2); pop($('a10b'),t,64.4); pop($('a10btn'),t,65.6);
+  S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0;$(id).style.zIndex=i+1;});
+  $('progi').style.width=(cl(t/68)*100)+'%'; $('prog').style.opacity=t<63?1:0;
+  BL.forEach(([s,i])=>{const c=s.children;c[0].setAttribute('cx',900+80*Math.sin(t*0.4+i));c[0].setAttribute('cy',1650+60*Math.cos(t*0.35+i));c[1].setAttribute('cx',120+70*Math.cos(t*0.3+i*2));c[1].setAttribute('cy',260+50*Math.sin(t*0.45+i))});
+  // 1
+  const hb=beat(t,1.4); $('a1heart').setAttribute('transform',`translate(540 220) scale(${(0.6+0.4*back(t/.6))*hb})`);
+  $('a1hp').setAttribute('fill',t<2.1?'#F09B7C':'#1E9E9E'); $('a1ecg').setAttribute('stroke',t<2.1?'#F09B7C':'#1E9E9E');
+  $('a1ecg').setAttribute('stroke-dashoffset',1400*(1-eo(t/2.2)));
+  pop($('a1x'),t,0.4); $('a1s').style.width=(eo((t-1.4)/.5)*100)+'%'; $('a1x').style.color=t>1.6?'#9AA0B8':'var(--ink)';
+  zoom($('a1y'),t,2.1); pop($('a1c'),t,3.0);
+  // 2
+  const k2=eo((t-5.4)/2.2); $('a2r').setAttribute('stroke-dashoffset',1445*(1-0.91*k2)); $('a2n').textContent=Math.round(91*k2)+'%';
+  pop($('a2t'),t,6.6); pop($('a2c'),t,7.4);
+  // 3
+  EQ.forEach((r,i)=>{const h=t>11?30+70*Math.abs(Math.sin(t*6+i*0.9))*eo((t-11.3)/.6):0;r.setAttribute('height',h);r.setAttribute('y',110-h/2)});
+  [['a3a',11.8,81],['a3b',12.4,69],['a3c',13.0,53]].forEach(([id,s,v])=>{const b=back((t-s)/1.2),k=eo((t-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
+  pop($('a3t'),t,14.2);
+  // 4
+  pop($('a4h'),t,19.4);
+  const fa=eo((t-20.2)/2.6)*167/180, fb=eo((t-20.4)/2.6)*132/180;
+  $('a4wa').setAttribute('d',arc(160,fa)); $('a4wb').setAttribute('d',arc(160,fb));
+  $('a4ha').setAttribute('transform',`rotate(${fa*360})`); $('a4hb').setAttribute('transform',`rotate(${fb*360})`);
+  $('a4na').textContent=Math.round(fa*180)+' s'; $('a4nb').textContent=Math.round(fb*180)+' s';
+  pop($('a4t'),t,23.0);
+  // 5
+  pop($('a5h'),t,26.3); pop($('a5l1'),t,26.8); pop($('a5l2'),t,27.1);
+  const fill=(arr,val,s,col)=>arr.forEach((c,i)=>{const kk=back((t-s-i*0.12)/.4);c.style.transform=`scaleY(${Math.max(0,kk)})`;const f=cl(eo((t-s-0.6)/1.6)*val-i);c.firstChild.style.width=(f*100)+'%';c.lastChild.style.opacity=f>=1?1:0});
+  fill(CX,3.6,27.2); fill(CY,2.94,27.5); pop($('a5t'),t,29.0);
+  // 6
+  pop($('a6h'),t,32.2);
+  const b6=beat(t,1.3); $('a6l').setAttribute('transform',`translate(290 170) scale(${b6*eo((t-32.6)/.5)})`); $('a6r').setAttribute('transform',`translate(790 170) scale(${b6*eo((t-32.9)/.5)})`);
+  $('a6e1').setAttribute('stroke-dashoffset',700*(1-eo((t-33.2)/1.4))); $('a6e2').setAttribute('stroke-dashoffset',700*(1-eo((t-33.2)/1.4)));
+  $('a6eq').setAttribute('opacity',eo((t-34.4)/.4)); pop($('a6c'),t,35.0);
+  // 7
+  pop($('a7q'),t,38.2); const m=back((t-39)/.45),mo=eo((t-39)/.3); const sh=t>39.3&&t<39.8?Math.sin((t-39.3)*60)*6*(1-(t-39.3)/.5):0;
+  $('a7m').style.opacity=mo; $('a7m').style.display='inline-flex'; $('a7m').style.transform=`scale(${2-m}) rotate(${-8*mo+sh}deg)`; pop($('a7t'),t,40.0);
+  // 8
+  pop($('a8h'),t,43.2); pop($('a8a'),t,43.8); pop($('a8b'),t,44.4); pop($('a8c'),t,45.0); pop($('a8p'),t,45.8);
+  // 9
+  pop($('a9h'),t,49.3); pop($('a9n'),t,49.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((t-49+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',t>49?(1-ph)*0.8:0)});
+  // 10
+  $('a10e').setAttribute('stroke-dashoffset',700*(1-eo((t-63.1)/1)));
+  $('a10a').setAttribute('stroke-dashoffset',700*(1-eo((t-63.9)/1.1))); $('a10h').setAttribute('opacity',eo((t-64.9)/.3));
+  pop($('a10t'),t,63.6); pop($('a10b'),t,64.8); pop($('a10btn'),t,65.8);
 };
 render(0);
 </script></body></html>
