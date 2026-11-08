@@ -65,6 +65,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Gentilezza (13 Nov) — Kumar & Epley 2023 (pillar Relazioni) | `carosselli/gentilezza/` | Published |
 | Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Published |
 | Coppia / una coppia felice si costruisce — Joel et al. 2020 (pillar Relazioni, first couples post) | `carosselli/coppia/` | Ready (suggested Wed 11 Nov 2026; check 1522 before posting) |
+| Ansia da prestazione / il batticuore può diventare un alleato — Yeager et al. 2022 | `carosselli/prestazione/` | Ready (suggested Mon 16 Nov 2026; check Telefono Amico before posting); Reel on Brooks 2014 to follow |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
