@@ -66,6 +66,6 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Published |
 | Coppia / una coppia felice si costruisce — Joel et al. 2020 (pillar Relazioni, first couples post) | `carosselli/coppia/` | Ready (suggested Wed 11 Nov 2026; check 1522 before posting) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
-| Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Video ready (36 s, no audio); founder records voice-over |
+| Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
 Open items: a real-life photo for the Dunedin article; the Dunedin article title still uses «te» (founder may want third person); the content plan in `piano/` is v1 and is being redefined around weekly trends (Instagram, Facebook, TikTok; Italy + Caserta/Campania); it now has three recurring pillars (Relazioni incl. couples, Leadership, Umorismo with a lighter tone), see section 3bis.
