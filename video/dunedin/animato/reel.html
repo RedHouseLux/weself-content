@@ -92,6 +92,21 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <div class="cap" id="s5c">È fatto di attenzione, costanza e impulsi, e dipende anche dalle condizioni in cui si vive.</div>
 </div>
 
+<!-- S6o opinion 31-45 -->
+<div class="sc" id="s6o" style="background:var(--peri-soft)">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="kick" style="color:var(--peri)">Il mio punto di vista</div>
+  <div id="s6oh" style="position:absolute;left:72px;right:72px;top:320px;font-weight:900;font-size:64px;line-height:1.1">Il fondatore di WeSelf</div>
+  <div id="s6on" style="position:absolute;left:72px;right:72px;top:410px;font-weight:600;font-size:34px;color:var(--muted)">Un'opinione personale, non un risultato dello studio.</div>
+  <svg id="s6ov" style="position:absolute;left:140px;top:520px" width="800" height="620" viewBox="0 0 800 620">
+    <circle id="r1" cx="400" cy="310" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle id="r2" cx="400" cy="310" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/>
+    <circle id="r3" cx="400" cy="310" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="310" r="58" fill="#4A5BE8"/>
+    <circle cx="400" cy="310" r="20" fill="#F09B7C"/>
+  </svg>
+</div>
+
 <!-- S6 CTA 31-36 -->
 <div class="sc cta" id="s6">
   <div style="position:absolute;left:72px;right:72px;top:360px;font-weight:900;font-size:84px;line-height:1.08" id="s6t">Non serve entrare in uno stampo. Servono condizioni migliori.</div>
@@ -108,7 +123,7 @@ function pop(el,t,start,dur=.45){const k=ease((t-start)/dur);el.style.opacity=k;
 // continuum dots
 const D3=$('s3d'); const xs=[];for(let i=0;i<34;i++){const e=document.createElement('i');const x=10+ (i/33)*900 + (Math.sin(i*7.3)*12);const y=60+((i*37)%5)*26;e.style.cssText=`position:absolute;left:${x}px;top:${y}px;width:30px;height:30px;border-radius:50%;background:${i%3==0?'#F09B7C':(i%3==1?'#1E9E9E':'#4A5BE8')};opacity:0`;D3.appendChild(e);xs.push(e)}
 window.render=function(t){
-  const S=[['s1',0,5],['s2',5,11],['s3',11,18],['s4',18,25],['s5',25,31],['s6',31,36.2]];
+  const S=[['s1',0,5],['s2',5,11],['s3',11,18],['s4',18,25],['s5',25,31],['s6o',31,45],['s6',45,50.2]];
   S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3; const fin=a===0?1:cl((t-(a-0.25))/0.3); $(id).style.opacity=vis?fin:0; $(id).style.zIndex=i+1;});
   pop($('s1q'),t,0.05,.5); $('s1p').setAttribute('stroke-dashoffset',1100*(1-ease((t-1.4)/2.4)));
   // s2 (study)
@@ -125,7 +140,8 @@ window.render=function(t){
   const m=ease((t-26)/.35); $('s5m').style.opacity=m; $('s5m').style.transform=`scale(${1.6-0.6*m}) rotate(${-8*m}deg)`;
   pop($('s5t'),t,27.0); pop($('s5c'),t,28.4);
   // s6
-  pop($('s6t'),t,31.2); pop($('s6b'),t,32.4); pop($('s6btn'),t,33.6);
+  pop($('s6oh'),t,31.3); pop($('s6on'),t,31.9); ['r1','r2','r3'].forEach((id,j)=>{const ph=((t-31+j*1.4)%4.2)/4.2; $(id).setAttribute('r',120+170*ph); $(id).setAttribute('opacity',t>31?(1-ph)*0.8:0);});
+  pop($('s6t'),t,45.2); pop($('s6b'),t,46.2); pop($('s6btn'),t,47.4);
 };
 render(0);
 </script></body></html>

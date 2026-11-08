@@ -1,12 +1,12 @@
 # Reel animato · Lo studio di Dunedin (senza volto)
 
-**File video:** `weself-dunedin-reel-animato.mp4` (1080×1920, 30 fps, 36 secondi, senza audio). Testo sempre nella zona sicura (tra 220 e 1480 pixel dall'alto). Le scritte sullo schermo coincidono con la voce: fanno anche da sottotitoli per chi guarda senza audio.
+**File video:** `weself-dunedin-reel-animato.mp4` (1080×1920, 30 fps, 50 secondi, senza audio). Testo sempre nella zona sicura (tra 220 e 1480 pixel dall'alto). Le scritte sullo schermo coincidono con la voce: fanno anche da sottotitoli per chi guarda senza audio.
 
-**Come è fatto:** animazione in HTML (`reel.html`) trasformata in video con `node tools/render-video.cjs video/dunedin/animato/reel.html video/dunedin/animato/weself-dunedin-reel-animato.mp4 36 30`. Per cambiare tempi o testi si modifica `reel.html` e si rigenera.
+**Come è fatto:** animazione in HTML (`reel.html`) trasformata in video con `node tools/render-video.cjs video/dunedin/animato/reel.html video/dunedin/animato/weself-dunedin-reel-animato.mp4 50 30`. Per cambiare tempi o testi si modifica `reel.html` e si rigenera.
 
 **Numeri e taglio:** dallo studio (Moffitt et al., 2011, *PNAS*) usiamo solo 1.037 persone e 32 anni. Niente percentuali sulle condanne: il Reel non divide le persone in «poco» e «molto» autocontrollo, ma racconta che l'autocontrollo è una scala continua (il titolo dello studio parla di «gradient») e che può cambiare (chi è migliorato nel tempo, da adulto stava meglio). Il messaggio: non serve entrare in uno stampo, servono condizioni migliori.
 
-## 1. Il copione per la voce (circa 36 secondi)
+## 1. Il copione per la voce (circa 50 secondi)
 
 Leggi con calma, come se lo raccontassi a un amico. Le pause tra una scena e l'altra sono già nell'animazione.
 
@@ -17,7 +17,8 @@ Leggi con calma, come se lo raccontassi a un amico. Le pause tra una scena e l'a
 | 11–18 | Puntini sparsi lungo una scala | «Non ha trovato due tipi di persone, ma una scala continua: attenzione, costanza e impulsi, un po' diversi in ognuno.» |
 | 18–25 | Una linea che sale dall'infanzia all'età adulta | «E l'autocontrollo può cambiare: chi è migliorato nel tempo, da adulto stava meglio.» |
 | 25–31 | «Com'eri da bambino è il tuo destino.» Timbro MITO | «È un mito. L'autocontrollo non è una dote fissa: dipende anche dalle condizioni in cui si vive.» |
-| 31–36 | Finale WeSelf | «Non serve entrare in uno stampo: servono condizioni migliori. L'articolo completo è nel link in bio.» |
+| 31–45 | **La tua opinione** (sfondo lilla, «Il mio punto di vista · Il fondatore di WeSelf», «Un'opinione personale, non un risultato dello studio») | **Parole tue, fino a 14 secondi** (circa 35–40 parole). Un consiglio: parti da un'esperienza tua o da una domanda, e chiudi con un pensiero positivo. Niente nuovi numeri e niente promesse cliniche. |
+| 45–50 | Finale WeSelf | «Non serve entrare in uno stampo: servono condizioni migliori. L'articolo completo è nel link in bio.» |
 
 ## 2. Registrare la voce (solo audio, niente volto)
 
@@ -30,11 +31,12 @@ Leggi con calma, come se lo raccontassi a un amico. Le pause tra una scena e l'a
 ## 3. Montaggio in CapCut (10 minuti)
 
 1. Nuovo progetto → importa `weself-dunedin-reel-animato.mp4` (è già 9:16).
-2. **Audio → Importa** le registrazioni e mettile sotto il video, ognuna all'inizio della sua scena (0; 4,5; 10,5; 18,5; 25; 31 secondi).
+2. **Audio → Importa** le registrazioni e mettile sotto il video, ognuna all'inizio della sua scena (0; 5; 11; 18; 25; 31; 45 secondi).
 3. Se una frase è più lunga della scena, **accelera leggermente** quella clip audio (Velocità 1,1×) invece di tagliarla. Se è molto più lunga, dimmi i secondi e rigenero il video con i tempi giusti.
 4. Seleziona le clip audio → **Riduzione del rumore** attiva. Volume voce 100%.
-5. Musica (facoltativa): meglio aggiungerla **su Instagram** al momento della pubblicazione, dalla libreria, a volume molto basso (10–15%).
-6. **Esporta:** 1080p, 30 fps.
+5. **Sottotitoli della tua opinione (31–45 s):** nelle altre scene i sottotitoli sono già nel video; per la tua opinione usa **Testo → Sottotitoli automatici** solo su quel tratto, stile bianco o blu inchiostro su riquadro, posizione in basso ma sopra i 1480 pixel (resta libero lo spazio tra 1200 e 1480).
+6. Musica (facoltativa): meglio aggiungerla **su Instagram** al momento della pubblicazione, dalla libreria, a volume molto basso (10–15%).
+7. **Esporta:** 1080p, 30 fps.
 
 ## 4. Pubblicazione
 
