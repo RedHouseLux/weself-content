@@ -214,7 +214,7 @@ Una rubrica fissa, **ogni settimana**, solo carosello (per ora). Ogni episodio r
 - **Aspetto:** tema chiaro del brand con `templates/bias/bias.html` aggiunto dopo `head.html` (`cat head.html bias.html body.html > slides.html`): icona della lente, banda corallo sul bordo sinistro della copertina, «Bias #N · sezione» in alto nelle slide interne, box «Il trucco».
 - **Struttura (6–8 slide, uguale ogni settimana):** 1) copertina (illustrazione, rubrica, occhiello, nome del bias); 2) «Succede a molti» (in terza persona); 3) lo studio: chi, come, che cosa è stato misurato; 4) i numeri, tradotti; 5) perché succede, solo se lo spiegano gli autori; 6) Mito o realtà?; 7) i limiti; 8) «Il trucco» (in seconda persona) e WeSelf. Racconto lineare con la riga «→» in fondo.
 - **Regole:** tutte quelle del punto 2. Uno studio per episodio, numeri verificati sul testo completo. Solo bias **replicati** in studi successivi (citati nelle note di affidabilità); niente studi di autori coinvolti in casi di dati falsificati. Ogni tanto un episodio «Il bias che non c'è», su un bias popolare che le prove non confermano.
-- **Giorno fisso:** il mercoledì, tra le 12:30 e le 13:30 o la sera tra le 20:30 e le 21:30 (da confermare con le statistiche).
+- **Giorno fisso:** il **sabato** (deciso con il fondatore), in mattinata tra le 10:00 e le 11:30 (da confermare con le statistiche).
 - **Lavorazione:** si verificano 6–8 bias in blocco, così ogni settimana resta solo la scrittura. Per gli articoli a pagamento serve il PDF.
 
 ### Banca dei bias (prima lista; riferimenti da verificare sul testo completo prima di ogni episodio)

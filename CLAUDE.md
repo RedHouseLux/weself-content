@@ -52,7 +52,7 @@ Agreed with the founder (Nov 2026) for papers with no data of their own to trans
 
 ## «Il bias della settimana» (weekly column)
 
-Agreed with the founder (Nov 2026): one carousel every week (Wednesday), light theme, built with `cat head.html bias.html body.html > slides.html` (`templates/bias/bias.html`: lens icon, coral band on the cover, `.rub`, `.occ`, `.ep`, `.trucco`). Cover: «Il bias della settimana · #N», subtitle «Le scorciatoie della mente», an occhiello with the everyday situation, then the bias name. Slides: Succede a molti → lo studio → i numeri, tradotti → perché succede → Mito o realtà? → I limiti → Il trucco + WeSelf. All editorial rules apply; only replicated biases; tone curious, never «you are irrational». Bias bank: `piano/piano-editoriale-weself.md`, section 3quater.
+Agreed with the founder (Nov 2026): one carousel every week (Saturday), light theme, built with `cat head.html bias.html body.html > slides.html` (`templates/bias/bias.html`: lens icon, coral band on the cover, `.rub`, `.occ`, `.ep`, `.trucco`). Cover: «Il bias della settimana · #N», subtitle «Le scorciatoie della mente», an occhiello with the everyday situation, then the bias name. Slides: Succede a molti → lo studio → i numeri, tradotti → perché succede → Mito o realtà? → I limiti → Il trucco + WeSelf. All editorial rules apply; only replicated biases; tone curious, never «you are irrational». Bias bank: `piano/piano-editoriale-weself.md`, section 3quater.
 
 Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal = Self, peri = We, coral = one warm accent per asset; Nunito + Literata). Logos in `brand/logo/`. Full design system: https://claude.ai/artifact/214XU3j96pZnVaHHELpgBa
 
@@ -73,6 +73,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Reel animato «Sono emozionato» — Brooks 2014 (follow-up to the performance-anxiety carousel) | `video/emozionato/` | Published (89 s, founder voice-over) |
 | Invidia / pesa sul benessere, cala con l'età — Mujcic & Oswald 2018 (first envy post) | `carosselli/invidia/` | Published |
 | Curiosità · invidia, perché la proviamo — Ramachandran & Jalal 2017 | `carosselli/invidia-perche/` | Not published (founder's choice) |
+| Il bias della settimana #1 · effetto riflettore — Gilovich, Medvec & Savitsky 2000 | `carosselli/bias-01-riflettore/` | Ready, not published (Sat 14 Nov) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
