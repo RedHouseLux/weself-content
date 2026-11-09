@@ -205,6 +205,32 @@ Per articoli che **non hanno dati propri da tradurre**: ipotesi, teorie, rifless
 - **Numeri:** solo se verificati come sempre. Il collegamento a WeSelf va solo nella slide finale ed è dichiarato come nostro in «Un'onestà necessaria».
 - **Frequenza:** al massimo uno ogni 2–3 settimane; mai su consigli clinici.
 
+## 3quater. Rubrica «Il bias della settimana» (decisa con il fondatore, novembre 2026)
+
+Una rubrica fissa, **ogni settimana**, solo carosello (per ora). Ogni episodio racconta una scorciatoia della mente che usiamo tutti, lo studio che l'ha misurata e un piccolo modo per conviverci. Non è un pilastro a sé: ogni bias serve uno dei pilastri o delle situazioni WeSelf.
+
+- **Nome e titoli:** «Il bias della settimana» con il numero dell'episodio («#1»), sottotitolo «Le scorciatoie della mente». Sopra il nome del bias, un **occhiello** con la situazione di tutti i giorni (es. «Quando pensiamo che tutti ci stiano guardando»).
+- **Tono:** curioso e leggero, mai «sei irrazionale». I bias sono scorciatoie normali del cervello, non difetti; niente modelli in cui «entrare». Può ospitare il tono dell'Umorismo.
+- **Aspetto:** tema chiaro del brand con `templates/bias/bias.html` aggiunto dopo `head.html` (`cat head.html bias.html body.html > slides.html`): icona della lente, banda corallo sul bordo sinistro della copertina, «Bias #N · sezione» in alto nelle slide interne, box «Il trucco».
+- **Struttura (6–8 slide, uguale ogni settimana):** 1) copertina (illustrazione, rubrica, occhiello, nome del bias); 2) «Succede a molti» (in terza persona); 3) lo studio: chi, come, che cosa è stato misurato; 4) i numeri, tradotti; 5) perché succede, solo se lo spiegano gli autori; 6) Mito o realtà?; 7) i limiti; 8) «Il trucco» (in seconda persona) e WeSelf. Racconto lineare con la riga «→» in fondo.
+- **Regole:** tutte quelle del punto 2. Uno studio per episodio, numeri verificati sul testo completo. Solo bias **replicati** in studi successivi (citati nelle note di affidabilità); niente studi di autori coinvolti in casi di dati falsificati. Ogni tanto un episodio «Il bias che non c'è», su un bias popolare che le prove non confermano.
+- **Giorno fisso:** il mercoledì, tra le 12:30 e le 13:30 o la sera tra le 20:30 e le 21:30 (da confermare con le statistiche).
+- **Lavorazione:** si verificano 6–8 bias in blocco, così ogni settimana resta solo la scrittura. Per gli articoli a pagamento serve il PDF.
+
+### Banca dei bias (prima lista; riferimenti da verificare sul testo completo prima di ogni episodio)
+
+| # proposto | Bias | Studio | Pilastro / situazione |
+|---|---|---|---|
+| 1 | Effetto riflettore | Gilovich, Medvec & Savitsky 2000, *JPSP* | Ansia da prestazione |
+| 2 | Liking gap | Boothby et al. 2018, *Psychological Science* | Relazioni, amicizia |
+| 3 | Effetto «nuovo inizio» | Dai, Milkman & Riis 2014, *Management Science* | Abitudini |
+| 4 | Fallacia della pianificazione | Buehler, Griffin & Ross 1994, *JPSP* | Abitudini, piccoli passi |
+| 5 | Sottovalutare la voglia di parlare degli altri | Epley & Schroeder 2014, *JEP: General* | Relazioni, trovare chi ha il tuo obiettivo |
+| 6 | «Beautiful mess» | Bruk et al. 2018, *JPSP* | Relazioni, comunità |
+| 7 | Illusione della fine della storia | Quoidbach, Gilbert & Wilson 2013, *Science* | Conoscere se stessi |
+| 8 | Illusione di trasparenza | Savitsky & Gilovich 2003, *JESP* | Leadership, parlare in pubblico |
+| 9 | Effetto alone | Nisbett & Wilson 1977, *JPSP* | Leadership |
+
 ---
 
 ## 4. Schede tema

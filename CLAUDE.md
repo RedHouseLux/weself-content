@@ -50,6 +50,10 @@ Agreed with the founder (Nov 2026) for papers with no data of their own to trans
 - **Numbers:** none unless they are verified like any other number. Our link to WeSelf goes only on the CTA slide and is declared as ours in «Un'onestà necessaria».
 - **Frequency:** at most one every 2–3 weeks; never on clinical advice.
 
+## «Il bias della settimana» (weekly column)
+
+Agreed with the founder (Nov 2026): one carousel every week (Wednesday), light theme, built with `cat head.html bias.html body.html > slides.html` (`templates/bias/bias.html`: lens icon, coral band on the cover, `.rub`, `.occ`, `.ep`, `.trucco`). Cover: «Il bias della settimana · #N», subtitle «Le scorciatoie della mente», an occhiello with the everyday situation, then the bias name. Slides: Succede a molti → lo studio → i numeri, tradotti → perché succede → Mito o realtà? → I limiti → Il trucco + WeSelf. All editorial rules apply; only replicated biases; tone curious, never «you are irrational». Bias bank: `piano/piano-editoriale-weself.md`, section 3quater.
+
 Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal = Self, peri = We, coral = one warm accent per asset; Nunito + Literata). Logos in `brand/logo/`. Full design system: https://claude.ai/artifact/214XU3j96pZnVaHHELpgBa
 
 ## Status (9 November 2026)
