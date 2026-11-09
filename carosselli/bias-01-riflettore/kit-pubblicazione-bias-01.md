@@ -2,7 +2,7 @@
 
 **Rubrica:** «Il bias della settimana · Le scorciatoie della mente», episodio #1. Regole e struttura nel piano editoriale, sezione 3quater.
 
-**Immagini:** `weself-bias-01-01.png` … `weself-bias-01-09.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
+**Immagini:** `weself-bias-01-01.png` … `weself-bias-01-10.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
 
 **Data consigliata:** **sabato 14 novembre 2026**, tra le 10:00 e le 11:30 (il sabato è il giorno fisso della rubrica).
 
@@ -45,10 +45,11 @@ I numeri: nello studio 1 (15 studenti con la maglietta, 64 osservatori) le stime
 3. Lo studio: disegno di una maglietta bianca con un grande volto. Alla Cornell University 15 studenti hanno indossato una maglietta con il volto di un cantante che i coetanei trovavano imbarazzante, sono entrati per pochi istanti in una stanza dove altri studenti compilavano un questionario e poi hanno stimato quanti avessero notato chi c'era sulla maglietta.
 4. I numeri, tradotti: chi indossava la maglietta pensava che l'avesse notata il 46% dei presenti; l'ha notata davvero il 23%. La stima era il doppio della realtà; chi ha visto la scena in video ha fatto stime molto più basse.
 5. Non solo l'imbarazzo: con una maglietta scelta con orgoglio (Bob Marley, Martin Luther King o Jerry Seinfeld) la stima è stata del 48%, la realtà dell'8%. Anche nei gruppi di discussione, errori e interventi migliori sono rimasti in mente agli altri meno di quanto si pensasse.
-6. Perché succede: partiamo dalla nostra esperienza, intensa, e correggiamo troppo poco. Il 77% di chi aveva pensato a un altro numero ne aveva considerato uno più alto; chi è entrato dopo 15 minuti con la maglietta ha stimato il 37%, chi è entrato subito il 51%.
-7. Mito o realtà: «Se ho fatto una brutta figura, se ne sono accorti tutti.» È un mito: in questi studi gli altri hanno notato molto meno; ognuno è più occupato con il proprio.
-8. I limiti: pochi partecipanti, quasi tutti studenti universitari negli Stati Uniti; situazioni brevi in laboratorio; quanto viene notato dipende dal contesto; per le cose a cui siamo abituati può succedere il contrario.
-9. Il trucco: prima di rinunciare per paura di come apparirai, chiediti «Quanto ci penserei io, se fosse successo a un altro?». Con WeSelf quel corso, quel coro o quella corsa diventano piccoli passi in agenda, insieme a chi ha il tuo stesso obiettivo. Scopri WeSelf, link in bio.
+6. Perché succede: partiamo da ciò che sentiamo noi e correggiamo troppo poco («ancoraggio e aggiustamento»). Schema a tre gradini: si parte da come la vive chi indossa la maglietta («tutti la guardano»); pensando che gli altri sono distratti si scende fino alla stima, 46%; la correzione che manca porta alla realtà, 23%.
+7. Due indizi: il 77% di chi aveva pensato a un altro numero prima di rispondere ne aveva pensato uno più alto (44 studenti); con la stessa maglietta, chi è entrato subito ha stimato il 51%, chi l'ha tenuta addosso 15 minuti prima di entrare il 37% (30 studenti). Abituarsi abbassa il punto di partenza.
+8. Mito o realtà: «Se ho fatto una brutta figura, se ne sono accorti tutti.» È un mito: in questi studi gli altri hanno notato molto meno; ognuno è più occupato con il proprio.
+9. I limiti: pochi partecipanti, quasi tutti studenti universitari negli Stati Uniti; situazioni brevi in laboratorio; quanto viene notato dipende dal contesto; per le cose a cui siamo abituati può succedere il contrario.
+10. Il trucco: prima di rinunciare per paura di come apparirai, chiediti «Quanto ci penserei io, se fosse successo a un altro?». Con WeSelf quel corso, quel coro o quella corsa diventano piccoli passi in agenda, insieme a chi ha il tuo stesso obiettivo. Scopri WeSelf, link in bio.
 
 ## Note di affidabilità
 
@@ -58,8 +59,8 @@ I numeri: nello studio 1 (15 studenti con la maglietta, 64 osservatori) le stime
 - **Gruppi di controllo (slide 4):** 30 persone hanno visto una ricostruzione in video della scena e hanno fatto stime significativamente più basse.
 - **Studio 2:** gli autori ipotizzano che la percentuale reale più bassa (8% contro 23%) dipenda da un questionario degli osservatori più coinvolgente; lo riportiamo tra i limiti.
 - **Studio 3 (slide 5):** 193 studenti in 42 gruppi di discussione; i risultati sono differenze di posizione in classifica, per questo non li traduciamo in numeri.
-- **Perché succede (slide 6):** è l'interpretazione degli autori («ancoraggio e aggiustamento»), sostenuta dagli studi 4 (44 studenti, risposte introspettive, da prendere con cautela secondo gli stessi autori) e 5 (30 studenti).
-- **Slide 8, «il contrario»:** esempio degli autori (chi usa molto profumo e non se ne accorge più).
-- **Slide 9:** il legame tra effetto riflettore e rimpianti per ciò che non si è fatto è degli autori (discussione finale); la frase del trucco e il collegamento con WeSelf sono nostri.
+- **Perché succede (slide 6 e 7):** lo schema della slide 6 usa i numeri dello studio 1 (46% e 23%); il punto di partenza non ha un numero perché non è stato misurato. È l'interpretazione degli autori («ancoraggio e aggiustamento»), sostenuta dagli studi 4 (44 studenti, risposte introspettive, da prendere con cautela secondo gli stessi autori) e 5 (30 studenti).
+- **Slide 9, «il contrario»:** esempio degli autori (chi usa molto profumo e non se ne accorge più).
+- **Slide 10:** il legame tra effetto riflettore e rimpianti per ciò che non si è fatto è degli autori (discussione finale); la frase del trucco e il collegamento con WeSelf sono nostri.
 - **Replicazioni:** l'effetto compare in tutti gli studi dell'articolo, in due università diverse (Cornell e Northwestern). Non abbiamo verificato repliche indipendenti di altri gruppi.
 - **Tema non sensibile** per le nostre regole: nessun rimando di supporto obbligatorio.
