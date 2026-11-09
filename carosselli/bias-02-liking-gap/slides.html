@@ -1,0 +1,310 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-weight:400;src:url(../../fonts/literata-latin-400-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--raised:#fff;--sunk:#F3EEE8;--line:#EAE3DB;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8}
+*{box-sizing:border-box;margin:0}
+body{background:#ccc;font-family:Nunito,sans-serif;color:var(--ink)}
+.slide{width:1080px;height:1350px;position:relative;overflow:hidden;background:var(--surface);padding:64px;display:flex;flex-direction:column;margin-bottom:20px}
+.top{display:flex;justify-content:space-between;align-items:center;position:relative;z-index:2}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px;letter-spacing:-.02em}
+.brand img{width:46px;height:46px}.we{color:var(--peri)}.self{color:var(--teal)}
+.count{font-weight:800;font-size:24px;color:var(--muted);letter-spacing:.08em}
+.kicker{font-weight:800;font-size:26px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.kicker.we{color:var(--peri)}.kicker.warm{color:var(--coral-text)}
+h1{font-weight:900;font-size:112px;line-height:.95;letter-spacing:-.03em}
+h2{font-weight:900;font-size:76px;line-height:1.02;letter-spacing:-.025em}
+.body{font-weight:600;font-size:44px;line-height:1.35}
+.muted{color:var(--muted)}
+.big{font-weight:900;font-size:200px;line-height:.9;letter-spacing:-.04em;color:var(--teal-text)}
+.biglabel{font-weight:800;font-size:44px;line-height:1.2}
+.quote{font-family:Literata,serif;font-style:italic;font-size:62px;line-height:1.25}
+.src{margin-top:auto;display:flex;gap:18px;align-items:baseline;background:var(--sunk);border-radius:14px;padding:26px 30px;position:relative;z-index:2}
+.src b{font-weight:800;font-size:22px;letter-spacing:.16em;color:var(--muted);flex:0 0 auto}
+.src span{font-family:Literata,serif;font-size:30px;color:var(--muted)}.src em{font-style:normal;color:var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:18px;font-weight:900;font-size:46px;letter-spacing:.08em;padding:20px 40px 20px 22px;border-radius:999px;align-self:flex-start}
+.badge i{font-style:normal;width:58px;height:58px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:32px}
+.mito{background:var(--coral);color:var(--ink)}.mito i{background:var(--ink);color:var(--coral)}
+.dip{background:var(--peri-soft);color:var(--ink)}.dip i{background:var(--ink);color:var(--peri-soft)}
+.stack{display:flex;flex-direction:column;gap:40px}
+.plan{background:var(--raised);border:3px solid var(--line);border-radius:28px;padding:44px 48px;display:flex;flex-direction:column;gap:14px}
+.plan .lbl{font-weight:800;font-size:24px;letter-spacing:.16em;color:var(--peri)}
+.plan p{font-weight:900;font-size:58px;line-height:1.1}
+.plan .if{color:var(--peri)}.plan .then{color:var(--teal-text)}
+svg.shape{position:absolute;z-index:1}
+.s-self{fill:var(--teal)}.s-we{fill:var(--peri)}.s-warm{fill:var(--coral)}.s-tint{fill:var(--teal-soft)}.s-tintwe{fill:var(--peri-soft)}
+.wire{stroke:var(--surface);stroke-width:8;fill:none;stroke-linecap:round}.node{fill:var(--surface)}
+.wire-ink{stroke:var(--ink);stroke-width:6;fill:none;stroke-linecap:round}.node-ink{fill:var(--ink)}
+/* warm slide */
+.warmbg{background:var(--coral-soft)}
+.warmbg .src{background:rgba(255,255,255,.6)}
+/* CTA slide */
+.cta{background:var(--peri);color:#fff}
+.cta .count{color:rgba(255,255,255,.75)}
+.cta .kicker{color:#fff}
+.btn{align-self:flex-start;background:#fff;color:var(--ink);font-weight:900;font-size:40px;padding:30px 52px;border-radius:999px}
+.ctafoot{margin-top:auto;display:flex;justify-content:space-between;align-items:flex-end}
+.ctafoot .brand{font-size:56px;color:#fff}.ctafoot .brand img{width:84px;height:84px;background:#fff;border-radius:24px;padding:8px}
+.ctafoot .brand .we,.ctafoot .brand .self{color:#fff}
+.ctafoot small{font-weight:800;font-size:26px;opacity:.9}
+
+.hl{background:linear-gradient(transparent 55%,var(--hl,#FBE3D8) 55%);font-weight:900;padding:0 4px;margin:0 -4px;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.hl.t{--hl:#A8E6DD}.hl.p{--hl:#DDE0FB}
+.cta .hl{background:none;text-decoration:underline;text-decoration-thickness:6px;text-underline-offset:10px;text-decoration-color:#F09B7C}
+.vars{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.var{display:flex;align-items:center;gap:18px;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:24px 26px;font-weight:900;font-size:38px;line-height:1.1}
+.var i{flex:0 0 auto;width:22px;height:22px;border-radius:50%;background:var(--teal)}
+.var:nth-child(2) i{background:var(--peri)}.var:nth-child(3) i{background:var(--coral)}.var:nth-child(4) i{background:var(--teal)}.var:nth-child(5) i{background:var(--peri)}
+.var:nth-child(5){grid-column:1/-1}
+.who{font-weight:600;font-size:32px;color:var(--muted);line-height:1.35}
+.outcomes{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.out{background:var(--teal-soft);border-radius:24px;padding:30px 30px;font-weight:900;font-size:44px;line-height:1.1}
+.out:nth-child(2){background:var(--peri-soft)}.out:nth-child(3){background:var(--coral-soft)}
+.out small{display:block;font-weight:600;font-size:26px;margin-bottom:8px;color:var(--muted)}
+
+.cmp{display:flex;flex-direction:column;gap:14px}
+.cmp-head{display:grid;grid-template-columns:1fr 190px 190px;gap:14px;align-items:end;padding:0 24px}
+.cmp-head span:nth-child(n+2){text-align:center}
+.row{display:grid;grid-template-columns:1fr 190px 190px;gap:14px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.row b{font-weight:800;font-size:34px;line-height:1.15}
+.n{font-weight:900;font-size:64px;line-height:1;text-align:center;border-radius:16px;padding:10px 0}
+.n.lo{background:var(--coral-soft);color:var(--coral-text)}.n.hi{background:var(--teal-soft);color:var(--teal-text)}
+.lab{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;font-weight:800;font-size:21px;line-height:1.1;border-radius:16px;padding:14px 6px}.lab strong{font-weight:900;font-size:38px;letter-spacing:.04em}
+.lab.lo{background:var(--coral);color:var(--ink)}.lab.hi{background:var(--teal);color:#fff}
+</style></head><body><!-- «Il bias della settimana»: append after head.html (cat head.html bias.html body.html > slides.html) -->
+<style>
+/* rubric strip, used on the cover */
+.rub{display:flex;align-items:center;gap:22px}
+.rub .lens{width:84px;height:84px;flex:none}
+.rub .rt{display:flex;flex-direction:column;gap:4px}
+.rub .rn{font-weight:900;font-size:34px;letter-spacing:.02em;line-height:1.05;color:var(--ink)}
+.rub .rn em{font-style:normal;color:var(--coral-text)}
+.rub .rs{font-family:'Literata',serif;font-style:italic;font-size:30px;color:var(--muted)}
+/* occhiello: the situation line above the bias name */
+.occ{font-weight:800;font-size:28px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-text)}
+/* episode tag in the top bar of inner slides */
+.ep{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-text)}
+.ep svg{width:30px;height:30px}
+/* cover: a coral band on the left edge marks the column in the grid */
+.slide.biascover{box-shadow:inset 18px 0 0 var(--coral)}
+.slide.biascover .rub{padding-bottom:20px;border-bottom:3px solid var(--line)}
+/* «Il trucco» box on the last content slide */
+.trucco{background:var(--teal-soft);border-radius:28px;padding:30px 36px;display:flex;flex-direction:column;gap:12px}
+.trucco small{font-weight:800;font-size:23px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-text)}
+.trucco b{font-weight:900;font-size:44px;line-height:1.2}
+.trucco p{font-weight:600;font-size:32px;line-height:1.35}
+.next{margin-top:auto;margin-bottom:22px;font-weight:800;font-size:31px;line-height:1.3;color:var(--peri)}
+.next + .src{margin-top:0}
+.mid{font-weight:600;font-size:38px;line-height:1.4}
+/* ===== Column colour: a bright «sun» accent (yellow by default) ===== */
+:root{--sun:#FFD23F;--sun-soft:#FFF6D6;--sun-deep:#E0A800}
+.slide:not(.cta):not(.warmbg){background:var(--sun-soft)}
+.slide .hl{--hl:var(--sun)}
+.slide .src{background:rgba(255,255,255,.65)}
+.ep{background:var(--sun);color:var(--ink);padding:10px 18px 10px 12px;border-radius:999px}
+.slide.biascover:not(.cta){background:var(--sun);box-shadow:none}
+.slide.biascover .hl{--hl:#FFFFFF}
+.slide.biascover .occ{color:var(--ink)}
+.slide.biascover .rub{border-bottom-color:rgba(30,43,92,.18)}
+.slide.biascover .rub .rn em{color:var(--ink);background:#FFFFFF;border-radius:10px;padding:0 10px}
+.slide.biascover .muted{color:var(--ink);opacity:.8}
+.slide.biascover .top .self{color:var(--teal-text)}
+.slide.biascover .top .we{color:#3646C9}
+.slide.biascover .rub .rs{color:var(--ink);opacity:.85}
+.slide.cta .btn{background:var(--sun);color:var(--ink)}
+.slide.cta .trucco{background:var(--sun);color:var(--ink)}
+.slide.cta .trucco b,.slide.cta .trucco p{color:var(--ink)}
+.slide.cta .trucco small{color:var(--ink)}
+</style>
+<!-- Lens icon (copy into the cover's .rub and, smaller, into .ep):
+<svg class="lens" viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>
+Cover skeleton:
+<section class="slide biascover" id="s1">
+  <div class="top"><div class="brand">…</div><div class="count">1/N</div></div>
+  [illustration of the bias, svg or png]
+  <div style="margin-top:auto;gap:24px" class="stack">
+    <div class="rub">LENS<div class="rt"><span class="rn">Il bias della settimana · <em>#1</em></span><span class="rs">Le scorciatoie della mente</span></div></div>
+    <p class="occ">Occhiello: la situazione di tutti i giorni</p>
+    <h1>Nome del bias, in una frase-affermazione.</h1>
+    <p class="mid muted">Una riga sullo studio.</p>
+  </div>
+</section>
+Inner slides: <div class="top"><p class="ep">LENS-small Bias #1 · Titolo sezione</p><div class="count">2/N</div></div>
+-->
+<style>
+.cmpb{display:flex;flex-direction:column;gap:14px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:30px 34px}
+.cmpb .lb2{font-weight:800;font-size:29px}
+.cmpb .tr{height:64px;border-radius:999px;background:var(--sunk)}
+.cmpb .fl{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:22px;font-weight:900;font-size:38px}
+.row{display:flex;gap:30px;align-items:center}
+.facts{display:flex;flex-direction:column;gap:16px}
+.facts div{background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 26px;font-weight:600;font-size:30px;line-height:1.35}
+.facts b{font-weight:900}
+.lim{display:flex;flex-direction:column;gap:22px}
+.lim div{font-weight:600;font-size:33px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+.big2{font-weight:900;font-size:120px;line-height:.95;letter-spacing:-.04em;color:var(--coral-text)}
+
+.anc{display:grid;grid-template-columns:70px 1fr;gap:18px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:26px 30px}
+.anc .axis{display:flex;flex-direction:column;justify-content:space-between;font-weight:800;font-size:22px;color:var(--muted);border-right:4px solid var(--line);padding-right:10px}
+.anc .steps{display:flex;flex-direction:column;gap:8px}
+.anc .st{border-radius:20px;padding:14px 22px;display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:center}
+.anc .st b{font-weight:900;font-size:40px;line-height:1}
+.anc .st span{font-weight:600;font-size:26px;line-height:1.3}
+.anc .s1{background:var(--sun)}.anc .s1 b{font-size:28px}
+.anc .s2{background:var(--coral-soft)}.anc .s2 b{color:var(--coral-text)}
+.anc .s3{background:var(--teal-soft)}.anc .s3 b{color:var(--teal-text)}
+.anc .arrow{font-weight:900;font-size:28px;color:var(--ink);padding-left:22px}
+.anc .arrow em{font-family:'Literata',serif;font-weight:400;font-size:26px;color:var(--muted)}
+.anc .gap em{color:var(--coral-text)}
+.clue{background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:26px 32px;display:flex;flex-direction:column;gap:8px}
+.clue small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.clue b{font-weight:900;font-size:64px;line-height:1;color:var(--ink)}
+.clue p{font-weight:600;font-size:31px;line-height:1.35}
+.clue p b{font-size:inherit}
+
+.qs{display:flex;flex-direction:column;gap:12px}
+.qs div{background:var(--raised);border:3px solid var(--line);border-radius:20px;padding:16px 24px;font-weight:700;font-size:29px;line-height:1.3}
+.qs div small{display:block;font-weight:800;font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri);margin-bottom:4px}
+.tl{display:flex;flex-direction:column;gap:16px}
+.tl div{display:grid;grid-template-columns:250px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 26px}
+.tl b{font-weight:900;font-size:34px;line-height:1.1;color:var(--ink)}
+.tl span{font-weight:600;font-size:28px;line-height:1.35}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vs div{border-radius:24px;padding:22px 26px;display:flex;flex-direction:column;gap:8px}
+.vs small{font-weight:800;font-size:21px;letter-spacing:.12em;text-transform:uppercase}
+.vs p{font-family:'Literata',serif;font-style:italic;font-size:29px;line-height:1.35}
+.vs .me{background:var(--coral-soft)}.vs .me small{color:var(--coral-text)}
+.vs .you{background:var(--teal-soft)}.vs .you small{color:var(--teal-text)}
+</style>
+
+<section class="slide biascover" id="s1">
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/10</div></div>
+  <svg width="952" height="600" viewBox="0 0 952 600" style="display:block;margin-top:10px;align-self:center"><defs>
+<linearGradient id="lk-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE9C7"/><stop offset=".6" stop-color="#FBE3D8"/><stop offset="1" stop-color="#F3EEE8"/></linearGradient>
+<linearGradient id="lk-win" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD98A"/><stop offset="1" stop-color="#F5B49C"/></linearGradient>
+<radialGradient id="lk-glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#FFE7A8" stop-opacity=".85"/><stop offset="1" stop-color="#FFE7A8" stop-opacity="0"/></radialGradient>
+<clipPath id="lk-card"><rect x="0" y="40" width="952" height="500" rx="40"/></clipPath>
+</defs><g clip-path="url(#lk-card)"><rect x="0" y="40" width="952" height="500" fill="url(#lk-sky)"/><path d="M0 250 H70 V170 H150 V210 H200 V140 H260 V250 H952 V540 H0Z" fill="#EAD9CC" opacity=".7"/><path d="M700 250 V160 H770 V120 H840 V190 H900 V250Z" fill="#EAD9CC" opacity=".7"/><rect x="282" y="96" width="388" height="380" rx="10" fill="#FBF8F5"/><rect x="282" y="96" width="388" height="30" fill="#1E2B5C"/><text x="476" y="118" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="20" fill="#FFD23F" letter-spacing="6">CAFFÈ</text><path d="M282.0 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#4A5BE8"/><path d="M330.5 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#FFFFFF"/><path d="M379.0 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#4A5BE8"/><path d="M427.5 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#FFFFFF"/><path d="M476.0 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#4A5BE8"/><path d="M524.5 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#FFFFFF"/><path d="M573.0 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#4A5BE8"/><path d="M621.5 126 h48.5 v40 q-24.25 18 -48.5 0z" fill="#FFFFFF"/><ellipse cx="476" cy="270" rx="240" ry="120" fill="url(#lk-glow)"/><rect x="312" y="196" width="150" height="150" rx="12" fill="url(#lk-win)"/><rect x="490" y="196" width="150" height="150" rx="12" fill="url(#lk-win)"/><g fill="#E09A6E" opacity=".55"><circle cx="360" cy="276" r="16"/><rect x="342" y="292" width="36" height="54" rx="16"/><circle cx="590" cy="270" r="16"/><rect x="572" y="286" width="36" height="60" rx="16"/></g><path d="M312 252 H462 M490 252 H640" stroke="#FBF8F5" stroke-width="5"/><rect x="292" y="420" width="44" height="52" rx="8" fill="#C98E64"/><g fill="#1E9E9E"><ellipse cx="302" cy="402" rx="14" ry="28" transform="rotate(-25 302 402)"/><ellipse cx="326" cy="398" rx="14" ry="30" transform="rotate(20 326 398)"/><ellipse cx="314" cy="390" rx="12" ry="30"/></g><rect x="0" y="472" width="952" height="70" fill="#E6DCD1"/><path d="M0 472 H952" stroke="#D8CCBF" stroke-width="4"/><g stroke="#1E2B5C" stroke-width="6" fill="none" stroke-linecap="round"><path d="M398 420 v100 M398 446 h34 M432 446 v74 M398 420 q-6 -40 6 -54"/><path d="M554 420 v100 M554 446 h-34 M520 446 v74 M554 420 q6 -40 -6 -54"/></g><ellipse cx="476" cy="424" rx="62" ry="12" fill="#1E2B5C"/><rect x="472" y="424" width="8" height="96" fill="#1E2B5C"/><ellipse cx="476" cy="522" rx="34" ry="6" fill="#1E2B5C"/><rect x="446" y="400" width="24" height="20" rx="5" fill="#FFFFFF"/><rect x="484" y="400" width="24" height="20" rx="5" fill="#FFFFFF"/><path d="M454 392 q-5 -9 0 -16 M494 392 q-5 -9 0 -16" fill="none" stroke="#AAB3DD" stroke-width="3" stroke-linecap="round"/><path d="M232 496 h40 M222 512 h26" stroke="#C9BFB3" stroke-width="5" stroke-linecap="round"/><path d="M720 496 h-40 M730 512 h-26" stroke="#C9BFB3" stroke-width="5" stroke-linecap="round"/><ellipse cx="150" cy="528" rx="78" ry="12" fill="#1E2B5C" opacity=".13"/><g transform="rotate(14 150 432)"><rect x="136" y="430" width="28" height="94" rx="13" fill="#1E2B5C"/><rect x="126" y="508" width="40" height="18" rx="9" fill="#F09B7C"/></g><g transform="rotate(-16 150 432)"><rect x="136" y="430" width="28" height="94" rx="13" fill="#1E2B5C"/><rect x="126" y="508" width="40" height="18" rx="9" fill="#F09B7C"/></g><path d="M180 350 C202 384 206 410 198 432" fill="none" stroke="#0F6F6F" stroke-width="22" stroke-linecap="round"/><circle cx="198" cy="436" r="11" fill="#8D5A3B"/><path d="M100 440 C96 366 106 334 150 332 C194 334 204 366 200 440 Z" fill="#1E9E9E"/><path d="M132 336 C104 344 96 380 100 440 L124 440 C120 396 122 360 132 336Z" fill="#0F6F6F" opacity=".55"/><path d="M176 338 L120 420" stroke="#4A5BE8" stroke-width="7" stroke-linecap="round"/><rect x="90" y="408" width="44" height="40" rx="10" fill="#4A5BE8"/><path d="M120 350 C102 380 94 404 88 424" fill="none" stroke="#1E9E9E" stroke-width="22" stroke-linecap="round"/><circle cx="87" cy="428" r="11" fill="#8D5A3B"/><rect x="139" y="306" width="22" height="30" rx="8" fill="#8D5A3B"/><circle cx="160" cy="284" r="34" fill="#8D5A3B"/><ellipse cx="130" cy="288" rx="6" ry="9" fill="#8D5A3B"/><path d="M125 282 C120 236 200 232 195 278 C186 262 166 256 154 250 C146 262 136 270 125 282Z" fill="#1E2B5C"/><circle cx="158" cy="292" r="3.6" fill="#1E2B5C"/><circle cx="176" cy="292" r="3.6" fill="#1E2B5C"/><path d="M150 279 l8 -4 M184 279 l-8 -4" stroke="#1E2B5C" stroke-width="3" stroke-linecap="round"/><path d="M160 309 q7 -5 14 0" fill="none" stroke="#1E2B5C" stroke-width="3.5" stroke-linecap="round"/><path d="M136 256 q7 11 0 16 q-7 -5 0 -16z" fill="#8B93E8"/><ellipse cx="800" cy="528" rx="78" ry="12" fill="#1E2B5C" opacity=".13"/><g transform="rotate(-14 800 432)"><rect x="786" y="430" width="28" height="94" rx="13" fill="#4A5BE8"/><rect x="792" y="508" width="40" height="18" rx="9" fill="#1E2B5C"/></g><g transform="rotate(16 800 432)"><rect x="786" y="430" width="28" height="94" rx="13" fill="#4A5BE8"/><rect x="792" y="508" width="40" height="18" rx="9" fill="#1E2B5C"/></g><path d="M770 350 C748 384 744 410 752 432" fill="none" stroke="#D9785A" stroke-width="22" stroke-linecap="round"/><circle cx="752" cy="436" r="11" fill="#F2C9A8"/><path d="M750 440 C746 366 756 334 800 332 C844 334 854 366 850 440 Z" fill="#F09B7C"/><path d="M818 336 C846 344 854 380 850 440 L826 440 C830 396 828 360 818 336Z" fill="#D9785A" opacity=".55"/><path d="M830 350 C848 380 856 404 862 424" fill="none" stroke="#F09B7C" stroke-width="22" stroke-linecap="round"/><circle cx="863" cy="428" r="11" fill="#F2C9A8"/><rect x="789" y="306" width="22" height="30" rx="8" fill="#F2C9A8"/><path d="M752 288 C744 226 836 226 828 288 L830 330 C814 324 810 300 808 280 L772 280 C770 300 766 324 750 330 Z" fill="#6B3E26"/><circle cx="790" cy="284" r="34" fill="#F2C9A8"/><ellipse cx="820" cy="288" rx="6" ry="9" fill="#F2C9A8"/><path d="M754 282 C754 240 826 238 826 276 C804 270 784 258 778 248 C772 262 762 272 754 282Z" fill="#6B3E26"/><circle cx="774" cy="292" r="3.6" fill="#1E2B5C"/><circle cx="792" cy="292" r="3.6" fill="#1E2B5C"/><path d="M773 304 q10 11 20 0" fill="none" stroke="#1E2B5C" stroke-width="3.5" stroke-linecap="round"/><circle cx="763" cy="302" r="6.5" fill="#F09B7C" opacity=".5"/><circle cx="803" cy="302" r="6.5" fill="#F09B7C" opacity=".5"/></g><g><rect x="16" y="70" width="300" height="100" rx="34" fill="#FFFFFF" stroke="#AAB3DD" stroke-width="4"/><text x="166.0" y="114" text-anchor="middle" font-family="Literata" font-style="italic" font-size="24" fill="#5A6488">«Avrò parlato troppo…»</text><path transform="translate(94.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#AAB3DD" stroke="#AAB3DD" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(130.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#AAB3DD" stroke="#AAB3DD" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(166.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#FFFFFF" stroke="#AAB3DD" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(202.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#FFFFFF" stroke="#AAB3DD" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(238.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#FFFFFF" stroke="#AAB3DD" stroke-width="2.10" stroke-linejoin="round"/><circle cx="176" cy="186" r="9" fill="#FFFFFF" stroke="#AAB3DD" stroke-width="3"/><circle cx="186" cy="206" r="5" fill="#FFFFFF" stroke="#AAB3DD" stroke-width="3"/></g><g><rect x="636" y="70" width="300" height="100" rx="34" fill="#FFFFFF" stroke="#F09B7C" stroke-width="4"/><text x="786.0" y="114" text-anchor="middle" font-family="Literata" font-style="italic" font-size="24" fill="#A64A30">«Che bella chiacchierata!»</text><path transform="translate(714.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#F09B7C" stroke="#F09B7C" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(750.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#F09B7C" stroke="#F09B7C" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(786.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#F09B7C" stroke="#F09B7C" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(822.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#F09B7C" stroke="#F09B7C" stroke-width="2.10" stroke-linejoin="round"/><path transform="translate(858.0 132) scale(1.05)" d="M0 6 C-2 -2 -14 -2 -14 7 C-14 15 0 22 0 24 C0 22 14 15 14 7 C14 -2 2 -2 0 6Z" fill="#F09B7C" stroke="#F09B7C" stroke-width="2.10" stroke-linejoin="round"/><circle cx="776" cy="186" r="9" fill="#FFFFFF" stroke="#F09B7C" stroke-width="3"/><circle cx="766" cy="206" r="5" fill="#FFFFFF" stroke="#F09B7C" stroke-width="3"/></g></svg>
+  <div style="margin-top:auto;gap:22px" class="stack">
+    <div class="rub"><svg class="lens" viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg><div class="rt"><span class="rn">Il bias della settimana · <em>#2</em></span><span class="rs">Le scorciatoie della mente</span></div></div>
+    <p class="occ">Dopo una chiacchierata con qualcuno di nuovo</p>
+    <h1 style="font-size:84px">Il <span class="hl">liking gap</span>.</h1>
+    <p class="mid muted">Dopo una conversazione, molte persone pensano di essere piaciute meno di quanto sia successo davvero.</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #2 · Succede a molti</p><div class="count">2/10</div></div>
+  <div class="stack" style="margin-top:80px;gap:36px">
+    <h2 style="font-size:62px">«Avrò parlato troppo? Sarò sembrato noioso?»</h2>
+    <p class="mid">Dopo una chiacchierata con qualcuno di nuovo, c'è chi ripassa ogni frase e si convince di non aver fatto una buona impressione.</p>
+    <p class="mid">Nel 2018 un gruppo di ricerca di Yale, Harvard, Cornell e dell'Università dell'Essex ha chiamato questo errore <b>«liking gap»</b>, il divario tra quanto pensiamo di essere piaciuti e quanto lo siamo davvero.</p>
+  </div>
+  <p class="next">Come l'hanno misurato? →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #2 · Lo studio</p><div class="count">3/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:24px">
+    <h2 style="font-size:54px">Cinque minuti di chiacchiere con uno sconosciuto.</h2>
+    <p class="mid" style="font-size:32px">All'università di Yale, 84 studenti hanno parlato a coppie con una persona mai vista prima, di quello che volevano. Poi, in stanze separate, hanno risposto a due serie di domande, con un voto da 1 a 7:</p>
+    <div class="vs">
+      <div class="me"><small>Che cosa provo io</small><p>Quanto mi è piaciuto l'altro? Vorrei conoscerlo meglio? Potremmo diventare amici?</p></div>
+      <div class="you"><small>Che cosa penso provi l'altro</small><p>Quanto gli sono piaciuto? Vorrebbe conoscermi meglio? Potremmo diventare amici?</p></div>
+    </div>
+  </div>
+  <p class="next">Hanno indovinato? →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #2 · I numeri, tradotti</p><div class="count">4/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:54px">Il 63% è piaciuto <span class="hl">più di quanto pensasse</span>.</h2>
+    <div class="cmpb"><span class="lb2">Ha pensato di essere piaciuto meno di quanto è successo</span><div class="tr"><div class="fl" style="width:63%;background:var(--coral-soft);color:var(--coral-text)">63%</div></div><span class="lb2">Ha indovinato</span><div class="tr"><div class="fl" style="width:24%;background:var(--teal-soft);color:var(--teal-text)">24%</div></div><span class="lb2">Ha pensato di essere piaciuto di più</span><div class="tr"><div class="fl" style="width:16%;background:var(--peri-soft);color:var(--peri)">13%</div></div></div>
+    <p class="mid" style="font-size:30px">Abbiamo confrontato, coppia per coppia, quanto ognuno pensava di essere piaciuto con quanto l'altro ha detto di apprezzarlo, usando i dati che gli autori hanno reso pubblici.</p>
+  </div>
+  <p class="next">Ed è successo solo una volta? →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #2 · Non solo in laboratorio</p><div class="count">5/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:24px">
+    <h2 style="font-size:54px">Lo stesso errore, in cinque studi diversi.</h2>
+    <div class="tl">
+      <div><b>Da 2 a 45 minuti</b><span>Il divario è rimasto anche nelle conversazioni lunghe, e riguardava anche quanto l'altro si era divertito.</span></div>
+      <div><b>Fuori dall'università</b><span>Lo hanno trovato anche tra 100 persone, di età diverse, a dei laboratori di conversazione nel Regno Unito.</span></div>
+      <div><b>Per mesi</b><span>Tra compagni di stanza al primo anno, è durato da settembre a febbraio; a maggio, quando si conoscevano bene, era sparito.</span></div>
+    </div>
+  </div>
+  <p class="next">Perché succede? →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s6">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #2 · Perché succede</p><div class="count">6/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:54px">Il critico più severo, durante una conversazione, siamo noi.</h2>
+    <p class="mid" style="font-size:32px">Secondo gli autori, dopo una chiacchierata ripensiamo soprattutto ai nostri errori, per non ripeterli. E ci confrontiamo con la versione ideale di noi stessi: «l'ultima volta l'ho raccontata meglio».</p>
+    <p class="mid" style="font-size:32px">Chi ascolta non conosce quella versione ideale, e non sta cercando i nostri errori. Così ognuno immagina che l'altro lo giudichi duramente <b>come si giudica da sé</b>.</p>
+  </div>
+  <p class="next">Gli indizi →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #2 · Gli indizi</p><div class="count">7/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:22px">
+    <h2 style="font-size:52px">I segnali c'erano. Ma non li abbiamo visti.</h2>
+    <div class="clue"><small>Chi guardava i video</small><p>Due osservatori esterni, guardando le registrazioni, hanno capito quanto le persone si piacevano. Chi era nella conversazione, invece, non ha usato quei segnali.</p></div>
+    <div class="clue"><small>I pensieri dopo</small><p>I momenti che ognuno ricordava di sé erano <b>più negativi</b> di quelli che ricordava dell'altro, e questo era legato al divario.</p></div>
+    <div class="clue"><small>La timidezza</small><p>Tra le persone più timide il divario era più grande; tra le meno timide quasi spariva.</p></div>
+  </div>
+  <p class="next">Quindi, mito o realtà? →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide warmbg" id="s8">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">8/10</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«Dopo una chiacchierata, si capisce bene se si è piaciuti.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">In questi studi la maggior parte delle persone è piaciuta <span class="hl">più di quanto credesse</span>, anche dopo conversazioni lunghe e anche per mesi.</p>
+  </div>
+  <p class="next">Prima di concludere, i limiti →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s9">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">9/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:58px">Che cosa lo studio <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>I partecipanti erano soprattutto <b>giovani</b> e studenti di università americane; solo uno studio ha coinvolto il pubblico, nel Regno Unito.</div>
+      <div>Tutto si basa su <b>risposte a questionari</b>: quanto ci si piace è difficile da misurare in altro modo.</div>
+      <div>Non vale per tutti: il <b>13%</b> ha pensato di essere piaciuto più di quanto fosse vero.</div>
+      <div>Con il tempo e la confidenza il divario può <b>sparire</b>: riguarda soprattutto le persone nuove.</div>
+    </div>
+  </div>
+  <p class="next">E allora, che cosa ce ne facciamo? →</p>
+  <div class="src"><b>FONTE</b><span><em>Boothby, Cooney, Sandstrom &amp; Clark, 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide cta" id="s10">
+  <div class="top"><p class="kicker">Il trucco</p><div class="count">10/10</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <div class="trucco"><small>Il trucco</small><b>Se una chiacchierata ti è piaciuta, probabilmente è piaciuta anche all'altro. Fai tu il primo passo: proponi di rivedervi.</b></div>
+    <p class="body" style="opacity:.92">Con WeSelf puoi trovare chi ha il tuo stesso obiettivo, vicino a te o tra gli amici che hai già, e trasformare una chiacchierata in un appuntamento in agenda.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>

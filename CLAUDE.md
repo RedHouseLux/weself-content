@@ -74,6 +74,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Invidia / pesa sul benessere, cala con l'età — Mujcic & Oswald 2018 (first envy post) | `carosselli/invidia/` | Published |
 | Curiosità · invidia, perché la proviamo — Ramachandran & Jalal 2017 | `carosselli/invidia-perche/` | Not published (founder's choice) |
 | Il bias della settimana #1 · effetto riflettore — Gilovich, Medvec & Savitsky 2000 | `carosselli/bias-01-riflettore/` | Published |
+| Il bias della settimana #2 · liking gap — Boothby et al. 2018 (percentages computed from the authors' public OSF data) | `carosselli/bias-02-liking-gap/` | Ready, not published (Sat 21 Nov) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
