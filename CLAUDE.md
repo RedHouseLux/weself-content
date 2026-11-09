@@ -67,7 +67,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Coppia / una coppia felice si costruisce — Joel et al. 2020 (pillar Relazioni, first couples post) | `carosselli/coppia/` | Published |
 | Ansia da prestazione / il batticuore può diventare un alleato — Yeager et al. 2022 | `carosselli/prestazione/` | Published; Reel on Brooks 2014 in `video/emozionato/` |
 | Reel animato «Sono emozionato» — Brooks 2014 (follow-up to the performance-anxiety carousel) | `video/emozionato/` | Published (89 s, founder voice-over) |
-| Invidia / pesa sul benessere, cala con l'età — Mujcic & Oswald 2018 (first envy post) | `carosselli/invidia/` | Ready, not published |
+| Invidia / pesa sul benessere, cala con l'età — Mujcic & Oswald 2018 (first envy post) | `carosselli/invidia/` | Published |
 | Curiosità · invidia, perché la proviamo — Ramachandran & Jalal 2017 | `carosselli/invidia-perche/` | Not published (founder's choice) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
