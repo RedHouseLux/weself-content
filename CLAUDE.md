@@ -66,7 +66,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Curiosità · coscienza nel tronco encefalico — Devor & Baron 2026 (first «Curiosità» post) | `carosselli/coscienza/` | Published |
 | Coppia / una coppia felice si costruisce — Joel et al. 2020 (pillar Relazioni, first couples post) | `carosselli/coppia/` | Published |
 | Ansia da prestazione / il batticuore può diventare un alleato — Yeager et al. 2022 | `carosselli/prestazione/` | Published; Reel on Brooks 2014 in `video/emozionato/` |
-| Reel animato «Sono emozionato» — Brooks 2014 (follow-up to the performance-anxiety carousel) | `video/emozionato/` | Video ready (68 s, no audio, 14 s opinion slot); founder records voice-over |
+| Reel animato «Sono emozionato» — Brooks 2014 (follow-up to the performance-anxiety carousel) | `video/emozionato/` | Video ready (89 s, conversational script, no audio, 14 s opinion slot) + cover `weself-emozionato-copertina.png`; founder records voice-over |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 

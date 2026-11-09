@@ -1,0 +1,39 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;background:#FBF8F5;font-family:Nunito,sans-serif;color:#1E2B5C;position:relative}
+.brand{position:absolute;left:72px;top:260px;display:flex;align-items:center;gap:12px;font-weight:900;font-size:36px}
+.brand img{width:50px;height:50px}.we{color:#4A5BE8}.self{color:#1E9E9E}
+.h{position:absolute;left:72px;right:72px;top:1060px;font-weight:900;font-size:70px;line-height:1.1;letter-spacing:-.02em}
+.say{position:absolute;left:72px;right:30px;top:1340px;font-family:Literata,serif;font-style:italic;font-size:100px;line-height:1.05;color:#0F6F6F;white-space:nowrap}
+.say span{background:linear-gradient(transparent 62%,#A8E6DD 62%);padding:0 6px;margin:0 -6px}
+</style></head><body>
+<svg style="position:absolute;inset:0" width="1080" height="1920">
+  <defs>
+    <linearGradient id="hg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F09B7C"/><stop offset="1" stop-color="#1E9E9E"/></linearGradient>
+    <linearGradient id="lg" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#F09B7C"/><stop offset=".5" stop-color="#F09B7C"/><stop offset=".62" stop-color="#1E2B5C"/><stop offset="1" stop-color="#1E2B5C"/></linearGradient>
+    <radialGradient id="glow"><stop offset="0" stop-color="#A8E6DD" stop-opacity=".55"/><stop offset="1" stop-color="#A8E6DD" stop-opacity="0"/></radialGradient>
+  </defs>
+  <circle cx="980" cy="1760" r="300" fill="#DDE0FB" opacity=".5"/>
+  <circle cx="90" cy="420" r="230" fill="#FBE3D8" opacity=".7"/>
+  <circle cx="540" cy="640" r="420" fill="url(#glow)"/>
+  <circle cx="540" cy="640" r="250" fill="none" stroke="#4A5BE8" stroke-width="4" opacity=".25"/>
+  <circle cx="540" cy="640" r="320" fill="none" stroke="#1E9E9E" stroke-width="4" opacity=".18"/>
+  <circle cx="540" cy="640" r="390" fill="none" stroke="#4A5BE8" stroke-width="4" opacity=".1"/>
+  <clipPath id="lh"><rect x="-200" y="-200" width="196" height="400"/></clipPath><clipPath id="rh"><rect x="4" y="-200" width="196" height="400"/></clipPath>
+  <g transform="translate(540 610) scale(2.3)">
+    <path clip-path="url(#lh)" d="M0 70 C-90 10 -120 -60 -70 -100 C-35 -128 0 -105 0 -70 C0 -105 35 -128 70 -100 C120 -60 90 10 0 70Z" fill="#F09B7C"/>
+    <path clip-path="url(#rh)" d="M0 70 C-90 10 -120 -60 -70 -100 C-35 -128 0 -105 0 -70 C0 -105 35 -128 70 -100 C120 -60 90 10 0 70Z" fill="#1E9E9E"/>
+  </g>
+  <polyline points="40,700 250,700 300,700 340,610 385,800 430,560 475,760 515,700 570,700" fill="none" stroke="#fff" stroke-width="26" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M570 700 C700 700 800 650 880 560 C930 505 970 450 1010 400" fill="none" stroke="#fff" stroke-width="26" stroke-linecap="round"/>
+  <polyline points="40,700 250,700 300,700 340,610 385,800 430,560 475,760 515,700 570,700" fill="none" stroke="url(#lg)" stroke-width="14" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M570 700 C700 700 800 650 880 560 C930 505 970 450 1010 400" fill="none" stroke="#1E2B5C" stroke-width="14" stroke-linecap="round"/>
+  <path d="M962 392 L1016 394 L1006 448" fill="none" stroke="#1E2B5C" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+<div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+<div class="h">La prossima volta che senti il cuore battere forte, prova a dirti:</div>
+<div class="say"><span>«Sono emozionato.»</span></div>
+</body></html>

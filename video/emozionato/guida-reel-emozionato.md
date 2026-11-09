@@ -33,7 +33,7 @@ Come per il Reel di Dunedin (`video/dunedin/animato/guida-reel-animato.md`): una
 
 ## 3. Pubblicazione
 
-**Copertina del Reel:** il fotogramma a circa 3 secondi («Calmati.» barrato e «Sono emozionato.»).
+**Copertina del Reel:** `weself-emozionato-copertina.png` (1080×1920; il testo resta nella zona visibile anche nella griglia del profilo). In Instagram: Modifica copertina → Aggiungi dal rullino.
 
 **Didascalia:**
 
