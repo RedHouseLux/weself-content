@@ -1,33 +1,35 @@
 # Reel animato · «Sono emozionato» invece di «calmati» (Brooks, 2014)
 
-**File video:** `weself-emozionato-reel.mp4` (1080×1920, 30 fps, 68 secondi, senza audio). Le scritte sullo schermo coincidono con la voce e fanno da sottotitoli; restano nella zona sicura (220–1480 pixel dall'alto).
+**File video:** `weself-emozionato-reel.mp4` (1080×1920, 30 fps, 89 secondi, senza audio). Le scritte sullo schermo coincidono con la voce e fanno da sottotitoli; restano nella zona sicura (220–1480 pixel dall'alto).
 
 **Grafica:** illustrazioni animate nei colori del brand (cuori, anello, microfono, cronometri, carte, icone), forme morbide che si muovono sullo sfondo e una barra sottile in alto che mostra l'avanzamento.
 
-**Come è fatto:** `reel.html`, trasformato in video con `node tools/render-video.cjs video/emozionato/reel.html video/emozionato/weself-emozionato-reel.mp4 68 30`.
+**Come è fatto:** `reel.html`, trasformato in video con `node tools/render-video.cjs video/emozionato/reel.html video/emozionato/weself-emozionato-reel.mp4 89 30`.
 
 **Collegamento:** è il seguito del carosello sull'ansia da prestazione (Yeager et al., 2022). Pubblicalo qualche giorno dopo il carosello.
 
 **Tema sensibile:** ansia. Il rimando di supporto è in didascalia, da verificare prima di pubblicare.
 
-## 1. Il copione per la voce
+## 1. Il copione per la voce (tono discorsivo, circa 89 secondi)
+
+Leggi con calma, come se lo raccontassi a un amico: circa 2,7 parole al secondo. I sottotitoli nel video seguono queste frasi, divise in pezzi brevi.
 
 | Secondi | Scena | Voce |
 |---|---|---|
-| 0–5 | Un cuore che batte e una linea del battito; «Calmati.» barrato, il cuore diventa verde con «Sono emozionato.» | «Prima di una prova ti dici "calmati"? Una ricerca suggerisce un'alternativa.» |
-| 5–11 | Un anello che si riempie fino al 91% | «In un sondaggio, più del novanta per cento delle persone ha detto che, prima di una prova, la cosa migliore è calmarsi.» |
-| 11–19 | Microfono con onde sonore; tre barre: 81%, 69%, 53% | «Ma al karaoke, davanti a uno sconosciuto, chi prima di cantare ha detto "sono emozionato" ha avuto una precisione dell'ottantuno per cento; chi ha detto "sono in ansia", del cinquantatré.» |
-| 19–26 | Due cronometri: 167 e 132 secondi | «Prima di un discorso, chi ha detto "sono emozionato" invece di "sono calmo" è stato giudicato più convincente e sicuro, e ha parlato più a lungo.» |
-| 26–32 | Otto carte che si girano e si riempiono: 3,6 e 2,9 su 8 | «E in un test di matematica, bastava leggere "cerca di emozionarti": tre virgola sei risposte giuste su otto, contro due virgola nove.» |
-| 32–38 | Due cuori che battono insieme: «agitazione» = «entusiasmo» | «L'ansia non è sparita: è cambiato il modo di leggerla. Agitazione ed entusiasmo fanno battere il cuore allo stesso modo, ed è più facile dare un altro nome a quell'energia che spegnerla.» |
-| 38–43 | Mito o realtà? Timbro MITO | «Prima di una prova, la cosa migliore è calmarsi? In questi studi, no.» |
-| 43–49 | I limiti, con tre icone (laboratorio, cronometro, luogo) | «Erano prove brevi, in laboratorio, soprattutto con studenti negli Stati Uniti: serviranno conferme nella vita reale.» |
-| 49–63 | **Il tuo punto di vista** (sfondo lilla, «Un'opinione personale, non un risultato dello studio») | **Parole tue, fino a 14 secondi.** I sottotitoli qui non sono nel video: aggiungili in CapCut con «Sottotitoli automatici», oppure mandami il testo e li inserisco io. |
-| 63–68 | Finale WeSelf | «La prossima volta che il cuore batte forte, prova a dirti: "sono emozionato". Link in bio.» |
+| 0–6 | Un cuore che batte e una linea del battito; «Calmati.» barrato, il cuore diventa verde con «Sono emozionato.» | «Spesso, prima di una prova, ci ripetiamo: "calmati, respira…". Una ricerca suggerisce un'alternativa.» |
+| 6–14 | Un anello che si riempie fino al 91% | «Del resto lo pensiamo quasi tutti: in un sondaggio, più del novanta per cento delle persone ha detto che calmarsi è la cosa migliore.» |
+| 14–26 | Microfono con onde sonore; tre barre: 81%, 69%, 53% | «Ma al karaoke, davanti a uno sconosciuto, chi prima di cantare si è detto "sono emozionato" ha cantato con l'ottantuno per cento di precisione; chi si è detto "sono in ansia", con il cinquantatré.» |
+| 26–36 | Due cronometri: 167 e 132 secondi | «Lo stesso prima di un discorso: chi si è detto "sono emozionato", invece di "sono calmo", è sembrato più convincente e sicuro, e ha parlato più a lungo.» |
+| 36–46 | Otto carte che si girano e si riempiono: 3,6 e 2,9 su 8 | «E perfino in un test di matematica: è bastato leggere "cerca di emozionarti" per rispondere meglio, tre virgola sei domande giuste su otto, contro due virgola nove.» |
+| 46–55 | Due cuori che battono insieme: «agitazione» = «entusiasmo» | «L'ansia, attenzione, non è sparita: è cambiato il modo di leggerla. Agitazione ed entusiasmo fanno battere il cuore allo stesso modo.» |
+| 55–61 | Mito o realtà? Timbro MITO | «Quindi, prima di una prova, la cosa migliore è calmarsi? Almeno in questi studi, no.» |
+| 61–68 | I limiti, con tre icone (laboratorio, cronometro, luogo) | «Certo, erano prove brevi, in laboratorio, soprattutto con studenti americani: serviranno conferme nella vita di tutti i giorni.» |
+| 68–82 | **Il tuo punto di vista** (sfondo lilla, «Un'opinione personale, non un risultato dello studio») | **Parole tue, fino a 14 secondi.** Mandami il testo e inserisco i sottotitoli, oppure usa «Sottotitoli automatici» in CapCut solo su questo tratto. |
+| 82–89 | Finale WeSelf | «Quindi, la prossima volta che senti il cuore battere forte, prova a dirti: "sono emozionato". Il link è in bio.» |
 
 ## 2. Registrazione e montaggio
 
-Come per il Reel di Dunedin (`video/dunedin/animato/guida-reel-animato.md`): una frase alla volta, telefono a 15–20 cm, stanza piccola; in CapCut metti ogni frase all'inizio della sua scena (0; 5; 11; 19; 26; 32; 38; 43; 49; 63 secondi), riduzione del rumore attiva, esporta in 1080p a 30 fps. Se una frase è più lunga della scena, dimmi i secondi e rigenero il video.
+Come per il Reel di Dunedin (`video/dunedin/animato/guida-reel-animato.md`): una frase alla volta, telefono a 15–20 cm, stanza piccola; in CapCut metti ogni frase all'inizio della sua scena (0; 6; 14; 26; 36; 46; 55; 61; 68; 82 secondi), riduzione del rumore attiva, esporta in 1080p a 30 fps. Un Reel di circa 90 secondi va bene su Instagram (i Reel arrivano a 3 minuti); se vuoi accorciarlo, il primo candidato è la scena dei limiti, ma resta obbligatoria nella didascalia. Se una frase è più lunga della scena, dimmi i secondi e rigenero il video.
 
 ## 3. Pubblicazione
 

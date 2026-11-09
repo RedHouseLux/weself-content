@@ -32,6 +32,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
 #prog{position:absolute;left:72px;right:72px;top:214px;height:8px;border-radius:4px;background:rgba(30,43,92,.08);z-index:50}
 #prog i{display:block;height:100%;border-radius:4px;background:var(--peri);width:0}
 </style></head><body>
+<div class="cap" id="gcap" style="top:1190px;z-index:40;opacity:0"></div>
 <div id="prog"><i id="progi"></i></div>
 
 <!-- 1 hook 0-5 -->
@@ -42,7 +43,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   </svg>
   <div class="say" id="a1x" style="top:880px">«Calmati.»<span id="a1s" style="position:absolute;left:0;top:54%;height:12px;border-radius:6px;background:#F09B7C;width:0"></span></div>
   <div class="say" id="a1y" style="top:1010px;color:var(--teal-text)">«Sono emozionato.»</div>
-  <div class="cap" id="a1c" style="top:1240px">Prima di una prova ti dici «calmati»? Una ricerca suggerisce un'alternativa.</div>
 </div>
 
 <!-- 2 survey 5-11 -->
@@ -54,7 +54,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
     <text id="a2n" x="300" y="335" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="150" fill="#4A5BE8">0%</text>
   </svg>
   <div class="h" id="a2t" style="top:960px;font-size:56px;text-align:center">pensa che la cosa migliore sia <span style="color:var(--peri)">cercare di calmarsi</span>.</div>
-  <div class="cap" id="a2c">In un sondaggio, <b>più del 90%</b> delle persone ha detto che, prima di una prova, la cosa migliore è calmarsi.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
@@ -73,7 +72,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <div class="bar" style="top:810px"><div class="fill" id="a3b" style="width:0;background:var(--peri-soft);color:var(--peri)"></div></div>
   <div class="lbl" style="top:950px">«Sono in ansia»</div>
   <div class="bar" style="top:1000px"><div class="fill" id="a3c" style="width:0;background:var(--coral);color:var(--ink)"></div></div>
-  <div class="cap" id="a3t" style="top:1150px">113 studenti, prima di cantare: precisione dell'<b>81%</b> con «sono emozionato», del <b>53%</b> con «sono in ansia».</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
@@ -89,7 +87,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
     <text x="234" y="490" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#0F6F6F">«Sono emozionato»</text>
     <text x="702" y="490" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="34" fill="#5A6488">«Sono calmo»</text>
   </svg>
-  <div class="cap" id="a4t">140 studenti: con «sono emozionato», giudicati <b>più convincenti e sicuri</b>, e 167 secondi di discorso contro 132.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
@@ -101,7 +98,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <div id="a5x"></div>
   <div class="lbl" id="a5l2" style="top:830px">«Cerca di restare calmo» · 2,9 su 8</div>
   <div id="a5y"></div>
-  <div class="cap" id="a5t">188 studenti, un test difficile e a tempo: <b>3,6</b> risposte giuste su 8 contro <b>2,9</b>.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
@@ -118,7 +114,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
     <text x="790" y="470" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="46" fill="#0F6F6F">entusiasmo</text>
     <text id="a6eq" x="540" y="190" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="90" fill="#4A5BE8" opacity="0">=</text>
   </svg>
-  <div class="cap" id="a6c">Stesso battito, un altro nome. Nel karaoke l'ansia dichiarata è rimasta <b>uguale</b>: è cresciuto l'entusiasmo.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
@@ -137,7 +132,6 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <div class="lim" id="a8a" style="top:560px"><div class="ic"><svg width="70" height="80" viewBox="0 0 70 80"><path d="M24 4h22M28 4v24L6 70a6 6 0 0 0 5 8h48a6 6 0 0 0 5-8L42 28V4" fill="none" stroke="#A64A30" stroke-width="6" stroke-linejoin="round"/><path d="M14 56h42" stroke="#A64A30" stroke-width="6"/></svg></div><div>Prove <b>brevi</b>, in laboratorio.</div></div>
   <div class="lim" id="a8b" style="top:740px"><div class="ic"><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="40" cy="44" r="30" fill="none" stroke="#A64A30" stroke-width="6"/><path d="M40 44V26M32 6h16" stroke="#A64A30" stroke-width="6" stroke-linecap="round"/></svg></div><div>Effetti misurati <b>subito dopo</b>.</div></div>
   <div class="lim" id="a8c" style="top:920px"><div class="ic"><svg width="70" height="80" viewBox="0 0 70 80"><path d="M35 76S8 46 8 30a27 27 0 0 1 54 0c0 16-27 46-27 46z" fill="none" stroke="#A64A30" stroke-width="6"/><circle cx="35" cy="30" r="9" fill="#A64A30"/></svg></div><div>Soprattutto <b>studenti</b> negli Stati Uniti.</div></div>
-  <div class="cap" id="a8p">Serviranno conferme nella vita reale.</div>
   <div class="src">Brooks, 2014 · J. Exp. Psychol. Gen.</div>
 </div>
 
@@ -159,7 +153,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
     <path id="a10a" d="M420 260 C560 260 660 220 780 140 C860 90 920 60 990 40" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-dasharray="700" stroke-dashoffset="700"/>
     <path id="a10h" d="M950 26 L996 36 L978 82" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" opacity="0"/>
   </svg>
-  <div class="h" id="a10t" style="top:660px;font-size:72px">La prossima volta che il cuore batte forte, prova a dirti: «Sono emozionato.»</div>
+  <div class="h" id="a10t" style="top:660px;font-size:72px">La prossima volta che senti il cuore battere forte, prova a dirti: «Sono emozionato.»</div>
   <div class="h" id="a10b" style="top:1000px;font-size:42px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf ti avvicini alla tua prova a piccoli passi, già in agenda, insieme a chi ha il tuo stesso obiettivo.</div>
   <div style="position:absolute;left:72px;top:1240px" id="a10btn"><span class="btn">Scopri WeSelf · link in bio</span></div>
 </div>
@@ -181,51 +175,57 @@ function mk(id,top,col){const box=$(id);const arr=[];for(let i=0;i<8;i++){const 
 const CX=mk('a5x',640,'#1E9E9E'),CY=mk('a5y',880,'#4A5BE8');
 function arc(r,f){const a=f*2*Math.PI;const x=r*Math.sin(a),y=-r*Math.cos(a);return f<=0?'':`M0 0 L0 ${-r} A${r} ${r} 0 ${a>Math.PI?1:0} 1 ${x.toFixed(1)} ${y.toFixed(1)} Z`}
 function beat(t,rate){const p=(t*rate)%1;return 1+0.12*Math.exp(-Math.pow((p-0.1)/0.06,2))+0.07*Math.exp(-Math.pow((p-0.3)/0.06,2))}
+const T={a1:0,a2:6,a3:14,a4:26,a5:36,a6:46,a7:55,a8:61,a9:68,a10:82}, END=89;
+const CAPS=[[0.6,5.9,"Spesso, prima di una prova, ci ripetiamo: «calmati, respira…». Una ricerca suggerisce un'alternativa."],
+[6.3,13.9,"Del resto lo pensiamo quasi tutti: in un sondaggio, <b>più del 90%</b> delle persone ha detto che calmarsi è la cosa migliore."],
+[14.3,19.8,"Ma al karaoke, davanti a uno sconosciuto, chi prima di cantare si è detto «sono emozionato»…"],
+[19.8,25.9,"…ha cantato con l'<b>81%</b> di precisione; chi si è detto «sono in ansia», con il <b>53%</b>."],
+[26.3,30.8,"Lo stesso prima di un discorso: chi si è detto «sono emozionato», invece di «sono calmo»…"],
+[30.8,35.9,"…è sembrato <b>più convincente e sicuro</b>, e ha parlato più a lungo."],
+[36.3,40.8,"E perfino in un test di matematica: è bastato leggere «cerca di emozionarti»…"],
+[40.8,45.9,"…per rispondere meglio: <b>3,6</b> domande giuste su 8, contro <b>2,9</b>."],
+[46.3,50.5,"L'ansia, attenzione, non è sparita: è cambiato il modo di leggerla."],
+[50.5,54.9,"Agitazione ed entusiasmo fanno battere il cuore <b>allo stesso modo</b>."],
+[55.3,60.9,"Quindi, prima di una prova, la cosa migliore è calmarsi? Almeno in questi studi, <b>no</b>."],
+[61.3,64.5,"Certo, erano prove brevi, in laboratorio, soprattutto con studenti americani:"],
+[64.5,67.9,"serviranno conferme nella vita di tutti i giorni."]];
 window.render=function(t){
-  const S=[['a1',0,5],['a2',5,11],['a3',11,19],['a4',19,26],['a5',26,32],['a6',32,38],['a7',38,43],['a8',43,49],['a9',49,63],['a10',63,68.2]];
+  const S=[['a1',T.a1,T.a2],['a2',T.a2,T.a3],['a3',T.a3,T.a4],['a4',T.a4,T.a5],['a5',T.a5,T.a6],['a6',T.a6,T.a7],['a7',T.a7,T.a8],['a8',T.a8,T.a9],['a9',T.a9,T.a10],['a10',T.a10,END+0.2]];
   S.forEach(([id,a,b],i)=>{const vis=t>=a-0.25&&t<b+0.3;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0;$(id).style.zIndex=i+1;});
-  $('progi').style.width=(cl(t/68)*100)+'%'; $('prog').style.opacity=t<63?1:0;
+  $('progi').style.width=(cl(t/END)*100)+'%'; $('prog').style.opacity=t<T.a10?1:0;
+  {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on)el.style.opacity=0;}
   BL.forEach(([s,i])=>{const c=s.children;c[0].setAttribute('cx',900+80*Math.sin(t*0.4+i));c[0].setAttribute('cy',1650+60*Math.cos(t*0.35+i));c[1].setAttribute('cx',120+70*Math.cos(t*0.3+i*2));c[1].setAttribute('cy',260+50*Math.sin(t*0.45+i))});
+  let u;
   // 1
-  const hb=beat(t,1.4); $('a1heart').setAttribute('transform',`translate(540 220) scale(${(0.6+0.4*back(t/.6))*hb})`);
-  $('a1hp').setAttribute('fill',t<2.1?'#F09B7C':'#1E9E9E'); $('a1ecg').setAttribute('stroke',t<2.1?'#F09B7C':'#1E9E9E');
-  $('a1ecg').setAttribute('stroke-dashoffset',1400*(1-eo(t/2.2)));
-  pop($('a1x'),t,0.4); $('a1s').style.width=(eo((t-1.4)/.5)*100)+'%'; $('a1x').style.color=t>1.6?'#9AA0B8':'var(--ink)';
-  zoom($('a1y'),t,2.1); pop($('a1c'),t,3.0);
+  u=t-T.a1; const hb=beat(t,1.4); $('a1heart').setAttribute('transform',`translate(540 220) scale(${(0.6+0.4*back(u/.6))*hb})`);
+  $('a1hp').setAttribute('fill',u<2.6?'#F09B7C':'#1E9E9E'); $('a1ecg').setAttribute('stroke',u<2.6?'#F09B7C':'#1E9E9E'); $('a1ecg').setAttribute('stroke-dashoffset',1400*(1-eo(u/2.2)));
+  pop($('a1x'),u,0.5); $('a1s').style.width=(eo((u-1.8)/.5)*100)+'%'; $('a1x').style.color=u>2.0?'#9AA0B8':'var(--ink)'; zoom($('a1y'),u,2.6);
   // 2
-  const k2=eo((t-5.4)/2.2); $('a2r').setAttribute('stroke-dashoffset',1445*(1-0.91*k2)); $('a2n').textContent=Math.round(91*k2)+'%';
-  pop($('a2t'),t,6.6); pop($('a2c'),t,7.4);
+  u=t-T.a2; const k2=eo((u-0.6)/2.4); $('a2r').setAttribute('stroke-dashoffset',1445*(1-0.91*k2)); $('a2n').textContent=Math.round(91*k2)+'%'; pop($('a2t'),u,2.0);
   // 3
-  EQ.forEach((r,i)=>{const h=t>11?30+70*Math.abs(Math.sin(t*6+i*0.9))*eo((t-11.3)/.6):0;r.setAttribute('height',h);r.setAttribute('y',110-h/2)});
-  [['a3a',11.8,81],['a3b',12.4,69],['a3c',13.0,53]].forEach(([id,s,v])=>{const b=back((t-s)/1.2),k=eo((t-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
-  pop($('a3t'),t,14.2);
+  u=t-T.a3; EQ.forEach((r,i)=>{const h=u>0?30+70*Math.abs(Math.sin(t*6+i*0.9))*eo((u-0.3)/.6):0;r.setAttribute('height',h);r.setAttribute('y',110-h/2)});
+  [['a3a',5.8,81],['a3b',6.6,69],['a3c',7.4,53]].forEach(([id,s,v])=>{const b=back((u-s)/1.2),k=eo((u-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
   // 4
-  pop($('a4h'),t,19.4);
-  const fa=eo((t-20.2)/2.6)*167/180, fb=eo((t-20.4)/2.6)*132/180;
-  $('a4wa').setAttribute('d',arc(160,fa)); $('a4wb').setAttribute('d',arc(160,fb));
-  $('a4ha').setAttribute('transform',`rotate(${fa*360})`); $('a4hb').setAttribute('transform',`rotate(${fb*360})`);
+  u=t-T.a4; pop($('a4h'),u,0.4); const fa=eo((u-1.4)/3)*167/180, fb=eo((u-1.6)/3)*132/180;
+  $('a4wa').setAttribute('d',arc(160,fa)); $('a4wb').setAttribute('d',arc(160,fb)); $('a4ha').setAttribute('transform',`rotate(${fa*360})`); $('a4hb').setAttribute('transform',`rotate(${fb*360})`);
   $('a4na').textContent=Math.round(fa*180)+' s'; $('a4nb').textContent=Math.round(fb*180)+' s';
-  pop($('a4t'),t,23.0);
   // 5
-  pop($('a5h'),t,26.3); pop($('a5l1'),t,26.8); pop($('a5l2'),t,27.1);
-  const fill=(arr,val,s,col)=>arr.forEach((c,i)=>{const kk=back((t-s-i*0.12)/.4);c.style.transform=`scaleY(${Math.max(0,kk)})`;const f=cl(eo((t-s-0.6)/1.6)*val-i);c.firstChild.style.width=(f*100)+'%';c.lastChild.style.opacity=f>=1?1:0});
-  fill(CX,3.6,27.2); fill(CY,2.94,27.5); pop($('a5t'),t,29.0);
+  u=t-T.a5; pop($('a5h'),u,0.3); pop($('a5l1'),u,0.8); pop($('a5l2'),u,1.1);
+  const fill=(arr,val,s)=>arr.forEach((c,i)=>{const kk=back((u-s-i*0.12)/.4);c.style.transform=`scaleY(${Math.max(0,kk)})`;const f=cl(eo((u-s-0.6)/2)*val-i);c.firstChild.style.width=(f*100)+'%';c.lastChild.style.opacity=f>=1?1:0});
+  fill(CX,3.6,3.6); fill(CY,2.94,3.9);
   // 6
-  pop($('a6h'),t,32.2);
-  const b6=beat(t,1.3); $('a6l').setAttribute('transform',`translate(290 170) scale(${b6*eo((t-32.6)/.5)})`); $('a6r').setAttribute('transform',`translate(790 170) scale(${b6*eo((t-32.9)/.5)})`);
-  $('a6e1').setAttribute('stroke-dashoffset',700*(1-eo((t-33.2)/1.4))); $('a6e2').setAttribute('stroke-dashoffset',700*(1-eo((t-33.2)/1.4)));
-  $('a6eq').setAttribute('opacity',eo((t-34.4)/.4)); pop($('a6c'),t,35.0);
+  u=t-T.a6; pop($('a6h'),u,0.2); const b6=beat(t,1.3); $('a6l').setAttribute('transform',`translate(290 170) scale(${b6*eo((u-0.6)/.5)})`); $('a6r').setAttribute('transform',`translate(790 170) scale(${b6*eo((u-0.9)/.5)})`);
+  $('a6e1').setAttribute('stroke-dashoffset',700*(1-eo((u-1.2)/1.4))); $('a6e2').setAttribute('stroke-dashoffset',700*(1-eo((u-1.2)/1.4))); $('a6eq').setAttribute('opacity',eo((u-4.6)/.4));
   // 7
-  pop($('a7q'),t,38.2); const m=back((t-39)/.45),mo=eo((t-39)/.3); const sh=t>39.3&&t<39.8?Math.sin((t-39.3)*60)*6*(1-(t-39.3)/.5):0;
-  $('a7m').style.opacity=mo; $('a7m').style.display='inline-flex'; $('a7m').style.transform=`scale(${2-m}) rotate(${-8*mo+sh}deg)`; pop($('a7t'),t,40.0);
+  u=t-T.a7; pop($('a7q'),u,0.2); const m=back((u-2.6)/.45),mo=eo((u-2.6)/.3); const sh=u>2.9&&u<3.4?Math.sin((u-2.9)*60)*6*(1-(u-2.9)/.5):0;
+  $('a7m').style.opacity=mo; $('a7m').style.transform=`scale(${2-m}) rotate(${-8*mo+sh}deg)`; pop($('a7t'),u,3.4);
   // 8
-  pop($('a8h'),t,43.2); pop($('a8a'),t,43.8); pop($('a8b'),t,44.4); pop($('a8c'),t,45.0); pop($('a8p'),t,45.8);
+  u=t-T.a8; pop($('a8h'),u,0.2); pop($('a8a'),u,0.8); pop($('a8b'),u,1.6); pop($('a8c'),u,2.4);
   // 9
-  pop($('a9h'),t,49.3); pop($('a9n'),t,49.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((t-49+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',t>49?(1-ph)*0.8:0)});
+  u=t-T.a9; pop($('a9h'),u,0.3); pop($('a9n'),u,0.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)});
   // 10
-  $('a10e').setAttribute('stroke-dashoffset',700*(1-eo((t-63.1)/1)));
-  $('a10a').setAttribute('stroke-dashoffset',700*(1-eo((t-63.9)/1.1))); $('a10h').setAttribute('opacity',eo((t-64.9)/.3));
-  pop($('a10t'),t,63.6); pop($('a10b'),t,64.8); pop($('a10btn'),t,65.8);
+  u=t-T.a10; $('a10e').setAttribute('stroke-dashoffset',700*(1-eo((u-0.1)/1))); $('a10a').setAttribute('stroke-dashoffset',700*(1-eo((u-0.9)/1.1))); $('a10h').setAttribute('opacity',eo((u-1.9)/.3));
+  pop($('a10t'),u,0.6); pop($('a10b'),u,2.4); pop($('a10btn'),u,3.6);
 };
 render(0);
 </script></body></html>
