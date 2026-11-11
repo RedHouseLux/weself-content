@@ -15,12 +15,9 @@ SCENES = [
     ("studio", "Un gruppo di ricercatori finlandesi ha chiesto a quasi 4.000 persone, in 101 paesi, di colorare su una sagoma dove sentono un'emozione: in rosso dove qualcosa si attiva, in blu dove si spegne."),
     ("diverse", "Il risultato: ogni emozione è stata percepita nel corpo in modo diverso, e queste mappe si sono somigliate in tutto il mondo."),
     ("mappe", "La rabbia si è accesa in testa, nel petto e nelle mani. La paura nel petto. Il disgusto in gola e nello stomaco. La tristezza ha svuotato braccia e gambe. L'amore e la felicità, invece, hanno acceso tutto il corpo ma con intensità diverse."),
-    ("vicine", "Perfino emozioni vicine, come l'amore e la felicità, hanno avuto mappe distinte: per esempio, cambiano le zone più accese e la loro intensità."),
     ("mondo", "E queste mappe si sono somigliate moltissimo da un paese all'altro. A fare la differenza è stata l'emozione, molto più della cultura, del sesso o del titolo di studio. E non contava dove si vive, né quanto si è alti o pesanti."),
-    ("piccole", "Qualche piccola differenza c'è stata: nei paesi occidentali le sensazioni sono state segnate un po' più forti; le donne hanno sentito di più la pancia e la gola, per esempio nell'ansia e nella vergogna."),
     ("eta", "L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui."),
     ("perche", "Perché? Secondo gli autori, un'espressione del volto si può imparare guardando gli altri, il battito del cuore no. Per questo ciò che sentiamo nel corpo sarebbe meno legato alla cultura."),
-    ("mito", "Le emozioni stanno solo nella testa? Secondo la ricerca, no: vengono percepite anche nel corpo."),
     ("opinione", "Sembra banale: chi di noi non ha percepito sul proprio corpo un'emozione… ma avere maggiore consapevolezza su cosa percepiamo fisiologicamente potrebbe aiutarci anche a migliorare le nostre decisioni senza saltare a conclusioni affrettate. Magari non è fame quella che stai provando..."),
     ("fine", "La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti. Il link è in bio."),
 ]

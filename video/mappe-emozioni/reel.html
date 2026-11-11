@@ -61,13 +61,7 @@ svg{position:absolute;left:0;top:0;overflow:visible}
   <div class="lab" id="emo" style="left:540px;top:320px;font-size:64px"></div>
 </section>
 
-<!-- 5 vicine -->
-<section class="sc" id="vicine"><p class="kick">Vicine ma diverse</p>
-  <svg width="1080" height="1920"><g id="loveB"></g><g id="happyB"></g></svg>
-  <div class="lab" style="left:310px;top:1110px">amore</div>
-  <div class="lab" style="left:770px;top:1110px">felicità</div>
-</section>
-
+ 
 <!-- 6 mondo -->
 <section class="sc" id="mondo"><p class="kick">In tutto il mondo</p>
   <svg width="1080" height="1920"><g id="globe"><circle cx="300" cy="760" r="230" fill="#DDE0FB"/><ellipse cx="300" cy="760" rx="230" ry="80" fill="none" stroke="#4A5BE8" stroke-width="3" opacity=".35"/><ellipse cx="300" cy="760" rx="95" ry="230" fill="none" stroke="#4A5BE8" stroke-width="3" opacity=".35"/><line x1="70" y1="760" x2="530" y2="760" stroke="#4A5BE8" stroke-width="3" opacity=".35"/><circle cx="300" cy="760" r="230" fill="none" stroke="#4A5BE8" stroke-width="5"/></g><g id="dots6"></g></svg>
@@ -79,12 +73,7 @@ svg{position:absolute;left:0;top:0;overflow:visible}
   <div class="pill" id="w5" style="left:640px;top:850px;background:var(--sunk);color:var(--muted)">altezza e peso</div>
 </section>
 
-<!-- 7 piccole -->
-<section class="sc" id="piccole"><p class="kick">Piccole differenze</p>
-  <div class="card" id="pc1" style="top:420px"><svg width="150" height="150" style="position:relative"><g id="pg1"></g></svg><div><b>Paesi occidentali</b><span>sensazioni segnate un po' più forti</span></div></div>
-  <div class="card" id="pc2" style="top:720px"><svg width="150" height="150" style="position:relative"><g id="pg2"></g></svg><div><b>Donne</b><span>un po' di più pancia e gola, per esempio nell'ansia e nella vergogna</span></div></div>
-</section>
-
+ 
 <!-- 8 eta -->
 <section class="sc" id="eta"><p class="kick">Con l'età</p>
   <svg width="1080" height="1920"><g id="a1"></g><g id="a2"></g><g id="a3"></g><path id="arrow" d="M150 1110 L930 1110" stroke="#5A6488" stroke-width="6" stroke-linecap="round" fill="none"/><path d="M905 1092 L935 1110 L905 1128" stroke="#5A6488" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none" id="arrowh"/></svg>
@@ -105,12 +94,7 @@ svg{position:absolute;left:0;top:0;overflow:visible}
   <div class="lab" style="left:780px;top:930px;font-size:32px;color:var(--muted)">non si vede</div>
 </section>
 
-<!-- 10 mito -->
-<section class="sc" id="mito" style="background:var(--coral-soft)"><p class="kick" style="color:var(--coral-text)">Mito o realtà?</p>
-  <div class="say" id="mq" style="top:420px">«Le emozioni stanno solo nella testa.»</div>
-  <div id="mstamp" style="position:absolute;left:72px;top:760px"><span class="chip"><i>✕</i>MITO</span></div>
-</section>
-
+ 
 <!-- 11 opinione -->
 <section class="sc" id="opinione" style="background:var(--peri-soft)">
   <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
@@ -135,8 +119,8 @@ const $=id=>document.getElementById(id);
 const cl=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-cl(x),3), back=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
 const lerp=(a,b,k)=>a+(b-a)*k;
 function pop(el,u,s){const k=back((u-s)/.45);el.style.opacity=eo((u-s)/.3);el.style.transform=(el.classList.contains('lab')?'translateX(-50%) ':'')+`scale(${0.85+0.15*k})`}
-const T={"hook": 0.0, "studio": 4.0, "diverse": 18.7, "mappe": 29.0, "vicine": 48.1, "mondo": 58.8, "piccole": 77.1, "eta": 92.2, "perche": 99.7, "mito": 113.2, "opinione": 120.7, "fine": 138.6}, END=148.1;
-const CAPS=[[0.35, 3.65, "Dove sentiamo le emozioni?"], [4.35, 10.43, "Un gruppo di ricercatori finlandesi ha chiesto a quasi 4.000 persone, in 101 paesi,"], [10.43, 18.35, "di colorare su una sagoma dove sentono un'emozione: in rosso dove qualcosa si attiva, in blu dove si spegne."], [19.05, 24.62, "Il risultato: ogni emozione è stata percepita nel corpo in modo diverso,"], [24.62, 28.65, "e queste mappe si sono somigliate in tutto il mondo."], [29.35, 35.17, "La rabbia si è accesa in testa, nel petto e nelle mani. La paura nel petto."], [35.17, 41.23, "Il disgusto in gola e nello stomaco. La tristezza ha svuotato braccia e gambe."], [41.23, 47.75, "L'amore e la felicità, invece, hanno acceso tutto il corpo ma con intensità diverse."], [48.45, 54.12, "Perfino emozioni vicine, come l'amore e la felicità, hanno avuto mappe distinte:"], [54.12, 58.45, "per esempio, cambiano le zone più accese e la loro intensità."], [59.15, 64.41, "E queste mappe si sono somigliate moltissimo da un paese all'altro."], [64.41, 72.19, "A fare la differenza è stata l'emozione, molto più della cultura, del sesso o del titolo di studio."], [72.19, 76.75, "E non contava dove si vive, né quanto si è alti o pesanti."], [77.45, 85.33, "Qualche piccola differenza c'è stata: nei paesi occidentali le sensazioni sono state segnate un po' più forti;"], [85.33, 91.85, "le donne hanno sentito di più la pancia e la gola, per esempio nell'ansia e nella vergogna."], [92.55, 99.35, "L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui."], [100.05, 100.54, "Perché?"], [100.54, 107.91, "Secondo gli autori, un'espressione del volto si può imparare guardando gli altri, il battito del cuore no."], [107.91, 112.85, "Per questo ciò che sentiamo nel corpo sarebbe meno legato alla cultura."], [113.55, 120.35, "Le emozioni stanno solo nella testa? Secondo la ricerca, no: vengono percepite anche nel corpo."], [121.05, 125.49, "Sembra banale: chi di noi non ha percepito sul proprio corpo un'emozione…"], [125.49, 135.52, "ma avere maggiore consapevolezza su cosa percepiamo fisiologicamente potrebbe aiutarci anche a migliorare le nostre decisioni senza saltare a conclusioni affrettate."], [135.52, 138.25, "Magari non è fame quella che stai provando..."], [138.95, 147.75, "La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti. Il link è in bio."]];
+const T={"hook": 0.0, "studio": 4.0, "diverse": 18.7, "mappe": 29.0, "mondo": 48.1, "eta": 66.4, "perche": 73.9, "opinione": 87.4, "fine": 105.3}, END=114.8;
+const CAPS=[[0.35, 3.65, "Dove sentiamo le emozioni?"], [4.35, 10.43, "Un gruppo di ricercatori finlandesi ha chiesto a quasi 4.000 persone, in 101 paesi,"], [10.43, 18.35, "di colorare su una sagoma dove sentono un'emozione: in rosso dove qualcosa si attiva, in blu dove si spegne."], [19.05, 24.62, "Il risultato: ogni emozione è stata percepita nel corpo in modo diverso,"], [24.62, 28.65, "e queste mappe si sono somigliate in tutto il mondo."], [29.35, 35.17, "La rabbia si è accesa in testa, nel petto e nelle mani. La paura nel petto."], [35.17, 41.23, "Il disgusto in gola e nello stomaco. La tristezza ha svuotato braccia e gambe."], [41.23, 47.75, "L'amore e la felicità, invece, hanno acceso tutto il corpo ma con intensità diverse."], [48.45, 53.71, "E queste mappe si sono somigliate moltissimo da un paese all'altro."], [53.71, 61.49, "A fare la differenza è stata l'emozione, molto più della cultura, del sesso o del titolo di studio."], [61.49, 66.05, "E non contava dove si vive, né quanto si è alti o pesanti."], [66.75, 73.55, "L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui."], [74.25, 74.74, "Perché?"], [74.74, 82.11, "Secondo gli autori, un'espressione del volto si può imparare guardando gli altri, il battito del cuore no."], [82.11, 87.05, "Per questo ciò che sentiamo nel corpo sarebbe meno legato alla cultura."], [87.75, 92.19, "Sembra banale: chi di noi non ha percepito sul proprio corpo un'emozione…"], [92.19, 102.22, "ma avere maggiore consapevolezza su cosa percepiamo fisiologicamente potrebbe aiutarci anche a migliorare le nostre decisioni senza saltare a conclusioni affrettate."], [102.22, 104.95, "Magari non è fame quella che stai provando..."], [105.65, 114.45, "La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti. Il link è in bio."]];
 
 // ---- heat colour scale (like the study's maps: dark = nothing, red-yellow = activation, blue = deactivation)
 function mix(c1,c2,k){const a=parseInt(c1.slice(1),16),b=parseInt(c2.slice(1),16);const r=Math.round(lerp(a>>16,b>>16,k)),g=Math.round(lerp((a>>8)&255,(b>>8)&255,k)),bl=Math.round(lerp(a&255,b&255,k));return `rgb(${r},${g},${bl})`}
@@ -179,18 +163,18 @@ const ROW=[];NAMES.forEach(([k,n],i)=>{const x=180+(i%3)*360,y=(i<3?560:930);con
 // scene 4
 const big=body('bigB',540,810,0.88);
 // scene 5
-const loveB=body('loveB',310,700,0.7), happyB=body('happyB',770,700,0.7);
+
 // scene 6: stacked bodies from different countries + dots
 let d6='';for(let i=0;i<60;i++){const a=i*2.399,r=Math.sqrt((i+.5)/60)*200;d6+=`<circle cx="${300+r*Math.cos(a)}" cy="${760+r*Math.sin(a)}" r="12" opacity="0"/>`}$('dots6').innerHTML=d6;const D6=[...$('dots6').children];
 // scene 7
-const pg1=glow($('pg1'),75,75,62), pg2=glow($('pg2'),75,75,62);
+
 // scene 8
 const A1=glow($('a1'),230,760,120),A2=glow($('a2'),540,760,120),A3=glow($('a3'),850,760,120);
 // scene 11, 12
 
 
-const ORDER=['hook','studio','diverse','mappe','vicine','mondo','piccole','eta','perche','mito','opinione','fine'];
-const NOSRC=['hook','mito','opinione','fine'];
+const ORDER=['hook','studio','diverse','mappe','mondo','eta','perche','opinione','fine'];
+const NOSRC=['hook','opinione','fine'];
 window.render=function(t){
   ORDER.forEach((id,i)=>{const a=T[id],b=i<ORDER.length-1?T[ORDER[i+1]]:END+1;const vis=t>=a-0.3&&t<b+0.35;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.3))/0.35)):0;$(id).style.zIndex=i+1});
   const cur=ORDER.filter(id=>t>=T[id]).pop();
@@ -209,21 +193,18 @@ window.render=function(t){
   // 3 diverse
   u=t-T.diverse;ROW.forEach(([b,k],i)=>{b.set(E[k],eo((u-0.4-i*0.45)/.8))});
   // 4 mappe: one big body cycling emotions
-  u=t-T.mappe;{const D=T.vicine-T.mappe,CU=[0,.234,.318,.473,.649,.80,1].map(x=>x?0.35+x*(D-0.7):0);CU[6]=D;let i=0;while(i<5&&u>=CU[i+1])i++;const f=(u-CU[i])/(CU[i+1]-CU[i]);const prev=i>0?E[NAMES[i-1][0]]:{};const k=eo(f/.25);big.set(blend(prev,E[NAMES[i][0]],k));const em=$('emo');if(em.dataset.k!==String(i)){em.textContent=NAMES[i][1];em.dataset.k=String(i)}em.style.opacity=Math.min(eo(f/.15),eo((1-f)/.1));}
+  u=t-T.mappe;{const D=T.mondo-T.mappe,CU=[0,.234,.318,.473,.649,.80,1].map(x=>x?0.35+x*(D-0.7):0);CU[6]=D;let i=0;while(i<5&&u>=CU[i+1])i++;const f=(u-CU[i])/(CU[i+1]-CU[i]);const prev=i>0?E[NAMES[i-1][0]]:{};const k=eo(f/.25);big.set(blend(prev,E[NAMES[i][0]],k));const em=$('emo');if(em.dataset.k!==String(i)){em.textContent=NAMES[i][1];em.dataset.k=String(i)}em.style.opacity=Math.min(eo(f/.15),eo((1-f)/.1));}
   // 5 vicine
-  u=t-T.vicine;loveB.set(E.amore,eo((u-0.4)/1));happyB.set(E.felicita,eo((u-0.9)/1));
   // 6 mondo: bodies from different places converge onto one map
   u=t-T.mondo;{const k=eo((u-2)/2.5);D6.forEach((c,i)=>{c.setAttribute('opacity',eo((u-0.2-i*0.03)/.3)*0.9);const col=['#1E9E9E','#4A5BE8','#F09B7C'][i%3];c.setAttribute('fill',k<1?mix(col,'#F57C1F',k):'#F57C1F')});
    $('globe').setAttribute('opacity',eo(u/.4));
    pop($('w0'),u,5);[1,2,3,4,5].forEach(j=>{const el=$('w'+j);pop(el,u,5.6+j*0.5);el.style.opacity=Math.min(eo((u-5.6-j*0.5)/.3),0.75)})}
   // 7 piccole
-  u=t-T.piccole;{pop($('pc1'),u,0.3);pg1(0.9*eo((u-0.5)/.8));pop($('pc2'),u,7);pg2(0.8*eo((u-7.3)/.8));}
   // 8 eta
   u=t-T.eta;A1(eo((u-0.3)/.8));A2(0.65*eo((u-0.9)/.8));A3(0.35*eo((u-1.5)/.8));
   // 9 perche: face changes expression, heart beats unseen
   u=t-T.perche;{const s=Math.sin(u*1.6);$('mouth').setAttribute('d',`M-70 70 Q0 ${70+60*s} 70 70`);const hb=1+0.08*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('heart').setAttribute('transform',`translate(780 700) scale(${hb})`);$('face').setAttribute('opacity',eo(u/.5));$('heart').setAttribute('opacity',eo((u-0.6)/.5))}
   // 10 mito
-  u=t-T.mito;{$('mq').style.opacity=eo((u-0.2)/.4);const m=back((u-3)/.45),mo=eo((u-3)/.3);$('mstamp').style.opacity=mo;$('mstamp').style.transform=`scale(${2-m}) rotate(${-8*mo}deg)`}
   // 11 opinione
   u=t-T.opinione;{pop($('oph'),u,0.3);pop($('opn'),u,0.9);['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)})}
   // 12 fine

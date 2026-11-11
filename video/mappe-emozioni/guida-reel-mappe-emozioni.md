@@ -1,14 +1,14 @@
 # Reel animato · «Dove sentiamo le emozioni» (Volynets et al., 2020)
 
-**File video:** `weself-mappe-emozioni-reel.mp4` (1080×1920, 30 fps, 148 secondi, senza audio). Le scritte sullo schermo coincidono con la voce e fanno da sottotitoli; restano nella zona sicura (220–1480 pixel dall'alto).
+**File video:** `weself-mappe-emozioni-reel.mp4` (1080×1920, 30 fps, 115 secondi, senza audio). Le scritte sullo schermo coincidono con la voce e fanno da sottotitoli; restano nella zona sicura (220–1480 pixel dall'alto).
 
-**Grafica:** colori «a mappa di calore» come nello studio: dal rosso al giallo dove una sensazione si accende, dal blu all'azzurro dove si spegne. Le sagome stilizzate (non persone reali) compaiono solo dove servono a mostrare le mappe: il metodo, le singole emozioni e il confronto amore/felicità; nelle altre scene ci sono macchie di colore, un globo, schede e icone. Sotto ogni scena c'è la fonte; in alto, una barra sottile mostra l'avanzamento.
+**Grafica:** colori «a mappa di calore» come nello studio: dal rosso al giallo dove una sensazione si accende, dal blu all'azzurro dove si spegne. Le sagome stilizzate (non persone reali) compaiono solo dove servono a mostrare le mappe: il metodo e le singole emozioni; nelle altre scene ci sono macchie di colore, un globo e icone. Sotto ogni scena c'è la fonte; in alto, una barra sottile mostra l'avanzamento.
 
-**Come è fatto:** il testo della voce è in `build_reel.py` (copione approvato nell'editor), la grafica in `reel_template.html`. `python3 video/mappe-emozioni/build_reel.py` crea `reel.html`; poi `node tools/render-video.cjs video/mappe-emozioni/reel.html video/mappe-emozioni/weself-mappe-emozioni-reel.mp4 148.1 30`.
+**Come è fatto:** il testo della voce è in `build_reel.py` (copione approvato nell'editor), la grafica in `reel_template.html`. `python3 video/mappe-emozioni/build_reel.py` crea `reel.html`; poi `node tools/render-video.cjs video/mappe-emozioni/reel.html video/mappe-emozioni/weself-mappe-emozioni-reel.mp4 114.8 30`.
 
 **Nota sulle mappe:** i colori delle sagome riproducono a grandi linee la Figura 1 dell'articolo (zone e direzione delle sensazioni), non i valori esatti pixel per pixel.
 
-## 1. Il copione per la voce (circa 148 secondi)
+## 1. Il copione per la voce (circa 115 secondi)
 
 Leggi con calma, circa 2,5 parole al secondo. Metti ogni frase all'inizio della sua scena. **Nel punto di vista e nel finale non ci sono sottotitoli** (come negli altri Reel): non aggiungere i sottotitoli automatici in quei tratti.
 
@@ -18,20 +18,17 @@ Leggi con calma, circa 2,5 parole al secondo. Metti ogni frase all'inizio della 
 | 4–19 | Puntini (101 paesi), pillole «quasi 4.000 persone», «101 paesi»; due sagome si colorano: «si attiva» e «si spegne» | «Un gruppo di ricercatori finlandesi ha chiesto a quasi 4.000 persone, in 101 paesi, di colorare su una sagoma dove sentono un'emozione: in rosso dove qualcosa si attiva, in blu dove si spegne.» |
 | 19–29 | Sei cerchi colorati, uno per emozione, ognuno con i suoi colori | «Il risultato: ogni emozione è stata percepita nel corpo in modo diverso, e queste mappe si sono somigliate in tutto il mondo.» |
 | 29–48 | Una grande sagoma cambia mappa con il nome dell'emozione (rabbia, paura, disgusto, tristezza, amore, felicità) | «La rabbia si è accesa in testa, nel petto e nelle mani. La paura nel petto. Il disgusto in gola e nello stomaco. La tristezza ha svuotato braccia e gambe. L'amore e la felicità, invece, hanno acceso tutto il corpo ma con intensità diverse.» |
-| 48–59 | Amore e felicità affiancate | «Perfino emozioni vicine, come l'amore e la felicità, hanno avuto mappe distinte: per esempio, cambiano le zone più accese e la loro intensità.» |
-| 59–77 | Un globo con puntini colorati che diventano tutti dello stesso colore; pillola grande «l'emozione», pillole piccole cultura, sesso, titolo di studio, dove si vive, altezza e peso | «E queste mappe si sono somigliate moltissimo da un paese all'altro. A fare la differenza è stata l'emozione, molto più della cultura, del sesso o del titolo di studio. E non contava dove si vive, né quanto si è alti o pesanti.» |
-| 77–92 | Due schede: «Paesi occidentali» e «Donne», ognuna con una piccola macchia di colore | «Qualche piccola differenza c'è stata: nei paesi occidentali le sensazioni sono state segnate un po' più forti; le donne hanno sentito di più la pancia e la gola, per esempio nell'ansia e nella vergogna.» |
-| 92–100 | Tre macchie di colore sempre più tenui, freccia «con gli anni» | «L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui.» |
-| 100–113 | Un volto che cambia espressione accanto a un cuore che batte | «Perché? Secondo gli autori, un'espressione del volto si può imparare guardando gli altri, il battito del cuore no. Per questo ciò che sentiamo nel corpo sarebbe meno legato alla cultura.» |
-| 113–121 | Mito o realtà? Timbro MITO | «Le emozioni stanno solo nella testa? Secondo la ricerca, no: vengono percepite anche nel corpo.» |
-| 121–139 | **Il mio punto di vista** (stessa schermata del Reel «Sono emozionato»: sfondo lilla, cerchi che si allargano, «Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.») | «Sembra banale: chi di noi non ha percepito sul proprio corpo un'emozione… ma avere maggiore consapevolezza su cosa percepiamo fisiologicamente potrebbe aiutarci anche a migliorare le nostre decisioni senza saltare a conclusioni affrettate. Magari non è fame quella che stai provando...» |
-| 139–148 | Finale come negli altri Reel (sfondo pervinca): in alto un cuore che batte; sotto la frase «La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti.», poi «Con WeSelf costruisci piccole abitudini che ti fanno stare bene, già in agenda, insieme a una comunità dove ci si sostiene.» e il pulsante «Scopri WeSelf · link in bio» | «La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti. Il link è in bio.» |
+| 48–66 | Un globo con puntini colorati che diventano tutti dello stesso colore; pillola grande «l'emozione», pillole piccole cultura, sesso, titolo di studio, dove si vive, altezza e peso | «E queste mappe si sono somigliate moltissimo da un paese all'altro. A fare la differenza è stata l'emozione, molto più della cultura, del sesso o del titolo di studio. E non contava dove si vive, né quanto si è alti o pesanti.» |
+| 66–74 | Tre macchie di colore sempre più tenui, freccia «con gli anni» | «L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui.» |
+| 74–87 | Un volto che cambia espressione accanto a un cuore che batte | «Perché? Secondo gli autori, un'espressione del volto si può imparare guardando gli altri, il battito del cuore no. Per questo ciò che sentiamo nel corpo sarebbe meno legato alla cultura.» |
+| 87–105 | **Il mio punto di vista** (stessa schermata del Reel «Sono emozionato»: sfondo lilla, cerchi che si allargano, «Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.») | «Sembra banale: chi di noi non ha percepito sul proprio corpo un'emozione… ma avere maggiore consapevolezza su cosa percepiamo fisiologicamente potrebbe aiutarci anche a migliorare le nostre decisioni senza saltare a conclusioni affrettate. Magari non è fame quella che stai provando...» |
+| 105–115 | Finale come negli altri Reel (sfondo pervinca): in alto un cuore che batte; sotto la frase «La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti.», poi «Con WeSelf costruisci piccole abitudini che ti fanno stare bene, già in agenda, insieme a una comunità dove ci si sostiene.» e il pulsante «Scopri WeSelf · link in bio» | «La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti. Il link è in bio.» |
 
 ## 2. Registrazione e montaggio
 
-Come per gli altri Reel: una frase alla volta, telefono a 15–20 cm, stanza piccola. In CapCut metti ogni frase all'inizio della sua scena (0; 4; 19; 29; 48; 59; 77; 92; 100; 113; 121; 139 secondi), riduzione del rumore attiva, esporta in 1080p a 30 fps. Se una frase risulta più lunga della sua scena, dimmi i secondi e rigenero il video con i tempi giusti.
+Come per gli altri Reel: una frase alla volta, telefono a 15–20 cm, stanza piccola. In CapCut metti ogni frase all'inizio della sua scena (0; 4; 19; 29; 48; 66; 74; 87; 105 secondi), riduzione del rumore attiva, esporta in 1080p a 30 fps. Se una frase risulta più lunga della sua scena, dimmi i secondi e rigenero il video con i tempi giusti.
 
-**Durata:** 2 minuti e mezzo vanno bene su Instagram (i Reel arrivano a 3 minuti) e su TikTok. Se vuoi accorciarlo, le prime candidate sono le scene «Piccole differenze» (77–92) e «Vicine ma diverse» (48–59): i limiti restano comunque in didascalia.
+**Durata:** circa 2 minuti, adatti a Instagram (i Reel arrivano a 3 minuti) e a TikTok. Su tua scelta il video non ha le scene «Vicine ma diverse», «Piccole differenze» e «Mito o realtà?»: il mito e i limiti sono in didascalia.
 
 ## 3. Pubblicazione
 
@@ -44,7 +41,9 @@ Ogni emozione ha la sua mappa nel corpo. E si somiglia in tutto il mondo.
 
 Un gruppo di ricercatori finlandesi ha chiesto a quasi 4.000 persone, in 101 paesi, di colorare su una sagoma dove sentono 13 emozioni: dove qualcosa si attiva e dove si spegne.
 
-Ogni emozione ha avuto la sua mappa: la rabbia in testa, nel petto e nelle mani; il disgusto in gola e nello stomaco; la tristezza ha svuotato braccia e gambe. E le mappe si sono somigliate moltissimo da un paese all'altro: contava l'emozione, molto più della cultura, del sesso o del titolo di studio. L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui.
+Ogni emozione ha avuto la sua mappa: la rabbia in testa, nel petto e nelle mani; il disgusto in gola e nello stomaco; la tristezza ha svuotato braccia e gambe. E le mappe si sono somigliate moltissimo da un paese all'altro: contava l'emozione, molto più della cultura, del sesso o del titolo di studio. Ci sono state solo piccole differenze (nei paesi occidentali le sensazioni sono state segnate un po' più forti; le donne hanno sentito un po' di più pancia e gola). L'unica differenza importante è stata l'età: con gli anni, le sensazioni sono diventate più tenui.
+
+Mito o realtà? «Le emozioni stanno solo nella testa.» Secondo la ricerca, è un mito: vengono percepite anche nel corpo.
 
 I limiti: le persone hanno descritto da sole quello che sentivano, con un questionario online in inglese; hanno partecipato soprattutto donne e persone con un alto titolo di studio. Lo studio mostra come le emozioni vengono percepite, non che cosa succede davvero negli organi.
 
@@ -71,8 +70,9 @@ Dove sentiamo le emozioni? Quasi 4.000 persone in 101 paesi le hanno colorate su
 
 - Tutto quello che dice la voce è stato controllato sull'articolo completo (versione accettata del 2019, pubblicata su Emotion nel 2020).
 - «Quasi 4.000» = 3.954 persone; «101 paesi» come nell'articolo.
-- «In tutto il mondo»: le mappe dei diversi paesi e gruppi culturali si sono somigliate molto; gli autori parlano di mappe «culturalmente universali». Restano piccole differenze (paesi occidentali più intensi; donne più pancia e gola), dette nel video.
+- «In tutto il mondo»: le mappe dei diversi paesi e gruppi culturali si sono somigliate molto; gli autori parlano di mappe «culturalmente universali». Restano piccole differenze (paesi occidentali più intensi; donne più pancia e gola), dette in didascalia.
 - «Perché?»: è la spiegazione proposta dagli autori, detta al condizionale («sarebbe»).
 - Il punto di vista è dichiarato come opinione personale sia sullo schermo sia in didascalia.
 - Tema non clinico: nessun rimando di supporto obbligatorio. Il video nomina ansia e vergogna solo come esempi dello studio.
-- Nessuna persona reale nelle immagini: sagome stilizzate solo nelle tre scene sulle mappe, come concordato.
+- Nessuna persona reale nelle immagini: sagome stilizzate solo nelle due scene sulle mappe, come concordato.
+- «Mito o realtà?» e i limiti non sono nel video (scelta del fondatore): sono in didascalia, come richiede la regola di ogni post.

@@ -77,7 +77,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Il bias della settimana #1 · effetto riflettore — Gilovich, Medvec & Savitsky 2000 | `carosselli/bias-01-riflettore/` | Published |
 | Il bias della settimana #2 · liking gap — Boothby et al. 2018 (percentages computed from the authors' public OSF data) | `carosselli/bias-02-liking-gap/` | Published (real Canva photo on the cover) |
 | Leadership / leader non si nasce: si impara — Lacerenza et al. 2017 (first Leadership post) | `carosselli/leadership/` | Ready, not published (Sun 15 Nov) |
-| Reel animato «Dove sentiamo le emozioni» — Volynets et al. 2020 (bodily maps, stylised bodies, founder opinion) | `video/mappe-emozioni/` | Ready, voice-over to record (148 s) |
+| Reel animato «Dove sentiamo le emozioni» — Volynets et al. 2020 (bodily maps, stylised bodies, founder opinion) | `video/mappe-emozioni/` | Ready, voice-over to record (115 s) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
