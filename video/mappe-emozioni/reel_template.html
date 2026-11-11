@@ -124,10 +124,11 @@ svg{position:absolute;left:0;top:0;overflow:visible}
 
 <!-- 12 fine -->
 <section class="sc cta" id="fine">
-  <svg width="1080" height="1920"><g id="ctaH" transform="translate(800 720)"><path d="M0 70 C-150 -30 -110 -170 0 -100 C110 -170 150 -30 0 70Z" transform="scale(1.3)" fill="#F09B7C"/></g></svg>
-  <div style="position:absolute;left:72px;right:72px;top:300px;font-weight:900;font-size:70px;line-height:1.1">Chiediti dove senti<br>le tue emozioni.</div>
-  <div id="ctab" style="position:absolute;left:72px;top:1000px"><span class="btn">Scopri WeSelf · link in bio</span></div>
-  <div style="position:absolute;left:72px;top:1120px;font-weight:900;font-size:56px"><span>We</span><span>Self</span></div>
+  <svg width="1080" height="1920"><g id="ctaR"><circle id="r1" cx="540" cy="440" r="100" fill="none" stroke="#fff" stroke-width="5"/><circle id="r2" cx="540" cy="440" r="100" fill="none" stroke="#F09B7C" stroke-width="5"/><circle id="r3" cx="540" cy="440" r="100" fill="none" stroke="#fff" stroke-width="5"/></g>
+    <g id="ctaH" transform="translate(540 440)"><path d="M0 70 C-150 -30 -110 -170 0 -100 C110 -170 150 -30 0 70Z" transform="scale(1.2)" fill="#F09B7C"/></g></svg>
+  <div class="h" id="ctat" style="top:660px;font-size:68px">La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti.</div>
+  <div class="h" id="ctaw" style="top:1010px;font-size:42px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf costruisci piccole abitudini che ti fanno stare bene, già in agenda, insieme a una comunità dove ci si sostiene.</div>
+  <div id="ctab" style="position:absolute;left:72px;top:1250px"><span class="btn">Scopri WeSelf · link in bio</span></div>
 </section>
 
 <script>
@@ -196,7 +197,7 @@ window.render=function(t){
   const cur=ORDER.filter(id=>t>=T[id]).pop();
   $('progi').style.width=(cl(t/END)*100)+'%';$('prog').style.opacity=cur==='fine'?0:1;
   $('gsrc').style.opacity=NOSRC.includes(cur)?0:1;
-  {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on)el.style.opacity=0;
+  {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on||cur==='opinione'||cur==='fine')el.style.opacity=0;
    el.style.top=(cur==='fine'?1270:1215)+'px';}
   let u;
   // 1 hook: heart beat in chest, knot in belly, legs going blue
@@ -227,7 +228,7 @@ window.render=function(t){
   // 11 opinione
   u=t-T.opinione;{pop($('oph'),u,0.3);pop($('opn'),u,0.9);['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)})}
   // 12 fine
-  u=t-T.fine;{const hb=1+0.1*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('ctaH').setAttribute('transform',`translate(800 720) scale(${hb})`);$('ctaH').setAttribute('opacity',eo(u/.5));pop($('ctab'),u,1.2)}
+  u=t-T.fine;{const hb=1+0.1*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('ctaH').setAttribute('transform',`translate(540 440) scale(${hb})`);$('ctaH').setAttribute('opacity',eo(u/.5));['r1','r2','r3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',100+160*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)});pop($('ctat'),u,0.4);pop($('ctaw'),u,2.5);pop($('ctab'),u,4.5)}
 };
 render(0);
 </script></body></html>
