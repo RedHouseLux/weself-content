@@ -1,0 +1,147 @@
+<title>Copione Reel Emozioni</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital@0;1&family=Nunito:wght@600;800;900&display=swap">
+<style>
+/* A script board: one card per scene, voice first; WeSelf colours */
+:root{--bg:#F1EEF7;--panel:#FFFFFF;--fg:#1E2B5C;--muted:#5A6488;--line:#DCD8E8;--accent:#4A5BE8;--teal:#0F6F6F;--warn:#A64A30;--soft:#DDE0FB;
+--ui:"Nunito",system-ui,sans-serif;--read:"Literata",Georgia,serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#12162B;--panel:#1B2140;--fg:#E8EAF6;--muted:#AAB3DD;--line:#2E3660;--accent:#8B93E8;--teal:#5BC8BC;--warn:#F5B49C;--soft:#2A3268;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12162B;--panel:#1B2140;--fg:#E8EAF6;--muted:#AAB3DD;--line:#2E3660;--accent:#8B93E8;--teal:#5BC8BC;--warn:#F5B49C;--soft:#2A3268;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--panel);border-bottom:1px solid var(--line)}
+.bar .in,.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:860px;margin:0 auto}
+.bar .in{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding-block:14px}
+.bar h1{font-size:20px;font-weight:900;margin:0}
+.bar p{margin:2px 0 0;font-size:14px;color:var(--muted)}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.status{font-size:14px;font-weight:800;color:var(--muted)}.status.dirty{color:var(--warn)}.status.saved{color:var(--teal)}
+button{font:inherit;font-weight:900;font-size:15px;border-radius:999px;padding:10px 18px;border:2px solid var(--accent);cursor:pointer}
+button.primary{background:var(--accent);color:var(--panel)}button.ghost{background:transparent;color:var(--accent)}
+button:disabled{opacity:.45;cursor:default}button:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+.wrap{padding-block:24px 56px;display:flex;flex-direction:column;gap:18px}
+.intro{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:15px;line-height:1.55;color:var(--muted)}
+.intro b{color:var(--fg)}
+.scene{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:14px}
+.scene header{display:flex;gap:14px;align-items:center}
+.num{font-weight:900;font-size:15px;color:var(--accent);background:var(--soft);border-radius:10px;padding:6px 9px;font-variant-numeric:tabular-nums}
+.scene h2{font-size:19px;font-weight:900;margin:0}
+.time{font-size:13px;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.lab{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.voice{font-family:var(--read);font-size:20px;line-height:1.5;margin:0}
+.vis{font-size:15px;line-height:1.5;margin:0;color:var(--muted)}
+[data-e]{border-radius:8px;padding:4px 6px;margin-inline:-6px;cursor:text;transition:box-shadow .15s}
+[data-e]:hover{box-shadow:0 0 0 2px var(--line)}
+[data-e]:focus{outline:none;box-shadow:0 0 0 3px var(--accent)}
+[data-e].changed{box-shadow:0 0 0 2px var(--warn)}
+@media (prefers-reduced-motion: reduce){[data-e]{transition:none}}
+</style>
+<div class="bar"><div class="in">
+  <div><h1>Copione Reel · Dove sentiamo le emozioni</h1><p>Clicca su un testo e riscrivilo, poi premi «Salva modifiche».</p></div>
+  <div class="actions"><span class="status" id="status">Nessuna modifica</span>
+  <button class="ghost" id="undo" type="button" disabled>Annulla le modifiche non salvate</button>
+  <button class="primary" id="save" type="button" disabled>Salva modifiche</button></div>
+</div></div>
+<div class="wrap">
+<div class="intro"><b>Fonte principale:</b> Volynets, Glerean, Hietanen, Hari e Nummenmaa, «Bodily maps of emotions are culturally universal», <i>Emotion</i>, 2020 (3.954 persone, 101 paesi, 13 emozioni). <b>Durata:</b> circa 93 secondi, voce fuori campo del fondatore; i sottotitoli seguono la voce. Puoi cambiare sia la voce sia la descrizione di ciò che si vede; i tempi si adattano alla lunghezza delle frasi quando Claude prepara il video.</div>
+<article class="scene">
+  <header><span class="num">01</span><div><h2 data-e="n1">Hook</h2><span class="time" data-e="t1">0–6 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v1">Il cuore che batte forte. Un nodo allo stomaco. Le gambe che non reggono. Ma dove le sentiamo, le emozioni?</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s1">Una sagoma stilizzata al centro: si accende un battito nel petto, un nodo nello stomaco, le gambe diventano blu.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">02</span><div><h2 data-e="n2">Lo studio</h2><span class="time" data-e="t2">6–16 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v2">Un gruppo di ricercatori finlandesi ha chiesto a quasi 4.000 persone, in 101 paesi, di colorare su una sagoma dove sentono un'emozione: in rosso dove qualcosa si attiva, in blu dove si spegne.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s2">Un mappamondo di puntini che si accendono (101 paesi); due sagome affiancate: una si colora di rosso, l'altra di blu.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">03</span><div><h2 data-e="n3">Le mappe</h2><span class="time" data-e="t3">16–32 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v3">La rabbia si è accesa in testa, nel petto e nelle mani. La paura nel petto. Il disgusto in gola e nello stomaco. La tristezza ha svuotato braccia e gambe. L'amore e la felicità, invece, hanno acceso tutto il corpo.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s3">Le sagome si colorano una dopo l'altra, come nella ricerca: rabbia, paura, disgusto, tristezza, amore e felicità.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">04</span><div><h2 data-e="n4">Uguali ovunque</h2><span class="time" data-e="t4">32–41 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v4">E la cosa sorprendente: le mappe si sono somigliate moltissimo da un paese all'altro, e tra uomini e donne.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s4">Le sagome di paesi diversi si sovrappongono quasi perfettamente.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">05</span><div><h2 data-e="n5">Con l'età</h2><span class="time" data-e="t5">41–47 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v5">Con l'età, invece, le sensazioni sono risultate un po' più deboli.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s5">Una sagoma che si colora con tinte un po' più tenui.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">06</span><div><h2 data-e="n6">Perché</h2><span class="time" data-e="t6">47–57 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v6">Perché? Secondo gli autori, un'espressione del volto si può imparare guardando gli altri, il battito del cuore no. Per questo ciò che sentiamo nel corpo sarebbe meno legato alla cultura.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s6">Un volto stilizzato che cambia espressione accanto a un cuore che batte, che resta uguale.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">07</span><div><h2 data-e="n7">Mito o realtà?</h2><span class="time" data-e="t7">57–63 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v7">Le emozioni stanno solo nella testa? Per queste persone, no: le hanno sentite in tutto il corpo.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s7">Scritta «Le emozioni stanno solo nella testa» con timbro MITO.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">08</span><div><h2 data-e="n8">I limiti</h2><span class="time" data-e="t8">63–71 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v8">Certo, sono sensazioni che le persone dicono di provare, non misure del corpo. E hanno risposto online: soprattutto donne e persone con un alto livello di istruzione.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s8">Tre icone: un fumetto (ciò che si dice), un computer (online), un grafico sbilanciato (campione).</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">09</span><div><h2 data-e="n9">La tua opinione</h2><span class="time" data-e="t9">71–85 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v9">[Scrivi qui la tua opinione, circa 14 secondi]</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s9">Sfondo lilla, «Il mio punto di vista · Il fondatore di WeSelf», «Un'opinione personale, non un risultato dello studio».</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">10</span><div><h2 data-e="n10">Finale WeSelf</h2><span class="time" data-e="t10">85–93 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v10">La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti. Il link è in bio.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s10">Logo WeSelf, la sagoma con un piccolo cuore che pulsa.</p></div>
+</article>
+</div>
+<script type="application/json" id="state">{}</script>
+<script>
+(function(){
+  var PRISTINE = document.body.innerHTML;
+  var saved = {};
+  try { saved = JSON.parse(document.getElementById('state').textContent || '{}'); } catch (e) { saved = {}; }
+  var els = Array.prototype.slice.call(document.querySelectorAll('[data-e]'));
+  var original = {};
+  els.forEach(function(el){
+    original[el.dataset.e] = el.innerHTML;
+    if (saved[el.dataset.e] != null) el.innerHTML = saved[el.dataset.e];
+    el.setAttribute('contenteditable', 'true'); el.setAttribute('lang', 'it'); el.setAttribute('spellcheck', 'true');
+  });
+  var base = {}; els.forEach(function(el){ base[el.dataset.e] = el.innerHTML; });
+  var st = document.getElementById('status'), saveBtn = document.getElementById('save'), undoBtn = document.getElementById('undo');
+  function refresh(msg, cls){
+    els.forEach(function(el){ el.classList.toggle('changed', el.innerHTML !== original[el.dataset.e]); });
+    var n = els.filter(function(el){ return el.innerHTML !== base[el.dataset.e]; }).length;
+    saveBtn.disabled = n === 0; undoBtn.disabled = n === 0;
+    st.className = 'status' + (cls ? ' ' + cls : (n ? ' dirty' : ''));
+    st.textContent = msg || (n ? (n === 1 ? '1 testo modificato, da salvare' : n + ' testi modificati, da salvare') : 'Nessuna modifica da salvare');
+  }
+  document.addEventListener('input', function(e){ if (e.target.closest && e.target.closest('[data-e]')) refresh(); });
+  document.addEventListener('paste', function(e){
+    if (!(e.target.closest && e.target.closest('[data-e]'))) return;
+    e.preventDefault(); document.execCommand('insertText', false, (e.clipboardData || window.clipboardData).getData('text/plain'));
+  });
+  undoBtn.addEventListener('click', function(){ els.forEach(function(el){ el.innerHTML = base[el.dataset.e]; }); refresh(); });
+  var artifact = null;
+  if (window.claude && window.claude.use) window.claude.use('artifact').then(function(a){ artifact = a; });
+  saveBtn.addEventListener('click', function(){
+    if (!artifact) { refresh('Salvataggio non disponibile in questa vista: apri la pagina su claude.ai', 'dirty'); return; }
+    var next = {};
+    els.forEach(function(el){ if (el.innerHTML !== original[el.dataset.e]) next[el.dataset.e] = el.innerHTML; });
+    var json = JSON.stringify(next).replace(/</g, '\\u003c');
+    var body = PRISTINE.replace(/(<script type="application\/json" id="state">)[\s\S]*?(<\/script>)/, function(m, a, b){ return a + json + b; });
+    var reset = (document.head.querySelector('style') || {}).textContent || '';
+    var html = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>' + reset + '</style></head><body>' + body + '</body></html>';
+    saveBtn.disabled = true; refresh('Salvataggio…');
+    artifact.publish(html).then(function(){ refresh('Salvato', 'saved'); }).catch(function(err){
+      var c = err && err.code;
+      if (c === 'conflict') refresh('Qualcun altro ha salvato nel frattempo: la pagina si ricarica', 'dirty');
+      else if (c === 'not_granted' || c === 'not_writer') refresh('Non hai il permesso di salvare questa pagina', 'dirty');
+      else refresh('Salvataggio non riuscito: riprova tra poco', 'dirty');
+    });
+  });
+  refresh();
+})();
+</script>
