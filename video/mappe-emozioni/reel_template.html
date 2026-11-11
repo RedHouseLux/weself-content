@@ -9,6 +9,9 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
 .sc{position:absolute;inset:0;opacity:0;background:var(--surface);overflow:hidden}
 .kick{position:absolute;left:72px;top:250px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--peri)}
 .brand{position:absolute;left:72px;top:246px;display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px}
+.brand img{width:46px;height:46px}.h{position:absolute;left:72px;right:72px;font-weight:900;letter-spacing:-.02em;line-height:1.08}
+.card{position:absolute;left:72px;right:72px;background:#fff;border-radius:32px;padding:34px 40px;box-shadow:0 10px 30px rgba(30,43,92,.08);display:flex;align-items:center;gap:34px}
+.card b{display:block;font-weight:900;font-size:44px;line-height:1.15}.card span{display:block;font-weight:600;font-size:34px;color:var(--muted);margin-top:6px}
 .we{color:var(--peri)}.self{color:var(--teal)}
 .cap{position:absolute;left:72px;right:72px;top:1215px;font-weight:800;font-size:44px;line-height:1.3;background:#fff;border-radius:28px;padding:28px 34px;box-shadow:0 10px 30px rgba(30,43,92,.08);z-index:40;opacity:0}
 .src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted);z-index:41}
@@ -34,7 +37,7 @@ svg{position:absolute;left:0;top:0;overflow:visible}
 
 <!-- 1 hook -->
 <section class="sc" id="hook"><div class="brand"><span><span class="we">We</span><span class="self">Self</span></span></div>
-  <svg width="1080" height="1920"><g id="hookB"></g></svg>
+  <svg width="1080" height="1920"><g id="hookG"></g></svg>
   <div class="say" id="hookQ" style="top:330px;text-align:center;font-size:84px">Dove sentiamo<br>le emozioni?</div>
 </section>
 
@@ -67,7 +70,7 @@ svg{position:absolute;left:0;top:0;overflow:visible}
 
 <!-- 6 mondo -->
 <section class="sc" id="mondo"><p class="kick">In tutto il mondo</p>
-  <svg width="1080" height="1920"><g id="dots6"></g><g id="stack"></g></svg>
+  <svg width="1080" height="1920"><g id="globe"><circle cx="300" cy="760" r="230" fill="#DDE0FB"/><ellipse cx="300" cy="760" rx="230" ry="80" fill="none" stroke="#4A5BE8" stroke-width="3" opacity=".35"/><ellipse cx="300" cy="760" rx="95" ry="230" fill="none" stroke="#4A5BE8" stroke-width="3" opacity=".35"/><line x1="70" y1="760" x2="530" y2="760" stroke="#4A5BE8" stroke-width="3" opacity=".35"/><circle cx="300" cy="760" r="230" fill="none" stroke="#4A5BE8" stroke-width="5"/></g><g id="dots6"></g></svg>
   <div class="pill" id="w0" style="left:600px;top:420px;background:var(--coral);color:var(--ink);font-size:40px;font-weight:900">l'emozione</div>
   <div class="pill" id="w1" style="left:640px;top:530px;background:var(--sunk);color:var(--muted)">cultura</div>
   <div class="pill" id="w2" style="left:640px;top:610px;background:var(--sunk);color:var(--muted)">sesso</div>
@@ -78,10 +81,8 @@ svg{position:absolute;left:0;top:0;overflow:visible}
 
 <!-- 7 piccole -->
 <section class="sc" id="piccole"><p class="kick">Piccole differenze</p>
-  <svg width="1080" height="1920"><g id="manB"></g><g id="womB"></g></svg>
-  <div class="pill" id="pw" style="left:72px;top:330px;background:var(--sunk);color:var(--ink)">Paesi occidentali: un po' più intense</div>
-  <div class="lab" style="left:310px;top:1110px">uomini</div>
-  <div class="lab" style="left:770px;top:1110px">donne: pancia e gola</div>
+  <div class="card" id="pc1" style="top:420px"><svg width="150" height="150" style="position:relative"><g id="pg1"></g></svg><div><b>Paesi occidentali</b><span>sensazioni segnate un po' più forti</span></div></div>
+  <div class="card" id="pc2" style="top:720px"><svg width="150" height="150" style="position:relative"><g id="pg2"></g></svg><div><b>Donne</b><span>un po' di più pancia e gola, per esempio nell'ansia e nella vergogna</span></div></div>
 </section>
 
 <!-- 8 eta -->
@@ -111,15 +112,19 @@ svg{position:absolute;left:0;top:0;overflow:visible}
 </section>
 
 <!-- 11 opinione -->
-<section class="sc op" id="opinione"><p class="kick" style="color:var(--peri)">Il mio punto di vista</p>
-  <div style="position:absolute;left:72px;right:72px;top:320px;font-weight:900;font-size:56px;line-height:1.15">Il fondatore di WeSelf</div>
-  <div style="position:absolute;left:72px;right:72px;top:410px;font-family:Literata,serif;font-style:italic;font-size:34px;color:var(--muted)">Un'opinione personale, non un risultato dello studio</div>
-  <svg width="1080" height="1920"><g id="opB"></g></svg>
+<section class="sc" id="opinione" style="background:var(--peri-soft)">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="h" id="oph" style="top:330px;font-size:64px">Il mio punto di vista</div>
+  <div class="h" id="opn" style="top:420px;font-size:34px;font-weight:600;color:var(--muted)">Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.</div>
+  <svg style="position:absolute;left:140px;top:540px" width="800" height="600" viewBox="0 0 800 600">
+    <circle id="q1" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/><circle id="q2" cx="400" cy="300" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/><circle id="q3" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="300" r="58" fill="#4A5BE8"/><circle cx="400" cy="300" r="20" fill="#F09B7C"/>
+  </svg>
 </section>
 
 <!-- 12 fine -->
 <section class="sc cta" id="fine">
-  <svg width="1080" height="1920"><g id="ctaB"></g></svg>
+  <svg width="1080" height="1920"><g id="ctaH" transform="translate(800 720)"><path d="M0 70 C-150 -30 -110 -170 0 -100 C110 -170 150 -30 0 70Z" transform="scale(1.3)" fill="#F09B7C"/></g></svg>
   <div style="position:absolute;left:72px;right:72px;top:300px;font-weight:900;font-size:70px;line-height:1.1">Chiediti dove senti<br>le tue emozioni.</div>
   <div id="ctab" style="position:absolute;left:72px;top:1000px"><span class="btn">Scopri WeSelf · link in bio</span></div>
   <div style="position:absolute;left:72px;top:1120px;font-weight:900;font-size:56px"><span>We</span><span>Self</span></div>
@@ -164,25 +169,25 @@ const NAMES=[['rabbia','Rabbia'],['paura','Paura'],['disgusto','Disgusto'],['tri
 function blend(a,b,k){const o={};for(const r in REG)o[r]=lerp(a[r]||0,b[r]||0,k);return o}
 
 // scene 1
-const hookB=body('hookB',540,880,0.72);
+function glow(g,cx,cy,r){g.insertAdjacentHTML('beforeend',`<g><circle cx="${cx}" cy="${cy}" r="${r}" filter="url(#blur)"/><circle cx="${cx}" cy="${cy}" r="${r*0.62}" filter="url(#blurS)"/><circle cx="${cx}" cy="${cy}" r="${r*0.3}" filter="url(#blurS)"/></g>`);const c=[...g.lastElementChild.children];return v=>{c.forEach((e,j)=>{const w=v*(0.55+0.25*j);e.setAttribute('fill',heat(w));e.setAttribute('opacity',Math.min(1,Math.abs(v)*1.4))})}}
+const hookG=glow($('hookG'),540,880,230);
 // scene 2: world of dots + painting
 let w='';for(let i=0;i<101;i++){const a=i*2.399,r=Math.sqrt(i/101)*300;w+=`<circle cx="${540+r*Math.cos(a)*1.55}" cy="${560+r*Math.sin(a)*.62}" r="11" fill="#4A5BE8" opacity="0"/>`}$('world').innerHTML=w;const WD=[...$('world').children];
 const stL=body('stL',330,860,0.62), stR=body('stR',750,860,0.62);
 // scene 3: row of 6 small bodies with labels
-const ROW=[];NAMES.forEach(([k,n],i)=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.id='rw'+i;$('row').appendChild(g);const x=180+(i%3)*360,y=(i<3?530:920);ROW.push([body('rw'+i,x,y,0.4),k]);const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',x);t.setAttribute('y',y+200);t.setAttribute('text-anchor','middle');t.setAttribute('font-family','Nunito');t.setAttribute('font-weight','900');t.setAttribute('font-size','34');t.setAttribute('fill','#1E2B5C');t.textContent=n;$('row').appendChild(t)});
+const ROW=[];NAMES.forEach(([k,n],i)=>{const x=180+(i%3)*360,y=(i<3?560:930);const e=E[k];const up=(e.head+e.chest)/2,lo=(e.legL+e.armL+e.belly)/3;$('row').insertAdjacentHTML('beforeend',`<clipPath id="cc${i}"><circle cx="${x}" cy="${y}" r="130"/></clipPath><circle cx="${x}" cy="${y}" r="130" fill="${BASE}"/><g clip-path="url(#cc${i})" filter="url(#blur)"><ellipse cx="${x}" cy="${y-60}" rx="140" ry="80"/><ellipse cx="${x}" cy="${y+70}" rx="140" ry="80"/></g>`);const el=[...$('row').lastElementChild.children];ROW.push([{set(_,k){el[0].setAttribute('fill',heat(up*k));el[0].setAttribute('opacity',Math.min(1,Math.abs(up*k)*1.6));el[1].setAttribute('fill',heat(lo*k));el[1].setAttribute('opacity',Math.min(1,Math.abs(lo*k)*1.6))}},k]);const t=document.createElementNS('http://www.w3.org/2000/svg','text');t.setAttribute('x',x);t.setAttribute('y',y+185);t.setAttribute('text-anchor','middle');t.setAttribute('font-family','Nunito');t.setAttribute('font-weight','900');t.setAttribute('font-size','34');t.setAttribute('fill','#1E2B5C');t.textContent=n;$('row').appendChild(t)});
 // scene 4
 const big=body('bigB',540,810,0.88);
 // scene 5
 const loveB=body('loveB',310,700,0.7), happyB=body('happyB',770,700,0.7);
 // scene 6: stacked bodies from different countries + dots
-let d6='';for(let i=0;i<40;i++){const a=i*2.399,r=150+(i%7)*28;d6+=`<circle cx="${300+r*Math.cos(a)}" cy="${760+r*Math.sin(a)*1.3}" r="9" fill="${['#1E9E9E','#4A5BE8','#F09B7C'][i%3]}" opacity="0"/>`}$('dots6').innerHTML=d6;const D6=[...$('dots6').children];
-const STK=[];for(let i=0;i<5;i++){const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.id='sk'+i;$('stack').appendChild(g);STK.push(body('sk'+i,300,760,0.6))}
+let d6='';for(let i=0;i<60;i++){const a=i*2.399,r=Math.sqrt((i+.5)/60)*200;d6+=`<circle cx="${300+r*Math.cos(a)}" cy="${760+r*Math.sin(a)}" r="12" opacity="0"/>`}$('dots6').innerHTML=d6;const D6=[...$('dots6').children];
 // scene 7
-const manB=body('manB',310,700,0.7), womB=body('womB',770,700,0.7);
+const pg1=glow($('pg1'),75,75,62), pg2=glow($('pg2'),75,75,62);
 // scene 8
-const A1=body('a1',230,680,0.5),A2=body('a2',540,680,0.5),A3=body('a3',850,680,0.5);
+const A1=glow($('a1'),230,760,120),A2=glow($('a2'),540,760,120),A3=glow($('a3'),850,760,120);
 // scene 11, 12
-const opB=body('opB',540,830,0.7), ctaB=body('ctaB',820,720,0.55);
+
 
 const ORDER=['hook','studio','diverse','mappe','vicine','mondo','piccole','eta','perche','mito','opinione','fine'];
 const NOSRC=['hook','mito','opinione','fine'];
@@ -195,7 +200,7 @@ window.render=function(t){
    el.style.top=(cur==='fine'?1270:1215)+'px';}
   let u;
   // 1 hook: heart beat in chest, knot in belly, legs going blue
-  u=t-T.hook;{const beat=0.5+0.5*Math.exp(-Math.pow(((t*1.3)%1-.15)/.07,2));hookB.set({chest:.35+.6*beat*eo(u/.6),belly:.75*eo((u-1.2)/1),throat:.2*eo((u-1.2)/1),legL:-.9*eo((u-2.2)/1),legR:-.9*eo((u-2.2)/1)});$('hookQ').style.opacity=eo(u/.5)}
+  u=t-T.hook;{const beat=0.5+0.5*Math.exp(-Math.pow(((t*1.3)%1-.15)/.07,2));hookG((.45+.5*beat)*eo(u/.6));$('hookG').setAttribute('transform',`translate(540 880) scale(${1+0.06*beat}) translate(-540 -880)`);$('hookQ').style.opacity=eo(u/.5)}
   // 2 studio
   u=t-T.studio;WD.forEach((c,i)=>c.setAttribute('opacity',eo((u-0.3-i*0.02)/.3)*0.85));
   pop($('p1'),u,0.6);pop($('p2'),u,1.2);
@@ -208,21 +213,21 @@ window.render=function(t){
   // 5 vicine
   u=t-T.vicine;loveB.set(E.amore,eo((u-0.4)/1));happyB.set(E.felicita,eo((u-0.9)/1));
   // 6 mondo: bodies from different places converge onto one map
-  u=t-T.mondo;{const k=eo((u-0.6)/3);STK.forEach((b,i)=>{const off=(i-2)*120*(1-k);b.g.setAttribute('transform',`translate(${300+off} ${760+Math.abs(i-2)*25*(1-k)}) scale(0.6)`);b.g.setAttribute('opacity',i===2?1:0.45*(1-k)+0.15);b.set(E.amore,0.95+0.05*Math.sin(i))});
-   D6.forEach((c,i)=>c.setAttribute('opacity',eo((u-0.2-i*0.03)/.3)*0.8));
+  u=t-T.mondo;{const k=eo((u-2)/2.5);D6.forEach((c,i)=>{c.setAttribute('opacity',eo((u-0.2-i*0.03)/.3)*0.9);const col=['#1E9E9E','#4A5BE8','#F09B7C'][i%3];c.setAttribute('fill',k<1?mix(col,'#F57C1F',k):'#F57C1F')});
+   $('globe').setAttribute('opacity',eo(u/.4));
    pop($('w0'),u,5);[1,2,3,4,5].forEach(j=>{const el=$('w'+j);pop(el,u,5.6+j*0.5);el.style.opacity=Math.min(eo((u-5.6-j*0.5)/.3),0.75)})}
   // 7 piccole
-  u=t-T.piccole;{manB.set(E.ansia,eo((u-0.3)/1));const w7=Object.assign({},E.ansia);w7.belly=.8;w7.throat=.85;womB.set(w7,eo((u-0.6)/1));pop($('pw'),u,1.2)}
+  u=t-T.piccole;{pop($('pc1'),u,0.3);pg1(0.9*eo((u-0.5)/.8));pop($('pc2'),u,7);pg2(0.8*eo((u-7.3)/.8));}
   // 8 eta
-  u=t-T.eta;A1.set(E.felicita,eo((u-0.3)/.8));A2.set(E.felicita,0.75*eo((u-0.9)/.8));A3.set(E.felicita,0.5*eo((u-1.5)/.8));
+  u=t-T.eta;A1(eo((u-0.3)/.8));A2(0.65*eo((u-0.9)/.8));A3(0.35*eo((u-1.5)/.8));
   // 9 perche: face changes expression, heart beats unseen
   u=t-T.perche;{const s=Math.sin(u*1.6);$('mouth').setAttribute('d',`M-70 70 Q0 ${70+60*s} 70 70`);const hb=1+0.08*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('heart').setAttribute('transform',`translate(780 700) scale(${hb})`);$('face').setAttribute('opacity',eo(u/.5));$('heart').setAttribute('opacity',eo((u-0.6)/.5))}
   // 10 mito
   u=t-T.mito;{$('mq').style.opacity=eo((u-0.2)/.4);const m=back((u-3)/.45),mo=eo((u-3)/.3);$('mstamp').style.opacity=mo;$('mstamp').style.transform=`scale(${2-m}) rotate(${-8*mo}deg)`}
   // 11 opinione
-  u=t-T.opinione;{const br=0.55+0.25*Math.sin(t*1.1);opB.set({head:.5,throat:.4,chest:br,belly:.55+0.2*Math.sin(t*0.9+1),armL:.3,armR:.3,handL:.3,handR:.3,legL:.25,legR:.25},eo(u/.8))}
+  u=t-T.opinione;{pop($('oph'),u,0.3);pop($('opn'),u,0.9);['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)})}
   // 12 fine
-  u=t-T.fine;{const beat=0.6+0.4*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));ctaB.set({chest:beat,head:.4,belly:.3},eo(u/.6));pop($('ctab'),u,1.2)}
+  u=t-T.fine;{const hb=1+0.1*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('ctaH').setAttribute('transform',`translate(800 720) scale(${hb})`);$('ctaH').setAttribute('opacity',eo(u/.5));pop($('ctab'),u,1.2)}
 };
 render(0);
 </script></body></html>
