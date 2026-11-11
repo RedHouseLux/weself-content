@@ -124,8 +124,7 @@ svg{position:absolute;left:0;top:0;overflow:visible}
 
 <!-- 12 fine -->
 <section class="sc cta" id="fine">
-  <svg width="1080" height="1920"><g id="ctaR"><circle id="r1" cx="540" cy="440" r="100" fill="none" stroke="#fff" stroke-width="5"/><circle id="r2" cx="540" cy="440" r="100" fill="none" stroke="#F09B7C" stroke-width="5"/><circle id="r3" cx="540" cy="440" r="100" fill="none" stroke="#fff" stroke-width="5"/></g>
-    <g id="ctaH" transform="translate(540 440)"><path d="M0 70 C-150 -30 -110 -170 0 -100 C110 -170 150 -30 0 70Z" transform="scale(1.2)" fill="#F09B7C"/></g></svg>
+  <svg width="1080" height="1920"><g id="ctaH" transform="translate(540 440)"><path d="M0 70 C-150 -30 -110 -170 0 -100 C110 -170 150 -30 0 70Z" transform="scale(1.2)" fill="#F09B7C"/></g></svg>
   <div class="h" id="ctat" style="top:660px;font-size:68px">La prossima volta che provi un'emozione, chiediti dove la senti. È un modo per ascoltarti.</div>
   <div class="h" id="ctaw" style="top:1010px;font-size:42px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf costruisci piccole abitudini che ti fanno stare bene, già in agenda, insieme a una comunità dove ci si sostiene.</div>
   <div id="ctab" style="position:absolute;left:72px;top:1250px"><span class="btn">Scopri WeSelf · link in bio</span></div>
@@ -228,7 +227,7 @@ window.render=function(t){
   // 11 opinione
   u=t-T.opinione;{pop($('oph'),u,0.3);pop($('opn'),u,0.9);['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)})}
   // 12 fine
-  u=t-T.fine;{const hb=1+0.1*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('ctaH').setAttribute('transform',`translate(540 440) scale(${hb})`);$('ctaH').setAttribute('opacity',eo(u/.5));['r1','r2','r3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',100+160*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)});pop($('ctat'),u,0.4);pop($('ctaw'),u,2.5);pop($('ctab'),u,4.5)}
+  u=t-T.fine;{const hb=1+0.1*Math.exp(-Math.pow(((t*1.2)%1-.15)/.07,2));$('ctaH').setAttribute('transform',`translate(540 440) scale(${hb})`);$('ctaH').setAttribute('opacity',eo(u/.5));pop($('ctat'),u,0.4);pop($('ctaw'),u,2.5);pop($('ctab'),u,4.5)}
 };
 render(0);
 </script></body></html>
