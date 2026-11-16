@@ -146,10 +146,20 @@ svg.shape{position:absolute;z-index:1}
 .dom span{font-weight:700;font-size:25px;line-height:1.3}
 .dom small{font-weight:600;font-size:21px;color:var(--muted)}
 .dom .few b{color:var(--peri)}
+.road{position:relative;display:flex;flex-direction:column;gap:12px;padding-left:4px}
+.road::before{content:"";position:absolute;left:52px;top:30px;bottom:30px;border-left:6px dashed var(--coral)}
+.road .st{display:grid;grid-template-columns:100px 1fr;gap:24px;align-items:center;position:relative}
+.road .pc{width:100px;height:100px;border-radius:50%;background:var(--teal-soft);color:var(--teal-text);font-weight:900;font-size:32px;display:flex;align-items:center;justify-content:center;border:6px solid var(--surface)}
+.road .hi .pc{background:var(--coral);color:var(--ink)}
+.road .dot{width:44px;height:44px;margin-left:28px;border-radius:50%;background:var(--peri);border:6px solid var(--surface)}
+.road .flag{width:64px;height:64px;margin-left:18px;border-radius:50%;background:var(--peri);color:#fff;font-size:34px;display:flex;align-items:center;justify-content:center;border:6px solid var(--surface)}
+.road b{display:block;font-weight:900;font-size:30px;line-height:1.2}
+.road p span{display:block;font-weight:600;font-size:24px;line-height:1.3;color:var(--muted)}
+.road .start b,.road .end b{color:var(--peri)}
 </style>
 
 <section class="slide" id="s1">
-  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/12</div></div>
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/11</div></div>
   <svg class="cv" width="952" height="560" viewBox="0 0 952 560"><defs><linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDE0FB"></stop><stop offset="1" stop-color="#FBF8F5"></stop></linearGradient></defs><rect width="952" height="560" rx="40" fill="url(#lg1)"/>
 <g transform="translate(70 110)"><rect width="330" height="330" rx="34" fill="#fff" stroke="#DCD8E8" stroke-width="4"/><rect width="330" height="84" rx="34" fill="#4A5BE8"/><rect y="50" width="330" height="34" fill="#4A5BE8"/><text x="165" y="58" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="34" fill="#fff" letter-spacing="4">MARTEDÌ</text><text x="165" y="215" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="96" fill="#1E2B5C">18:00</text><text x="165" y="280" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="30" fill="#4A5BE8">SE…</text></g>
 <path d="M430 275 C 480 275 500 275 540 275" stroke="#F09B7C" stroke-width="10" stroke-linecap="round" fill="none"/><path d="M528 252 L556 275 L528 298" stroke="#F09B7C" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
@@ -166,7 +176,7 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s2">
-  <div class="top"><p class="kicker ">Succede a molti</p><div class="count">2/12</div></div>
+  <div class="top"><p class="kicker ">Succede a molti</p><div class="count">2/11</div></div>
   <div class="stack" style="margin-top:80px;gap:40px">
     <p class="qt">«Da lunedì comincio.»<small>Un proposito che molte persone conoscono bene</small></p>
     <p class="mid">Volere qualcosa non basta sempre per farla. Secondo una revisione precedente, citata dagli autori, in media <b>il 47%</b> delle persone che avevano intenzione di fare qualcosa poi non l'ha fatto.<br><br>Tra il volere e il fare, spesso, c'è un vuoto.</p>
@@ -176,7 +186,7 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s3">
-  <div class="top"><p class="kicker we">Il piano «se… allora…»</p><div class="count">3/12</div></div>
+  <div class="top"><p class="kicker we">Il piano «se… allora…»</p><div class="count">3/11</div></div>
   <div class="stack" style="margin-top:44px;gap:26px">
     <h2 style="font-size:52px">Un'intenzione dice <span class="hl t">che cosa</span> vuoi. Un piano «se… allora…» dice <span class="hl t">quando, dove e come</span>.</h2>
     <div class="plan">
@@ -190,45 +200,36 @@ svg.shape{position:absolute;z-index:1}
 </section>
 
 <section class="slide" id="s4">
-  <div class="top"><p class="kicker we">La ricerca</p><div class="count">4/12</div></div>
+  <div class="top"><p class="kicker we">La ricerca</p><div class="count">4/11</div></div>
   <div class="stack" style="margin-top:44px;gap:22px">
     <p class="big" style="font-size:150px">94</p>
     <p class="biglabel">studi, dal 1990 al 2003, con <span class="hl t">8.461 persone</span>.</p>
     <p class="mid" style="font-size:31px">In ogni studio sono state confrontate persone con lo stesso obiettivo: alcune avevano solo l'intenzione (per esempio «voglio fare più movimento»), altre avevano aggiunto un piano «se… allora…».<br><br>Poi è stato misurato se avevano raggiunto l'obiettivo: in 58 studi con misure oggettive, negli altri con quanto riferito dalle persone.</p>
   </div>
-  <p class="next">Come si leggono i risultati? →</p>
+  <p class="next">Che cosa è risultato? →</p>
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
 <section class="slide" id="s5">
-  <div class="top"><p class="kicker we">I numeri, tradotti</p><div class="count">5/12</div></div>
-  <div class="stack" style="margin-top:44px;gap:24px">
-    <h2 style="font-size:50px">Immagina di mettere in fila i risultati di chi aveva <span class="hl t">solo l'intenzione</span>.</h2>
-    <p class="mid" style="font-size:30px">Dal più basso al più alto. Poi prendi il risultato medio di chi aveva anche un piano «se… allora…», e guarda dove si colloca in quella fila.</p>
-    <div class="row20"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><div class="mk" style="left:74%"><b>chi aveva il piano: 74%</b><span></span></div><span class="half">a metà fila (50%) = il piano non serve</span></div>
-    <p class="mid" style="font-size:30px;margin-top:40px">Ha fatto meglio del <b>74%</b> di chi aveva solo l'intenzione. Se il piano non servisse a nulla, starebbe a metà: <b>50%</b>.</p>
-  </div>
-  <p class="next">In quali difficoltà ha aiutato? →</p>
-  <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
-</section>
-
-<section class="slide" id="s6">
-  <div class="top"><p class="kicker we">Dove ha aiutato</p><div class="count">6/12</div></div>
-  <div class="stack" style="margin-top:40px;gap:18px">
-    <h2 style="font-size:48px">Il piano ha aiutato sia a <span class="hl t">cominciare</span> sia a <span class="hl t">non mollare</span>.</h2>
-    <div class="res">
-      <div><b>71%</b><p><strong>Ricordarsi di farlo</strong>Non dimenticare quello che ci si era proposti.</p></div>
-      <div><b>73%</b><p><strong>Cogliere il momento giusto</strong>Non lasciarsi sfuggire l'occasione per cominciare.</p></div>
-      <div><b>74%</b><p><strong>Vincere la resistenza iniziale</strong>Cominciare anche quando non se ne ha voglia.</p></div>
-      <div class="hi"><b>78%</b><p><strong>Restare sulla strada</strong>Non farsi distrarre da tentazioni, stanchezza o da quello che succede intorno.</p></div>
+  <div class="top"><p class="kicker we">Dove ha aiutato</p><div class="count">5/11</div></div>
+  <div class="stack" style="margin-top:36px;gap:20px">
+    <h2 style="font-size:46px">In media, chi aveva il piano ha fatto meglio del <span class="hl t">74%</span> di chi aveva solo l'intenzione.</h2>
+    <p class="mid" style="font-size:26px;line-height:1.35">Ogni percentuale dice quante persone con la sola intenzione sono state superate, in media, da chi aveva anche il piano. Se il piano non servisse a nulla, sarebbe 50%.</p>
+    <div class="road">
+      <div class="st start"><span class="dot"></span><p><b>L'intenzione</b><span>«Voglio fare più movimento.»</span></p></div>
+      <div class="st"><span class="pc">71%</span><p><b>Ricordarsi di farlo</b><span>non dimenticare quello che ci si era proposti</span></p></div>
+      <div class="st"><span class="pc">73%</span><p><b>Cogliere il momento giusto</b><span>non lasciarsi sfuggire l'occasione</span></p></div>
+      <div class="st"><span class="pc">74%</span><p><b>Vincere la resistenza iniziale</b><span>cominciare anche senza averne voglia</span></p></div>
+      <div class="st hi"><span class="pc">78%</span><p><b>Restare sulla strada</b><span>non farsi distrarre da tentazioni, stanchezza o da quello che succede intorno</span></p></div>
+      <div class="st end"><span class="flag">⚑</span><p><b>L'obiettivo</b></p></div>
     </div>
   </div>
   <p class="next">E per quali obiettivi? →</p>
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
-<section class="slide" id="s7">
-  <div class="top"><p class="kicker we">Per quali obiettivi</p><div class="count">7/12</div></div>
+<section class="slide" id="s6">
+  <div class="top"><p class="kicker we">Per quali obiettivi</p><div class="count">6/11</div></div>
   <div class="stack" style="margin-top:40px;gap:20px">
     <h2 style="font-size:48px">Ha funzionato per obiettivi <span class="hl t">molto diversi</span>.</h2>
     <div class="dom">
@@ -245,8 +246,8 @@ svg.shape{position:absolute;z-index:1}
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
-<section class="slide" id="s8">
-  <div class="top"><p class="kicker we">Perché funziona</p><div class="count">8/12</div></div>
+<section class="slide" id="s7">
+  <div class="top"><p class="kicker we">Perché funziona</p><div class="count">7/11</div></div>
   <div class="stack" style="margin-top:44px;gap:26px">
     <h2 style="font-size:50px">Il piano fa due cose, secondo gli autori.</h2>
     <div class="pr">
@@ -259,8 +260,8 @@ svg.shape{position:absolute;z-index:1}
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
-<section class="slide warmbg" id="s9">
-  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">9/12</div></div>
+<section class="slide warmbg" id="s8">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">8/11</div></div>
   <div class="stack" style="margin-top:90px;gap:36px">
     <p class="quote">«Per riuscire basta volerlo davvero.»</p>
     <span class="badge mito"><i>✕</i>MITO</span>
@@ -270,8 +271,8 @@ svg.shape{position:absolute;z-index:1}
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
-<section class="slide" id="s10">
-  <div class="top"><p class="kicker warm">I limiti</p><div class="count">10/12</div></div>
+<section class="slide" id="s9">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">9/11</div></div>
   <div class="stack" style="margin-top:44px;gap:24px">
     <h2 style="font-size:56px">Che cosa la ricerca <span class="hl">non dice</span></h2>
     <div class="lim">
@@ -285,8 +286,8 @@ svg.shape{position:absolute;z-index:1}
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
-<section class="slide" id="s11">
-  <div class="top"><p class="kicker we">Prova così</p><div class="count">11/12</div></div>
+<section class="slide" id="s10">
+  <div class="top"><p class="kicker we">Prova così</p><div class="count">10/11</div></div>
   <div class="stack" style="margin-top:44px;gap:24px">
     <h2 style="font-size:52px">Scrivi il tuo <span class="hl t">«se… allora…»</span> in tre passi.</h2>
     <div class="pr">
@@ -299,8 +300,8 @@ svg.shape{position:absolute;z-index:1}
   <div class="src"><b>FONTE</b><span><em>Gollwitzer &amp; Sheeran, 2006</em> · Advances in Experimental Social Psychology</span></div>
 </section>
 
-<section class="slide cta" id="s12">
-  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">12/12</div></div>
+<section class="slide cta" id="s11">
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">11/11</div></div>
   <div class="stack" style="margin-top:90px">
     <h2 style="font-size:66px">Dal volere al fare, <span class="hl">un «se… allora…» alla volta</span>.</h2>
     <p class="body" style="opacity:.92">Con WeSelf un obiettivo diventa una settimana di piccole azioni, già in agenda, e puoi trovare chi ha il tuo stesso obiettivo, vicino a te o tra i tuoi amici.</p>

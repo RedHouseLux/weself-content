@@ -1,12 +1,12 @@
 # Carosello · Un buon proposito regge meglio con un «se… allora…» (Gollwitzer & Sheeran, 2006)
 
-**Tema:** abitudini (funzione WeSelf: costruire abitudini sane; trovare chi ha il tuo obiettivo). **Immagini:** `weself-se-allora-01.png` … `weself-se-allora-12.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
+**Tema:** abitudini (funzione WeSelf: costruire abitudini sane; trovare chi ha il tuo obiettivo). **Immagini:** `weself-se-allora-01.png` … `weself-se-allora-11.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
 
 **Fonte letta per intero:** il capitolo completo (PDF fornito dal fondatore), pp. 69–119. Tutti i numeri vengono dalle Tabelle II, III e IV e dal testo dei risultati.
 
 **Data consigliata:** **martedì 17 novembre 2026**, tra le 12:30 e le 14:00 oppure tra le 18:30 e le 20:00 (contenuto pratico, da salvare).
 
-**Racconto lineare:** il vuoto tra volere e fare → che cos'è un piano «se… allora…» → la ricerca → come leggere il numero → in quali difficoltà ha aiutato → per quali obiettivi → perché funziona → mito o realtà → limiti → prova così → WeSelf. Visual senza persone.
+**Racconto lineare:** il vuoto tra volere e fare → che cos'è un piano «se… allora…» → la ricerca → il risultato e le difficoltà in cui ha aiutato (un percorso dall'intenzione all'obiettivo) → per quali obiettivi → perché funziona → mito o realtà → limiti → prova così → WeSelf. Visual senza persone.
 
 ## Didascalia (Instagram / Facebook)
 
@@ -54,14 +54,13 @@ Il dato del 47% (persone che avevano l'intenzione di agire ma non l'hanno fatto)
 2. «Da lunedì comincio.» In media il 47% di chi aveva l'intenzione di fare qualcosa poi non l'ha fatto: tra volere e fare c'è spesso un vuoto.
 3. Un piano «se… allora…» dice quando, dove e come: «Se è martedì alle 18 ed esco dal lavoro, allora vado a camminare per 30 minuti nel parco.»
 4. La ricerca: 94 studi, dal 1990 al 2003, con 8.461 persone; confronto tra chi aveva solo l'intenzione e chi aveva anche un piano «se… allora…».
-5. Una fila di 20 caselle: il risultato medio di chi aveva il piano supera il 74% di chi aveva solo l'intenzione; 50% vorrebbe dire nessun effetto.
-6. Dove ha aiutato: ricordarsi di farlo 71%, cogliere il momento giusto 73%, vincere la resistenza iniziale 74%, restare sulla strada 78%.
-7. Per quali obiettivi: salute 72%, studio 76%, obiettivi personali 72%, aiutare gli altri 84%, ambiente 87%, acquisti 66%; le percentuali più alte vengono da pochi studi.
-8. Perché funziona: il «se» diventa un segnale che si nota prima; l'«allora» parte quasi da solo, più rapido e con meno fatica.
-9. Mito o realtà? «Per riuscire basta volerlo davvero.» Mito.
-10. I limiti: soprattutto studenti universitari; molti compiti in laboratorio; pochi studi su come smettere abitudini dannose; risultati molto diversi tra studi; la ricerca arriva al 2003.
-11. Prova così: scegli un obiettivo, trova il «se» (un momento o un ostacolo), decidi l'«allora» (un'azione piccola e concreta).
-12. Dal volere al fare, un «se… allora…» alla volta. Con WeSelf un obiettivo diventa una settimana di piccole azioni già in agenda. Scopri WeSelf, link in bio.
+5. Un percorso dall'intenzione all'obiettivo: in media chi aveva il piano ha fatto meglio del 74% di chi aveva solo l'intenzione (50% = nessun effetto). Lungo la strada: ricordarsi di farlo 71%, cogliere il momento giusto 73%, vincere la resistenza iniziale 74%, restare sulla strada 78%.
+6. Per quali obiettivi: salute 72%, studio 76%, obiettivi personali 72%, aiutare gli altri 84%, ambiente 87%, acquisti 66%; le percentuali più alte vengono da pochi studi.
+7. Perché funziona: il «se» diventa un segnale che si nota prima; l'«allora» parte quasi da solo, più rapido e con meno fatica.
+8. Mito o realtà? «Per riuscire basta volerlo davvero.» Mito.
+9. I limiti: soprattutto studenti universitari; molti compiti in laboratorio; pochi studi su come smettere abitudini dannose; risultati molto diversi tra studi; la ricerca arriva al 2003.
+10. Prova così: scegli un obiettivo, trova il «se» (un momento o un ostacolo), decidi l'«allora» (un'azione piccola e concreta).
+11. Dal volere al fare, un «se… allora…» alla volta. Con WeSelf un obiettivo diventa una settimana di piccole azioni già in agenda. Scopri WeSelf, link in bio.
 
 ## Note di affidabilità
 
