@@ -1,0 +1,239 @@
+<style>
+.cv{display:block;margin-top:30px;align-self:center}
+.mid{font-weight:600;font-size:38px;line-height:1.4}
+.next{margin-top:auto;margin-bottom:22px;font-weight:800;font-size:31px;line-height:1.3;color:var(--peri)}
+.next + .src{margin-top:0}
+.qt{font-family:'Literata',serif;font-style:italic;font-size:46px;line-height:1.35;border-left:8px solid var(--coral);padding-left:34px}
+.qt small{display:block;margin-top:16px;font-family:'Nunito';font-style:normal;font-weight:700;font-size:27px;color:var(--muted)}
+.u3{display:flex;flex-direction:column;gap:12px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:24px 30px}
+.u3 .r{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center}
+.u3 .r span{font-weight:700;font-size:28px;line-height:1.25}
+.u3 .r b{font-weight:900;font-size:52px;text-align:right;color:var(--teal-text)}
+.u3 .r.top b{color:var(--coral-text)}
+.u3 .bar{grid-column:1/3;height:16px;border-radius:999px;background:var(--sunk)}
+.u3 .bar i{display:block;height:100%;border-radius:999px;background:var(--teal-soft)}
+.u3 .r.top .bar i{background:var(--coral-soft)}
+.ex{background:var(--raised);border:3px solid var(--line);border-left:10px solid var(--teal);border-radius:24px;padding:24px 30px;display:flex;flex-direction:column;gap:12px}
+.ex small{font-weight:800;font-size:21px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.ex p{font-family:'Literata',serif;font-style:italic;font-size:31px;line-height:1.4}
+.ex .eff{font-weight:800;font-size:26px;color:var(--teal-text)}
+.goal{display:flex;flex-direction:column;gap:16px}
+.goal div{border-radius:22px;padding:22px 28px;display:flex;flex-direction:column;gap:8px}
+.goal p{font-weight:600;font-size:28px;line-height:1.4}
+.goal small{font-weight:800;font-size:22px;letter-spacing:.12em;text-transform:uppercase}
+.goal b{font-weight:900;font-size:34px;line-height:1.15}
+.goal ul{list-style:none;display:flex;flex-direction:column;gap:8px;padding:0;margin:0}
+.goal li{font-weight:600;font-size:23px;line-height:1.3}
+.goal .a{background:var(--teal-soft)}.goal .a small{color:var(--teal-text)}
+.goal .b{background:var(--peri-soft)}.goal .b small{color:var(--peri)}
+.goal .c{background:var(--coral-soft)}.goal .c small{color:var(--coral-text)}
+.lim{display:flex;flex-direction:column;gap:22px}
+.lim div{font-weight:600;font-size:31px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+
+.row20{display:grid;grid-template-columns:repeat(20,1fr);gap:8px;position:relative;margin-top:64px}
+.row20 i{display:block;height:64px;border-radius:14px;background:var(--peri-soft)}
+.row20 i.on{background:var(--teal-soft)}
+.row20 .mk{position:absolute;left:79%;top:-62px;display:flex;flex-direction:column;align-items:flex-end;gap:4px;transform:translateX(calc(-100% + 2px))}
+.row20 .mk b{background:var(--coral);color:#fff;font-weight:900;font-size:26px;border-radius:999px;padding:6px 16px;white-space:nowrap}
+.row20 .mk span{width:4px;height:84px;background:var(--coral)}
+.row20 .half{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);font-weight:800;font-size:22px;color:var(--muted);white-space:nowrap}
+.res{display:flex;flex-direction:column;gap:14px}
+.res div{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.res b{font-weight:900;font-size:54px;color:var(--teal-text);text-align:center}
+.res .hi b{color:var(--coral-text)}
+.res p{font-weight:600;font-size:26px;line-height:1.35}
+.res p strong{display:block;font-weight:900;font-size:30px;color:var(--ink);margin-bottom:2px}
+.cmp2{display:flex;flex-direction:column;gap:18px}
+.cmp2 .pair{background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:20px 26px;display:flex;flex-direction:column;gap:10px}
+.cmp2 small{font-weight:800;font-size:21px;letter-spacing:.12em;text-transform:uppercase;color:var(--peri)}
+.cmp2 .ln{display:grid;grid-template-columns:330px 1fr 90px;gap:14px;align-items:center}
+.cmp2 .ln span{font-weight:700;font-size:26px}
+.cmp2 .ln .tr{height:30px;border-radius:999px;background:var(--sunk)}
+.cmp2 .ln .tr i{display:block;height:100%;border-radius:999px}
+.cmp2 .ln b{font-weight:900;font-size:32px;text-align:right}
+.pr{display:flex;flex-direction:column;gap:14px}
+.pr div{display:grid;grid-template-columns:60px 1fr;gap:18px;align-items:start;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.pr .n{width:54px;height:54px;border-radius:50%;background:var(--teal-soft);color:var(--teal-text);font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center}
+.pr b{font-weight:900;font-size:31px;line-height:1.2;display:block}
+.pr span{font-weight:600;font-size:26px;line-height:1.35;color:var(--muted)}
+
+.clock{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.clock div{border-radius:26px;padding:26px 28px;display:flex;flex-direction:column;gap:6px}
+.clock .a{background:var(--sunk)}.clock .b{background:var(--teal-soft)}
+.clock small{font-weight:800;font-size:22px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.clock .b small{color:var(--teal-text)}
+.clock b{font-weight:900;font-size:80px;line-height:1;letter-spacing:-.03em}
+.clock span{font-weight:700;font-size:24px;color:var(--muted)}
+.hbar{display:flex;flex-direction:column;gap:12px}
+.hbar .l{display:grid;grid-template-columns:200px 1fr;gap:16px;align-items:center}
+.hbar .l span{font-weight:800;font-size:24px}
+.hbar .t{height:40px;border-radius:999px;background:var(--sunk);position:relative}
+.hbar .t i{position:absolute;left:0;top:0;bottom:0;border-radius:999px}
+.ups{display:flex;flex-direction:column;gap:16px}
+.ups div{display:grid;grid-template-columns:84px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:24px;padding:20px 24px}
+.ups .ic{width:84px;height:84px;border-radius:24px;background:var(--teal-soft);color:var(--teal-text);font-weight:900;font-size:44px;display:flex;align-items:center;justify-content:center}
+.ups b{display:block;font-weight:900;font-size:32px;line-height:1.2}
+.ups span{display:block;font-weight:600;font-size:25px;line-height:1.35;color:var(--muted)}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.tiles div{border-radius:24px;padding:22px 18px;display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center;font-weight:800;font-size:25px;line-height:1.2}
+.tiles svg{display:block}
+.tiles .p{background:var(--peri-soft)}.tiles .t{background:var(--teal-soft)}.tiles .c{background:var(--coral-soft)}
+.quarter{display:flex;align-items:center;gap:34px}
+.quarter b{font-weight:900;font-size:150px;line-height:.9;color:var(--coral-text);letter-spacing:-.04em}
+.quarter p{font-weight:800;font-size:33px;line-height:1.25}
+</style>
+
+<section class="slide" id="s1">
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/11</div></div>
+  <svg class="cv" width="952" height="560" viewBox="0 0 952 560"><defs><linearGradient id="lg1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DDE0FB"/><stop offset="1" stop-color="#FBF8F5"/></linearGradient></defs><rect width="952" height="560" rx="40" fill="url(#lg1)"/>
+<g transform="translate(110 70)"><rect width="230" height="420" rx="40" fill="#1E2B5C"/><rect x="16" y="16" width="198" height="388" rx="28" fill="#fff"/>
+<g transform="translate(115 170)" fill="none" stroke="#5A6488" stroke-width="12" stroke-linecap="round"><path d="M-70 -20 A100 100 0 0 1 70 -20"/><path d="M-45 10 A62 62 0 0 1 45 10"/><circle cx="0" cy="40" r="8" fill="#5A6488"/></g>
+<line x1="45" y1="290" x2="185" y2="80" stroke="#F09B7C" stroke-width="16" stroke-linecap="round"/>
+<text x="115" y="350" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#1E2B5C">2 settimane</text></g>
+<path d="M370 280 L460 280" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/><path d="M445 258 L470 280 L445 302" stroke="#4A5BE8" stroke-width="10" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+<g transform="translate(500 90)"><circle cx="90" cy="90" r="70" fill="#FFD23F"/><g stroke="#FFD23F" stroke-width="10" stroke-linecap="round"><line x1="90" y1="0" x2="90" y2="-10"/><line x1="0" y1="90" x2="-10" y2="90"/><line x1="180" y1="90" x2="190" y2="90"/><line x1="26" y1="26" x2="18" y2="18"/><line x1="154" y1="26" x2="162" y2="18"/></g>
+<path d="M-10 380 C 60 300 120 300 190 380 Z" fill="#1E9E9E"/><path d="M120 380 C 190 280 270 280 340 380 Z" fill="#0F6F6F"/>
+<rect x="210" y="200" width="22" height="90" rx="8" fill="#A64A30"/><circle cx="221" cy="185" r="50" fill="#1E9E9E"/></g></svg>
+  <div style="margin-top:auto;gap:22px" class="stack">
+    <p class="kicker we">Schermi e persone</p>
+    <h1 style="font-size:74px">Due settimane senza internet sul telefono hanno <span class="hl t">migliorato umore e attenzione</span>.</h1>
+    <p class="mid muted">Che cosa è successo a 467 persone che hanno provato, e che cosa possiamo prendere noi.</p>
+    <p style="font-weight:900;font-size:36px;color:var(--peri)">Scorri →</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="kicker ">Succede a molti</p><div class="count">2/11</div></div>
+  <div class="stack" style="margin-top:80px;gap:40px">
+    <p class="qt">«Lo prendo solo un attimo.»<small>Una frase che molte persone ripetono più volte al giorno</small></p>
+    <p class="mid">Molte persone controllano il telefono senza pensarci: un messaggio, un video, le notizie. Il tempo passa e poi resta la sensazione di averne perso.<br><br>Una ricerca del 2025 ha provato a rispondere a una domanda semplice: <b>che cosa succede se per due settimane il telefono resta un telefono?</b></p>
+  </div>
+  <p class="next">Com'è stata fatta la ricerca? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="kicker we">La ricerca</p><div class="count">3/11</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <p class="big" style="font-size:150px">467</p>
+    <p class="biglabel">adulti negli Stati Uniti e in Canada, in media di <span class="hl t">32 anni</span>.</p>
+    <p class="mid" style="font-size:30px">Un'app ha bloccato internet sul telefono, sia dati sia wi-fi, per 2 settimane. Chiamate e SMS funzionavano, e internet restava disponibile sul computer.<br><br>Le persone sono state divise a caso in due gruppi: uno ha bloccato internet nelle prime due settimane, l'altro nelle due successive. Sono stati misurati benessere, salute mentale (per esempio sintomi di ansia e depressione) e attenzione, con un test al computer.</p>
+  </div>
+  <p class="next">Prima di tutto: quanto tempo al telefono? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="kicker we">Il tempo al telefono</p><div class="count">4/11</div></div>
+  <div class="stack" style="margin-top:50px;gap:28px">
+    <h2 style="font-size:52px">Il tempo al telefono si è <span class="hl t">quasi dimezzato</span>.</h2>
+    <div class="clock">
+      <div class="a"><small>Prima, al giorno</small><b>5 h 14</b><span>in media</span></div>
+      <div class="b"><small>Con il blocco, al giorno</small><b>2 h 41</b><span>in media</span></div>
+    </div>
+    <div class="hbar">
+      <div class="l"><span>Prima</span><div class="t"><i style="width:94%;background:var(--peri-soft)"></i></div></div>
+      <div class="l"><span>Con il blocco</span><div class="t"><i style="width:48%;background:var(--teal)"></i></div></div>
+      <div class="l"><span>Dopo il blocco</span><div class="t"><i style="width:79%;background:var(--peri-soft)"></i></div></div>
+    </div>
+    <p class="mid" style="font-size:28px">Finito il blocco, il tempo è risalito (4 h 25 al giorno), ma è rimasto più basso di prima. Dati del primo gruppo, dalle schermate del tempo di utilizzo.</p>
+  </div>
+  <p class="next">E come sono state le persone? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="kicker we">Che cosa è cambiato</p><div class="count">5/11</div></div>
+  <div class="stack" style="margin-top:44px;gap:22px">
+    <h2 style="font-size:50px">Dopo due settimane, è migliorato <span class="hl t">tutto ciò che è stato misurato</span>.</h2>
+    <div class="ups">
+      <div><span class="ic">↑</span><p><b>Benessere</b><span>Più soddisfazione per la propria vita e più emozioni positive.</span></p></div>
+      <div><span class="ic">↑</span><p><b>Salute mentale</b><span>Meno sintomi, per esempio di ansia e di umore giù.</span></p></div>
+      <div><span class="ic">↑</span><p><b>Attenzione</b><span>Nel test al computer: secondo gli autori, un miglioramento simile a 10 anni di invecchiamento in meno.</span></p></div>
+    </div>
+    <p class="mid" style="font-size:27px">Le stesse cose sono successe all'altro gruppo, quando è arrivato il suo turno. E nel primo gruppo benessere e salute mentale sono rimasti più alti anche due settimane dopo.</p>
+  </div>
+  <p class="next">Perché? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s6">
+  <div class="top"><p class="kicker we">Perché</p><div class="count">6/11</div></div>
+  <div class="stack" style="margin-top:44px;gap:26px">
+    <h2 style="font-size:50px">Il tempo liberato è andato <span class="hl t">al mondo fuori dallo schermo</span>.</h2>
+    <div class="tiles">
+      <div class="p"><svg width="90" height="70" viewBox="0 0 90 70"><path d="M10 10 h40 a10 10 0 0 1 10 10 v14 a10 10 0 0 1 -10 10 h-24 l-12 10 v-10 a10 10 0 0 1 -14 -10 v-14 a10 10 0 0 1 10 -10z" fill="#4A5BE8"/><path d="M50 26 h20 a10 10 0 0 1 10 10 v12 a10 10 0 0 1 -6 9 v10 l-12 -9 h-12 a10 10 0 0 1 -10 -10" fill="#8B93E8"/></svg>Stare con le persone dal vivo</div>
+      <div class="t"><svg width="90" height="70" viewBox="0 0 90 70"><path d="M8 52 C 30 52 32 30 46 30 C 60 30 62 52 84 52" stroke="#0F6F6F" stroke-width="10" fill="none" stroke-linecap="round"/><circle cx="46" cy="16" r="10" fill="#0F6F6F"/></svg>Fare movimento</div>
+      <div class="c"><svg width="90" height="70" viewBox="0 0 90 70"><rect x="40" y="38" width="10" height="30" rx="4" fill="#A64A30"/><circle cx="45" cy="28" r="24" fill="#F09B7C"/></svg>Stare all'aperto</div>
+    </div>
+    <p class="mid" style="font-size:29px">Le persone hanno passato più tempo così (e con hobby e libri) e meno a guardare video e notizie. Si sono sentite più in contatto con gli altri, più padrone di sé e hanno dormito un po' di più.<br><br>Secondo gli autori, questi cambiamenti aiutano a spiegare il miglioramento di benessere e salute mentale.</p>
+  </div>
+  <p class="next">Ma è stato facile? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="kicker we">Difficile, ma utile</p><div class="count">7/11</div></div>
+  <div class="stack" style="margin-top:50px;gap:30px">
+    <h2 style="font-size:50px">Non è stato facile, e non è servito essere perfetti.</h2>
+    <div class="quarter"><b>26%</b><p>delle persone ha tenuto il blocco attivo per almeno 10 giorni su 14.</p></div>
+    <p class="mid" style="font-size:31px">Molti l'hanno tolto prima, o non l'hanno mai attivato. Eppure i miglioramenti si sono visti <b>contando tutti</b>, anche chi non ha resistito fino in fondo; sono stati più forti per chi ha tenuto duro.<br><br>Secondo gli autori, potrebbe bastare ridurre, senza bloccare tutto.</p>
+  </div>
+  <p class="next">Quindi, mito o realtà? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide warmbg" id="s8">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">8/11</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«Senza internet sul telefono si sta peggio: ci si sente tagliati fuori.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">In questa ricerca, dopo due settimane senza internet sul telefono le persone sono state <span class="hl">meglio, non peggio</span>, e si sono sentite più in contatto con gli altri.</p>
+  </div>
+  <p class="next">Prima di concludere, i limiti →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s9">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">9/11</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <h2 style="font-size:56px">Che cosa la ricerca <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>Le persone sapevano che lo studio riguardava il telefono e il benessere: le aspettative possono aver influito. Per questo gli autori hanno usato anche un test di attenzione.</div>
+      <div>Erano persone <b>motivate</b> a ridurre il telefono (83%), con iPhone, negli Stati Uniti e in Canada.</div>
+      <div>Due settimane soltanto, e non tutti hanno completato lo studio (circa il 67% fino alla fine).</div>
+      <div>È stato bloccato tutto internet sul telefono: blocchi più mirati non sono stati provati.</div>
+    </div>
+  </div>
+  <p class="next">E allora, da dove cominciare? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide" id="s10">
+  <div class="top"><p class="kicker we">Prova così</p><div class="count">10/11</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <h2 style="font-size:50px">Non serve bloccare tutto: prova con <span class="hl t">un momento alla volta</span>.</h2>
+    <div class="pr">
+      <div><span class="n">1</span><p><b>Scegli un momento.</b><span>Una sera, il pranzo, la prima ora del mattino.</span></p></div>
+      <div><span class="n">2</span><p><b>Scrivi il tuo «se… allora…».</b><span>«Se ceno con qualcuno, allora il telefono resta in borsa, senza internet.»</span></p></div>
+      <div><span class="n">3</span><p><b>Dai un posto al tempo liberato.</b><span>Una passeggiata, una telefonata a un amico, un libro.</span></p></div>
+    </div>
+  </div>
+  <p class="next">E se vuoi farlo con qualcuno? →</p>
+  <div class="src"><b>FONTE</b><span><em>Castelo et al., 2025</em> · PNAS Nexus</span></div>
+</section>
+
+<section class="slide cta" id="s11">
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">11/11</div></div>
+  <div class="stack" style="margin-top:90px">
+    <h2 style="font-size:64px">Meno schermo, <span class="hl">più vita intorno</span>.</h2>
+    <p class="body" style="opacity:.92">Con WeSelf l'obiettivo «meno telefono» diventa una settimana di piccole azioni, già in agenda, e puoi trovare chi ha il tuo stesso obiettivo per farlo insieme.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>
