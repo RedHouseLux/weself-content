@@ -1,4 +1,4 @@
-# Carosello · Chiedere «come stai davvero?» è meno imbarazzante di quanto si pensa (Kardas, Kumar & Epley, 2022)
+# Carosello · Si pensa che agli altri non interessi come stai. Non è così. (Kardas, Kumar & Epley, 2022)
 
 **Pilastro:** Relazioni (amicizia). **Occasione:** giovedì 19 novembre, Giornata internazionale dell'uomo (non istituita dall'ONU; tema dei promotori 2026: «The Future Is Everyone»). **Immagini:** `weself-come-stai-01.png` … `weself-come-stai-12.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
 
@@ -17,7 +17,7 @@
 ## Didascalia (Instagram / Facebook)
 
 ```
-Chiedere «come stai davvero?» è meno imbarazzante di quanto si pensa.
+Si pensa che agli altri non interessi come stai. Non è così.
 
 Oggi è la Giornata internazionale dell'uomo. Molte persone, e molti uomini, con gli amici parlano di calcio, lavoro e programmi per il weekend; la domanda su come si sta davvero resta spesso in gola.
 
@@ -43,7 +43,7 @@ A chi faresti oggi la domanda vera? 👇
 ## Didascalia breve (TikTok)
 
 ```
-«Ma tu, come stai davvero?» In 12 esperimenti, le conversazioni profonde sono state meno imbarazzanti e più piacevoli del previsto, anche tra amici. Fonte: Kardas, Kumar & Epley, 2022. #amicizia #comestai #WeSelf
+Si pensa che agli altri non interessi come stai. Non è così: in 12 esperimenti, le conversazioni profonde sono state meno imbarazzanti e più piacevoli del previsto, anche tra amici. Fonte: Kardas, Kumar & Epley, 2022. #amicizia #comestai #WeSelf
 ```
 
 ## Primo commento
@@ -56,7 +56,7 @@ Come abbiamo letto i numeri: nella slide 8 le percentuali sono la quota di doman
 
 ## Testo alternativo (una per slide)
 
-1. Due fumetti: «E la partita di domenica?» e «Ma tu, come stai davvero?» con un cuore. Titolo: «Chiedere "come stai davvero?" è meno imbarazzante di quanto si pensa».
+1. Due fumetti: «E la partita di domenica?» e «Ma tu, come stai davvero?» con un cuore. Titolo: «Si pensa che agli altri non interessi come stai. Non è così.»
 2. «Tutto bene? E la partita?» Molte persone, e molti uomini, con gli amici parlano di calcio e lavoro; la domanda vera resta in gola.
 3. La ricerca: 12 esperimenti, tra sconosciuti e in uno con amici, partner e familiari; conversazioni di circa 10 minuti con domande leggere o profonde; aspettative prima e esperienza dopo.
 4. Il risultato: imbarazzo meno di quanto temuto; vicinanza e felicità più di quanto previsto. 50 dirigenti, per l'82% uomini, vorrebbero più conversazioni profonde.
