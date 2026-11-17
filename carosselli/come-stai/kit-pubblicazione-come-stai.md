@@ -60,7 +60,7 @@ Come abbiamo letto i numeri: nella slide 8 le percentuali sono la quota di doman
 2. «Tutto bene? E la partita?» Molte persone, e molti uomini, con gli amici parlano di calcio e lavoro; la domanda vera resta in gola.
 3. La ricerca: 12 esperimenti, tra sconosciuti e in uno con amici, partner e familiari; conversazioni di circa 10 minuti con domande leggere o profonde; aspettative prima e esperienza dopo.
 4. Il risultato: imbarazzo meno di quanto temuto; vicinanza e felicità più di quanto previsto. 50 dirigenti, per l'82% uomini, vorrebbero più conversazioni profonde.
-5. Perché ci sbagliamo: si sottovaluta quanto l'altro tiene alle nostre risposte.
+5. Perché ci sbagliamo: «Si pensa che alle persone non interessi.» Un fumetto con il pensiero «Figurati se gli interessa come sto», barrato. Prima di parlare si è sottovalutato quanto l'altro avrebbe tenuto alle risposte; dopo, l'altro è risultato più interessato del previsto.
 6. 4 volte: la differenza di imbarazzo attesa tra domande profonde e leggere è stata circa quattro volte quella vissuta.
 7. Con uno sconosciuto il divario tra attese e realtà è grande; con chi si conosce è più piccolo, ma c'è. Barre illustrative.
 8. Chi immaginava una persona attenta ha scelto domande profonde nel 62% dei casi; chi la immaginava indifferente nel 40%.
