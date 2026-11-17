@@ -1,0 +1,153 @@
+<title>Copione Reel WOOP</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Literata:ital@0;1&family=Nunito:wght@600;800;900&display=swap">
+<style>
+/* A script board: one card per scene, voice first; WeSelf colours */
+:root{--bg:#F1EEF7;--panel:#FFFFFF;--fg:#1E2B5C;--muted:#5A6488;--line:#DCD8E8;--accent:#4A5BE8;--teal:#0F6F6F;--warn:#A64A30;--soft:#DDE0FB;
+--ui:"Nunito",system-ui,sans-serif;--read:"Literata",Georgia,serif}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#12162B;--panel:#1B2140;--fg:#E8EAF6;--muted:#AAB3DD;--line:#2E3660;--accent:#8B93E8;--teal:#5BC8BC;--warn:#F5B49C;--soft:#2A3268;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#12162B;--panel:#1B2140;--fg:#E8EAF6;--muted:#AAB3DD;--line:#2E3660;--accent:#8B93E8;--teal:#5BC8BC;--warn:#F5B49C;--soft:#2A3268;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--panel)}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--panel);border-bottom:1px solid var(--line)}
+.bar .in,.wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));max-width:860px;margin:0 auto}
+.bar .in{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center;justify-content:space-between;padding-block:14px}
+.bar h1{font-size:20px;font-weight:900;margin:0}
+.bar p{margin:2px 0 0;font-size:14px;color:var(--muted)}
+.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.status{font-size:14px;font-weight:800;color:var(--muted)}.status.dirty{color:var(--warn)}.status.saved{color:var(--teal)}
+button{font:inherit;font-weight:900;font-size:15px;border-radius:999px;padding:10px 18px;border:2px solid var(--accent);cursor:pointer}
+button.primary{background:var(--accent);color:var(--panel)}button.ghost{background:transparent;color:var(--accent)}
+button:disabled{opacity:.45;cursor:default}button:focus-visible{outline:3px solid var(--fg);outline-offset:2px}
+.wrap{padding-block:24px 56px;display:flex;flex-direction:column;gap:18px}
+.intro{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;font-size:15px;line-height:1.55;color:var(--muted)}
+.intro b{color:var(--fg)}
+.scene{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;display:flex;flex-direction:column;gap:14px}
+.scene header{display:flex;gap:14px;align-items:center}
+.num{font-weight:900;font-size:15px;color:var(--accent);background:var(--soft);border-radius:10px;padding:6px 9px;font-variant-numeric:tabular-nums}
+.scene h2{font-size:19px;font-weight:900;margin:0}
+.time{font-size:13px;font-weight:800;color:var(--muted);font-variant-numeric:tabular-nums}
+.fld{display:flex;flex-direction:column;gap:6px;min-width:0}
+.lab{font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.voice{font-family:var(--read);font-size:20px;line-height:1.5;margin:0}
+.vis{font-size:15px;line-height:1.5;margin:0;color:var(--muted)}
+[data-e]{border-radius:8px;padding:4px 6px;margin-inline:-6px;cursor:text;transition:box-shadow .15s}
+[data-e]:hover{box-shadow:0 0 0 2px var(--line)}
+[data-e]:focus{outline:none;box-shadow:0 0 0 3px var(--accent)}
+[data-e].changed{box-shadow:0 0 0 2px var(--warn)}
+@media (prefers-reduced-motion: reduce){[data-e]{transition:none}}
+</style>
+<div class="bar"><div class="in">
+  <div><h1>Copione Reel · WOOP, dal volere al fare</h1><p>Clicca su un testo e riscrivilo, poi premi «Salva modifiche».</p></div>
+  <div class="actions"><span class="status" id="status">Nessuna modifica</span>
+  <button class="ghost" id="undo" type="button" disabled>Annulla le modifiche non salvate</button>
+  <button class="primary" id="save" type="button" disabled>Salva modifiche</button></div>
+</div></div>
+<div class="wrap">
+<div class="intro"><b>Fonte principale:</b> Wang, Wang e Gai, «A Meta-Analysis of the Effects of Mental Contrasting With Implementation Intentions on Goal Attainment», <i>Frontiers in Psychology</i>, 2021 (24 studi, 15.907 persone). Articolo libero: <a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2021.565202/full" target="_blank" rel="noopener">leggilo qui</a>. <b>Numeri verificati sul testo completo:</b> effetto complessivo g = 0,34 → 63% (con la correzione per i possibili studi mancanti g = 0,24 → 60%); con una persona che guida g = 0,47 → 68%; da soli, su carta o online, g = 0,28 → 61%. <b>Durata stimata:</b> circa 100 secondi, voce fuori campo del fondatore; nel punto di vista e nel finale niente sottotitoli. Visual senza persone. Puoi cambiare voce e descrizione delle scene; i tempi si adattano quando Claude prepara il video.</div>
+<article class="scene">
+  <header><span class="num">01</span><div><h2 data-e="n1">Gancio</h2><span class="time" data-e="t1">0–6 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v1">Volere non basta. C'è un metodo in quattro lettere che aiuta a passare dal volere al fare: si chiama WOOP.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s1">Quattro grandi lettere W, O, O, P compaiono una alla volta, come tessere che si girano.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">02</span><div><h2 data-e="n2">Il problema</h2><span class="time" data-e="t2">6–16 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v2">Molte persone partono con un buon proposito, immaginano già il traguardo… e poi si fermano al primo ostacolo.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s2">Una linea che sale verso una bandierina, poi si interrompe contro un muretto.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">03</span><div><h2 data-e="n3">W · Desiderio</h2><span class="time" data-e="t3">16–24 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v3">W sta per «wish», desiderio: scegli una cosa che desideri e che puoi davvero ottenere, per esempio camminare tre volte questa settimana.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s3">La W si illumina; dentro una nuvoletta compare l'obiettivo scritto.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">04</span><div><h2 data-e="n4">O · Risultato</h2><span class="time" data-e="t4">24–31 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v4">O sta per «outcome», risultato: immagina il momento più bello in cui ci sei riuscito.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s4">La prima O si illumina; si accende un piccolo sole.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">05</span><div><h2 data-e="n5">O · Ostacolo</h2><span class="time" data-e="t5">31–41 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v5">La seconda O sta per «obstacle», ostacolo: chiediti che cosa, dentro di te, potrebbe fermarti. La stanchezza, la pigrizia, il telefono.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s5">La seconda O si illumina; compare un sasso sulla strada.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">06</span><div><h2 data-e="n6">P · Piano</h2><span class="time" data-e="t6">41–50 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v6">P sta per «plan», piano: «se arriva quell'ostacolo, allora faccio questo». Per esempio: «se torno stanco, allora esco comunque per dieci minuti».</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s6">La P si illumina; una freccia aggira il sasso: «se… allora…».</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">07</span><div><h2 data-e="n7">La ricerca</h2><span class="time" data-e="t7">50–60 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v7">Una ricerca del 2021 ha messo insieme 24 studi su questo metodo, con studenti, adulti e bambini, per obiettivi di salute, di studio e personali.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s7">Ventiquattro puntini che si dispongono in una griglia; tre etichette: salute, studio, obiettivi personali.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">08</span><div><h2 data-e="n8">Il risultato</h2><span class="time" data-e="t8">60–72 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v8">In media, chi ha usato WOOP ha fatto meglio del 63% di chi non l'ha usato. Un effetto piccolo-medio, ma per un esercizio breve; e ha funzionato a età diverse.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s8">Una fila di 20 caselle: il segnalino si ferma al 63%; una tacca al 50% indica «nessun effetto».</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">09</span><div><h2 data-e="n9">Insieme funziona meglio</h2><span class="time" data-e="t9">72–82 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v9">E ha funzionato di più quando qualcuno guidava l'esercizio: 68%, contro il 61% di chi l'ha fatto da solo, su carta o online.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s9">Due barre affiancate: «con qualcuno» 68%, «da soli» 61%.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">10</span><div><h2 data-e="n10">Il mio punto di vista</h2><span class="time" data-e="t10">82–96 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v10">[Il tuo punto di vista: fino a 15 secondi. Scrivilo qui o mandamelo.]</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s10">Stessa schermata degli altri Reel: sfondo lilla, cerchi che si allargano, «Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio». Niente sottotitoli.</p></div>
+</article>
+<article class="scene">
+  <header><span class="num">11</span><div><h2 data-e="n11">Finale</h2><span class="time" data-e="t11">96–104 s</span></div></header>
+  <div class="fld"><span class="lab">Voce e sottotitoli</span><p class="voice" data-e="v11">Prova adesso: un desiderio, il risultato, l'ostacolo, il piano. Quattro lettere, un esercizio breve. Il link è in bio.</p></div>
+  <div class="fld"><span class="lab">Che cosa si vede</span><p class="vis" data-e="s11">Finale come negli altri Reel: in alto le quattro lettere WOOP che pulsano; sotto la frase, poi le righe su WeSelf (un obiettivo diventa piccole azioni in agenda, con chi ha il tuo stesso obiettivo) e il pulsante «Scopri WeSelf · link in bio». Niente sottotitoli.</p></div>
+</article>
+<div class="intro"><b>Note:</b> «Mito o realtà?» e i limiti vanno in didascalia, come nel Reel delle emozioni (i limiti: possibile effetto gonfiato dagli studi mancanti, 60% dopo la correzione; molti risultati riferiti dalle persone stesse; studi diversi tra loro; due grandi studi su corsi online con effetto molto piccolo). Gli esempi (camminare, «se torno stanco…») sono nostri.</div>
+</div>
+<script type="application/json" id="state">{}</script>
+<script>
+(function(){
+  var PRISTINE = document.body.innerHTML;
+  var saved = {};
+  try { saved = JSON.parse(document.getElementById('state').textContent || '{}'); } catch (e) { saved = {}; }
+  var els = Array.prototype.slice.call(document.querySelectorAll('[data-e]'));
+  var original = {};
+  els.forEach(function(el){
+    original[el.dataset.e] = el.innerHTML;
+    if (saved[el.dataset.e] != null) el.innerHTML = saved[el.dataset.e];
+    el.setAttribute('contenteditable', 'true'); el.setAttribute('lang', 'it'); el.setAttribute('spellcheck', 'true');
+  });
+  var base = {}; els.forEach(function(el){ base[el.dataset.e] = el.innerHTML; });
+  var st = document.getElementById('status'), saveBtn = document.getElementById('save'), undoBtn = document.getElementById('undo');
+  function refresh(msg, cls){
+    els.forEach(function(el){ el.classList.toggle('changed', el.innerHTML !== original[el.dataset.e]); });
+    var n = els.filter(function(el){ return el.innerHTML !== base[el.dataset.e]; }).length;
+    saveBtn.disabled = n === 0; undoBtn.disabled = n === 0;
+    st.className = 'status' + (cls ? ' ' + cls : (n ? ' dirty' : ''));
+    st.textContent = msg || (n ? (n === 1 ? '1 testo modificato, da salvare' : n + ' testi modificati, da salvare') : 'Nessuna modifica da salvare');
+  }
+  document.addEventListener('input', function(e){ if (e.target.closest && e.target.closest('[data-e]')) refresh(); });
+  document.addEventListener('paste', function(e){
+    if (!(e.target.closest && e.target.closest('[data-e]'))) return;
+    e.preventDefault(); document.execCommand('insertText', false, (e.clipboardData || window.clipboardData).getData('text/plain'));
+  });
+  undoBtn.addEventListener('click', function(){ els.forEach(function(el){ el.innerHTML = base[el.dataset.e]; }); refresh(); });
+  var artifact = null;
+  if (window.claude && window.claude.use) window.claude.use('artifact').then(function(a){ artifact = a; });
+  saveBtn.addEventListener('click', function(){
+    if (!artifact) { refresh('Salvataggio non disponibile in questa vista: apri la pagina su claude.ai', 'dirty'); return; }
+    var next = {};
+    els.forEach(function(el){ if (el.innerHTML !== original[el.dataset.e]) next[el.dataset.e] = el.innerHTML; });
+    var json = JSON.stringify(next).replace(/</g, '\\u003c');
+    var body = PRISTINE.replace(/(<script type="application\/json" id="state">)[\s\S]*?(<\/script>)/, function(m, a, b){ return a + json + b; });
+    var reset = (document.head.querySelector('style') || {}).textContent || '';
+    var html = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>' + reset + '</style></head><body>' + body + '</body></html>';
+    saveBtn.disabled = true; refresh('Salvataggio…');
+    artifact.publish(html).then(function(){ refresh('Salvato', 'saved'); }).catch(function(err){
+      var c = err && err.code;
+      if (c === 'conflict') refresh('Qualcun altro ha salvato nel frattempo: la pagina si ricarica', 'dirty');
+      else if (c === 'not_granted' || c === 'not_writer') refresh('Non hai il permesso di salvare questa pagina', 'dirty');
+      else refresh('Salvataggio non riuscito: riprova tra poco', 'dirty');
+    });
+  });
+  refresh();
+})();
+</script>
