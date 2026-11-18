@@ -1,0 +1,165 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8;--sunk:#F3EEE8;--sun:#FFD23F}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-family:Nunito,sans-serif;color:var(--ink)}
+.sc{position:absolute;inset:0;opacity:0;background:var(--surface);overflow:hidden}
+.kick{position:absolute;left:72px;top:250px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--peri)}
+.brand{position:absolute;left:72px;top:246px;display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px}
+.brand img{width:46px;height:46px}.we{color:var(--peri)}.self{color:var(--teal)}
+.h{position:absolute;left:72px;right:72px;font-weight:900;letter-spacing:-.02em;line-height:1.08}
+.cap{position:absolute;left:72px;right:72px;top:1215px;font-weight:800;font-size:44px;line-height:1.3;background:#fff;border-radius:28px;padding:28px 34px;box-shadow:0 10px 30px rgba(30,43,92,.08);z-index:40;opacity:0}
+.src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted);z-index:41}
+.tile{position:absolute;width:400px;height:280px;border-radius:40px;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:10px;font-weight:900;font-size:48px;box-shadow:0 12px 30px rgba(30,43,92,.08)}
+.tile small{font-weight:800;font-size:28px;letter-spacing:.14em;opacity:.7}
+.t1{background:var(--peri-soft);color:var(--peri)}.t2{background:var(--teal-soft);color:var(--teal-text)}.t3{background:var(--coral-soft);color:var(--coral-text)}.t4{background:#FFF1BF;color:#7A5A00}
+.mini{position:absolute;top:330px;width:212px;height:96px;border-radius:24px;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:28px;opacity:.35}
+.mini.on{opacity:1;box-shadow:0 0 0 6px var(--ink)}
+.lab{position:absolute;font-weight:900;font-size:34px;text-align:center;transform:translateX(-50%);white-space:nowrap}
+.pill{position:absolute;font-weight:800;font-size:34px;padding:16px 28px;border-radius:999px;white-space:nowrap}
+.cta{background:var(--peri);color:#fff}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:44px;padding:30px 54px;border-radius:999px}
+#prog{position:absolute;left:72px;right:72px;top:214px;height:8px;border-radius:4px;background:rgba(30,43,92,.08);z-index:42}
+#progi{height:100%;width:0;border-radius:4px;background:var(--peri)}
+svg{position:absolute;left:0;top:0;overflow:visible}
+</style></head><body>
+<div id="prog"><div id="progi"></div></div>
+<div class="cap" id="gcap"></div>
+<div class="src" id="gsrc">Wang, Wang &amp; Gai, 2021 · Frontiers in Psychology</div>
+
+<!-- 1 hook: four tiles flip in -->
+<section class="sc" id="hook"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="tile t1" id="h1" style="left:100px;top:380px"><small>1</small>Desiderio</div>
+  <div class="tile t2" id="h2" style="left:580px;top:380px"><small>2</small>Risultato</div>
+  <div class="tile t3" id="h3" style="left:100px;top:720px"><small>3</small>Ostacolo</div>
+  <div class="tile t4" id="h4" style="left:580px;top:720px"><small>4</small>Piano</div>
+</section>
+
+<!-- 2 problema: path to a flag, stopped by a wall -->
+<section class="sc" id="problema"><p class="kick">Succede a molti</p>
+  <svg width="1080" height="1920">
+    <path id="pp" d="M120 1080 C 300 1060 360 900 520 860 S 760 640 900 520" stroke="#4A5BE8" stroke-width="14" fill="none" stroke-linecap="round"/>
+    <g id="flag"><line x1="900" y1="520" x2="900" y2="380" stroke="#1E2B5C" stroke-width="8" stroke-linecap="round"/><path d="M900 382 L990 408 L900 436Z" fill="#F09B7C"/></g>
+    <g id="wall"><rect x="560" y="740" width="120" height="150" rx="10" fill="#C9BFB4"/><line x1="560" y1="790" x2="680" y2="790" stroke="#FBF8F5" stroke-width="6"/><line x1="560" y1="840" x2="680" y2="840" stroke="#FBF8F5" stroke-width="6"/><line x1="620" y1="740" x2="620" y2="790" stroke="#FBF8F5" stroke-width="6"/><line x1="590" y1="790" x2="590" y2="840" stroke="#FBF8F5" stroke-width="6"/><line x1="650" y1="790" x2="650" y2="840" stroke="#FBF8F5" stroke-width="6"/></g>
+  </svg>
+</section>
+
+<!-- 3-6 the four steps: mini tiles on top, illustration below -->
+<section class="sc" id="desiderio"><p class="kick">Primo passo</p>
+  <div class="mini t1 on" style="left:72px">Desiderio</div><div class="mini t2" style="left:306px">Risultato</div><div class="mini t3" style="left:540px">Ostacolo</div><div class="mini t4" style="left:774px">Piano</div>
+  <svg width="1080" height="1920"><g id="cloud" transform="translate(540 820)">
+    <path d="M-330 90 C-400 90 -410 -10 -340 -30 C-350 -120 -240 -150 -190 -100 C-160 -190 -20 -200 10 -110 C60 -170 190 -150 190 -60 C290 -80 350 20 290 80 C320 130 260 170 200 150 L-300 150 C-360 150 -380 100 -330 90Z" fill="#DDE0FB"/>
+    <text text-anchor="middle" y="0" font-family="Nunito" font-weight="900" font-size="48" fill="#1E2B5C">Camminare 3 volte</text>
+    <text text-anchor="middle" y="62" font-family="Nunito" font-weight="900" font-size="48" fill="#1E2B5C">questa settimana</text></g></svg>
+</section>
+<section class="sc" id="risultato"><p class="kick">Secondo passo</p>
+  <div class="mini t1" style="left:72px">Desiderio</div><div class="mini t2 on" style="left:306px">Risultato</div><div class="mini t3" style="left:540px">Ostacolo</div><div class="mini t4" style="left:774px">Piano</div>
+  <svg width="1080" height="1920"><g id="sunG"><circle id="sun" cx="540" cy="900" r="120" fill="#FFD23F"/><g id="rays" stroke="#FFD23F" stroke-width="14" stroke-linecap="round"></g></g>
+    <path d="M60 1150 C 260 960 420 960 560 1060 C 700 960 860 960 1020 1150 Z" fill="#1E9E9E"/><path d="M300 1150 C 460 1010 640 1010 820 1150Z" fill="#0F6F6F"/></svg>
+</section>
+<section class="sc" id="ostacolo"><p class="kick">Terzo passo</p>
+  <div class="mini t1" style="left:72px">Desiderio</div><div class="mini t2" style="left:306px">Risultato</div><div class="mini t3 on" style="left:540px">Ostacolo</div><div class="mini t4" style="left:774px">Piano</div>
+  <svg width="1080" height="1920"><rect x="60" y="860" width="960" height="140" rx="70" fill="#F3EEE8"/><line x1="120" y1="930" x2="960" y2="930" stroke="#DCD3C8" stroke-width="8" stroke-dasharray="40 30"/>
+    <g id="rock" transform="translate(540 930)"><path d="M-110 50 C-130 -20 -70 -90 0 -90 C80 -90 130 -30 115 50 Z" fill="#8C7F73"/><path d="M-50 -40 C-20 -60 20 -60 40 -45" stroke="#A89C90" stroke-width="10" fill="none" stroke-linecap="round"/></g>
+    <g id="ow" font-family="Nunito" font-weight="800" font-size="36" fill="#A64A30" text-anchor="middle"><text id="o1" x="250" y="640">stanchezza</text><text id="o2" x="540" y="580">pigrizia</text><text id="o3" x="830" y="640">telefono</text></g></svg>
+</section>
+<section class="sc" id="piano"><p class="kick">Quarto passo</p>
+  <div class="mini t1" style="left:72px">Desiderio</div><div class="mini t2" style="left:306px">Risultato</div><div class="mini t3" style="left:540px">Ostacolo</div><div class="mini t4 on" style="left:774px">Piano</div>
+  <svg width="1080" height="1920"><rect x="60" y="860" width="960" height="140" rx="70" fill="#F3EEE8"/><line x1="120" y1="930" x2="960" y2="930" stroke="#DCD3C8" stroke-width="8" stroke-dasharray="40 30"/>
+    <g transform="translate(540 930)"><path d="M-110 50 C-130 -20 -70 -90 0 -90 C80 -90 130 -30 115 50 Z" fill="#8C7F73"/></g>
+    <path id="arc" d="M150 930 C 330 930 360 700 540 700 C 720 700 750 930 930 930" stroke="#1E9E9E" stroke-width="16" fill="none" stroke-linecap="round"/>
+    <path id="arch" d="M900 905 L940 930 L900 955" stroke="#1E9E9E" stroke-width="16" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  <div class="pill" id="sea" style="left:330px;top:560px;background:#FFF1BF;color:#7A5A00">se… allora…</div>
+</section>
+
+<!-- 7 ricerca: 24 dots and three domains -->
+<section class="sc" id="ricerca"><p class="kick">La ricerca</p>
+  <div class="h" style="top:330px;font-size:150px;color:var(--teal-text)">24</div>
+  <div class="h" style="top:500px;font-size:48px">studi su questo metodo</div>
+  <svg width="1080" height="1920"><g id="dots"></g></svg>
+  <div class="pill" id="d1" style="left:72px;top:1010px;background:var(--teal-soft);color:var(--teal-text)">salute</div>
+  <div class="pill" id="d2" style="left:280px;top:1010px;background:var(--peri-soft);color:var(--peri)">studio</div>
+  <div class="pill" id="d3" style="left:480px;top:1010px;background:var(--coral-soft);color:var(--coral-text)">obiettivi personali</div>
+</section>
+
+<!-- 8 esito: two markers on the way to the flag -->
+<section class="sc" id="esito"><p class="kick">Il risultato</p>
+  <svg width="1080" height="1920">
+    <rect x="80" y="640" width="900" height="24" rx="12" fill="#F3EEE8"/><rect x="80" y="900" width="900" height="24" rx="12" fill="#F3EEE8"/>
+    <g><line x1="980" y1="652" x2="980" y2="540" stroke="#1E2B5C" stroke-width="6" stroke-linecap="round"/><path d="M980 542 L1040 562 L980 584Z" fill="#F09B7C"/></g>
+    <g><line x1="980" y1="912" x2="980" y2="800" stroke="#1E2B5C" stroke-width="6" stroke-linecap="round"/><path d="M980 802 L1040 822 L980 844Z" fill="#F09B7C"/></g>
+    <circle id="mg" cx="100" cy="652" r="40" fill="#B9B3C9"/><circle id="mc" cx="100" cy="912" r="40" fill="#F09B7C"/>
+  </svg>
+  <div class="h" id="lg" style="top:700px;font-size:36px;font-weight:800;color:var(--muted)">senza il metodo</div>
+  <div class="h" id="lc" style="top:960px;font-size:36px;font-weight:800;color:var(--coral-text)">con il metodo</div>
+</section>
+
+<!-- 9 opinione: same screen as the other Reels -->
+<section class="sc" id="opinione" style="background:var(--peri-soft)">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="h" id="oph" style="top:330px;font-size:64px">Il mio punto di vista</div>
+  <div class="h" id="opn" style="top:420px;font-size:34px;font-weight:600;color:var(--muted)">Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.</div>
+  <svg style="position:absolute;left:140px;top:540px" width="800" height="600" viewBox="0 0 800 600">
+    <circle id="q1" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/><circle id="q2" cx="400" cy="300" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/><circle id="q3" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="300" r="58" fill="#4A5BE8"/><circle cx="400" cy="300" r="20" fill="#F09B7C"/>
+  </svg>
+</section>
+
+<!-- 10 fine: as the other Reels -->
+<section class="sc cta" id="fine">
+  <div id="ft" style="position:absolute;left:0;right:0;top:300px;height:300px">
+    <div class="tile t1" id="f1" style="left:150px;top:0;width:180px;height:130px;font-size:26px;border-radius:24px">Desiderio</div>
+    <div class="tile t2" id="f2" style="left:350px;top:0;width:180px;height:130px;font-size:26px;border-radius:24px">Risultato</div>
+    <div class="tile t3" id="f3" style="left:550px;top:0;width:180px;height:130px;font-size:26px;border-radius:24px">Ostacolo</div>
+    <div class="tile t4" id="f4" style="left:750px;top:0;width:180px;height:130px;font-size:26px;border-radius:24px">Piano</div>
+  </div>
+  <div class="h" id="ctat" style="top:560px;font-size:66px">Prova adesso: un desiderio, il risultato, l'ostacolo, il piano.</div>
+  <div class="h" id="ctaw" style="top:900px;font-size:42px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf un obiettivo diventa una settimana di piccole azioni, già in agenda, insieme a chi ha il tuo stesso obiettivo.</div>
+  <div id="ctab" style="position:absolute;left:72px;top:1150px"><span class="btn">Scopri WeSelf · link in bio</span></div>
+</section>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=x=>Math.max(0,Math.min(1,x)), eo=x=>1-Math.pow(1-cl(x),3), back=x=>{x=cl(x);const c=1.7;return 1+(c+1)*Math.pow(x-1,3)+c*Math.pow(x-1,2)};
+function pop(el,u,s){const k=back((u-s)/.45);el.style.opacity=eo((u-s)/.3);el.style.transform=(el.classList.contains('lab')?'translateX(-50%) ':'')+`scale(${0.85+0.15*k})`}
+/*__T__*/
+/*__CAPS__*/
+// dots for the research scene
+let dd='';for(let i=0;i<24;i++){const x=150+(i%12)*70,y=700+Math.floor(i/12)*80;dd+=`<circle cx="${x}" cy="${y}" r="24" fill="${['#1E9E9E','#4A5BE8','#F09B7C'][i%3]}" opacity="0"/>`}$('dots').innerHTML=dd;const DOTS=[...$('dots').children];
+let rr='';for(let i=0;i<10;i++){const a=i/10*Math.PI*2;rr+=`<line x1="${540+150*Math.cos(a)}" y1="${900+150*Math.sin(a)}" x2="${540+190*Math.cos(a)}" y2="${900+190*Math.sin(a)}"/>`}$('rays').innerHTML=rr;
+const PP=$('pp'),PL=PP.getTotalLength();PP.style.strokeDasharray=PL;const ARC=$('arc'),AL=ARC.getTotalLength();ARC.style.strokeDasharray=AL;
+const ORDER=['hook','problema','desiderio','risultato','ostacolo','piano','ricerca','esito','opinione','fine'];
+const NOSRC=['hook','opinione','fine'];
+window.render=function(t){
+  ORDER.forEach((id,i)=>{const a=T[id],b=i<ORDER.length-1?T[ORDER[i+1]]:END+1;const vis=t>=a-0.3&&t<b+0.35;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.3))/0.35)):0;$(id).style.zIndex=i+1});
+  const cur=ORDER.filter(id=>t>=T[id]).pop();
+  $('progi').style.width=(cl(t/END)*100)+'%';$('prog').style.opacity=cur==='fine'?0:1;
+  $('gsrc').style.opacity=NOSRC.includes(cur)?0:1;
+  {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on||cur==='opinione'||cur==='fine')el.style.opacity=0;}
+  let u;
+  // 1 hook: tiles flip one by one
+  u=t-T.hook;['h1','h2','h3','h4'].forEach((id,i)=>{const k=eo((u-0.3-i*0.55)/.45);$(id).style.opacity=k>0?1:0;$(id).style.transform=`scaleX(${Math.max(0.02,k)})`});
+  // 2 problema: the line rises, then stops at the wall
+  u=t-T.problema;{const k=eo(u/3.2)*0.58;PP.style.strokeDashoffset=PL*(1-k);$('flag').setAttribute('opacity',eo(u/.6));const w=back((u-3)/.5);$('wall').setAttribute('opacity',eo((u-2.6)/.3));$('wall').setAttribute('transform',`translate(620 890) scale(${0.6+0.4*w}) translate(-620 -890)`)}
+  // 3 desiderio: cloud pops
+  u=t-T.desiderio;{const k=back((u-0.4)/.6);$('cloud').setAttribute('transform',`translate(540 820) scale(${0.7+0.3*k})`);$('cloud').setAttribute('opacity',eo((u-0.4)/.4))}
+  // 4 risultato: sun rises and rays turn
+  u=t-T.risultato;{const k=eo(u/1.6);$('sunG').setAttribute('transform',`translate(0 ${(1-k)*260}) rotate(${t*12} 540 900)`);$('rays').setAttribute('opacity',eo((u-1)/.6))}
+  // 5 ostacolo: rock drops, words appear
+  u=t-T.ostacolo;{const k=back((u-0.3)/.5);$('rock').setAttribute('transform',`translate(540 ${930-(1-k)*200})`);$('rock').setAttribute('opacity',eo((u-0.3)/.2));['o1','o2','o3'].forEach((id,i)=>$(id).setAttribute('opacity',eo((u-4.2-i*0.7)/.4)))}
+  // 6 piano: arrow goes around the rock
+  u=t-T.piano;{const k=eo((u-0.6)/2.2);ARC.style.strokeDashoffset=AL*(1-k);$('arch').setAttribute('opacity',eo((u-2.6)/.3));pop($('sea'),u,1.2)}
+  // 7 ricerca: dots and domains
+  u=t-T.ricerca;DOTS.forEach((c,i)=>c.setAttribute('opacity',eo((u-0.3-i*0.08)/.3)));pop($('d1'),u,4.6);pop($('d2'),u,5.2);pop($('d3'),u,5.8);
+  // 8 esito: grey goes halfway, coral goes further
+  u=t-T.esito;{const g=eo((u-0.4)/2.2),c=eo((u-0.4)/2.6);$('mg').setAttribute('cx',100+g*420);$('mc').setAttribute('cx',100+c*640);$('lg').style.opacity=eo((u-0.6)/.4);$('lc').style.opacity=eo((u-0.6)/.4)}
+  // 9 opinione
+  u=t-T.opinione;{pop($('oph'),u,0.3);pop($('opn'),u,0.9);['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)})}
+  // 10 fine: tiles pulse, then text and button
+  u=t-T.fine;{['f1','f2','f3','f4'].forEach((id,i)=>{const p=1+0.06*Math.exp(-Math.pow((((t*0.8)+i*0.25)%1-.15)/.08,2));$(id).style.opacity=eo((u-i*0.15)/.4);$(id).style.transform=`scale(${p})`});pop($('ctat'),u,0.6);pop($('ctaw'),u,2.6);pop($('ctab'),u,4.4)}
+};
+render(0);
+</script></body></html>
