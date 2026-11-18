@@ -62,4 +62,4 @@ Send the founder the PDF (or image) and the kit. Offer the Claude editor (`tools
 
 | Content | Folder | State |
 |---|---|---|
-| — | — | Not started yet |
+| Leadership / leader non si nasce: si impara — Lacerenza et al. 2017 (PDF carousel, 12 pages, adapted from Instagram + slide «Per chi progetta i corsi») | `linkedin/leadership/` | Proposed, waiting for the founder (Tue 24 Nov, 8:30) |
