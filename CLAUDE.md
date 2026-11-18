@@ -83,6 +83,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Schermi / due settimane senza internet sul telefono hanno migliorato umore e attenzione — Castelo et al. 2025 | `carosselli/senza-internet/` | Published |
 | Relazioni / molti uomini pensano che agli amici non interessi come stanno, non è così — Kardas, Kumar & Epley 2022 (Giornata internazionale dell'uomo) | `carosselli/come-stai/` | Published (Wed 18 Nov) |
 | Reel animato «Dove sentiamo le emozioni» — Volynets et al. 2020 (bodily maps, stylised bodies, founder opinion) | `video/mappe-emozioni/` | Published (Mon 16 Nov, 115 s, founder voice-over) |
+| Reel animato «Dal volere al fare, in quattro passi» (WOOP) — Wang, Wang & Gai 2021 (founder opinion on the «why») | `video/woop/` | Ready, voice-over to record (99 s) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
