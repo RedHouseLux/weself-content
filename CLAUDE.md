@@ -4,6 +4,8 @@ This repository holds WeSelf's social content: carousels, articles, video/Reel k
 
 Weekly topic signals come from a separate project (repo `RedHouseLux/weself-listening` and the Notion database **Temi**); this repo is only for making content. Brief, brand book and plan also live in Notion: page **WeSelf · Temi della settimana** → «Brief per nuove sessioni (Claude)», «Brand identity», «Piano editoriale».
 
+**LinkedIn:** a separate session handles LinkedIn content, on its own branch, inside `linkedin/` (see `linkedin/CLAUDE.md`). Do not edit `linkedin/` from here; shared folders (`templates/`, `brand/`, `fonts/`, `tools/`) change only with the founder's agreement, because both sessions use them.
+
 ## What WeSelf is (describe only these 4 features)
 
 1. **Costruire abitudini sane:** a goal becomes a week of small actions already in the agenda.
