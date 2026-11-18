@@ -4,7 +4,7 @@
 
 **Fonte letta per intero:** articolo ad accesso libero (PMC11834938), studio randomizzato preregistrato. Visual senza persone.
 
-**Data consigliata:** **mercoledì 18 novembre 2026**, tra le 12:30 e le 14:00 oppure tra le 18:30 e le 20:00.
+**Data consigliata:** **giovedì 19 novembre 2026**, tra le 12:30 e le 14:00 oppure tra le 18:30 e le 20:00.
 
 **Racconto lineare:** succede a molti → la ricerca → il tempo al telefono → che cosa è cambiato → perché → difficile ma utile → mito o realtà → limiti → prova così («se… allora…», collegato al post di martedì) → WeSelf. Prepara il post di giovedì sulle conversazioni dal vivo.
 
