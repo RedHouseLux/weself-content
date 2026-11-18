@@ -62,7 +62,7 @@ Come abbiamo letto i numeri: il tempo al telefono (dalle schermate del tempo di 
 8. Mito o realtà? «Senza internet sul telefono si sta peggio: ci si sente tagliati fuori.» Mito.
 9. I limiti: aspettative dei partecipanti, solo due settimane, circa il 67% ha completato lo studio, blocco totale di internet.
 10. Prova così: scegli un momento, scrivi il tuo «se… allora…», dai un posto al tempo liberato.
-11. Meno schermo, più vita intorno. Con WeSelf l'obiettivo «meno telefono» diventa piccole azioni in agenda, con chi ha il tuo stesso obiettivo. Scopri WeSelf, link in bio.
+11. Meno schermo, più vita intorno. Con WeSelf l'obiettivo «meno telefono» diventa piccole azioni in agenda, per esempio attivare la modalità concentrazione del telefono la sera. Scopri WeSelf, link in bio.
 
 ## Note di affidabilità
 
