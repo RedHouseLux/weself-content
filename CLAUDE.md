@@ -81,7 +81,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Leadership / leader non si nasce: si impara — Lacerenza et al. 2017 (first Leadership post) | `carosselli/leadership/` | Ready, not published (Sun 15 Nov) |
 | Abitudini / un buon proposito regge meglio con un «se… allora…» — Gollwitzer & Sheeran 2006 | `carosselli/se-allora/` | Published |
 | Schermi / due settimane senza internet sul telefono hanno migliorato umore e attenzione — Castelo et al. 2025 | `carosselli/senza-internet/` | Ready, not published (Wed 18 Nov) |
-| Relazioni / molti uomini pensano che agli amici non interessi come stanno, non è così — Kardas, Kumar & Epley 2022 (Giornata internazionale dell'uomo) | `carosselli/come-stai/` | Ready, not published (Thu 19 Nov) |
+| Relazioni / molti uomini pensano che agli amici non interessi come stanno, non è così — Kardas, Kumar & Epley 2022 (Giornata internazionale dell'uomo) | `carosselli/come-stai/` | Published (Wed 18 Nov) |
 | Reel animato «Dove sentiamo le emozioni» — Volynets et al. 2020 (bodily maps, stylised bodies, founder opinion) | `video/mappe-emozioni/` | Published (Mon 16 Nov, 115 s, founder voice-over) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
