@@ -19,10 +19,12 @@ Aim for 45–75 seconds. Don't read: keep the bullets next to the phone and talk
 
 | File | Size | Use |
 |---|---|---|
-| `clip-01…07.mp4` | 1080×960, 6 s | Top half. Text animates in for ~2 s, then holds still |
+| `clip-01…07.mp4` | 1080×960, 6 s | Top half. Headline + an illustration from weself.app; everything animates in within ~2 s, then holds still |
 | `clip-08.mp4` | 1080×1920, 6 s | Ending, full screen |
 | `clip-XX.png` | same | Still version of each clip (backup, or to extend) |
-| `sfondo-01…04.png` | 1080×960 | Blank brand backgrounds (cream, coral, lilac, mint) for your own photos or notes |
+| `sfondo-01…04.png` | 1080×960 | Blank backgrounds (cream + the website's three soft gradients) for your own photos or notes |
+
+**Visual story (from the website's «Sara» scene):** alone under a cloud (`clip-02`) → small steps, the checklist (`clip-05`) → together in the sun (`clip-06`). `clip-06` uses the website's own line: «Il cambiamento arriva comunque. Accogliamolo insieme.» `clip-07` shows the real «Oggi» screen of the app from the website.
 
 ## Filming (bottom half)
 
@@ -43,8 +45,8 @@ Aim for 45–75 seconds. Don't read: keep the bullets next to the phone and talk
 
 ## Before posting
 
-- The ending says «Scrivimi in privato: ti aggiungo al beta test». If people should join some other way (link, form, TestFlight), tell me and I'll change it.
-- Brand colours/fonts come from the WeSelf design system in this repo; the website itself could not be checked from the work session.
+- The ending says «È in prova su Android. Scrivimi in privato.» (Android as stated on weself.app). If people should join some other way (link, form, TestFlight), tell me and I'll change it.
+- Illustrations, app screenshot, colours and type are taken from www.weself.app (files in `art/`).
 - Caption idea: write it like a short diary entry, first person, and end with «@weselfofficial se vuoi seguire il percorso». Tag @weselfofficial in the post.
 
-To change any text: edit `cards.html`, then `node render.cjs` (from this folder) re-renders everything.
+To change any text: edit `build.py`, then `python3 build.py && node render.cjs` (from this folder) re-renders everything.
