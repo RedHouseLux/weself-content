@@ -85,8 +85,13 @@ for i, s in enumerate(data["slides"], 1):
     if s.get("small"): h.append(f'<p class="small">{md(s["small"])}</p>')
     if s.get("note"): h.append(f'<div class="note">{md(s["note"])}</div>')
     vis = visual(s.get("visual"))
-    if s.get("theme") == "coral":  # coral figures would vanish on a coral background: make them white
-        vis = vis.replace("fill:rgb(240, 155, 124)", "fill:rgb(255, 255, 255)").replace("stroke:rgb(240, 155, 124)", "stroke:rgb(255, 255, 255)").replace(";color:rgb(240, 155, 124)", ";color:rgb(255, 255, 255)").replace("\"color:rgb(240, 155, 124)", "\"color:rgb(255, 255, 255)")
+    if s.get("theme") == "coral":  # tonal palette so the illustration sits in harmony with the coral background
+        tone = {"fill:rgb(221, 224, 251)": "fill:rgb(247, 190, 168)", "fill:rgb(168, 230, 221)": "fill:rgb(251, 227, 216)",
+                "fill:rgb(251, 227, 216)": "fill:rgb(250, 212, 196)", "fill:rgb(240, 155, 124)": "fill:rgb(255, 255, 255)",
+                "stroke:rgb(240, 155, 124)": "stroke:rgb(255, 255, 255)", "color:rgb(240, 155, 124)": "color:rgb(255, 255, 255)",
+                "color:rgb(74, 91, 232)": "color:rgb(30, 43, 92)", "stroke:rgb(74, 91, 232)": "stroke:rgb(255, 255, 255)",
+                "color:rgb(15, 111, 111)": "color:rgb(30, 43, 92)"}
+        vis = re.sub("|".join(re.escape(k) for k in tone), lambda m: tone[m.group(0)], vis)
     h.append(vis)
     h.append("</div>")
     foot = s.get("foot", data.get("foot", ""))

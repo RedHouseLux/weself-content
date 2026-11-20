@@ -19,7 +19,7 @@ Porta tutti alla stessa pagina: https://www.weself.app/it/community (da lì si e
 
 ## 1. Carosello: alt text
 
-1. Su fondo arancione corallo, in piccolo «Comunità fondatrice». Titolo: «Vuoi aiutarci a far nascere WeSelf?» Sotto: «Bastano un telefono Android e 14 giorni.» Illustrazione di una rete di persone collegate, con le etichette «Come stai?», «Passo fatto», «Stesso obiettivo».
+1. Su fondo arancione corallo, in piccolo «Comunità fondatrice». Titolo: «Vuoi aiutarci a far nascere WeSelf?» Sotto: «Bastano un telefono Android e 14 giorni.» Illustrazione nei toni del corallo: una rete di persone collegate da linee bianche, con le etichette «Come stai?», «Passo fatto», «Stesso obiettivo».
 2. «Un'agenda che ti chiede come stai.» Abitudini sane, persone con il tuo stesso obiettivo, una piccola comunità e, se serve, uno specialista. Non è una terapia. Uno smartphone mostra la schermata «Oggi» dell'app, con l'etichetta «In test su Google Play».
 3. «La comunità fondatrice»: le prime persone che fanno conoscere WeSelf, su Discord, con missioni chiare. Illustrazione di tre persone.
 4. «La prima missione: provala.» Google chiede che almeno 12 persone provino l'app per 14 giorni di fila. Serve un telefono Android; vale 20 punti più un questionario di 5 minuti. Disegno di 12 persone e di un calendario di 14 giorni.
