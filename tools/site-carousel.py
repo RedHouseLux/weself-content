@@ -84,7 +84,10 @@ for i, s in enumerate(data["slides"], 1):
     if s.get("buttons"): h.append('<div class="btns">' + "".join(f'<span class="btn">{md(b)}</span>' for b in s["buttons"]) + "</div>")
     if s.get("small"): h.append(f'<p class="small">{md(s["small"])}</p>')
     if s.get("note"): h.append(f'<div class="note">{md(s["note"])}</div>')
-    h.append(visual(s.get("visual")))
+    vis = visual(s.get("visual"))
+    if s.get("theme") == "coral":  # coral figures would vanish on a coral background: make them white
+        vis = vis.replace("fill:rgb(240, 155, 124)", "fill:rgb(255, 255, 255)").replace("stroke:rgb(240, 155, 124)", "stroke:rgb(255, 255, 255)").replace(";color:rgb(240, 155, 124)", ";color:rgb(255, 255, 255)").replace("\"color:rgb(240, 155, 124)", "\"color:rgb(255, 255, 255)")
+    h.append(vis)
     h.append("</div>")
     foot = s.get("foot", data.get("foot", ""))
     h.append(f'<div class="foot"><span>weself.app</span><span>{md(foot)}</span></div></section>')

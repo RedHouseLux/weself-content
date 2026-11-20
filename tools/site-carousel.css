@@ -83,6 +83,14 @@ h1 em,h2 em,.body em{font-style:normal;color:var(--coral-text)}
 .seat{width:100%;height:100%}
 .tag{position:absolute;right:120px;top:40px;background:#F09B7C;color:#1E2B5C;font-weight:900;font-size:34px;letter-spacing:.14em;padding:16px 30px;border-radius:14px;transform:rotate(-6deg);box-shadow:0 14px 30px rgba(0,0,0,.25)}
 .k3{left:90px;top:70px;color:var(--ink)}
+.coral{background:radial-gradient(circle at 90% 95%,#F7C2AC 0,transparent 55%),radial-gradient(circle at 0% 0%,#F4AE93 0,transparent 50%),#F09B7C;color:var(--ink)}
+.coral .kick{color:var(--ink)}
+.coral .brand .we,.coral .brand .self,.coral .count,.coral .foot{color:var(--ink)}
+.coral .brand img{background:#fff;border-radius:14px;padding:4px}
+.coral h1 em{color:var(--ink);text-decoration:underline;text-decoration-color:#fff;text-decoration-thickness:10px;text-underline-offset:14px}
+.coral .body{color:var(--ink);font-size:42px}.coral .body b{color:var(--ink)}
+.coral .card{background:transparent}
+.coral .ill{height:100%;max-width:100%}
 /* honest slide */
 .warm{background:var(--coral-soft)}
 .warm .kick{color:var(--coral-text)}

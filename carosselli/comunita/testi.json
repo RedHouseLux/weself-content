@@ -1,24 +1,49 @@
 {
  "foot": "",
  "slides": [
-  {"type": "cover", "kicker": "Comunità fondatrice",
+  {
+   "type": "cover",
+   "kicker": "Comunità fondatrice",
    "title": "Vuoi aiutarci a far nascere *WeSelf*?",
-   "text": "Bastano un telefono Android e 14 giorni.", "visual": "hero:g-we"},
-  {"type": "text", "title": "Un'agenda che ti chiede *come stai.*",
+   "text": "Bastano un telefono Android e 14 giorni.",
+   "visual": "hero:g-plain",
+   "theme": "coral"
+  },
+  {
+   "type": "text",
+   "title": "Un'agenda che ti chiede *come stai.*",
    "text": "Ti aiuta a costruire abitudini sane, a trovare chi ha il tuo stesso obiettivo, ad appoggiarti a una piccola comunità e, se serve, a raggiungere uno specialista.",
-   "small": "Non è una terapia.", "visual": "phone"},
-  {"type": "text", "title": "La comunità *fondatrice*",
+   "small": "Non è una terapia.",
+   "visual": "phone"
+  },
+  {
+   "type": "text",
+   "title": "La comunità *fondatrice*",
    "text": "Le prime persone che fanno conoscere WESELF: chi la prova, chi la racconta, chi apre una porta. Ci troviamo su Discord, con missioni chiare.",
-   "visual": "community:g-warm"},
-  {"type": "text", "title": "La prima missione: *provala.*",
+   "visual": "community:g-warm"
+  },
+  {
+   "type": "text",
+   "title": "La prima missione: *provala.*",
    "text": "Per pubblicare l'app per tutti, Google chiede che almeno 12 persone la provino per 14 giorni di fila. Ogni tester conta.",
-   "small": "Serve un telefono Android. Vale 20 punti, più un questionario di 5 minuti.", "visual": "days"},
-  {"type": "text", "title": "Cosa *ricevi*",
+   "small": "Serve un telefono Android. Vale 20 punti, più un questionario di 5 minuti.",
+   "visual": "days"
+  },
+  {
+   "type": "text",
+   "title": "Cosa *ricevi*",
    "text": "Punti che sbloccano vantaggi e ruoli nella comunità. Chi contribuisce di più può diventare socio della società di WESELF, che fonderemo come società benefit.",
    "small": "Posti limitati, regole sulla pagina. Non investi denaro e non è un'offerta al pubblico di quote.",
-   "visual": "sara-2:g-sea"},
-  {"type": "cta", "title": "Entra nella comunità *fondatrice.*",
-   "buttons": ["Scrivici in DM"],
-   "small": "Ti mandiamo il link per entrare · weself.app/it/community", "visual": "logo"}
+   "visual": "sara-2:g-sea"
+  },
+  {
+   "type": "cta",
+   "title": "Entra nella comunità *fondatrice.*",
+   "buttons": [
+    "Scrivici in DM"
+   ],
+   "small": "Ti mandiamo il link per entrare · weself.app/it/community",
+   "visual": "logo"
+  }
  ]
 }
