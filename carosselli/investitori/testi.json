@@ -1,0 +1,105 @@
+{
+ "foot": "Non è un'offerta di investimento",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Per chi crede nel progetto",
+   "title": "Cerchiamo i primi *investitori.*",
+   "text": "E una comunità che costruisce WESELF con noi.",
+   "visual": "hero:g-we"
+  },
+  {
+   "type": "timeline",
+   "kicker": "Dove siamo e dove andiamo",
+   "title": "Ogni tappa trasforma un dubbio *in una prova.*",
+   "timeline": [
+    [
+     "2024 – oggi · Fatto",
+     "done",
+     "L'app è costruita",
+     "Agenda, obiettivi, check-in su come stai, diario e comunità."
+    ],
+    [
+     "Adesso",
+     "now",
+     "In prova su Google Play",
+     "Intanto cerchiamo cofondatore, primi investitori e comunità fondatrice."
+    ],
+    [
+     "2027",
+     "next",
+     "Pilot 1",
+     "Circa 20 persone usano WeSelf per tre mesi, con uno psicologo che veglia sulla sicurezza."
+    ],
+    [
+     "2027 – 2028",
+     "next",
+     "Pilot 2 e abbonamento premium",
+     "Un pilot più ampio nel Sud Italia."
+    ],
+    [
+     "2028",
+     "next",
+     "Il round sull'evidenza",
+     "Con i dati dei pilot, un round con un prezzo."
+    ]
+   ]
+  },
+  {
+   "type": "steps",
+   "kicker": "Come funziona",
+   "title": "Uno strumento *convertibile.*",
+   "steps": [
+    [
+     "Oggi: investi",
+     "I soldi entrano nella società e portano WeSelf ai pilot."
+    ],
+    [
+     "Al primo round: diventano quote",
+     "A condizioni migliori di chi entra dopo: uno sconto e un tetto alla valutazione."
+    ],
+    [
+     "Dopo: le quote si possono vendere",
+     "Quando la società viene venduta, o a un investitore successivo. Nei primi anni tutto resta nella crescita."
+    ]
+   ],
+   "visual": "sara-2:g-sea"
+  },
+  {
+   "type": "text",
+   "kicker": "Perché convertibile",
+   "title": "Il prezzo lo decide *l'evidenza.*",
+   "text": "Oggi il valore di WESELF è una stima; dopo i pilot sarà un fatto. Lo strumento convertibile rimanda il prezzo al momento in cui ci saranno dati veri.",
+   "visual": "sara-1:g-we"
+  },
+  {
+   "type": "honest",
+   "kicker": "Un'onestà necessaria",
+   "title": "Cosa *non sappiamo* ancora.",
+   "items": [
+    "Se WeSelf è utile a persone diverse da chi l'ha costruita: il pilot 1 serve a scoprirlo.",
+    "Quanto costa raggiungere una persona e quanto rende: lo misureremo prima di spendere in pubblicità.",
+    "Il team oggi è una persona: il cofondatore è la prima risposta."
+   ],
+   "note": "<b>Investire in una startup è rischioso:</b> si può perdere tutto il capitale investito."
+  },
+  {
+   "type": "text",
+   "kicker": "Non vuoi investire denaro?",
+   "title": "Entra nella *community fondatrice.*",
+   "text": "Fai conoscere WESELF, guadagni punti e sblocchi vantaggi. Da 377 punti i punti diventano <b>diritti di opzione</b> per diventare socio di HVP S.r.l. I posti con le opzioni sono al massimo 13, per chi vive in Italia e ha almeno 18 anni.",
+   "visual": "community:g-warm"
+  },
+  {
+   "type": "cta",
+   "kicker": "Parliamone",
+   "title": "Venti minuti per *conoscerci.*",
+   "text": "Importo del round, condizioni e piano completo li condividiamo solo in privato, in una chiamata. Contatti e community: <b>link in bio.</b>",
+   "buttons": [
+    "Link in bio",
+    "Community su Discord"
+   ],
+   "note": "Questo post racconta il progetto: non è un'offerta di investimento né un'offerta al pubblico di quote o strumenti finanziari. Le condizioni si definiscono solo in privato."
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+ "foot": "Profilo completo: weself.app/it/executive-summary",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Cerchiamo un cofondatore o una cofondatrice",
+   "title": "Fonda *WeSelf* con noi.",
+   "text": "Partendo dal Sud.",
+   "visual": "meet:g-sea"
+  },
+  {
+   "type": "text",
+   "kicker": "Dove siamo",
+   "title": "L'app c'è. Ora serve *una squadra.*",
+   "text": "WESELF è un'agenda che ti chiede come stai: trasforma un proposito in piccoli passi e ti mette accanto persone con il tuo stesso obiettivo. È in prova su Google Play, e chi l'ha costruita la usa ogni giorno.",
+   "visual": "phone"
+  },
+  {
+   "type": "text",
+   "kicker": "Perché adesso",
+   "title": "Oggi WESELF dipende da *una persona sola.*",
+   "text": "È il primo rischio che un investitore vede, ed è il primo che vogliamo togliere. Per questo cerchiamo chi fondi WESELF con noi, e chi porti nel team lo sguardo di chi studia la salute mentale.",
+   "visual": "founder:g-we"
+  },
+  {
+   "type": "list",
+   "kicker": "Cosa farai",
+   "title": "Un ruolo da *fondatore*, non da dipendente.",
+   "items": [
+    "Guidi i pilot insieme agli psicologi: le persone, il protocollo, il consenso.",
+    "Fai crescere la comunità fondatrice e i rapporti con università e associazioni.",
+    "Porti nelle scelte del prodotto lo sguardo di chi studia la salute mentale."
+   ],
+   "visual": "people:g-warm"
+  },
+  {
+   "type": "list",
+   "kicker": "Il profilo",
+   "title": "Chi *cerchiamo.*",
+   "items": [
+    "Laurea in psicologia o in un'altra disciplina della salute mentale, conclusa o in corso.",
+    "Residenza nel Sud Italia.",
+    "Meno di 35 anni e, oggi, senza un impiego."
+   ],
+   "note": "<b>Perché questi requisiti?</b> Sono quelli dei fondi pubblici per chi fa impresa da giovane al Sud: questo profilo ci permette di accedervi.",
+   "visual": "we:g-we"
+  },
+  {
+   "type": "text",
+   "kicker": "Cosa ricevi",
+   "title": "Una quota della *società.*",
+   "text": "La quota matura nel tempo, insieme al lavoro fatto. <b>Ruolo, quota e tempi li definiamo insieme</b>, in una chiamata.",
+   "visual": "sara-3:g-sea"
+  },
+  {
+   "type": "cta",
+   "kicker": "Ti riconosci?",
+   "title": "Venti minuti per *conoscerci.*",
+   "text": "Scrivici su WhatsApp o via email: i contatti sono nel link in bio. Conosci la persona giusta? <b>Mandale questo post.</b>",
+   "buttons": [
+    "Link in bio",
+    "Condividi"
+   ],
+   "visual": "founder:g-sea"
+  }
+ ]
+}
