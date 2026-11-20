@@ -19,10 +19,12 @@ def art(name):
 
 def visual(v):
     if not v: return ""
+    if v == "logo":
+        return f'''<div class="logocard"><img src="{rel('brand/logo/weself-heart-original.png')}" alt=""><span class="wm"><b class="we">We</b><b class="self">Self</b></span></div>'''
     if v == "phone":
         return f'''<div class="card g-sea phonecard"><div class="phone"><img src="{rel('brand/site-art/app-oggi.jpg')}" alt=""></div>
 <span class="chip c1"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>Passo fatto</span>
-<span class="chip c3"><b class="dot"></b>In prova su Google Play</span></div>'''
+<span class="chip c3"><b class="dot"></b>In test su Google Play</span></div>'''
     name, _, grad = v.partition(":")
     return f'<div class="card {grad or "g-sea"}">{art(name)}</div>'
 
@@ -44,8 +46,9 @@ for i, s in enumerate(data["slides"], 1):
         h.append('<ol class="steps">' + "".join(f'<li><b>{md(a)}</b><span>{md(b)}</span></li>' for a, b in s["steps"]) + "</ol>")
     if s.get("timeline"):
         h.append('<ol class="tl">' + "".join(f'<li class="{st}"><small>{md(w)}</small><b>{md(a)}</b><span>{md(b)}</span></li>' for w, st, a, b in s["timeline"]) + "</ol>")
-    if s.get("note"): h.append(f'<div class="note">{md(s["note"])}</div>')
     if s.get("buttons"): h.append('<div class="btns">' + "".join(f'<span class="btn">{md(b)}</span>' for b in s["buttons"]) + "</div>")
+    if s.get("small"): h.append(f'<p class="small">{md(s["small"])}</p>')
+    if s.get("note"): h.append(f'<div class="note">{md(s["note"])}</div>')
     h.append(visual(s.get("visual")))
     h.append("</div>")
     foot = s.get("foot", data.get("foot", ""))

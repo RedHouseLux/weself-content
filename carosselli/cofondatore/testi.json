@@ -1,67 +1,29 @@
 {
- "foot": "Profilo completo: weself.app/it/executive-summary",
+ "foot": "",
  "slides": [
-  {
-   "type": "cover",
-   "kicker": "Cerchiamo un cofondatore o una cofondatrice",
-   "title": "Fonda *WeSelf* con noi.",
-   "text": "Partendo dal Sud.",
-   "visual": "meet:g-sea"
-  },
-  {
-   "type": "text",
-   "kicker": "Dove siamo",
-   "title": "L'app c'è. Ora serve *una squadra.*",
-   "text": "WESELF è un'agenda che ti chiede come stai: trasforma un proposito in piccoli passi e ti mette accanto persone con il tuo stesso obiettivo. È in prova su Google Play, e chi l'ha costruita la usa ogni giorno.",
-   "visual": "phone"
-  },
-  {
-   "type": "text",
-   "kicker": "Perché adesso",
-   "title": "Oggi WESELF dipende da *una persona sola.*",
-   "text": "È il primo rischio che un investitore vede, ed è il primo che vogliamo togliere. Per questo cerchiamo chi fondi WESELF con noi, e chi porti nel team lo sguardo di chi studia la salute mentale.",
-   "visual": "founder:g-we"
-  },
-  {
-   "type": "list",
-   "kicker": "Cosa farai",
-   "title": "Un ruolo da *fondatore*, non da dipendente.",
-   "items": [
-    "Guidi i pilot insieme agli psicologi: le persone, il protocollo, il consenso.",
-    "Fai crescere la comunità fondatrice e i rapporti con università e associazioni.",
-    "Porti nelle scelte del prodotto lo sguardo di chi studia la salute mentale."
-   ],
-   "visual": "people:g-warm"
-  },
-  {
-   "type": "list",
-   "kicker": "Il profilo",
-   "title": "Chi *cerchiamo.*",
-   "items": [
-    "Laurea in psicologia o in un'altra disciplina della salute mentale, conclusa o in corso.",
-    "Residenza nel Sud Italia.",
-    "Meno di 35 anni e, oggi, senza un impiego."
-   ],
-   "note": "<b>Perché questi requisiti?</b> Sono quelli dei fondi pubblici per chi fa impresa da giovane al Sud: questo profilo ci permette di accedervi.",
-   "visual": "we:g-we"
-  },
-  {
-   "type": "text",
-   "kicker": "Cosa ricevi",
-   "title": "Una quota della *società.*",
-   "text": "La quota matura nel tempo, insieme al lavoro fatto. <b>Ruolo, quota e tempi li definiamo insieme</b>, in una chiamata.",
-   "visual": "sara-3:g-sea"
-  },
-  {
-   "type": "cta",
-   "kicker": "Ti riconosci?",
-   "title": "Venti minuti per *conoscerci.*",
-   "text": "Scrivici su WhatsApp o via email: i contatti sono nel link in bio. Conosci la persona giusta? <b>Mandale questo post.</b>",
-   "buttons": [
-    "Link in bio",
-    "Condividi"
-   ],
-   "visual": "founder:g-sea"
-  }
+  {"type": "cover", "kicker": "Cofondatore o cofondatrice",
+   "title": "Hai studiato *psicologia*, o la stai studiando?",
+   "text": "Fondiamo WESELF insieme.", "visual": "meet:g-sea"},
+  {"type": "text", "title": "L'app *c'è.*",
+   "text": "WESELF è un'agenda che ti chiede come stai. Ti aiuta a costruire abitudini sane, a trovare chi ha il tuo stesso obiettivo, ad appoggiarti a una piccola comunità e, se serve, a raggiungere uno specialista.",
+   "small": "È in test su Google Play. Non è una terapia.", "visual": "phone"},
+  {"type": "list", "title": "Cosa *farai*",
+   "items": ["Guidi il primo pilot insieme agli psicologi: circa 20 persone per tre mesi, il protocollo, il consenso.",
+             "Fai crescere la comunità e i rapporti con università e associazioni.",
+             "Porti nelle scelte del prodotto lo sguardo di chi studia la mente."],
+   "visual": "people:g-warm"},
+  {"type": "list", "title": "Chi *cerchiamo*",
+   "items": ["Una laurea in psicologia o in un'altra disciplina della salute mentale, conclusa o in corso.",
+             "La voglia di fondare un'impresa, non solo di collaborare."],
+   "note": "Vivi al Sud, hai meno di 35 anni e oggi sei senza impiego? <b>È un vantaggio in più:</b> ci apre i fondi pubblici per chi fa impresa da giovane al Sud.",
+   "visual": "we:g-we"},
+  {"type": "list", "title": "Cosa *ricevi*",
+   "items": ["La società la fondiamo insieme, come società benefit: la missione entra nello statuto.",
+             "Una quota che matura nel tempo insieme al lavoro fatto."],
+   "small": "Ruolo, quota e tempi li definiamo insieme, in una chiamata.",
+   "visual": "sara-3:g-sea"},
+  {"type": "cta", "title": "Fondiamo *WeSelf* insieme.",
+   "buttons": ["Candidati · link in bio"],
+   "small": "weself.app/it/executive-summary", "visual": "logo"}
  ]
 }
