@@ -42,6 +42,22 @@ def visual(v):
         return f'''<div class="card g-sea cofcard">{svg}
 <span class="chip k1"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>L'app c'è</span>
 <span class="chip k2"><b class="dot pe"></b>Chi studia la mente</span></div>'''
+    if v == "seat":
+        P = "M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z"
+        svg = f'''<svg class="seat" viewBox="0 0 900 560">
+<defs><radialGradient id="glow"><stop offset="0" stop-color="#F09B7C" stop-opacity=".55"/><stop offset="1" stop-color="#F09B7C" stop-opacity="0"/></radialGradient></defs>
+<circle cx="610" cy="300" r="300" fill="url(#glow)"/>
+<circle cx="260" cy="330" r="150" fill="#1E9E9E" opacity=".28"/>
+<circle cx="610" cy="320" r="190" fill="none" stroke="#F09B7C" stroke-width="7" stroke-dasharray="18 18" stroke-linecap="round"/>
+<path d="M350 250 Q440 150 520 230" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="2 18" stroke-linecap="round" opacity=".8"/>
+<path d="M440 150 C424 137 408 127 408 111 C408 99 417 90 428 90 C433 90 437 93 440 98 C443 93 447 90 452 90 C463 90 472 99 472 111 C472 127 456 137 440 150 Z" fill="#F09B7C"/>
+<g transform="translate(190 250) scale(3.5)"><circle cx="20" cy="12" r="10" fill="#1E9E9E"/><path d="{P}" fill="#1E9E9E"/></g>
+<g transform="translate(520 210) scale(4.5)"><path d="{P}" fill="#F09B7C" fill-opacity=".12" stroke="#F09B7C" stroke-width="1.6" stroke-dasharray="3 3"/></g>
+<text x="610" y="300" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="130" fill="#F09B7C">?</text>
+<circle cx="120" cy="120" r="10" fill="#A8E6DD"/><circle cx="840" cy="110" r="8" fill="#DDE0FB"/><circle cx="90" cy="480" r="7" fill="#F09B7C"/>
+</svg>'''
+        return f'''<div class="seatwrap">{svg}<span class="tag">POSTO LIBERO</span>
+<span class="chip k3"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>L'app c'è</span></div>'''
     if v == "logo":
         return f'''<div class="logocard"><img src="{rel('brand/logo/weself-heart-original.png')}" alt=""><span class="wm"><b class="we">We</b><b class="self">Self</b></span></div>'''
     if v == "phone":
@@ -55,7 +71,7 @@ N = len(data["slides"])
 out = [(root / "tools/site-carousel.css").read_text().replace("FONTS", str(rel("fonts")))]
 for i, s in enumerate(data["slides"], 1):
     t = s["type"]
-    cls = {"cta": "cta", "honest": "warm"}.get(t, "")
+    cls = {"cta": "cta", "honest": "warm"}.get(t, "") + (" " + s["theme"] if s.get("theme") else "")
     h = [f'<section class="slide {cls}" id="s{i}">',
          f'<div class="top"><span class="brand"><img src="{rel("templates/carousel/weself-mark.png")}" alt=""><span><b class="we">We</b><b class="self">Self</b></span></span><span class="count">{i}/{N}</span></div>',
          '<div class="main">']

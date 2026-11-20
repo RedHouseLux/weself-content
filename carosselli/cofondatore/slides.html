@@ -71,6 +71,17 @@ h1 em,h2 em,.body em{font-style:normal;color:var(--coral-text)}
 .days i:last-child{background:var(--teal);border-color:var(--teal);color:#fff}
 .cofcard{overflow:visible}.cof{height:94%;max-width:96%}
 .k1{left:36px;bottom:70px}.k2{right:30px;top:44px}.chip .dot.pe{background:var(--peri)}
+.bold{background:radial-gradient(circle at 80% 100%,rgba(74,91,232,.6) 0,transparent 55%),radial-gradient(circle at 0% 0%,rgba(30,158,158,.35) 0,transparent 45%),#1E2B5C;color:#fff}
+.bold .brand .we,.bold .brand .self,.bold .count,.bold .foot{color:#fff}
+.bold .brand img{background:#fff;border-radius:14px;padding:4px}
+.bold .kick{align-self:flex-start;background:#F09B7C;color:#1E2B5C;padding:12px 24px;border-radius:999px;font-size:26px}
+.bold h1{font-size:112px}.bold h1 em{color:#F09B7C}
+.bold .body{color:rgba(255,255,255,.85);font-size:42px}.bold .body b{color:#fff}
+.bold .wm .we{color:#A9B2FF}.bold .wm .self{color:#A8E6DD}
+.seatwrap{flex:1;min-height:0;position:relative;display:flex;align-items:flex-end;justify-content:center;margin:0 -84px -56px}
+.seat{width:100%;height:100%}
+.tag{position:absolute;right:120px;top:40px;background:#F09B7C;color:#1E2B5C;font-weight:900;font-size:34px;letter-spacing:.14em;padding:16px 30px;border-radius:14px;transform:rotate(-6deg);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.k3{left:90px;top:70px;color:var(--ink)}
 /* honest slide */
 .warm{background:var(--coral-soft)}
 .warm .kick{color:var(--coral-text)}
@@ -92,26 +103,25 @@ h1 em,h2 em,.body em{font-style:normal;color:var(--coral-text)}
 .cta .card{background:rgba(255,255,255,.95)}
 </style></head><body>
 
-<section class="slide " id="s1">
+<section class="slide  bold" id="s1">
 <div class="top"><span class="brand"><img src="../../templates/carousel/weself-mark.png" alt=""><span><b class="we">We</b><b class="self">Self</b></span></span><span class="count">1/6</span></div>
 <div class="main">
 <p class="kick">Cofondatore o cofondatrice</p>
 <h1>Hai studiato <em>psicologia</em>, o la stai studiando?</h1>
 <p class="body">Fondiamo <b class="wm"><b class="we">We</b><b class="self">Self</b></b> insieme.</p>
-<div class="card g-sea cofcard"><svg class="ill cof" viewBox="0 0 560 420">
-<circle cx="280" cy="230" r="182" fill="#DDE0FB"/>
-<circle cx="440" cy="330" r="70" fill="#FBE3D8"/>
-<circle cx="180" cy="245" r="92" fill="#A8E6DD"/>
-<circle cx="380" cy="245" r="92" fill="#fff" stroke="#4A5BE8" stroke-width="4" stroke-dasharray="10 12"/>
-<path d="M228 205 Q280 150 332 205" fill="none" stroke="#4A5BE8" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
-<path d="M280 128 C268 118 256 110 256 98 C256 89 263 82 271 82 C275 82 278 84 280 88 C282 84 285 82 289 82 C297 82 304 89 304 98 C304 110 292 118 280 128 Z" fill="#A64A30"/>
-<g transform="translate(140 186) scale(2)"><circle cx="20" cy="12" r="10" fill="#1E9E9E"/><path d="M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z" fill="#1E9E9E"/></g>
-<g transform="translate(340 186) scale(2)"><path d="M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z" fill="none" stroke="#4A5BE8" stroke-width="2" stroke-dasharray="4 4"/></g>
-<text x="380" y="228" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="58" fill="#4A5BE8">?</text>
-<circle cx="96" cy="120" r="9" fill="#F09B7C"/><circle cx="478" cy="132" r="7" fill="#1E9E9E"/><circle cx="120" cy="360" r="6" fill="#4A5BE8"/>
-</svg>
-<span class="chip k1"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>L'app c'è</span>
-<span class="chip k2"><b class="dot pe"></b>Chi studia la mente</span></div>
+<div class="seatwrap"><svg class="seat" viewBox="0 0 900 560">
+<defs><radialGradient id="glow"><stop offset="0" stop-color="#F09B7C" stop-opacity=".55"/><stop offset="1" stop-color="#F09B7C" stop-opacity="0"/></radialGradient></defs>
+<circle cx="610" cy="300" r="300" fill="url(#glow)"/>
+<circle cx="260" cy="330" r="150" fill="#1E9E9E" opacity=".28"/>
+<circle cx="610" cy="320" r="190" fill="none" stroke="#F09B7C" stroke-width="7" stroke-dasharray="18 18" stroke-linecap="round"/>
+<path d="M350 250 Q440 150 520 230" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="2 18" stroke-linecap="round" opacity=".8"/>
+<path d="M440 150 C424 137 408 127 408 111 C408 99 417 90 428 90 C433 90 437 93 440 98 C443 93 447 90 452 90 C463 90 472 99 472 111 C472 127 456 137 440 150 Z" fill="#F09B7C"/>
+<g transform="translate(190 250) scale(3.5)"><circle cx="20" cy="12" r="10" fill="#1E9E9E"/><path d="M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z" fill="#1E9E9E"/></g>
+<g transform="translate(520 210) scale(4.5)"><path d="M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z" fill="#F09B7C" fill-opacity=".12" stroke="#F09B7C" stroke-width="1.6" stroke-dasharray="3 3"/></g>
+<text x="610" y="300" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="130" fill="#F09B7C">?</text>
+<circle cx="120" cy="120" r="10" fill="#A8E6DD"/><circle cx="840" cy="110" r="8" fill="#DDE0FB"/><circle cx="90" cy="480" r="7" fill="#F09B7C"/>
+</svg><span class="tag">POSTO LIBERO</span>
+<span class="chip k3"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>L'app c'è</span></div>
 </div>
 <div class="foot"><span>weself.app</span><span></span></div></section>
 <section class="slide " id="s2">

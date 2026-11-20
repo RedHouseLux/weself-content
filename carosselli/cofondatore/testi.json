@@ -6,7 +6,8 @@
    "kicker": "Cofondatore o cofondatrice",
    "title": "Hai studiato *psicologia*, o la stai studiando?",
    "text": "Fondiamo WESELF insieme.",
-   "visual": "cofounder"
+   "visual": "seat",
+   "theme": "bold"
   },
   {
    "type": "text",

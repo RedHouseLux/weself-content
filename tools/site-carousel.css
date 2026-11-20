@@ -71,6 +71,17 @@ h1 em,h2 em,.body em{font-style:normal;color:var(--coral-text)}
 .days i:last-child{background:var(--teal);border-color:var(--teal);color:#fff}
 .cofcard{overflow:visible}.cof{height:94%;max-width:96%}
 .k1{left:36px;bottom:70px}.k2{right:30px;top:44px}.chip .dot.pe{background:var(--peri)}
+.bold{background:radial-gradient(circle at 80% 100%,rgba(74,91,232,.6) 0,transparent 55%),radial-gradient(circle at 0% 0%,rgba(30,158,158,.35) 0,transparent 45%),#1E2B5C;color:#fff}
+.bold .brand .we,.bold .brand .self,.bold .count,.bold .foot{color:#fff}
+.bold .brand img{background:#fff;border-radius:14px;padding:4px}
+.bold .kick{align-self:flex-start;background:#F09B7C;color:#1E2B5C;padding:12px 24px;border-radius:999px;font-size:26px}
+.bold h1{font-size:112px}.bold h1 em{color:#F09B7C}
+.bold .body{color:rgba(255,255,255,.85);font-size:42px}.bold .body b{color:#fff}
+.bold .wm .we{color:#A9B2FF}.bold .wm .self{color:#A8E6DD}
+.seatwrap{flex:1;min-height:0;position:relative;display:flex;align-items:flex-end;justify-content:center;margin:0 -84px -56px}
+.seat{width:100%;height:100%}
+.tag{position:absolute;right:120px;top:40px;background:#F09B7C;color:#1E2B5C;font-weight:900;font-size:34px;letter-spacing:.14em;padding:16px 30px;border-radius:14px;transform:rotate(-6deg);box-shadow:0 14px 30px rgba(0,0,0,.25)}
+.k3{left:90px;top:70px;color:var(--ink)}
 /* honest slide */
 .warm{background:var(--coral-soft)}
 .warm .kick{color:var(--coral-text)}
