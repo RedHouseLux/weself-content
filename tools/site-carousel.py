@@ -25,6 +25,23 @@ def visual(v):
         ppl = "".join(person(cols[i % 3]) for i in range(12))
         days = "".join(f'<i>{d}</i>' for d in range(1, 15))
         return f'''<div class="card g-sea daycard"><div class="ppl">{ppl}</div><small>almeno 12 persone</small><div class="days">{days}</div><small>14 giorni di fila</small></div>'''
+    if v == "cofounder":
+        P = "M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z"
+        svg = f'''<svg class="ill cof" viewBox="0 0 560 420">
+<circle cx="280" cy="230" r="182" fill="#DDE0FB"/>
+<circle cx="440" cy="330" r="70" fill="#FBE3D8"/>
+<circle cx="180" cy="245" r="92" fill="#A8E6DD"/>
+<circle cx="380" cy="245" r="92" fill="#fff" stroke="#4A5BE8" stroke-width="4" stroke-dasharray="10 12"/>
+<path d="M228 205 Q280 150 332 205" fill="none" stroke="#4A5BE8" stroke-width="4" stroke-dasharray="2 12" stroke-linecap="round"/>
+<path d="M280 128 C268 118 256 110 256 98 C256 89 263 82 271 82 C275 82 278 84 280 88 C282 84 285 82 289 82 C297 82 304 89 304 98 C304 110 292 118 280 128 Z" fill="#A64A30"/>
+<g transform="translate(140 186) scale(2)"><circle cx="20" cy="12" r="10" fill="#1E9E9E"/><path d="{P}" fill="#1E9E9E"/></g>
+<g transform="translate(340 186) scale(2)"><path d="{P}" fill="none" stroke="#4A5BE8" stroke-width="2" stroke-dasharray="4 4"/></g>
+<text x="380" y="228" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="58" fill="#4A5BE8">?</text>
+<circle cx="96" cy="120" r="9" fill="#F09B7C"/><circle cx="478" cy="132" r="7" fill="#1E9E9E"/><circle cx="120" cy="360" r="6" fill="#4A5BE8"/>
+</svg>'''
+        return f'''<div class="card g-sea cofcard">{svg}
+<span class="chip k1"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>L'app c'è</span>
+<span class="chip k2"><b class="dot pe"></b>Chi studia la mente</span></div>'''
     if v == "logo":
         return f'''<div class="logocard"><img src="{rel('brand/logo/weself-heart-original.png')}" alt=""><span class="wm"><b class="we">We</b><b class="self">Self</b></span></div>'''
     if v == "phone":

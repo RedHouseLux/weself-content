@@ -69,6 +69,8 @@ h1 em,h2 em,.body em{font-style:normal;color:var(--coral-text)}
 .days{display:grid;grid-template-columns:repeat(7,72px);gap:12px}
 .days i{font-style:normal;height:56px;border-radius:16px;background:#fff;border:3px solid var(--teal-soft);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:24px;color:var(--teal-text)}
 .days i:last-child{background:var(--teal);border-color:var(--teal);color:#fff}
+.cofcard{overflow:visible}.cof{height:94%;max-width:96%}
+.k1{left:36px;bottom:70px}.k2{right:30px;top:44px}.chip .dot.pe{background:var(--peri)}
 /* honest slide */
 .warm{background:var(--coral-soft)}
 .warm .kick{color:var(--coral-text)}
