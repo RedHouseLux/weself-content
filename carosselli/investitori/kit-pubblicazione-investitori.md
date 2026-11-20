@@ -1,3 +1,5 @@
+> **NON PUBBLICARE.** Decisione del 20/11/2026: nessun post pubblico per gli investitori finché non ci sono il cofondatore e la società. Vedi `carosselli/comunita/kit-pubblicazione-comunita.md`, sezione 6.
+
 # Kit · Cerchiamo i primi investitori (e la community fondatrice)
 
 **Fonte dei contenuti:** weself.app/it/executive-summary (Roadmap, Investitori) e weself.app/it/community. Nessun importo, sconto, tetto o rendimento nel post.

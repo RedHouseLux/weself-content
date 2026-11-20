@@ -4,6 +4,7 @@ Un post fuori dal piano editoriale, su Instagram, Facebook e LinkedIn (novembre 
 Porta tutti alla stessa pagina: https://www.weself.app/it/executive-summary#cofounder
 
 **Decisioni (20/11/2026):**
+- la CTA su Instagram porta ai messaggi diretti (DM); LinkedIn e Facebook tengono il link alla pagina;
 - requisito: laurea in psicologia o in un'altra disciplina della salute mentale, conclusa o in corso;
 - Sud, meno di 35 anni e senza impiego sono un vantaggio in più, non un requisito (Resto al Sud non si nomina);
 - Instagram da @weselfofficial; LinkedIn e Facebook dal profilo personale di Emanuel;
@@ -24,7 +25,7 @@ Porta tutti alla stessa pagina: https://www.weself.app/it/executive-summary#cofo
 3. «Cosa farai»: guidare il primo pilot con gli psicologi (circa 20 persone per tre mesi, protocollo, consenso); far crescere la comunità e i rapporti con università e associazioni; portare nel prodotto lo sguardo di chi studia la mente. Illustrazione di tre persone sotto un cuore.
 4. «Chi cerchiamo»: una laurea in psicologia o in un'altra disciplina della salute mentale, conclusa o in corso; la voglia di fondare un'impresa. Vivere al Sud, avere meno di 35 anni ed essere senza impiego è un vantaggio in più. Illustrazione di una rete di persone collegate da un cuore.
 5. «Cosa ricevi»: la società si fonda insieme, come società benefit; una quota che matura nel tempo con il lavoro fatto. Ruolo, quota e tempi si definiscono in una chiamata. Illustrazione di persone riunite sotto un sole.
-6. Su fondo blu: «Fondiamo WeSelf insieme.» Pulsante «Candidati · link in bio», indirizzo weself.app/it/executive-summary, cuore e logotipo WeSelf.
+6. Su fondo blu: «Fondiamo WeSelf insieme.» Pulsante «Scrivici in DM», profilo completo su weself.app/it/executive-summary, cuore e logotipo WeSelf.
 
 ---
 
@@ -40,7 +41,7 @@ Cerchiamo una persona con una laurea in psicologia o in un'altra disciplina dell
 
 La società la fondiamo insieme, come società benefit: la missione entra nello statuto.
 
-Il profilo completo e come candidarti: link in bio.
+Vuoi candidarti o saperne di più? Scrivici in DM: ti mandiamo il profilo completo.
 Conosci la persona giusta? Mandale questo post.
 
 #psicologia #cofounder #startup #benessere #WeSelf
@@ -95,7 +96,7 @@ Se ti viene in mente qualcuno, taggalo o mandagli questo post. Grazie.
 ## 5. Come pubblicare
 
 1. **Prima di tutto** la pagina deve essere online con il nuovo profilo (laurea come requisito, il resto come vantaggio, società benefit). Controllo del 20/11/2026: la pagina online chiede ancora i quattro requisiti di prima («Meno di 35 anni», «Oggi senza un impiego») e non parla di società benefit.
-2. **Instagram:** pubblica da @weselfofficial e invita il profilo personale di Emanuel come collaboratore. Link in bio → https://www.weself.app/it/executive-summary#cofounder. Aggiungi una Storia con l'adesivo link alla stessa pagina.
+2. **Instagram:** pubblica da @weselfofficial e invita il profilo personale di Emanuel come collaboratore. La CTA porta ai DM: a chi scrive, rispondi con https://www.weself.app/it/executive-summary#cofounder (anche il link in bio può puntarci). Aggiungi una Storia con l'adesivo link alla stessa pagina.
 3. **LinkedIn:** dal profilo personale, con `weself-cofondatore-linkedin.pdf` caricato come documento.
 4. **Facebook:** dal profilo personale, con le slide come album. Nei gruppi di studenti o laureati in psicologia, rispetta le regole di ogni gruppo.
 5. **Discord:** se diventa una missione a punti, chi lo ricondivide scrive ADV all'inizio del testo e, nei video, anche sullo schermo. I post di Emanuel e di @weselfofficial non ne hanno bisogno.

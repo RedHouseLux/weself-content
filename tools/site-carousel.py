@@ -19,6 +19,12 @@ def art(name):
 
 def visual(v):
     if not v: return ""
+    if v == "days":
+        cols = ["#4A5BE8", "#F09B7C", "#1E9E9E"]
+        person = lambda c: f'<svg viewBox="0 0 40 56"><circle cx="20" cy="12" r="10" fill="{c}"/><path d="M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z" fill="{c}"/></svg>'
+        ppl = "".join(person(cols[i % 3]) for i in range(12))
+        days = "".join(f'<i>{d}</i>' for d in range(1, 15))
+        return f'''<div class="card g-sea daycard"><div class="ppl">{ppl}</div><small>almeno 12 persone</small><div class="days">{days}</div><small>14 giorni di fila</small></div>'''
     if v == "logo":
         return f'''<div class="logocard"><img src="{rel('brand/logo/weself-heart-original.png')}" alt=""><span class="wm"><b class="we">We</b><b class="self">Self</b></span></div>'''
     if v == "phone":
