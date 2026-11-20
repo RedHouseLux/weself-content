@@ -20,7 +20,7 @@ Porta tutti alla stessa pagina: https://www.weself.app/it/executive-summary#cofo
 
 ## 1. Carosello: alt text
 
-1. Su fondo blu notte, un'etichetta corallo «Cofondatore o cofondatrice». Titolo: «Hai studiato psicologia, o la stai studiando?» Sotto: «Fondiamo WeSelf insieme.» Illustrazione: una persona verde acqua con l'etichetta «L'app c'è» e, accanto, un grande posto vuoto tratteggiato in corallo con un punto interrogativo e il cartello «Posto libero».
+1. Su fondo blu notte, in piccolo «Cofondatore o cofondatrice». Titolo: «Hai studiato psicologia, o la stai studiando?» Sotto: «Fondiamo WeSelf insieme.» Illustrazione: una persona verde acqua e, accanto, un posto vuoto tratteggiato con la scritta «tu?»; tra i due, un piccolo cuore.
 2. «L'app c'è.» WeSelf è un'agenda che ti chiede come stai: abitudini sane, persone con il tuo stesso obiettivo, una piccola comunità e, se serve, uno specialista. È in test su Google Play. Non è una terapia. Uno smartphone mostra la schermata «Oggi» dell'app.
 3. «Cosa farai»: guidare il primo pilot con gli psicologi (circa 20 persone per tre mesi, protocollo, consenso); far crescere la comunità e i rapporti con università e associazioni; portare nel prodotto lo sguardo di chi studia la mente. Illustrazione di tre persone sotto un cuore.
 4. «Chi cerchiamo»: una laurea in psicologia o in un'altra disciplina della salute mentale, conclusa o in corso; la voglia di fondare un'impresa. Vivere al Sud, avere meno di 35 anni ed essere senza impiego è un vantaggio in più. Illustrazione di una rete di persone collegate da un cuore.

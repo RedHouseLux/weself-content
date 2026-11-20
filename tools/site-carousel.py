@@ -44,20 +44,16 @@ def visual(v):
 <span class="chip k2"><b class="dot pe"></b>Chi studia la mente</span></div>'''
     if v == "seat":
         P = "M3 56 C3 36 11 27 20 27 C29 27 37 36 37 56 Z"
-        svg = f'''<svg class="seat" viewBox="0 0 900 560">
-<defs><radialGradient id="glow"><stop offset="0" stop-color="#F09B7C" stop-opacity=".55"/><stop offset="1" stop-color="#F09B7C" stop-opacity="0"/></radialGradient></defs>
-<circle cx="610" cy="300" r="300" fill="url(#glow)"/>
-<circle cx="260" cy="330" r="150" fill="#1E9E9E" opacity=".28"/>
-<circle cx="610" cy="320" r="190" fill="none" stroke="#F09B7C" stroke-width="7" stroke-dasharray="18 18" stroke-linecap="round"/>
-<path d="M350 250 Q440 150 520 230" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="2 18" stroke-linecap="round" opacity=".8"/>
-<path d="M440 150 C424 137 408 127 408 111 C408 99 417 90 428 90 C433 90 437 93 440 98 C443 93 447 90 452 90 C463 90 472 99 472 111 C472 127 456 137 440 150 Z" fill="#F09B7C"/>
-<g transform="translate(190 250) scale(3.5)"><circle cx="20" cy="12" r="10" fill="#1E9E9E"/><path d="{P}" fill="#1E9E9E"/></g>
-<g transform="translate(520 210) scale(4.5)"><path d="{P}" fill="#F09B7C" fill-opacity=".12" stroke="#F09B7C" stroke-width="1.6" stroke-dasharray="3 3"/></g>
-<text x="610" y="300" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="130" fill="#F09B7C">?</text>
-<circle cx="120" cy="120" r="10" fill="#A8E6DD"/><circle cx="840" cy="110" r="8" fill="#DDE0FB"/><circle cx="90" cy="480" r="7" fill="#F09B7C"/>
-</svg>'''
-        return f'''<div class="seatwrap">{svg}<span class="tag">POSTO LIBERO</span>
-<span class="chip k3"><svg viewBox="0 0 24 24"><path d="M5 12.5 L10 17.5 L19 7"/></svg>L'app c'è</span></div>'''
+        return f'''<div class="seatwrap"><svg class="seat" viewBox="0 0 900 560">
+<defs><radialGradient id="glow"><stop offset="0" stop-color="#DDE0FB" stop-opacity=".22"/><stop offset="1" stop-color="#DDE0FB" stop-opacity="0"/></radialGradient></defs>
+<circle cx="450" cy="330" r="330" fill="url(#glow)"/>
+<circle cx="290" cy="340" r="135" fill="#1E9E9E" opacity=".22"/>
+<circle cx="610" cy="340" r="135" fill="none" stroke="#DDE0FB" stroke-opacity=".55" stroke-width="4" stroke-dasharray="6 14" stroke-linecap="round"/>
+<path d="M450 236 C438 226 426 218 426 206 C426 197 433 190 441 190 C445 190 448 192 450 196 C452 192 455 190 459 190 C467 190 474 197 474 206 C474 218 462 226 450 236 Z" fill="#F09B7C"/>
+<g transform="translate(230 262) scale(3)"><circle cx="20" cy="12" r="10" fill="#1E9E9E"/><path d="{P}" fill="#1E9E9E"/></g>
+<g transform="translate(550 262) scale(3)"><path d="{P}" fill="#DDE0FB" fill-opacity=".08" stroke="#DDE0FB" stroke-opacity=".7" stroke-width="1.4" stroke-dasharray="2.5 3"/></g>
+<text x="610" y="318" text-anchor="middle" font-family="Literata" font-style="italic" font-size="64" fill="#F09B7C">tu?</text>
+</svg></div>'''
     if v == "logo":
         return f'''<div class="logocard"><img src="{rel('brand/logo/weself-heart-original.png')}" alt=""><span class="wm"><b class="we">We</b><b class="self">Self</b></span></div>'''
     if v == "phone":
