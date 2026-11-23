@@ -27,7 +27,7 @@ Mito o realtà? «Chi è onesto si allontana da chi imbroglia.» In questo studi
 
 I limiti: è un solo studio, in laboratorio, con studenti universitari; si giocava in forma anonima e per piccole somme; un gioco con un dado non è la vita reale.
 
-Un'onestà necessaria: lo studio riguarda un gioco di laboratorio sull'onestà, non WeSelf. Con WeSelf puoi trovare chi ha il tuo stesso obiettivo e crescere insieme in piccoli gruppi dove ci si sostiene.
+Un'onestà necessaria: lo studio riguarda un gioco di laboratorio sull'onestà, non WeSelf. Con WeSelf puoi trovare chi ha il tuo stesso obiettivo, vicino a te, e crescere insieme in gruppi dove ci si sostiene.
 
 Ti è mai capitato di accorgerti di un vantaggio «troppo bello per essere vero»? 👇
 
@@ -62,7 +62,7 @@ Come leggere i numeri: 71% e 29% sono le quote di persone classificate come «bu
 10. Mito o realtà? «Chi è onesto si allontana da chi imbroglia.» Mito.
 11. I limiti: un solo studio in laboratorio; anonimo e piccole somme; un gioco non è la vita; 8 sessioni.
 12. Prova così: chiediti da dove arriva un vantaggio; guarda con chi stai; scegli chi ti somiglia nei valori.
-13. Le persone che scegli contano. Con WeSelf trovi chi ha il tuo stesso obiettivo e piccoli gruppi dove ci si sostiene. Scopri WeSelf, link in bio.
+13. Le persone che scegli contano. Con WeSelf trovi chi ha il tuo stesso obiettivo, vicino a te, e gruppi dove ci si sostiene. Scopri WeSelf, link in bio.
 
 ## Note di affidabilità
 
