@@ -58,14 +58,10 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
 <!-- 1 hook -->
 <div class="sc" id="a1" style="background:var(--sun)">
   <div class="rub" style="background:#fff"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Il bias della settimana</div>
-  <div id="a1card" style="position:absolute;left:72px;right:72px;top:450px;background:#fff;border-radius:34px;padding:30px 36px;box-shadow:0 14px 40px rgba(30,43,92,.12)">
-    <div style="display:flex;align-items:center;gap:16px;font-weight:800;font-size:30px;color:var(--muted)"><span style="width:56px;height:56px;border-radius:50%;background:var(--peri-soft);display:inline-flex;align-items:center;justify-content:center;color:var(--peri);font-weight:900">✉</span>A: Responsabile</div>
-    <div id="a1msg" style="margin-top:22px;background:var(--peri);color:#fff;border-radius:28px 28px 8px 28px;padding:24px 30px;font-weight:800;font-size:46px;line-height:1.25;margin-left:90px">Ho sbagliato io. Rimedio subito.<span id="a1cur" style="display:inline-block;width:4px;height:44px;background:#fff;margin-left:6px;vertical-align:-6px"></span></div>
-    <div id="a1send" style="margin-top:14px;text-align:right;font-weight:800;font-size:26px;color:var(--teal-text)">✓✓ Inviato</div>
-  </div>
-  <div id="a1tagA" style="position:absolute;left:72px;top:840px;background:var(--coral-soft);color:var(--coral-text);border:4px dashed var(--coral);border-radius:999px;padding:12px 30px;font-weight:900;font-size:40px">debolezza?</div>
-  <div id="a1tagB" style="position:absolute;right:72px;top:840px;background:var(--teal-soft);color:var(--teal-text);border-radius:999px;padding:16px 34px;font-weight:900;font-size:40px">coraggio?</div>
-  <div class="h" id="a1t" style="top:990px;font-size:62px">L'effetto «beautiful mess»</div>
+  <svg id="a1paint" style="position:absolute;left:0;top:405px" width="1080" height="480" viewBox="0 0 1080 480"></svg>
+  <div id="a1tagA" style="position:absolute;left:72px;top:905px;background:var(--coral-soft);color:var(--coral-text);border:4px dashed var(--coral);border-radius:999px;padding:12px 30px;font-weight:900;font-size:40px">debolezza?</div>
+  <div id="a1tagB" style="position:absolute;right:72px;top:905px;background:var(--teal-soft);color:var(--teal-text);border-radius:999px;padding:16px 34px;font-weight:900;font-size:40px">coraggio?</div>
+  <div class="h" id="a1t" style="top:1020px;font-size:62px">L'effetto «beautiful mess»</div>
 </div>
 
 <!-- 2 study -->
@@ -187,6 +183,18 @@ const back=x=>{x=cl(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*M
 function pop(el,t,s,d=.5){const k=eo((t-s)/d),b=back((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-b)*50}px)`}
 const COLS=[['#FFD23F','#DDE0FB'],['#DDE0FB','#FBE3D8'],['#FBE3D8','#FFD23F']];
 const BL=[];document.querySelectorAll('.sc').forEach((sc,i)=>{if(sc.classList.contains('cta')||i===0)return;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('class','blobs');s.setAttribute('width','1080');s.setAttribute('height','1920');const c=COLS[i%3];s.innerHTML=`<circle r="300" fill="${c[0]}" opacity=".3"/><circle r="220" fill="${c[1]}" opacity=".45"/>`;sc.insertBefore(s,sc.firstChild);BL.push([s,i])});
+// paint splats for the opening
+let seed=7;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646};
+function splat(R,n){let pts=[];for(let i=0;i<n;i++){const a=(i+0.3*rnd())/n*2*Math.PI;let r;if(i%2)r=R*(0.55+0.15*rnd());else r=R*(0.85+0.25*rnd())*(rnd()<0.35?1.6:1);pts.push([r*Math.cos(a),r*Math.sin(a)])}
+ let d='M'+pts[0][0].toFixed(1)+' '+pts[0][1].toFixed(1);for(let i=0;i<n;i++){const p=pts[i],q=pts[(i+1)%n];const mx=(p[0]+q[0])/2,my=(p[1]+q[1])/2;d+=` Q${p[0].toFixed(1)} ${p[1].toFixed(1)} ${mx.toFixed(1)} ${my.toFixed(1)}`}return d+'Z'}
+const PAL=['#4A5BE8','#1E9E9E','#F09B7C','#FFFFFF','#8B93E8','#A8E6DD','#E0A800','#1E2B5C'];
+const SPEC=[[300,210,150,0],[560,180,170,1],[800,230,140,2],[430,300,90,4],[690,320,95,5],[190,120,70,6],[900,110,70,3],[540,90,60,2],[360,140,55,7],[760,130,50,0]];
+const SPL=[],DR=[],ST=[];const pz=document.getElementById('a1paint');
+[['M80 420 C260 360 420 470 620 400 S900 360 1000 430','#1E2B5C',26,0.1],['M120 60 C300 20 500 110 700 50 S920 40 990 90','#FFFFFF',20,0.4]].forEach(([d,c,w,dl])=>{const s=document.createElementNS('http://www.w3.org/2000/svg','path');s.setAttribute('d',d);s.setAttribute('fill','none');s.setAttribute('stroke',c);s.setAttribute('stroke-width',w);s.setAttribute('stroke-linecap','round');s.setAttribute('stroke-dasharray',1200);s.setAttribute('stroke-dashoffset',1200);pz.appendChild(s);ST.push({el:s,d:dl})});
+SPEC.forEach(([x,y,R,c],i)=>{const g=document.createElementNS('http://www.w3.org/2000/svg','g');let h=`<path d="${splat(R,14)}" fill="${PAL[c]}"/>`;
+ for(let k=0;k<5;k++){const a=rnd()*2*Math.PI,dd=R*(1.2+0.6*rnd()),rr=4+R*0.09*rnd();h+=`<circle cx="${(dd*Math.cos(a)).toFixed(1)}" cy="${(dd*Math.sin(a)).toFixed(1)}" r="${rr.toFixed(1)}" fill="${PAL[c]}"/>`}
+ h=`<path d="${splat(R,22)}" fill="${PAL[c]}"/>`+h.slice(h.indexOf('/>')+2);g.innerHTML=h;g.setAttribute('opacity',0);pz.appendChild(g);SPL.push({el:g,x,y,r:Math.round(rnd()*360),d:0.15+i*0.22});
+ if(R>=90){const dr=document.createElementNS('http://www.w3.org/2000/svg','rect');dr.setAttribute('x',x-12+R*0.2);dr.setAttribute('y',y+R*0.6);dr.setAttribute('width',22);dr.setAttribute('rx',11);dr.setAttribute('height',0);dr.setAttribute('fill',PAL[c]);pz.insertBefore(dr,pz.firstChild);DR.push({el:dr,h:60+80*rnd(),d:0.6+i*0.22})}});
 const T={a1:0,a2:6.5,a3:15,a4:24,a5:33,a6:42,a7:50,a8:56.5,a9:63,a10:70.5,a11:84.5}, END=95;
 const CAPS=[[0.5,6.3,"Ammettere un errore davanti al capo: c'è chi lo vive come una debolezza. Ma gli altri, come lo vedono?"],
 [6.8,14.8,"In uno studio, <b>101 studenti</b> hanno immaginato di confessare un errore al capo: una volta loro, una volta un altro."],
@@ -206,8 +214,7 @@ window.render=function(t){
   {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on)el.style.opacity=0;}
   BL.forEach(([s,i])=>{const c=s.children;c[0].setAttribute('cx',900+80*Math.sin(t*0.4+i));c[0].setAttribute('cy',1650+60*Math.cos(t*0.35+i));c[1].setAttribute('cx',120+70*Math.cos(t*0.3+i*2));c[1].setAttribute('cy',260+50*Math.sin(t*0.45+i))});
   let u;
-  u=t-T.a1; pop($('a1card'),u,0.1,.6); { const full='Ho sbagliato io. Rimedio subito.'; const n=Math.round(full.length*cl((u-0.6)/1.4)); const m=$('a1msg'); m.firstChild.textContent=full.slice(0,Math.max(1,n)); $('a1cur').style.opacity=(u<2.2&&Math.floor(t*3)%2==0)?1:0; }
-  $('a1send').style.opacity=eo((u-2.3)/.3); pop($('a1tagA'),u,2.8); pop($('a1tagB'),u,3.6); pop($('a1t'),u,4.2);
+  u=t-T.a1; SPL.forEach((g,i)=>{const k=back((u-g.d)/.35);g.el.setAttribute('transform',`translate(${g.x} ${g.y}) scale(${Math.max(0,k)}) rotate(${g.r})`);g.el.setAttribute('opacity',eo((u-g.d)/.15));}); DR.forEach(d=>{d.el.setAttribute('height',d.h*eo((u-d.d)/1.2))}); ST.forEach(s=>s.el.setAttribute('stroke-dashoffset',1200*(1-eo((u-s.d)/1.6)))); pop($('a1tagA'),u,2.8); pop($('a1tagB'),u,3.6); pop($('a1t'),u,4.2);
   u=t-T.a2; $('a2n').textContent=Math.round(101*eo((u-0.3)/1.6)); pop($('a2l'),u,1.0); pop($('a2a'),u,4.6);
   u=t-T.a3; pop($('a3h'),u,0.2); $('a3s').style.opacity=eo((u-0.6)/.4); pop($('a3p1'),u,2.0); pop($('a3p2'),u,4.6); $('a3p1').style.transform+=' translateX(calc(-100% + 3px))'; $('a3p2').style.transform+=' translateX(-3px)'; pop($('a3x'),u,5.4);
   u=t-T.a4; const k4=eo((u-0.4)/2.4); $('a4r').setAttribute('stroke-dashoffset',1445*(1-0.66*k4)); $('a4n').textContent=Math.round(66*k4)+'%'; pop($('a4x'),u,4.6);

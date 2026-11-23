@@ -4,7 +4,7 @@
 
 **File video:** `weself-li-reel-beautiful-mess.mp4` (1080×1920, 30 fps, 95 secondi, senza audio). Testo tra 300 e 1480 pixel dall'alto.
 
-**Look:** colori della rubrica «Il bias della settimana» (giallo). Nessuna persona: un messaggio al responsabile («Ho sbagliato io. Rimedio subito.») con due etichette, «debolezza?» e «coraggio?»; una lente sui dettagli e lo stesso messaggio visto da lontano.
+**Look:** colori della rubrica «Il bias della settimana» (giallo). Nessuna persona: un «bel pasticcio» di colori: macchie e schizzi di vernice nei colori del brand, che colano, con due pennellate e le etichette «debolezza?» e «coraggio?»; una lente sui dettagli e lo stesso messaggio visto da lontano.
 
 **Come è fatto:** `reel.html` → `node tools/render-video.cjs linkedin/reel-03-beautiful-mess/reel.html linkedin/reel-03-beautiful-mess/weself-li-reel-beautiful-mess.mp4 95 30`.
 
@@ -14,7 +14,7 @@
 
 | Secondi | Scena | Voce |
 |---|---|---|
-| 0–6,5 | Un messaggio al responsabile, «Ho sbagliato io. Rimedio subito.», poi due etichette: «debolezza?» e «coraggio?» | «Ammettere un errore davanti al capo: c'è chi lo vive come una debolezza. Ma gli altri, come lo vedono?» |
+| 0–6,5 | Macchie e schizzi di vernice colorata che si accumulano (il «bel pasticcio»), poi due etichette: «debolezza?» e «coraggio?» | «Ammettere un errore davanti al capo: c'è chi lo vive come una debolezza. Ma gli altri, come lo vedono?» |
 | 6,5–15 | Contatore 101; «confessare un errore al capo» | «In uno studio, centouno studenti hanno immaginato di confessare un errore al capo: una volta loro, una volta un altro.» |
 | 15–24 | Scala da 1 (debolezza) a 7 (coraggio): io 4,65, un altro 4,92 | «Poi hanno giudicato quanto quel gesto mostrasse coraggio o debolezza. Lo stesso errore, ammesso da un altro, è sembrato più positivo.» |
 | 24–33 | Anello al 66% (stima); «≈ 2 volte più spesso» | «Secondo la nostra stima sui dati pubblicati, il sessantasei per cento ha giudicato meglio il gesto dell'altro del proprio, cioè circa due volte più spesso del contrario.» |
@@ -67,7 +67,7 @@ Scopri WeSelf: https://www.weself.app/it
 
 ## 4. Testo alternativo / descrizione del video
 
-«Animazione nei colori della rubrica "Il bias della settimana": un messaggio al responsabile, "Ho sbagliato io. Rimedio subito.", con due etichette: "debolezza?" e "coraggio?". In uno studio, 101 studenti hanno immaginato di confessare un errore al capo, una volta loro e una volta un'altra persona. Su una scala da 1 (debolezza) a 7 (coraggio), 4,65 per sé e 4,92 per l'altro. Stima: il 66% ha giudicato meglio il gesto dell'altro, circa 2 volte più spesso del contrario. È l'effetto "beautiful mess": in noi vediamo i dettagli negativi, negli altri il quadro generale. Chi era più gentile con sé stesso ha mostrato una differenza più piccola. Limiti: situazioni immaginate, studenti in Germania, differenza piccola, stessi autori. Il trucco: come giudicherei un collega che lo ammette?»
+«Animazione nei colori della rubrica "Il bias della settimana": macchie e schizzi di vernice in tanti colori, un "bel pasticcio", con due etichette: "debolezza?" e "coraggio?". In uno studio, 101 studenti hanno immaginato di confessare un errore al capo, una volta loro e una volta un'altra persona. Su una scala da 1 (debolezza) a 7 (coraggio), 4,65 per sé e 4,92 per l'altro. Stima: il 66% ha giudicato meglio il gesto dell'altro, circa 2 volte più spesso del contrario. È l'effetto "beautiful mess": in noi vediamo i dettagli negativi, negli altri il quadro generale. Chi era più gentile con sé stesso ha mostrato una differenza più piccola. Limiti: situazioni immaginate, studenti in Germania, differenza piccola, stessi autori. Il trucco: come giudicherei un collega che lo ammette?»
 
 ## 5. Note di affidabilità
 
