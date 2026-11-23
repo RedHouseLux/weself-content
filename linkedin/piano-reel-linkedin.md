@@ -38,7 +38,7 @@ Poi si ricomincia da A. Quando l'ultimo giorno di una settimana e il primo della
 |---|---|---|---|
 | Mar 24 nov | Performance | Leader non si nasce: si impara · Lacerenza et al. 2017 | Video pronto, manca la voce |
 | Gio 26 nov | Relazioni | «Come stai, davvero?» · Kardas, Kumar & Epley 2022 (`linkedin/reel-02-come-stai/`) | Video pronto, manca la voce |
-| Sab 28 nov | Bias | Effetto riflettore · Gilovich, Medvec & Savitsky 2000 (`linkedin/reel-03-riflettore/`) | Video pronto, manca la voce |
+| Sab 28 nov | Bias | Effetto «beautiful mess» · Bruk, Scholl & Bless 2022 (`linkedin/reel-03-beautiful-mess/`; il riflettore è stato scartato) | Video pronto, manca la voce |
 | Mer 2 dic | Abitudini | Il «se… allora…» · Gollwitzer & Sheeran 2006 (`carosselli/se-allora/`) | Proposto |
 | Ven 4 dic | Benessere | Staccare dal lavoro · Karabinski et al. 2021 (`carosselli/stress/`) | Proposto |
 | Dom 6 dic | Scopo, felicità | Studio nuovo da scegliere e verificare | Da fare |
@@ -53,7 +53,7 @@ Poi si ricomincia da A. Quando l'ultimo giorno di una settimana e il primo della
 - **Abitudini:** Singh et al. 2024 (`carosselli/abitudini/`); Gollwitzer & Sheeran 2006; Wang, Wang & Gai 2021 (`video/woop/`).
 - **Relazioni:** Kardas, Kumar & Epley 2022; Boothby et al. 2018; Kumar & Epley 2023 (`carosselli/gentilezza/`); Hall 2019 (`carosselli/amicizia/`); Joel et al. 2020 (`carosselli/coppia/`).
 - **Autoregolazione / benessere:** Dunedin (`video/dunedin/`); Karabinski et al. 2021; Castelo et al. 2025 (`carosselli/senza-internet/`).
-- **Bias:** Gilovich et al. 2000; Boothby et al. 2018; banca dei bias in `piano/piano-editoriale-weself.md`, sezione 3quater.
+- **Bias:** Bruk, Scholl & Bless 2022 (beautiful mess, accesso libero); Gilovich et al. 2000 (scartato su LinkedIn: troppo noto); Boothby et al. 2018; banca dei bias in `piano/piano-editoriale-weself.md`, sezione 3quater.
 - **Sogni, scopo, felicità:** nessuno ancora: serve uno studio nuovo, verificato alla fonte.
 
 ## Regole che restano
