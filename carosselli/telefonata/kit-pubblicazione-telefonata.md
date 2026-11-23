@@ -48,7 +48,7 @@ Non è un «37% di solitudine in meno». Con la seconda scala sulla solitudine (
 
 ## Testo alternativo (una per slide)
 
-1. Un vecchio telefono verde acqua e uno smartphone blu, uniti da una linea tratteggiata; un fumetto «Come stai?» e un'etichetta «10 minuti». Titolo: «Qualche telefonata ha fatto sentire meno sole persone che uscivano poco di casa».
+1. Due poltrone una di fronte all'altra, verde acqua e blu, con in mezzo un tavolino e due tazze: il vapore delle tazze si unisce in un cuore. Sopra le poltrone due fumetti: «Come stai?» e «Ora un po' meglio.». Titolo: «Qualche telefonata ha fatto sentire meno sole persone che uscivano poco di casa».
 2. «Oggi non ho parlato con nessuno.» C'è chi passa intere giornate senza una vera conversazione; una ricerca ha provato una telefonata fatta con attenzione.
 3. La ricerca: 240 adulti in Texas, estate 2020, pasti a domicilio; 56% viveva da solo, 63% aveva almeno 65 anni; due gruppi formati a caso: telefonate per 4 settimane o nessuna telefonata.
 4. Le telefonate: 16 volontari tra i 17 e i 23 anni, circa un'ora di preparazione; ascoltare e fare domande, nessun copione; chiamate brevi, ogni giorno la prima settimana, poi da 2 a 5 a settimana; il 58% ha scelto 5.
