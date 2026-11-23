@@ -33,7 +33,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
 #prog i{display:block;height:100%;border-radius:4px;background:var(--peri);width:0}
 </style></head><body>
 <style>
-.row20{position:absolute;left:72px;right:72px;display:grid;grid-template-columns:repeat(20,1fr);gap:8px}
+.unused20{position:absolute;left:72px;right:72px;display:grid;grid-template-columns:repeat(20,1fr);gap:8px}
 .row20 i{display:block;height:110px;border-radius:14px;background:var(--peri-soft)}
 .mk{position:absolute;top:-110px;display:flex;flex-direction:column;align-items:center;gap:6px;transform:translateX(-50%)}
 .mk b{background:var(--coral);color:#fff;font-weight:900;font-size:40px;border-radius:999px;padding:10px 26px;white-space:nowrap}
@@ -73,19 +73,27 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
 </div>
 
-<!-- 3 how to read -->
+<!-- 3 how to read: probability of improvement on a standardised scale -->
 <div class="sc" id="a3">
   <div class="kick">Come leggere i numeri</div>
-  <div class="h" id="a3h" style="top:420px;font-size:60px">In fila, chi <span style="color:var(--peri)">non</span> ha fatto il corso: dal risultato più basso al più alto.</div>
-  <div class="row20" id="a3r" style="top:860px"></div>
-  <div class="mk" id="a3m" style="top:750px;left:540px"><b id="a3mb">50%</b><span></span></div>
-  <div class="lbl" id="a3l" style="top:1000px">a metà fila (50%) = il corso non serve</div>
+  <div class="h" id="a3h" style="top:410px;font-size:54px">Su una scala comune: chi <span style="color:var(--peri)">non</span> ha fatto il corso e chi <span style="color:var(--teal-text)">l'ha fatto</span>.</div>
+  <svg style="position:absolute;left:72px;top:560px" width="936" height="420" viewBox="0 0 936 420">
+    <path id="a3c0" fill="#DDE0FB" stroke="#4A5BE8" stroke-width="5"/>
+    <path id="a3c1" fill="#A8E6DD" fill-opacity=".55" stroke="#1E9E9E" stroke-width="5"/>
+    <line x1="0" y1="330" x2="936" y2="330" stroke="#5A6488" stroke-width="3"/>
+    <g id="a3ax" font-family="Nunito" font-weight="800" font-size="26" fill="#5A6488" text-anchor="middle"></g>
+    <line id="a3m0" y1="60" y2="330" stroke="#4A5BE8" stroke-width="4" stroke-dasharray="8 8"/>
+    <line id="a3m1" y1="60" y2="330" stroke="#0F6F6F" stroke-width="4" stroke-dasharray="8 8"/>
+    <text id="a3sh" y="44" font-family="Nunito" font-weight="900" font-size="34" fill="#0F6F6F" text-anchor="middle"></text>
+    <text x="468" y="412" font-family="Nunito" font-weight="700" font-size="24" fill="#5A6488" text-anchor="middle">deviazioni standard dalla media di chi non ha fatto il corso</text>
+  </svg>
+  <div id="a3p" style="position:absolute;left:72px;top:1010px;display:flex;align-items:center;gap:20px"><span style="font-weight:800;font-size:36px;color:var(--muted)">Probabilità di fare meglio</span><span id="a3pv" style="background:var(--coral);color:#fff;font-weight:900;font-size:56px;border-radius:999px;padding:6px 30px">50%</span></div>
   <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
 </div>
 
 <!-- 4 four outcomes -->
 <div class="sc" id="a4">
-  <div class="kick">Che cosa è cambiato</div>
+  <div class="kick">Probabilità di fare meglio</div>
   <div class="lbl" style="top:400px">Gradimento</div><div class="bar" style="top:448px;height:80px"><div class="fill" id="a4a" style="background:var(--teal-soft);color:var(--teal-text)"></div></div>
   <div class="lbl" style="top:570px">Apprendimento</div><div class="bar" style="top:618px;height:80px"><div class="fill" id="a4b" style="background:var(--teal-soft);color:var(--teal-text)"></div></div>
   <div class="lbl" style="top:740px;color:var(--coral-text)">Nella pratica, al lavoro</div><div class="bar" style="top:788px;height:80px"><div class="fill" id="a4c" style="background:var(--coral);color:#fff"></div></div>
@@ -163,20 +171,26 @@ const back=x=>{x=cl(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*M
 function pop(el,t,s,d=.5){const k=eo((t-s)/d),b=back((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-b)*50}px)`}
 const COLS=[['#A8E6DD','#DDE0FB'],['#DDE0FB','#FBE3D8'],['#FBE3D8','#A8E6DD']];
 const BL=[];document.querySelectorAll('.sc').forEach((sc,i)=>{if(sc.classList.contains('cta'))return;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('class','blobs');s.setAttribute('width','1080');s.setAttribute('height','1920');const c=COLS[i%3];s.innerHTML=`<circle r="300" fill="${c[0]}" opacity=".35"/><circle r="220" fill="${c[1]}" opacity=".45"/>`;sc.insertBefore(s,sc.firstChild);BL.push([s,i])});
-let r='';for(let i=0;i<20;i++)r+='<i></i>';$('a3r').innerHTML=r;const BX=[...$('a3r').children];
+const erf=x=>{const s=Math.sign(x);x=Math.abs(x);const t=1/(1+0.3275911*x);return s*(1-(((((1.061405429*t-1.453152027)*t)+1.421413741)*t-0.284496736)*t+0.254829592)*t*Math.exp(-x*x))};
+const Phi=z=>0.5*(1+erf(z/Math.SQRT2));
+const X=z=>372+z*172; // -2..+3.2 SD across 936px
+function curve(mu){let d='M'+X(-2).toFixed(1)+' 330';for(let z=-2;z<=3.2;z+=0.05){d+=' L'+X(z).toFixed(1)+' '+(330-260*Math.exp(-0.5*(z-mu)*(z-mu))).toFixed(1)}return d+' L'+X(3.2).toFixed(1)+' 330 Z'}
+$('a3c0').setAttribute('d',curve(0));
+$('a3ax').innerHTML=[-2,-1,0,1,2,3].map(z=>`<line x1="${X(z)}" y1="330" x2="${X(z)}" y2="344" stroke="#5A6488" stroke-width="3"/><text x="${X(z)}" y="374">${z>0?'+'+z:(z<0?'−'+(-z):'0')}</text>`).join('');
 const STEPS=[...$('a1st').children];
-const T={a1:0,a2:6,a3:13.5,a4:27,a5:34.5,a6:40.5,a7:53,a8:59,a9:66.5,a10:80.5}, END=87;
+const T={a1:0,a2:6,a3:13.5,a4:30,a5:37.5,a6:43.5,a7:56,a8:62,a9:69.5,a10:83.5}, END=90;
 const CAPS=[[0.5,5.9,"«Manager si diventa, leader si nasce.» Molti la pensano così. Una grande ricerca dice altro."],
 [6.3,13.3,"Ha messo insieme <b>335 studi</b> sui corsi di leadership, dal 1951 al 2014: più di <b>26.000 persone</b> al lavoro."],
-[13.8,19.6,"Immagina di mettere in fila chi non ha fatto il corso, dal risultato più basso al più alto."],
-[19.6,26.8,"Nella pratica al lavoro, chi l'ha fatto si è collocato in media più in alto del <b>79%</b>. Senza effetto, sarebbe al <b>50%</b>."],
-[27.3,34.3,"E sono migliorati anche gradimento, apprendimento e risultati per l'organizzazione e i collaboratori."],
-[34.8,40.3,"Su 120 risultati calcolati, <b>113</b> hanno mostrato un miglioramento: il <b>94%</b>."],
-[40.8,45.2,"Per chi organizza la formazione: tra formatori interni ed esterni, <b>nessuna differenza</b>."],
-[45.2,48.8,"I corsi da seguire da soli sono risultati <b>meno efficaci</b>."],
-[48.8,52.8,"E sul feedback a 360 gradi, gli autori invitano alla <b>cautela</b>."],
-[53.3,58.8,"Quindi, leader si nasce? È un <b>mito</b>: guidare è anche un insieme di abilità che si allenano."],
-[59.3,66.3,"Certo, in molti studi mancava un gruppo di confronto, e sono medie su corsi molto diversi tra loro."]];
+[13.8,19.8,"Mettiamo su una scala comune i risultati di chi non ha fatto il corso e di chi l'ha fatto."],
+[19.8,25.8,"Ora prendi a caso una persona per gruppo. Nella pratica al lavoro, chi ha fatto il corso è andato meglio…"],
+[25.8,29.8,"…nel <b>72%</b> dei casi. Senza effetto, sarebbe il <b>50%</b>: testa o croce."],
+[30.3,37.3,"Per gradimento, apprendimento e risultati, la probabilità è stata simile: <b>dal 67 al 70%</b>."],
+[37.8,43.3,"Su 120 risultati calcolati, <b>113</b> hanno mostrato un miglioramento: il <b>94%</b>."],
+[43.8,48.2,"Per chi organizza la formazione: tra formatori interni ed esterni, <b>nessuna differenza</b>."],
+[48.2,51.8,"I corsi da seguire da soli sono risultati <b>meno efficaci</b>."],
+[51.8,55.8,"E sul feedback a 360 gradi, gli autori invitano alla <b>cautela</b>."],
+[56.3,61.8,"Quindi, leader si nasce? È un <b>mito</b>: guidare è anche un insieme di abilità che si allenano."],
+[62.3,69.3,"Certo, in molti studi mancava un gruppo di confronto, e sono medie su corsi molto diversi tra loro."]];
 window.render=function(t){
   const ids=Object.keys(T);ids.forEach((id,i)=>{const a=T[id],b=i<ids.length-1?T[ids[i+1]]:END+0.2;const vis=t>=a-0.25&&t<b+0.3;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0;$(id).style.zIndex=i+1;});
   $('progi').style.width=(cl(t/END)*100)+'%'; $('prog').style.opacity=t<T.a10?1:0;
@@ -190,11 +204,13 @@ window.render=function(t){
   // 2
   u=t-T.a2; $('a2n').textContent=Math.round(335*eo((u-0.3)/2.2)); pop($('a2l'),u,1.2); pop($('a2m'),u,3.0);
   // 3
-  u=t-T.a3; pop($('a3h'),u,0.2); BX.forEach((b,i)=>{const k=back((u-0.8-i*0.06)/.4);b.style.transform=`scaleY(${Math.max(0,k)})`});
-  const mv=eo((u-6.6)/2.2), pos=50+29*mv; $('a3m').style.left=(72+936*pos/100)+'px'; $('a3mb').textContent=(u<6.6?'50%':'chi ha fatto il corso: '+Math.round(pos)+'%');
-  $('a3mb').style.transform=`translateX(${-36*mv}%)`; $('a3m').style.opacity=eo((u-2.2)/.4); BX.forEach((b,i)=>{b.style.background=(i+0.5)/20*100<pos&&u>6.6?'var(--teal-soft)':'var(--peri-soft)'}); pop($('a3l'),u,2.6);
+  u=t-T.a3; pop($('a3h'),u,0.2); $('a3c0').style.opacity=eo((u-0.8)/.6); $('a3m0').setAttribute('x1',X(0));$('a3m0').setAttribute('x2',X(0)); $('a3m0').style.opacity=eo((u-1.2)/.4);
+  const s3=0.82*eo((u-7.0)/3.0); $('a3c1').setAttribute('d',curve(s3)); $('a3c1').style.opacity=eo((u-3.0)/.6);
+  $('a3m1').setAttribute('x1',X(s3));$('a3m1').setAttribute('x2',X(s3)); $('a3m1').style.opacity=eo((u-7.0)/.4);
+  $('a3sh').setAttribute('x',X(s3)); $('a3sh').textContent=u>7.2?'+'+s3.toFixed(2).replace('.',','):''; 
+  $('a3pv').textContent=Math.round(100*Phi(s3/Math.SQRT2))+'%'; pop($('a3p'),u,5.8);
   // 4
-  u=t-T.a4; [['a4a',0.4,74],['a4b',0.8,77],['a4c',1.2,79],['a4d',1.6,76]].forEach(([id,s,v])=>{const b=back((u-s)/1.2),k=eo((u-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
+  u=t-T.a4; [['a4a',0.4,67],['a4b',0.8,70],['a4c',1.2,72],['a4d',1.6,70]].forEach(([id,s,v])=>{const b=back((u-s)/1.2),k=eo((u-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
   // 5
   u=t-T.a5; const k5=eo((u-0.4)/2.4); $('a5r').setAttribute('stroke-dashoffset',1445*(1-0.94*k5)); $('a5n').textContent=Math.round(94*k5)+'%';
   // 6

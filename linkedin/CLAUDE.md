@@ -70,4 +70,4 @@ Send the founder the PDF (or image) and the kit. Offer the Claude editor (`tools
 | Content | Folder | State |
 |---|---|---|
 | Leadership — Lacerenza et al. 2017 (PDF carousel, 12 pages) | `linkedin/leadership/` | Not published: replaced by Reel #1 (founder's choice) |
-| Reel #1 · Leader non si nasce: si impara — Lacerenza et al. 2017 (Tuesday, performance; 87 s) | `linkedin/reel-01-leadership/` | Video ready, waiting for the founder's voice-over (Tue 24 Nov, 12:30) |
+| Reel #1 · Leader non si nasce: si impara — Lacerenza et al. 2017 (Tuesday, performance; 90 s; numbers as «probabilità di fare meglio», Φ(d/√2)) | `linkedin/reel-01-leadership/` | Video ready, waiting for the founder's voice-over (Tue 24 Nov, 12:30) |
