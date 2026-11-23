@@ -88,6 +88,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Reel animato «Dal volere al fare, in quattro passi» (WOOP) — Wang, Wang & Gai 2021 (founder opinion on the «why») | `video/woop/` | Ready, voice-over to record (99 s) |
 | Direzione / scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno — Sun & Yang 2026 (three-arm RCT, 486 students) | `carosselli/direzione/` | Published |
 | Solitudine / qualche telefonata ha fatto sentire meno sole persone che uscivano poco di casa — Kahlon et al. 2021 (RCT, 240 adults, young volunteer callers) | `carosselli/telefonata/` | Ready, not published (Tue 24 Nov) |
+| Etica / molte persone oneste sono rimaste accanto a chi mentiva per loro («ethical free riding») — Gross, Leib, Offerman & Shalvi 2018 | `carosselli/mani-pulite/` | Ready, not published (Wed 25 Nov) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 

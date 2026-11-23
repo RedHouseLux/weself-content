@@ -1,0 +1,273 @@
+<style>
+.cv{display:block;margin-top:30px;align-self:center}
+.mid{font-weight:600;font-size:38px;line-height:1.4}
+.next{margin-top:auto;margin-bottom:22px;font-weight:800;font-size:31px;line-height:1.3;color:var(--peri)}
+.next + .src{margin-top:0}
+.qt{font-family:'Literata',serif;font-style:italic;font-size:46px;line-height:1.35;border-left:8px solid var(--coral);padding-left:34px}
+.qt small{display:block;margin-top:16px;font-family:'Nunito';font-style:normal;font-weight:700;font-size:27px;color:var(--muted)}
+.u3{display:flex;flex-direction:column;gap:12px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:24px 30px}
+.u3 .r{display:grid;grid-template-columns:1fr 150px;gap:10px;align-items:center}
+.u3 .r span{font-weight:700;font-size:28px;line-height:1.25}
+.u3 .r b{font-weight:900;font-size:52px;text-align:right;color:var(--teal-text)}
+.u3 .r.top b{color:var(--coral-text)}
+.u3 .bar{grid-column:1/3;height:16px;border-radius:999px;background:var(--sunk)}
+.u3 .bar i{display:block;height:100%;border-radius:999px;background:var(--teal-soft)}
+.u3 .r.top .bar i{background:var(--coral-soft)}
+.ex{background:var(--raised);border:3px solid var(--line);border-left:10px solid var(--teal);border-radius:24px;padding:24px 30px;display:flex;flex-direction:column;gap:12px}
+.ex small{font-weight:800;font-size:21px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.ex p{font-family:'Literata',serif;font-style:italic;font-size:31px;line-height:1.4}
+.ex .eff{font-weight:800;font-size:26px;color:var(--teal-text)}
+.goal{display:flex;flex-direction:column;gap:16px}
+.goal div{border-radius:22px;padding:22px 28px;display:flex;flex-direction:column;gap:8px}
+.goal p{font-weight:600;font-size:28px;line-height:1.4}
+.goal small{font-weight:800;font-size:22px;letter-spacing:.12em;text-transform:uppercase}
+.goal b{font-weight:900;font-size:34px;line-height:1.15}
+.goal ul{list-style:none;display:flex;flex-direction:column;gap:8px;padding:0;margin:0}
+.goal li{font-weight:600;font-size:23px;line-height:1.3}
+.goal .a{background:var(--teal-soft)}.goal .a small{color:var(--teal-text)}
+.goal .b{background:var(--peri-soft)}.goal .b small{color:var(--peri)}
+.goal .c{background:var(--coral-soft)}.goal .c small{color:var(--coral-text)}
+.lim{display:flex;flex-direction:column;gap:22px}
+.lim div{font-weight:600;font-size:31px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+
+.row20{display:grid;grid-template-columns:repeat(20,1fr);gap:8px;position:relative;margin-top:64px}
+.row20 i{display:block;height:64px;border-radius:14px;background:var(--peri-soft)}
+.row20 i.on{background:var(--teal-soft)}
+.row20 .mk{position:absolute;left:79%;top:-62px;display:flex;flex-direction:column;align-items:flex-end;gap:4px;transform:translateX(calc(-100% + 2px))}
+.row20 .mk b{background:var(--coral);color:#fff;font-weight:900;font-size:26px;border-radius:999px;padding:6px 16px;white-space:nowrap}
+.row20 .mk span{width:4px;height:84px;background:var(--coral)}
+.row20 .half{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);font-weight:800;font-size:22px;color:var(--muted);white-space:nowrap}
+.res{display:flex;flex-direction:column;gap:14px}
+.res div{display:grid;grid-template-columns:150px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.res b{font-weight:900;font-size:54px;color:var(--teal-text);text-align:center}
+.res .hi b{color:var(--coral-text)}
+.res p{font-weight:600;font-size:26px;line-height:1.35}
+.res p strong{display:block;font-weight:900;font-size:30px;color:var(--ink);margin-bottom:2px}
+.cmp2{display:flex;flex-direction:column;gap:18px}
+.cmp2 .pair{background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:20px 26px;display:flex;flex-direction:column;gap:10px}
+.cmp2 small{font-weight:800;font-size:21px;letter-spacing:.12em;text-transform:uppercase;color:var(--peri)}
+.cmp2 .ln{display:grid;grid-template-columns:330px 1fr 90px;gap:14px;align-items:center}
+.cmp2 .ln span{font-weight:700;font-size:26px}
+.cmp2 .ln .tr{height:30px;border-radius:999px;background:var(--sunk)}
+.cmp2 .ln .tr i{display:block;height:100%;border-radius:999px}
+.cmp2 .ln b{font-weight:900;font-size:32px;text-align:right}
+.pr{display:flex;flex-direction:column;gap:14px}
+.pr div{display:grid;grid-template-columns:60px 1fr;gap:18px;align-items:start;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.pr .n{width:54px;height:54px;border-radius:50%;background:var(--teal-soft);color:var(--teal-text);font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center}
+.pr b{font-weight:900;font-size:31px;line-height:1.2;display:block}
+.pr span{font-weight:600;font-size:26px;line-height:1.35;color:var(--muted)}
+
+.two{display:flex;flex-direction:column;gap:22px}
+.two .c{display:grid;grid-template-columns:170px 1fr;gap:26px;align-items:center;border-radius:26px;padding:34px 32px}
+.two .c.r{background:var(--coral-soft)}.two .c.e{background:var(--teal-soft)}
+.two small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase}
+.two .r small{color:var(--coral-text)}.two .e small{color:var(--teal-text)}
+.two b{display:block;font-weight:900;font-size:42px;line-height:1.15;margin:4px 0 8px}
+.two p{font-weight:600;font-size:31px;line-height:1.38}
+.grp{display:flex;flex-direction:column;gap:14px}
+.grp div{display:grid;grid-template-columns:64px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 24px}
+.grp .l{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:30px}
+.grp .a .l{background:var(--teal-soft);color:var(--teal-text)}.grp .b .l{background:var(--peri-soft);color:var(--peri)}.grp .w .l{background:var(--sunk);color:var(--muted)}
+.grp p{font-weight:600;font-size:29px;line-height:1.35}.grp p strong{font-weight:900;color:var(--ink)}
+.tl{display:flex;justify-content:space-between;gap:10px;margin-top:6px}
+.tl span{flex:1;text-align:center;font-weight:800;font-size:22px;background:var(--peri-soft);color:var(--peri);border-radius:999px;padding:10px 6px}
+.cmp2 .ln{grid-template-columns:400px 1fr 110px}
+.cmp2 .ln span{font-size:30px}.cmp2 .ln b{font-size:40px}.cmp2 small{font-size:24px}.cmp2 .pair{padding:26px 30px;gap:16px}
+.pr b{font-size:35px}.pr span{font-size:29px}.lim div{font-size:34px}
+.no{display:flex;flex-direction:column;gap:20px}
+.no div{display:grid;grid-template-columns:70px 1fr;gap:22px;align-items:start;background:var(--raised);border:3px solid var(--line);border-radius:24px;padding:24px 28px}
+.no .x{width:62px;height:62px;border-radius:50%;background:var(--sunk);color:var(--muted);font-weight:900;font-size:34px;display:flex;align-items:center;justify-content:center}
+.no b{display:block;font-weight:900;font-size:40px;line-height:1.2;margin-bottom:6px}
+.no p{font-weight:600;font-size:32px;line-height:1.38;color:var(--muted)}
+.sub{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sub div{border-radius:24px;padding:24px 26px;display:flex;flex-direction:column;gap:8px}
+.sub .m{background:var(--sunk)}.sub .p{background:var(--teal-soft)}
+.sub small{font-weight:800;font-size:21px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.sub .p small{color:var(--teal-text)}
+.dg{display:flex;flex-direction:column;gap:10px}
+.dg small{font-weight:800;font-size:24px;letter-spacing:.12em;text-transform:uppercase;color:var(--peri);margin-top:6px}
+.dr{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.dc{background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:14px 18px 18px;display:flex;flex-direction:column;align-items:center;gap:2px}
+.dc b{font-weight:900;font-size:46px;color:var(--teal-text);line-height:1}
+.dc span{font-weight:700;font-size:23px;color:var(--muted);text-align:center;line-height:1.3}
+.sub b{font-weight:900;font-size:40px;line-height:1.2}
+
+.who{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.who div{border-radius:24px;padding:24px 26px;display:flex;flex-direction:column;gap:6px}
+.who .a{background:var(--teal-soft)}.who .b{background:var(--peri-soft)}
+.who b{font-weight:900;font-size:58px;line-height:1}
+.who .a b{color:var(--teal-text)}.who .b b{color:var(--peri)}
+.who span{font-weight:700;font-size:26px;line-height:1.3}
+.dr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.dr3 .dc b{font-size:44px}
+.sub b{font-size:44px}
+#s11 .pr b{font-size:40px}#s11 .pr span{font-size:32px}#s11 .pr div{padding:26px 28px}
+.note{background:var(--sunk);border-radius:20px;padding:18px 24px;font-weight:600;font-size:26px;line-height:1.38;color:var(--muted)}
+
+.split{display:flex;flex-direction:column;gap:14px}
+.split .bar{display:flex;height:84px;border-radius:22px;overflow:hidden}
+.split .bar div{display:flex;align-items:center;justify-content:center;font-weight:900;font-size:34px}
+.split .lg{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.split .lg div{border-radius:20px;padding:18px 22px;font-weight:700;font-size:26px;line-height:1.35}
+.split .lg b{display:block;font-weight:900;font-size:30px;margin-bottom:4px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.duo div{background:var(--raised);border:3px solid var(--line);border-radius:24px;padding:24px 26px;display:flex;flex-direction:column;gap:8px}
+.duo b{font-weight:900;font-size:64px;line-height:1}
+.duo span{font-weight:700;font-size:26px;line-height:1.35}
+</style>
+
+<section class="slide" id="s1">
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/12</div></div>
+  <svg class="cv" width="952" height="520" viewBox="0 0 952 520"><g transform="translate(140 200) rotate(-8 100.0 100.0)"><rect x="0" y="0" width="200" height="200" rx="36" fill="#1E9E9E"/><circle cx="56.0" cy="50.0" r="17.0" fill="#FFFFFF"/><circle cx="144.0" cy="50.0" r="17.0" fill="#FFFFFF"/><circle cx="56.0" cy="100.0" r="17.0" fill="#FFFFFF"/><circle cx="144.0" cy="100.0" r="17.0" fill="#FFFFFF"/><circle cx="56.0" cy="150.0" r="17.0" fill="#FFFFFF"/><circle cx="144.0" cy="150.0" r="17.0" fill="#FFFFFF"/></g><g transform="translate(420 230) rotate(7 100.0 100.0)"><rect x="0" y="0" width="200" height="200" rx="36" fill="#4A5BE8"/><circle cx="56.0" cy="50.0" r="17.0" fill="#FFFFFF"/><circle cx="144.0" cy="50.0" r="17.0" fill="#FFFFFF"/><circle cx="56.0" cy="100.0" r="17.0" fill="#FFFFFF"/><circle cx="144.0" cy="100.0" r="17.0" fill="#FFFFFF"/><circle cx="56.0" cy="150.0" r="17.0" fill="#FFFFFF"/><circle cx="144.0" cy="150.0" r="17.0" fill="#FFFFFF"/></g><ellipse cx="760" cy="420" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="760" cy="404" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="760" cy="388" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="760" cy="372" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="760" cy="356" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="760" cy="340" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="760" cy="324" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><line x1="40" y1="470" x2="912" y2="470" stroke="#EAE3DB" stroke-width="6" stroke-linecap="round"/><g><rect x="60" y="60" width="360" height="80" rx="30" fill="#fff" stroke="#1E9E9E" stroke-width="4"/><text x="240.0" y="112" text-anchor="middle" font-family="Literata" font-style="italic" font-size="32" fill="#0F6F6F">«Io non ho mentito.»</text></g><g><rect x="520" y="90" width="330" height="80" rx="30" fill="#fff" stroke="#4A5BE8" stroke-width="4"/><text x="685.0" y="142" text-anchor="middle" font-family="Literata" font-style="italic" font-size="32" fill="#4A5BE8">«Allora restiamo.»</text></g></svg>
+  <div style="margin-top:auto;gap:24px" class="stack">
+    <p class="kicker we">Etica di tutti i giorni</p>
+    <h1 style="font-size:72px">Molte persone oneste non hanno mentito, ma sono rimaste accanto a <span class="hl">chi mentiva per loro</span>.</h1>
+    <p class="mid muted">Uno studio con 372 studenti e un dado: approfittare con le mani pulite.</p>
+    <p style="font-weight:900;font-size:36px;color:var(--peri)">Scorri →</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="kicker ">Succede a molti</p><div class="count">2/12</div></div>
+  <div class="stack" style="margin-top:80px;gap:40px">
+    <p class="qt">«Io non ho fatto niente.»<small>Una frase che si sente spesso quando qualcosa non torna</small></p>
+    <p class="mid" style="font-size:40px">C'è chi non infrange mai una regola, ma non dice nulla quando lo fa qualcun altro, soprattutto se ne ricava un vantaggio. <br><br>Una ricerca del 2018 ha osservato questo comportamento in laboratorio.</p>
+    <svg width="820" height="190" viewBox="0 0 820 190" style="align-self:center"><g transform="translate(120 20) rotate(-10 75.0 75.0)"><rect x="0" y="0" width="150" height="150" rx="27" fill="#AAB3DD"/><circle cx="42.0" cy="42.0" r="12.8" fill="#1E2B5C"/><circle cx="75.0" cy="75.0" r="12.8" fill="#1E2B5C"/><circle cx="108.0" cy="108.0" r="12.8" fill="#1E2B5C"/></g><ellipse cx="420" cy="160" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="420" cy="144" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="420" cy="128" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><g><rect x="500" y="30" width="300" height="80" rx="30" fill="#fff" stroke="#5A6488" stroke-width="4"/><text x="650.0" y="82" text-anchor="middle" font-family="Literata" font-style="italic" font-size="30" fill="#5A6488">«Non ho visto.»</text></g></svg>
+  </div>
+  <p class="next">Come è stata fatta →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="kicker we">La ricerca</p><div class="count">3/12</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <p class="big" style="font-size:130px">372</p>
+    <p class="biglabel">studenti dell'Università di Amsterdam, a coppie, per 30 turni di un gioco con un <span class="hl">dado</span>.</p>
+    <p class="mid" style="font-size:32px">Ognuno vedeva il risultato del proprio dado su uno schermo e doveva dichiararlo. Se i due dichiaravano lo stesso numero, entrambi guadagnavano: di più, più il numero era alto. <br><br>I ricercatori potevano vedere chi diceva la verità, e i partecipanti lo sapevano. Ogni bugia, inoltre, toglieva soldi a una donazione in beneficenza.</p>
+  </div>
+  <p class="next">Come si poteva mentire →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="kicker we">Il gioco</p><div class="count">4/12</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <h2 style="font-size:52px">Bastava che il secondo <span class="hl">copiasse</span> il primo.</h2>
+    <svg width="900" height="230" viewBox="0 0 900 230" style="align-self:center"><text x="110" y="28" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="24" fill="#0F6F6F">A vede</text><g transform="translate(50 45) rotate(0 60.0 60.0)"><rect x="0" y="0" width="120" height="120" rx="22" fill="#1E9E9E"/><circle cx="33.6" cy="33.6" r="10.2" fill="#FFFFFF"/><circle cx="86.4" cy="86.4" r="10.2" fill="#FFFFFF"/></g><text x="290" y="28" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="24" fill="#0F6F6F">A dichiara</text><g transform="translate(230 45) rotate(0 60.0 60.0)"><rect x="0" y="0" width="120" height="120" rx="22" fill="#7FD3C8"/><circle cx="33.6" cy="33.6" r="10.2" fill="#0F6F6F"/><circle cx="86.4" cy="86.4" r="10.2" fill="#0F6F6F"/></g><text x="610" y="28" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="24" fill="#4A5BE8">B vede</text><g transform="translate(550 45) rotate(0 60.0 60.0)"><rect x="0" y="0" width="120" height="120" rx="22" fill="#4A5BE8"/><circle cx="33.6" cy="33.6" r="10.2" fill="#FFFFFF"/><circle cx="86.4" cy="33.6" r="10.2" fill="#FFFFFF"/><circle cx="60.0" cy="60.0" r="10.2" fill="#FFFFFF"/><circle cx="33.6" cy="86.4" r="10.2" fill="#FFFFFF"/><circle cx="86.4" cy="86.4" r="10.2" fill="#FFFFFF"/></g><text x="790" y="28" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="24" fill="#4A5BE8">B dichiara</text><g transform="translate(730 45) rotate(0 60.0 60.0)"><rect x="0" y="0" width="120" height="120" rx="22" fill="#AAB3DD"/><circle cx="33.6" cy="33.6" r="10.2" fill="#1E2B5C"/><circle cx="86.4" cy="86.4" r="10.2" fill="#1E2B5C"/></g><path d="M180 105 h40" stroke="#5A6488" stroke-width="5" marker-end=""/><path d="M680 105 h40" stroke="#5A6488" stroke-width="5"/><text x="790" y="205" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="26" fill="#D9592A">una bugia</text><text x="290" y="205" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="26" fill="#0F6F6F">la verità</text></svg>
+    <p class="mid" style="font-size:31px">Il primo giocatore (A) poteva dire sempre 6; il secondo (B) poteva ripetere qualsiasi numero dichiarato da A. Mentendo insieme, si poteva guadagnare fino a dieci volte di più che dicendo la verità.</p>
+    <p class="note">Ogni tre turni, in metà delle sessioni, ciascuno poteva decidere se restare con lo stesso compagno o cambiarlo.</p>
+  </div>
+  <p class="next">Che cosa hanno scelto →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="kicker we">Che cosa è successo</p><div class="count">5/12</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:56px">Chi mentiva ha cercato <span class="hl">un complice</span>.</h2>
+    <div class="duo">
+      <div><b style="color:var(--peri)">71%</b><span>di chi poteva scegliere il compagno ha mentito: nella maggior parte dei giri da tre turni, almeno una bugia</span></div>
+      <div><b style="color:#D9592A">3,5%</b><span>delle volte, una coppia in cui mentivano entrambi ha chiesto di separarsi</span></div>
+    </div>
+    <p class="mid" style="font-size:32px">Chi mentiva lasciava i compagni onesti e restava con chi gli reggeva il gioco. Fin qui, nulla di sorprendente.</p>
+    <svg width="700" height="200" viewBox="0 0 700 200" style="align-self:center"><g transform="translate(60 30) rotate(-6 75.0 75.0)"><rect x="0" y="0" width="150" height="150" rx="27" fill="#1E9E9E"/><circle cx="42.0" cy="37.5" r="12.8" fill="#FFFFFF"/><circle cx="108.0" cy="37.5" r="12.8" fill="#FFFFFF"/><circle cx="42.0" cy="75.0" r="12.8" fill="#FFFFFF"/><circle cx="108.0" cy="75.0" r="12.8" fill="#FFFFFF"/><circle cx="42.0" cy="112.5" r="12.8" fill="#FFFFFF"/><circle cx="108.0" cy="112.5" r="12.8" fill="#FFFFFF"/></g><g transform="translate(260 40) rotate(6 75.0 75.0)"><rect x="0" y="0" width="150" height="150" rx="27" fill="#4A5BE8"/><circle cx="42.0" cy="37.5" r="12.8" fill="#FFFFFF"/><circle cx="108.0" cy="37.5" r="12.8" fill="#FFFFFF"/><circle cx="42.0" cy="75.0" r="12.8" fill="#FFFFFF"/><circle cx="108.0" cy="75.0" r="12.8" fill="#FFFFFF"/><circle cx="42.0" cy="112.5" r="12.8" fill="#FFFFFF"/><circle cx="108.0" cy="112.5" r="12.8" fill="#FFFFFF"/></g><path d="M215 110 h40" stroke="#D9592A" stroke-width="8" stroke-linecap="round"/><ellipse cx="520" cy="170" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="520" cy="154" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="520" cy="138" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="520" cy="122" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="520" cy="106" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="520" cy="90" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="630" cy="170" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="630" cy="154" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="630" cy="138" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/><ellipse cx="630" cy="122" rx="46" ry="16" fill="#F09B7C" stroke="#A64A30" stroke-width="3"/></svg>
+  </div>
+  <p class="next">E chi era onesto? →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s6">
+  <div class="top"><p class="kicker we">La sorpresa</p><div class="count">6/12</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:54px">La maggior parte degli onesti è rimasta con <span class="hl">chi mentiva</span>.</h2>
+    <p class="mid" style="font-size:31px">Tra chi diceva sempre la verità (il 29% dei partecipanti):</p>
+    <div class="split">
+      <div class="bar"><div style="width:64%;background:#FBE3D8;color:#A64A30">64%</div><div style="width:36%;background:var(--teal-soft);color:var(--teal-text)">36%</div></div>
+      <div class="lg"><div style="background:#FBE3D8"><b style="color:#A64A30">Mani pulite</b>Non mentivano, ma restavano con chi mentiva e ne approfittavano.</div><div style="background:var(--teal-soft)"><b style="color:var(--teal-text)">Coerenti</b>Cercavano un compagno onesto come loro.</div></div>
+    </div>
+    <p class="mid" style="font-size:30px">Chi era onesto nel ruolo del primo giocatore ha chiesto di cambiare compagno solo l'11% delle volte quando l'altro copiava ogni suo numero; il 46% quando non lo copiava.</p>
+  </div>
+  <p class="next">E la bugia si è diffusa? →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="kicker we">Il contagio</p><div class="count">7/12</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <p class="big" style="font-size:170px">+39%</p>
+    <p class="biglabel">la tendenza a mentire, subito dopo che il compagno aveva <span class="hl">mentito</span>.</p>
+    <p class="mid" style="font-size:33px">È il calcolo degli autori per le coppie rimaste insieme per tutti i 30 turni: un aumento relativo, non 39 punti in più. Più a lungo si restava con lo stesso compagno, più la bugia si trasmetteva. Quando le coppie venivano cambiate ogni tre turni, il contagio non si è visto.</p>
+    <svg width="850" height="185" viewBox="0 0 850 185" style="align-self:center"><g transform="translate(20 20) rotate(0 65.0 65.0)"><rect x="0" y="0" width="130" height="130" rx="23" fill="#1E9E9E"/><circle cx="36.4" cy="36.4" r="11.1" fill="#FFFFFF"/><circle cx="65.0" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="93.6" r="11.1" fill="#FFFFFF"/></g><g transform="translate(190 20) rotate(0 65.0 65.0)"><rect x="0" y="0" width="130" height="130" rx="23" fill="#1E9E9E"/><circle cx="36.4" cy="36.4" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="36.4" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="93.6" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="93.6" r="11.1" fill="#FFFFFF"/></g><g transform="translate(360 20) rotate(0 65.0 65.0)"><rect x="0" y="0" width="130" height="130" rx="23" fill="#F09B7C"/><circle cx="36.4" cy="32.5" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="32.5" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="97.5" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="97.5" r="11.1" fill="#FFFFFF"/></g><g transform="translate(530 20) rotate(0 65.0 65.0)"><rect x="0" y="0" width="130" height="130" rx="23" fill="#F09B7C"/><circle cx="36.4" cy="32.5" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="32.5" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="97.5" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="97.5" r="11.1" fill="#FFFFFF"/></g><g transform="translate(700 20) rotate(0 65.0 65.0)"><rect x="0" y="0" width="130" height="130" rx="23" fill="#D9592A"/><circle cx="36.4" cy="32.5" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="32.5" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="65.0" r="11.1" fill="#FFFFFF"/><circle cx="36.4" cy="97.5" r="11.1" fill="#FFFFFF"/><circle cx="93.6" cy="97.5" r="11.1" fill="#FFFFFF"/></g><path d="M20 175 H 830" stroke="#EAE3DB" stroke-width="5" stroke-linecap="round"/></svg>
+  </div>
+  <p class="next">Perché succede →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s8">
+  <div class="top"><p class="kicker we">Perché succede</p><div class="count">8/12</div></div>
+  <div class="stack" style="margin-top:80px;gap:40px">
+    <h2 style="font-size:64px">Restare onesti, <span class="hl">e guadagnare lo stesso</span>.</h2>
+    <div class="sub">
+      <div class="m"><small>Quello che si voleva</small><b>Sentirsi onesti</b></div>
+      <div class="p"><small>Quello che si otteneva</small><b>Il guadagno della bugia di un altro</b></div>
+    </div>
+    <p class="mid" style="font-size:36px">Secondo gli autori, un compagno che mente permetterebbe di avere entrambe le cose: le mani pulite e il vantaggio. E, in caso di domande, si potrebbe sempre dire di non essersene accorti.</p>
+  </div>
+  <p class="next">Quindi, mito o realtà? →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide warmbg" id="s9">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">9/12</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«Chi è onesto si allontana da chi imbroglia.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">In questo studio la maggior parte di chi diceva la verità è rimasta con un compagno che mentiva, quando la bugia portava un guadagno anche a lui. Non mentire non è bastato a <span class="hl">non approfittarne</span>.</p>
+  </div>
+  <p class="next">Prima di concludere, i limiti →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s10">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">10/12</div></div>
+  <div class="stack" style="margin-top:60px;gap:36px">
+    <h2 style="font-size:60px">Che cosa lo studio <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>È <b>un solo studio</b>, in laboratorio, con studenti universitari di Amsterdam: serviranno altre ricerche.</div>
+      <div>Si giocava in <b>forma anonima</b> e per piccole somme: nella vita reale contano anche la reputazione e le conseguenze.</div>
+      <div>Un gioco con un dado <b>non è la vita</b>, anche se in altri studi mentire in questi giochi è risultato legato a comportamenti reali.</div>
+      <div>Le scelte di cambiare compagno sono state osservate in <b>8 sessioni</b>: un numero piccolo di gruppi indipendenti.</div>
+    </div>
+  </div>
+  <p class="next">E allora, che cosa possiamo fare? →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide" id="s11">
+  <div class="top"><p class="kicker we">Prova così</p><div class="count">11/12</div></div>
+  <div class="stack" style="margin-top:60px;gap:32px">
+    <h2 style="font-size:58px">Quando qualcosa va <span class="hl">troppo bene</span>, fermati un attimo.</h2>
+    <div class="pr">
+      <div><span class="n">1</span><p><b>Chiediti da dove arriva</b><span>Un vantaggio che non ti spieghi merita una domanda, prima di accettarlo.</span></p></div>
+      <div><span class="n">2</span><p><b>Guarda con chi stai</b><span>Le persone che frequentiamo ogni giorno influenzano anche quello che facciamo noi.</span></p></div>
+      <div><span class="n">3</span><p><b>Scegli chi ti somiglia nei valori</b><span>Cercare compagni coerenti è una scelta che si può fare ogni volta.</span></p></div>
+    </div>
+  </div>
+  <p class="next">Con WeSelf →</p>
+  <div class="src"><b>FONTE</b><span><em>Gross et al., 2018</em> · Psychological Science</span></div>
+</section>
+
+<section class="slide cta" id="s12">
+  <div class="top"><p class="kicker">Che cosa ce ne facciamo</p><div class="count">12/12</div></div>
+  <div class="stack" style="margin-top:80px">
+    <h2 style="font-size:64px">Le persone che scegli <span class="hl">contano</span>.</h2>
+    <p class="body" style="opacity:.92">Con WeSelf puoi trovare chi ha il tuo stesso obiettivo, vicino a te o tra gli amici che hai già, e crescere insieme in piccoli gruppi dove ci si sostiene.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>
