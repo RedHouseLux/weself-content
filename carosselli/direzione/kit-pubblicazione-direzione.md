@@ -6,6 +6,8 @@
 
 **Data consigliata:** **martedì 24 novembre 2026**, tra le 12:30 e le 14:00 oppure tra le 18:30 e le 20:00.
 
+**Una sola immagine per i numeri:** l'ago sul quadrante (slide 6 e 7); niente file, gare o probabilità.
+
 **Racconto lineare:** succede a molti → due modi di pensarci (esplorare / rimuginare) → la ricerca → che cosa hanno scritto → come leggere i numeri → i numeri, tradotti → che cosa non è cambiato → perché, secondo gli autori → mito o realtà → limiti → WeSelf. Prepara il bias di sabato (illusione della fine della storia), che tocca lo stesso tema.
 
 **Attenzioni:** nessun consiglio di carriera o promessa di trovare lavoro (lo studio non l'ha mostrato); «molte persone» per il rimuginare, «tu» solo per l'invito.
@@ -47,7 +49,7 @@ Quattro esercizi di scrittura sul proprio lavoro futuro, 20 minuti a settimana: 
 ```
 📚 Fonte: Sun S., Yang D. (2026). Effects of a future work self writing intervention on ruminative career exploration and career decision-making difficulties among final-year university students: a three-arm randomized controlled trial. Frontiers in Psychology, 17, 1965900. https://doi.org/10.3389/fpsyg.2026.1965900 (articolo libero) — studio randomizzato preregistrato (ChiCTR2500074449), 486 studenti, tre gruppi da 162.
 
-Come abbiamo letto i numeri: gli autori riportano gli effetti come d di Cohen, stimati alla fine dello studio (3 mesi dopo). Li abbiamo convertiti con l'indice U3 di Cohen (U3 = Φ(d)): se metti in fila le persone di un gruppo di confronto, la persona media del gruppo che ha scritto del lavoro futuro si colloca davanti a quella percentuale (50% = nessuna differenza).
+Come abbiamo letto i numeri: gli autori riportano gli effetti come d di Cohen, stimati alla fine dello studio (3 mesi dopo). Li abbiamo convertiti con l'indice U3 di Cohen (U3 = Φ(d)): è la percentuale del gruppo di confronto che ha rimuginato di più (o si è sentita meno pronta) della persona media del gruppo che ha scritto del lavoro futuro. Nelle slide la mostriamo come un ago su un quadrante da 0% a 100%: 50% = nessuna differenza.
 • Rimuginare: d = 0,35 rispetto a chi ha scritto d'altro → 64%; d = 0,41 rispetto a chi non ha scritto → 66%.
 • Mancanza di prontezza a decidere (questionario CDDQ: motivazione, indecisione, convinzioni che bloccano): d = 0,38 → 65%; d = 0,43 → 67%.
 Non è un «64% in meno» né un «64% di persone».
@@ -63,10 +65,10 @@ Esplorare (su di sé e sui lavori): nessun effetto rilevabile (d tra 0,07 e 0,13
 4. La ricerca: 486 studenti divisi a caso in tre gruppi: A scrive del lavoro futuro, B di altri progetti, C non scrive; questionari prima, subito dopo, dopo 1 e 3 mesi.
 5. Le quattro domande: chi sarò, una giornata tipo, che cosa saprò fare e con chi, un passo. Completati in media 3,7 esercizi su 4.
 6. Come leggere i numeri: un quadrante da 0% a 100% con l'ago sul 64% (la persona media del gruppo A rispetto a 100 persone del gruppo B); a metà, il 50%, significa nessuna differenza.
-7. Tre mesi dopo: ha rimuginato meno del 64% del gruppo B e del 66% del gruppo C; più pronto a decidere: 65% e 67%.
+7. Quattro quadranti con l'ago oltre la metà: rimuginare meno, 64% rispetto al gruppo B e 66% rispetto al gruppo C; sentirsi pronti a decidere, 65% e 67%.
 8. Che cosa non è cambiato: esplorare e trovare lavoro.
 9. Togliere, non aggiungere: ci si aspettava più ricerca, è risultato meno pensieri in circolo.
-10. Mito o realtà? «Per capire che strada prendere, basta informarsi di più.» Mito.
+10. Mito o realtà? «Per capire che strada prendere, basta informarsi di più.» Mito: il gruppo più pronto a decidere non aveva cercato più informazioni, aveva immaginato con più chiarezza il proprio lavoro futuro.
 11. I limiti: studenti cinesi in stagione di assunzioni; questionari e scala adattata; tre mesi, nessun effetto sul lavoro; un solo studio.
 12. Una direzione si costruisce un passo alla volta. Prova una domanda a settimana; con WeSelf piccole azioni in agenda e chi ha il tuo stesso obiettivo. Scopri WeSelf, link in bio.
 
