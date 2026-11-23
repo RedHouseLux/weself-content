@@ -1,6 +1,6 @@
 # Carosello · Molte persone oneste non hanno mentito, ma sono rimaste accanto a chi mentiva per loro (Gross et al., 2018)
 
-**Tema:** etica dei comportamenti («perché le brave persone prendono scorciatoie»), scelto dal fondatore. **Immagini:** `weself-mani-pulite-01.png` … `weself-mani-pulite-12.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
+**Tema:** etica dei comportamenti («perché le brave persone prendono scorciatoie»), scelto dal fondatore. **Immagini:** `weself-mani-pulite-01.png` … `weself-mani-pulite-13.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
 
 **Fonte letta per intero:** articolo ad accesso libero (PMC6291908), dati e materiali pubblici su OSF. Visual senza persone (dadi, monete, fumetti). Evidenziazioni in arancione.
 
@@ -8,7 +8,7 @@
 
 **Perché questo studio:** molti studi famosi su questo tema sono stati ritirati o non si sono replicati (i casi Ariely e Gino, il cartello «firma in alto»). Questo studio non ha nessuno di questi problemi noti e ha dati aperti, ma è un solo esperimento: lo diciamo nei limiti.
 
-**Racconto lineare:** succede a molti → la ricerca → il gioco → chi mentiva cercava un complice → la sorpresa: gli onesti restano con chi mente → il contagio → perché → mito o realtà → limiti → prova così → WeSelf.
+**Racconto lineare:** succede a molti → la ricerca → le regole del gioco → come si poteva barare → chi mentiva cercava un complice → la sorpresa: gli onesti restano con chi mente → il contagio → perché → mito o realtà → limiti → prova così → WeSelf.
 
 **Attenzioni:** terza persona per i comportamenti negativi; tono curioso, mai «siete disonesti»; niente esempi di politica o cronaca (gli autori citano il caso Volkswagen, noi no).
 
@@ -53,15 +53,16 @@ Come leggere i numeri: 71% e 29% sono le quote di persone classificate come «bu
 1. Due dadi che mostrano entrambi il 6, uno verde acqua e uno blu, e una pila di monete; due fumetti: «Io non ho mentito.» e «Allora restiamo.». Titolo: «Molte persone oneste non hanno mentito, ma sono rimaste accanto a chi mentiva per loro».
 2. «Io non ho fatto niente.» C'è chi non infrange mai una regola, ma non dice nulla quando lo fa qualcun altro. Disegno: un dado, poche monete e un fumetto «Non ho visto.».
 3. La ricerca: 372 studenti dell'Università di Amsterdam, a coppie, 30 turni di un gioco con un dado; chi mentiva poteva essere visto, e i partecipanti lo sapevano.
-4. Il gioco: A vede 2 e dichiara 2 (la verità); B vede 5 e dichiara 2 (una bugia). Mentendo insieme si guadagnava fino a dieci volte di più.
-5. Chi mentiva ha cercato un complice: 71% ha mentito; le coppie in cui mentivano entrambi hanno chiesto di separarsi il 3,5% delle volte. Disegno: due dadi sul 6 uniti, e monete.
-6. Tra chi diceva sempre la verità (29%): il 64% è rimasto con chi mentiva («mani pulite»), il 36% ha cercato un compagno onesto. 11% contro 46%.
-7. +39%: la tendenza a mentire dopo una bugia del compagno, nelle coppie rimaste insieme. Disegno: una fila di dadi che passa dal verde all'arancione.
-8. Restare onesti e guadagnare lo stesso: sentirsi onesti e ottenere il guadagno della bugia di un altro.
-9. Mito o realtà? «Chi è onesto si allontana da chi imbroglia.» Mito.
-10. I limiti: un solo studio in laboratorio; anonimo e piccole somme; un gioco non è la vita; 8 sessioni.
-11. Prova così: chiediti da dove arriva un vantaggio; guarda con chi stai; scegli chi ti somiglia nei valori.
-12. Le persone che scegli contano. Con WeSelf trovi chi ha il tuo stesso obiettivo e piccoli gruppi dove ci si sostiene. Scopri WeSelf, link in bio.
+4. Le regole del gioco: si guadagnava solo se i due numeri dichiarati erano uguali. Tre esempi con un dado verde (A) e uno blu (B): 2 e 5, nessun guadagno; 2 e 2, 1 euro a testa; 6 e 6, 3 euro a testa.
+5. Come si poteva barare: A vede 2 e dichiara 6 (bugia); B vede 5 e dichiara 6 (bugia); due 6 dichiarati, 3 euro a testa. Dicendo la verità, circa 30 centesimi a turno; mentendo insieme, dieci volte di più.
+6. Chi mentiva ha cercato un complice: 71% ha mentito; le coppie in cui mentivano entrambi hanno chiesto di separarsi il 3,5% delle volte. Disegno: due dadi sul 6 uniti, e monete.
+7. Tra chi diceva sempre la verità (29%): il 64% è rimasto con chi mentiva («mani pulite»), il 36% ha cercato un compagno onesto. 11% contro 46%.
+8. +39%: la tendenza a mentire dopo una bugia del compagno, nelle coppie rimaste insieme. Disegno: una fila di dadi che passa dal verde all'arancione.
+9. Restare onesti e guadagnare lo stesso: sentirsi onesti e ottenere il guadagno della bugia di un altro.
+10. Mito o realtà? «Chi è onesto si allontana da chi imbroglia.» Mito.
+11. I limiti: un solo studio in laboratorio; anonimo e piccole somme; un gioco non è la vita; 8 sessioni.
+12. Prova così: chiediti da dove arriva un vantaggio; guarda con chi stai; scegli chi ti somiglia nei valori.
+13. Le persone che scegli contano. Con WeSelf trovi chi ha il tuo stesso obiettivo e piccoli gruppi dove ci si sostiene. Scopri WeSelf, link in bio.
 
 ## Note di affidabilità
 
