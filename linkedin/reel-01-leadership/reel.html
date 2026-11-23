@@ -88,6 +88,7 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
     <text x="468" y="412" font-family="Nunito" font-weight="700" font-size="24" fill="#5A6488" text-anchor="middle">deviazioni standard dalla media di chi non ha fatto il corso</text>
   </svg>
   <div id="a3p" style="position:absolute;left:72px;top:1010px;display:flex;align-items:center;gap:20px"><span style="font-weight:800;font-size:36px;color:var(--muted)">Probabilità di fare meglio</span><span id="a3pv" style="background:var(--coral);color:#fff;font-weight:900;font-size:56px;border-radius:999px;padding:6px 30px">50%</span></div>
+  <div class="h" id="a3x" style="top:1100px;font-size:40px;font-weight:800;color:var(--teal-text)">≈ 2,6 volte più spesso di chi non l'ha fatto</div>
   <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
 </div>
 
@@ -178,19 +179,20 @@ function curve(mu){let d='M'+X(-2).toFixed(1)+' 330';for(let z=-2;z<=3.2;z+=0.05
 $('a3c0').setAttribute('d',curve(0));
 $('a3ax').innerHTML=[-2,-1,0,1,2,3].map(z=>`<line x1="${X(z)}" y1="330" x2="${X(z)}" y2="344" stroke="#5A6488" stroke-width="3"/><text x="${X(z)}" y="374">${z>0?'+'+z:(z<0?'−'+(-z):'0')}</text>`).join('');
 const STEPS=[...$('a1st').children];
-const T={a1:0,a2:6,a3:13.5,a4:30,a5:37.5,a6:43.5,a7:56,a8:62,a9:69.5,a10:83.5}, END=90;
+const T={a1:0,a2:6,a3:13.5,a4:35,a5:42.5,a6:48.5,a7:61,a8:67,a9:74.5,a10:88.5}, END=95;
 const CAPS=[[0.5,5.9,"«Manager si diventa, leader si nasce.» Molti la pensano così. Una grande ricerca dice altro."],
 [6.3,13.3,"Ha messo insieme <b>335 studi</b> sui corsi di leadership, dal 1951 al 2014: più di <b>26.000 persone</b> al lavoro."],
 [13.8,19.8,"Mettiamo su una scala comune i risultati di chi non ha fatto il corso e di chi l'ha fatto."],
 [19.8,25.8,"Ora prendi a caso una persona per gruppo. Nella pratica al lavoro, chi ha fatto il corso è andato meglio…"],
 [25.8,29.8,"…nel <b>72%</b> dei casi. Senza effetto, sarebbe il <b>50%</b>: testa o croce."],
-[30.3,37.3,"Per gradimento, apprendimento e risultati, la probabilità è stata simile: <b>dal 67 al 70%</b>."],
-[37.8,43.3,"Su 120 risultati calcolati, <b>113</b> hanno mostrato un miglioramento: il <b>94%</b>."],
-[43.8,48.2,"Per chi organizza la formazione: tra formatori interni ed esterni, <b>nessuna differenza</b>."],
-[48.2,51.8,"I corsi da seguire da soli sono risultati <b>meno efficaci</b>."],
-[51.8,55.8,"E sul feedback a 360 gradi, gli autori invitano alla <b>cautela</b>."],
-[56.3,61.8,"Quindi, leader si nasce? È un <b>mito</b>: guidare è anche un insieme di abilità che si allenano."],
-[62.3,69.3,"Certo, in molti studi mancava un gruppo di confronto, e sono medie su corsi molto diversi tra loro."]];
+[30,34.8,"In altre parole, ha fatto meglio circa <b>2,6 volte più spesso</b> di chi non l'ha fatto."],
+[35.3,42.3,"Per gradimento, apprendimento e risultati, la probabilità è stata simile: <b>dal 67 al 70%</b>."],
+[42.8,48.3,"Su 120 risultati calcolati, <b>113</b> hanno mostrato un miglioramento: il <b>94%</b>."],
+[48.8,53.2,"Per chi organizza la formazione: tra formatori interni ed esterni, <b>nessuna differenza</b>."],
+[53.2,56.8,"I corsi da seguire da soli sono risultati <b>meno efficaci</b>."],
+[56.8,60.8,"E sul feedback a 360 gradi, gli autori invitano alla <b>cautela</b>."],
+[61.3,66.8,"Quindi, leader si nasce? È un <b>mito</b>: guidare è anche un insieme di abilità che si allenano."],
+[67.3,74.3,"Certo, in molti studi mancava un gruppo di confronto, e sono medie su corsi molto diversi tra loro."]];
 window.render=function(t){
   const ids=Object.keys(T);ids.forEach((id,i)=>{const a=T[id],b=i<ids.length-1?T[ids[i+1]]:END+0.2;const vis=t>=a-0.25&&t<b+0.3;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0;$(id).style.zIndex=i+1;});
   $('progi').style.width=(cl(t/END)*100)+'%'; $('prog').style.opacity=t<T.a10?1:0;
@@ -208,7 +210,7 @@ window.render=function(t){
   const s3=0.82*eo((u-7.0)/3.0); $('a3c1').setAttribute('d',curve(s3)); $('a3c1').style.opacity=eo((u-3.0)/.6);
   $('a3m1').setAttribute('x1',X(s3));$('a3m1').setAttribute('x2',X(s3)); $('a3m1').style.opacity=eo((u-7.0)/.4);
   $('a3sh').setAttribute('x',X(s3)); $('a3sh').textContent=u>7.2?'+'+s3.toFixed(2).replace('.',','):''; 
-  $('a3pv').textContent=Math.round(100*Phi(s3/Math.SQRT2))+'%'; pop($('a3p'),u,5.8);
+  $('a3pv').textContent=Math.round(100*Phi(s3/Math.SQRT2))+'%'; pop($('a3p'),u,5.8); pop($('a3x'),u,16.6);
   // 4
   u=t-T.a4; [['a4a',0.4,67],['a4b',0.8,70],['a4c',1.2,72],['a4d',1.6,70]].forEach(([id,s,v])=>{const b=back((u-s)/1.2),k=eo((u-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
   // 5
