@@ -6,6 +6,8 @@
 
 **Data consigliata:** **martedì 24 novembre 2026**, tra le 18:30 e le 20:00. Non agganciarlo al 25 novembre.
 
+**Disegni:** temi di vicinanza senza persone (poltrone una di fronte all'altra, tazze con il vapore a cuore, telefoni uniti da un cuore, un appuntamento in agenda). Evidenziazioni in arancione.
+
 **Racconto lineare:** succede a molti → la ricerca → le telefonate → come leggere i numeri (ago, vantaggio netto) → i numeri, tradotti → com'è andata → perché, secondo gli autori → mito o realtà → limiti → prova così → WeSelf + supporto. Prepara il Reel di giovedì «Dobbiamo vederci».
 
 **Attenzioni:** niente umorismo; mai la parola «epidemia»; terza persona per la solitudine; nessuna promessa clinica (ansia e umore giù sono sintomi misurati con questionari, non diagnosi). **Prima di pubblicare, verifica numero e orari di Telefono Amico Italia sul sito ufficiale** (dalla sandbox il sito non è raggiungibile).
@@ -49,16 +51,16 @@ Non è un «37% di solitudine in meno». Con la seconda scala sulla solitudine (
 ## Testo alternativo (una per slide)
 
 1. Due poltrone una di fronte all'altra, verde acqua e blu, con in mezzo un tavolino e due tazze: il vapore delle tazze si unisce in un cuore. Sopra le poltrone due fumetti: «Come stai?» e «Ora un po' meglio.». Titolo: «Qualche telefonata ha fatto sentire meno sole persone che uscivano poco di casa».
-2. «Oggi non ho parlato con nessuno.» C'è chi passa intere giornate senza una vera conversazione; una ricerca ha provato una telefonata fatta con attenzione.
+2. «Oggi non ho parlato con nessuno.» C'è chi passa intere giornate senza una vera conversazione; una ricerca ha provato una telefonata fatta con attenzione. Disegno: uno smartphone che squilla, con un piccolo fumetto a forma di cuore.
 3. La ricerca: 240 adulti in Texas, estate 2020, pasti a domicilio; 56% viveva da solo, 63% aveva almeno 65 anni; due gruppi formati a caso: telefonate per 4 settimane o nessuna telefonata.
 4. Le telefonate: 16 volontari tra i 17 e i 23 anni, circa un'ora di preparazione; ascoltare e fare domande, nessun copione; chiamate brevi, ogni giorno la prima settimana, poi da 2 a 5 a settimana; il 58% ha scelto 5.
 5. Come leggere i numeri: un quadrante da −100% a +100% con l'ago su +37%, il vantaggio netto nel sentirsi meno soli; 0% significa nessuna differenza.
 6. Tre quadranti: sentirsi meno soli +37%, meno sintomi d'ansia +27%, meno umore giù +24%. Ansia almeno lieve dal 50% al 36%. Un secondo questionario sulla solitudine ha mostrato solo una piccola differenza, non certa.
-7. L'88% delle persone chiamate si è detto soddisfatto; voto medio 4,5 su 5; 9 persone hanno lasciato il programma.
-8. Ascoltare, non consigliare: non c'erano terapia, copione o esperti; c'erano attenzione, domande e regolarità.
+7. L'88% delle persone chiamate si è detto soddisfatto; voto medio 4,5 su 5; 9 persone hanno lasciato il programma. Disegno: due tazze vicine su un tavolo, il vapore forma un cuore.
+8. Ascoltare, non consigliare: non c'erano terapia, copione o esperti; c'erano attenzione, domande e regolarità. Disegno: due poltrone una di fronte all'altra, con un tavolino, due tazze e un cuore.
 9. Mito o realtà? «Per aiutare chi si sente solo bisogna essere esperti.» Mito.
-10. I limiti: quattro settimane; chiamata o modo di farla; Stati Uniti, pandemia; questionari.
-11. Prova così: scegli una persona; dieci minuti, poche domande; un appuntamento fisso.
+10. I limiti: quattro settimane; chiamata o modo di farla; Stati Uniti, pandemia; questionari. Disegno: due telefoni uniti da una linea punteggiata con un cuore.
+11. Prova così: scegli una persona; dieci minuti, poche domande; un appuntamento fisso. Disegno: una settimana da lunedì a domenica, con un cuore sul giovedì.
 12. Un piccolo gesto a settimana, già in agenda. Scopri WeSelf, link in bio. Supporto: medico di base, Telefono Amico Italia, 112.
 
 ## Note di affidabilità

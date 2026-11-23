@@ -27,7 +27,7 @@ Website: https://www.weself.app (Italian /it, articles /it/articles, download /i
 - **Length:** 8 slides is the usual shape, but add slides whenever a concept needs more explanation to be understood (Instagram and Facebook allow up to 20). One idea per slide beats a crowded slide.
 - **Every post has:** a «Mito o realtà?» slide, a «limiti» slide, the source on each slide, «Un'onestà necessaria» in the caption (the study is not about WeSelf), and for sensitive topics (anxiety, loneliness, addiction, stress) a support reference to verify before publishing (medico di base, servizi universitari, Telefono Amico Italia, 112; gambling: Telefono Verde ISS 800 558 822).
 - **Visuals:** no people in illustrations or photos unless the founder asks for them for that post (agreed Nov 2026).
-- **Highlights:** a highlighted word or phrase (`.hl`) changes only its text colour (coral, `.t` teal, `.p` peri; light teal on the CTA, peri on the bias cover, yellow on the bias CTA). No background band and no underline (agreed Nov 2026; set in `templates/carousel/head.html`, `templates/bias/bias.html`, `templates/curiosita/dark.html`).
+- **Highlights:** a highlighted word or phrase (`.hl`, also `.t`/`.p`) changes only its text colour, and the colour is **orange** (#D9592A; light orange #FFB48C on the blue CTA; #F5A57E on the dark «Curiosità» theme). Exceptions kept for the yellow bias theme: peri on the bias cover, yellow on the bias CTA. No background band and no underline (agreed Nov 2026; set in `templates/carousel/head.html`, `templates/bias/bias.html`, `templates/curiosita/dark.html`).
 - **No clinical promises** (WeSelf never «cura», «tratta», «risolve»). **No political stances.** Never comment on local crime news.
 
 ## How to make a carousel
