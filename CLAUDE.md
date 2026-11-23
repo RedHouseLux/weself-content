@@ -85,6 +85,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Relazioni / molti uomini pensano che agli amici non interessi come stanno, non è così — Kardas, Kumar & Epley 2022 (Giornata internazionale dell'uomo) | `carosselli/come-stai/` | Published (Wed 18 Nov) |
 | Reel animato «Dove sentiamo le emozioni» — Volynets et al. 2020 (bodily maps, stylised bodies, founder opinion) | `video/mappe-emozioni/` | Published (Mon 16 Nov, 115 s, founder voice-over) |
 | Reel animato «Dal volere al fare, in quattro passi» (WOOP) — Wang, Wang & Gai 2021 (founder opinion on the «why») | `video/woop/` | Ready, voice-over to record (99 s) |
+| Direzione / scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno — Sun & Yang 2026 (three-arm RCT, 486 students) | `carosselli/direzione/` | Ready, not published (Tue 24 Nov) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
