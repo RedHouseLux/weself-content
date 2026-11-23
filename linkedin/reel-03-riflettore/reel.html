@@ -1,0 +1,199 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8;--sunk:#F3EEE8}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-family:Nunito,sans-serif;color:var(--ink)}
+.sc{position:absolute;inset:0;opacity:0;background:var(--surface);overflow:hidden}
+.blobs{position:absolute;inset:0;pointer-events:none}
+.brand{position:absolute;left:72px;top:330px;display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px}
+.brand img{width:46px;height:46px}.we{color:var(--peri)}.self{color:var(--teal)}
+.kick{position:absolute;left:72px;top:330px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.h{position:absolute;left:72px;right:72px;font-weight:900;letter-spacing:-.02em;line-height:1.08}
+.cap{position:absolute;left:72px;right:72px;top:1200px;font-weight:800;font-size:44px;line-height:1.3;background:#fff;border-radius:28px;padding:28px 34px;box-shadow:0 10px 30px rgba(30,43,92,.08)}
+.cap b{color:var(--peri)}
+.src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted)}
+.say{font-family:Literata,serif;font-style:italic;font-size:96px;line-height:1.1;position:absolute;left:72px}
+.chip{display:inline-flex;align-items:center;gap:16px;font-weight:900;font-size:60px;letter-spacing:.06em;padding:22px 46px 22px 24px;border-radius:999px}
+.chip i{font-style:normal;width:70px;height:70px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:38px}
+.mito{background:var(--coral)}.mito i{background:var(--ink);color:var(--coral)}
+.bar{position:absolute;left:72px;width:936px;height:96px;border-radius:999px;background:var(--sunk)}
+.fill{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:28px;font-weight:900;font-size:52px;min-width:0}
+.lbl{position:absolute;left:72px;font-weight:800;font-size:34px;color:var(--muted)}
+.card{position:absolute;width:100px;height:120px;border-radius:20px;background:var(--sunk);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:56px;color:#fff;overflow:hidden}
+.card s{position:absolute;left:0;top:0;bottom:0;background:var(--teal);text-decoration:none}
+.card b{position:relative}
+.lim{position:absolute;left:72px;right:72px;display:flex;gap:30px;align-items:center;font-weight:700;font-size:42px;line-height:1.3}
+.lim .ic{flex:0 0 120px;height:120px;border-radius:30px;background:var(--coral-soft);display:flex;align-items:center;justify-content:center}
+.cta{background:var(--peri);color:#fff}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:44px;padding:32px 56px;border-radius:999px}
+#prog{position:absolute;left:72px;right:72px;top:300px;height:8px;border-radius:4px;background:rgba(30,43,92,.08);z-index:50}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--peri);width:0}
+</style>
+<style>
+:root{--sun:#FFD23F;--sun-soft:#FFF6D6;--sun-deep:#E0A800}
+.sc{background:var(--sun-soft)}
+.rub{position:absolute;left:72px;top:330px;display:inline-flex;align-items:center;gap:14px;background:var(--sun);color:var(--ink);font-weight:900;font-size:30px;letter-spacing:.06em;padding:12px 26px 12px 16px;border-radius:999px}
+.rub svg{flex:0 0 auto}
+.kick{top:410px}
+.cmp{position:absolute;left:72px;right:72px}
+.cmp .lbl{position:static;margin-bottom:12px}
+.cmp .bar{position:relative;left:0;width:100%;height:100px}
+.card2{position:absolute;left:72px;right:72px;background:#fff;border-radius:28px;padding:28px 34px;box-shadow:0 10px 30px rgba(30,43,92,.08);display:flex;gap:26px;align-items:center}
+.card2 .ic{flex:0 0 96px;height:96px;border-radius:26px;display:flex;align-items:center;justify-content:center;font-size:52px;font-weight:900}
+.card2 p{font-weight:700;font-size:34px;line-height:1.25;color:var(--muted)}
+.card2 p b{display:block;color:var(--ink);font-weight:900;font-size:44px}
+.cta .btn{background:var(--sun);color:var(--ink)}
+.sc.cta{background:var(--peri)}
+</style></head><body>
+<div class="cap" id="gcap" style="top:1180px;z-index:40;opacity:0"></div>
+<div id="prog"><i id="progi"></i></div>
+
+<!-- 1 hook: spotlight -->
+<div class="sc" id="a1" style="background:var(--sun)">
+  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Il bias della settimana</div>
+  <svg style="position:absolute;left:0;top:420px" width="1080" height="560" viewBox="0 0 1080 560">
+    <polygon id="a1cone" points="500,0 580,0 800,500 280,500" fill="#FFFFFF" opacity="0"/>
+    <ellipse id="a1pool" cx="540" cy="500" rx="270" ry="40" fill="#FFFFFF" opacity="0"/>
+    <g id="a1shirt" transform="translate(540 330)">
+      <path d="M-120 -120 L-50 -150 Q0 -120 50 -150 L120 -120 L160 -40 L110 -20 L110 160 L-110 160 L-110 -20 L-160 -40 Z" fill="#4A5BE8"/>
+      <circle id="a1stain" cx="40" cy="40" r="0" fill="#F09B7C"/>
+    </g>
+    <g id="a1d1" opacity="0"><rect x="60" y="430" width="150" height="16" rx="8" fill="#1E2B5C"/><rect x="85" y="340" width="100" height="80" rx="10" fill="#1E2B5C" opacity=".85"/></g>
+    <g id="a1d2" opacity="0"><rect x="880" y="430" width="150" height="16" rx="8" fill="#1E2B5C"/><rect x="930" y="380" width="44" height="50" rx="8" fill="#1E2B5C" opacity=".85"/><path d="M974 392 q22 0 22 16 q0 16 -22 16" fill="none" stroke="#1E2B5C" stroke-width="6" opacity=".85"/></g>
+  </svg>
+  <div class="h" id="a1t" style="top:1010px;font-size:66px">L'effetto riflettore</div>
+</div>
+
+<!-- 2 study -->
+<div class="sc" id="a2">
+  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Lo studio</div>
+  <svg style="position:absolute;left:290px;top:440px" width="500" height="420" viewBox="-250 -170 500 420">
+    <g id="a2s"><path d="M-150 -130 L-60 -165 Q0 -130 60 -165 L150 -130 L200 -30 L135 -5 L135 220 L-135 220 L-135 -5 L-200 -30 Z" fill="#FFFFFF" stroke="#1E2B5C" stroke-width="6"/>
+    <g id="a2f"><circle cx="0" cy="40" r="80" fill="#FBE3D8" stroke="#1E2B5C" stroke-width="5"/><circle cx="-28" cy="25" r="9" fill="#1E2B5C"/><circle cx="28" cy="25" r="9" fill="#1E2B5C"/><path d="M-32 70 Q0 95 32 70" fill="none" stroke="#1E2B5C" stroke-width="6" stroke-linecap="round"/><path d="M-80 10 Q-60 -60 0 -45 Q60 -60 80 10" fill="#1E2B5C"/></g></g>
+  </svg>
+  <div class="h" id="a2t" style="top:900px;font-size:46px">15 studenti · una maglietta imbarazzante · pochi istanti in una stanza piena</div>
+  <div class="src">Gilovich, Medvec &amp; Savitsky, 2000 · J. Pers. Soc. Psychol.</div>
+</div>
+
+<!-- 3 46 vs 23 -->
+<div class="sc" id="a3">
+  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>I numeri, tradotti</div>
+  <div class="cmp" style="top:480px"><div class="lbl">Pensavano che l'avesse notata…</div><div class="bar"><div class="fill" id="a3a" style="background:var(--coral);color:#fff"></div></div></div>
+  <div class="cmp" style="top:700px"><div class="lbl">L'hanno notata davvero…</div><div class="bar"><div class="fill" id="a3b" style="background:var(--teal);color:#fff"></div></div></div>
+  <div class="h" id="a3x" style="top:940px;font-size:56px">La <span style="background:var(--sun);padding:0 12px;border-radius:10px">metà</span> di quanto pensavano.</div>
+  <div class="src">Gilovich, Medvec &amp; Savitsky, 2000 · J. Pers. Soc. Psychol.</div>
+</div>
+
+<!-- 4 48 vs 8 -->
+<div class="sc" id="a4">
+  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Non solo l'imbarazzo</div>
+  <div class="h" id="a4h" style="top:420px;font-size:44px;color:var(--muted)">Con una maglietta scelta con orgoglio</div>
+  <div class="cmp" style="top:530px"><div class="lbl">Stima</div><div class="bar"><div class="fill" id="a4a" style="background:var(--coral);color:#fff"></div></div></div>
+  <div class="cmp" style="top:730px"><div class="lbl">Realtà</div><div class="bar"><div class="fill" id="a4b" style="background:var(--teal);color:#fff"></div><span id="a4bn" style="position:absolute;left:calc(8% + 24px);top:50%;margin-top:-34px;font-weight:900;font-size:52px;color:var(--teal-text)">8%</span></div></div>
+  <div class="h" id="a4x" style="top:960px;font-size:56px"><span style="background:var(--sun);padding:0 12px;border-radius:10px">6 volte</span> meno di quanto pensavano.</div>
+  <div class="src">Gilovich, Medvec &amp; Savitsky, 2000 · J. Pers. Soc. Psychol.</div>
+</div>
+
+<!-- 5 meetings -->
+<div class="sc" id="a5">
+  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>E nelle discussioni di gruppo</div>
+  <div class="card2" id="a5a" style="top:440px"><span class="ic" style="background:var(--coral-soft);color:var(--coral-text)">✕</span><p><b>I propri errori</b>ricordati dagli altri meno del previsto</p></div>
+  <div class="card2" id="a5b" style="top:660px"><span class="ic" style="background:var(--teal-soft);color:var(--teal-text)">★</span><p><b>Gli interventi migliori</b>ricordati dagli altri meno del previsto</p></div>
+  <div class="h" id="a5x" style="top:900px;font-size:44px;color:var(--muted)">Il riflettore funziona in tutte e due le direzioni.</div>
+  <div class="src">Gilovich, Medvec &amp; Savitsky, 2000 · J. Pers. Soc. Psychol.</div>
+</div>
+
+<!-- 6 why -->
+<div class="sc" id="a6">
+  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Perché succede</div>
+  <div class="cmp" style="top:440px"><div class="lbl">Quello che sento io: «tutti la guardano»</div><div class="bar"><div class="fill" id="a6a" style="background:var(--sun);color:var(--ink)"></div></div></div>
+  <div class="cmp" style="top:640px"><div class="lbl">Correggo un po': la mia stima</div><div class="bar"><div class="fill" id="a6b" style="background:var(--coral);color:#fff"></div></div></div>
+  <div class="cmp" style="top:840px"><div class="lbl">La realtà</div><div class="bar"><div class="fill" id="a6c" style="background:var(--teal);color:#fff"></div></div></div>
+  <div class="lbl" id="a6n" style="top:1060px;font-size:26px">Il punto di partenza non è stato misurato: barra illustrativa.</div>
+  <div class="src">Gilovich, Medvec &amp; Savitsky, 2000 · J. Pers. Soc. Psychol.</div>
+</div>
+
+<!-- 7 myth -->
+<div class="sc" id="a7" style="background:var(--coral-soft)">
+  <div class="kick" style="color:var(--coral-text);top:330px">Mito o realtà?</div>
+  <div class="say" id="a7q" style="top:430px;right:72px;font-size:76px;line-height:1.25">«Ho sbagliato in riunione: se ne sono accorti tutti.»</div>
+  <div style="position:absolute;left:72px;top:780px"><span class="chip mito" id="a7m"><i>✕</i>MITO</span></div>
+  <div class="h" id="a7t" style="top:950px;font-size:54px">Ognuno è più occupato <span style="color:var(--teal-text)">con il proprio</span>.</div>
+</div>
+
+<!-- 8 limits -->
+<div class="sc" id="a8">
+  <div class="kick" style="color:var(--coral-text);top:330px">I limiti</div>
+  <div class="h" id="a8h" style="top:410px;font-size:64px">Che cosa lo studio non dice</div>
+  <div class="lim" id="a8a" style="top:600px"><div class="ic"><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="24" cy="28" r="12" fill="#A64A30"/><circle cx="56" cy="28" r="12" fill="#A64A30"/><rect x="8" y="46" width="32" height="26" rx="12" fill="#A64A30"/><rect x="40" y="46" width="32" height="26" rx="12" fill="#A64A30"/></svg></div><div><b>Pochi</b> partecipanti.</div></div>
+  <div class="lim" id="a8b" style="top:780px"><div class="ic"><svg width="70" height="80" viewBox="0 0 70 80"><path d="M35 76S8 46 8 30a27 27 0 0 1 54 0c0 16-27 46-27 46z" fill="none" stroke="#A64A30" stroke-width="6"/><circle cx="35" cy="30" r="9" fill="#A64A30"/></svg></div><div>Studenti negli <b>Stati Uniti</b>.</div></div>
+  <div class="lim" id="a8c" style="top:960px"><div class="ic"><svg width="70" height="80" viewBox="0 0 70 80"><path d="M24 4h22M28 4v24L6 70a6 6 0 0 0 5 8h48a6 6 0 0 0 5-8L42 28V4" fill="none" stroke="#A64A30" stroke-width="6" stroke-linejoin="round"/></svg></div><div>Situazioni <b>brevi</b>, in laboratorio.</div></div>
+  <div class="src">Gilovich, Medvec &amp; Savitsky, 2000 · J. Pers. Soc. Psychol.</div>
+</div>
+
+<!-- 9 opinion -->
+<div class="sc" id="a9" style="background:var(--peri-soft)">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="h" id="a9h" style="top:420px;font-size:64px">Il mio punto di vista</div>
+  <div class="h" id="a9n" style="top:510px;font-size:34px;font-weight:600;color:var(--muted)">Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.</div>
+  <svg style="position:absolute;left:140px;top:600px" width="800" height="560" viewBox="0 0 800 600">
+    <circle id="q1" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/><circle id="q2" cx="400" cy="300" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/><circle id="q3" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="300" r="58" fill="#4A5BE8"/><circle cx="400" cy="300" r="20" fill="#F09B7C"/>
+  </svg>
+</div>
+
+<!-- 10 trick + CTA -->
+<div class="sc cta" id="a10">
+  <div class="rub" style="top:360px"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Il trucco</div>
+  <div class="h" id="a10t" style="top:470px;font-size:58px;line-height:1.2">Prima di rinunciare per paura del giudizio, chiediti:</div>
+  <div class="say" id="a10q" style="top:700px;right:72px;font-size:64px;line-height:1.25;color:#fff">«Quanto ci penserei io, se fosse successo a un altro?»</div>
+  <div class="h" id="a10b" style="top:960px;font-size:38px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf quel passo che rimandi diventa una piccola azione in agenda, insieme a chi ha il tuo stesso obiettivo.</div>
+  <div style="position:absolute;left:72px;top:1200px" id="a10btn"><span class="btn">Link nel primo commento</span></div>
+  <div class="brand" style="top:1390px;color:#fff"><img src="weself-mark.png" style="background:#fff;border-radius:12px;padding:4px"><span style="color:#fff">WeSelf</span></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=x=>Math.max(0,Math.min(1,x));
+const eo=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
+const back=x=>{x=cl(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+function pop(el,t,s,d=.5){const k=eo((t-s)/d),b=back((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-b)*50}px)`}
+function bar(id,u,s,v,txt){const b=back((u-s)/1.2),k=eo((u-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?(txt!==undefined?txt:Math.round(v*k)+'%'):''}
+const COLS=[['#FFD23F','#DDE0FB'],['#DDE0FB','#FBE3D8'],['#FBE3D8','#FFD23F']];
+const BL=[];document.querySelectorAll('.sc').forEach((sc,i)=>{if(sc.classList.contains('cta')||i===0)return;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('class','blobs');s.setAttribute('width','1080');s.setAttribute('height','1920');const c=COLS[i%3];s.innerHTML=`<circle r="300" fill="${c[0]}" opacity=".3"/><circle r="220" fill="${c[1]}" opacity=".45"/>`;sc.insertBefore(s,sc.firstChild);BL.push([s,i])});
+const T={a1:0,a2:6.5,a3:16.5,a4:24,a5:31.5,a6:41,a7:48,a8:55,a9:61,a10:75}, END=86;
+const CAPS=[[0.5,6.3,"Una parola sbagliata in riunione, e c'è chi si sente come sotto un riflettore. Ma quanti se ne accorgono, davvero?"],
+[6.8,11.5,"Tre psicologi hanno fatto indossare a <b>15 studenti</b> una maglietta imbarazzante, con il volto gigante di un cantante…"],
+[11.5,16.3,"…e li hanno fatti entrare per pochi istanti in una stanza piena di persone."],
+[16.8,23.8,"Pensavano che l'avesse notata il <b>46%</b> dei presenti. L'ha notata davvero il <b>23%</b>: la metà."],
+[24.3,31.3,"E con una maglietta scelta con orgoglio? Stima del <b>48%</b>, realtà dell'<b>8%</b>: <b>6 volte</b> meno."],
+[31.8,36.3,"Anche nei gruppi di discussione, ognuno pensava che i propri errori…"],
+[36.3,40.8,"…e anche i propri interventi migliori, fossero rimasti in mente agli altri <b>più di quanto lo fossero</b>."],
+[41.3,47.8,"Il motivo, secondo gli autori: partiamo da ciò che sentiamo noi, che è intenso, e <b>correggiamo troppo poco</b>."],
+[48.3,54.8,"Quindi, se ne sono accorti tutti? In questi studi, è un <b>mito</b>: ognuno è più occupato con il proprio."],
+[55.3,60.8,"Certo: pochi partecipanti, studenti negli Stati Uniti, situazioni brevi in laboratorio."]];
+window.render=function(t){
+  const ids=Object.keys(T);ids.forEach((id,i)=>{const a=T[id],b=i<ids.length-1?T[ids[i+1]]:END+0.2;const vis=t>=a-0.25&&t<b+0.3;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0;$(id).style.zIndex=i+1;});
+  $('progi').style.width=(cl(t/END)*100)+'%'; $('prog').style.opacity=t<T.a10?1:0;
+  {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on)el.style.opacity=0;}
+  BL.forEach(([s,i])=>{const c=s.children;c[0].setAttribute('cx',900+80*Math.sin(t*0.4+i));c[0].setAttribute('cy',1650+60*Math.cos(t*0.35+i));c[1].setAttribute('cx',120+70*Math.cos(t*0.3+i*2));c[1].setAttribute('cy',260+50*Math.sin(t*0.45+i))});
+  let u;
+  u=t-T.a1; const sp=eo((u-0.8)/.6); $('a1cone').setAttribute('opacity',0.55*sp*(0.92+0.08*Math.sin(t*3))); $('a1pool').setAttribute('opacity',0.6*sp);
+  $('a1shirt').setAttribute('transform',`translate(540 330) scale(${0.6+0.4*back((u-0.2)/.6)})`); $('a1stain').setAttribute('r',28*back((u-1.6)/.5));
+  $('a1d1').setAttribute('opacity',eo((u-2.4)/.5)); $('a1d2').setAttribute('opacity',eo((u-2.7)/.5)); pop($('a1t'),u,3.4);
+  u=t-T.a2; const ss=back((u-0.3)/.6); $('a2s').setAttribute('transform',`scale(${Math.max(0.01,ss)})`); $('a2f').setAttribute('transform',`rotate(${4*Math.sin(t*2)} 0 40)`); pop($('a2t'),u,2.0);
+  u=t-T.a3; bar('a3a',u,0.8,46); bar('a3b',u,4.0,23); pop($('a3x'),u,5.4);
+  u=t-T.a4; pop($('a4h'),u,0.2); bar('a4a',u,2.6,48); bar('a4b',u,4.2,8,''); $('a4bn').style.opacity=eo((u-4.8)/.4); pop($('a4x'),u,5.6);
+  u=t-T.a5; pop($('a5a'),u,0.6); pop($('a5b'),u,4.8); pop($('a5x'),u,7.4);
+  u=t-T.a6; bar('a6a',u,0.6,95,''); bar('a6b',u,2.4,46); bar('a6c',u,4.2,23); pop($('a6n'),u,4.8);
+  u=t-T.a7; pop($('a7q'),u,0.2); const m=back((u-2.0)/.45),mo=eo((u-2.0)/.3); const sh=u>2.3&&u<2.8?Math.sin((u-2.3)*60)*6*(1-(u-2.3)/.5):0;
+  $('a7m').style.opacity=mo; $('a7m').style.transform=`scale(${2-m}) rotate(${-8*mo+sh}deg)`; pop($('a7t'),u,3.4);
+  u=t-T.a8; pop($('a8h'),u,0.2); pop($('a8a'),u,0.8); pop($('a8b'),u,2.0); pop($('a8c'),u,3.4);
+  u=t-T.a9; pop($('a9h'),u,0.3); pop($('a9n'),u,0.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)});
+  u=t-T.a10; pop($('a10t'),u,0.4); pop($('a10q'),u,2.0); pop($('a10b'),u,5.0); pop($('a10btn'),u,7.0);
+};
+render(0);
+</script></body></html>
