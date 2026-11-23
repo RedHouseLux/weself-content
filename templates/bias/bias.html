@@ -26,11 +26,11 @@
 /* ===== Column colour: a bright «sun» accent (yellow by default) ===== */
 :root{--sun:#FFD23F;--sun-soft:#FFF6D6;--sun-deep:#E0A800}
 .slide:not(.cta):not(.warmbg){background:var(--sun-soft)}
-.slide .hl{--hl:var(--sun)}
 .slide .src{background:rgba(255,255,255,.65)}
 .ep{background:var(--sun);color:var(--ink);padding:10px 18px 10px 12px;border-radius:999px}
 .slide.biascover:not(.cta){background:var(--sun);box-shadow:none}
-.slide.biascover .hl{--hl:#FFFFFF}
+.slide.biascover .hl,.slide.biascover .hl.t,.slide.biascover .hl.p{color:var(--peri)}
+.cta .hl,.cta .hl.t,.cta .hl.p{color:var(--sun)}
 .slide.biascover .occ{color:var(--ink)}
 .slide.biascover .rub{border-bottom-color:rgba(30,43,92,.18)}
 .slide.biascover .rub .rn em{color:var(--ink);background:#FFFFFF;border-radius:10px;padding:0 10px}
