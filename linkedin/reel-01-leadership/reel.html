@@ -1,0 +1,214 @@
+<!doctype html><html lang="it"><head><meta charset="utf-8"><style>
+@font-face{font-family:Nunito;font-weight:600;src:url(../../fonts/nunito-latin-600-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:800;src:url(../../fonts/nunito-latin-800-normal.woff2)}
+@font-face{font-family:Nunito;font-weight:900;src:url(../../fonts/nunito-latin-900-normal.woff2)}
+@font-face{font-family:Literata;font-style:italic;font-weight:400;src:url(../../fonts/literata-latin-400-italic.woff2)}
+:root{--surface:#FBF8F5;--ink:#1E2B5C;--muted:#5A6488;--teal:#1E9E9E;--teal-text:#0F6F6F;--teal-soft:#A8E6DD;--peri:#4A5BE8;--peri-soft:#DDE0FB;--coral:#F09B7C;--coral-text:#A64A30;--coral-soft:#FBE3D8;--sunk:#F3EEE8}
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-family:Nunito,sans-serif;color:var(--ink)}
+.sc{position:absolute;inset:0;opacity:0;background:var(--surface);overflow:hidden}
+.blobs{position:absolute;inset:0;pointer-events:none}
+.brand{position:absolute;left:72px;top:330px;display:flex;align-items:center;gap:12px;font-weight:900;font-size:34px}
+.brand img{width:46px;height:46px}.we{color:var(--peri)}.self{color:var(--teal)}
+.kick{position:absolute;left:72px;top:330px;font-weight:800;font-size:30px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal-text)}
+.h{position:absolute;left:72px;right:72px;font-weight:900;letter-spacing:-.02em;line-height:1.08}
+.cap{position:absolute;left:72px;right:72px;top:1200px;font-weight:800;font-size:44px;line-height:1.3;background:#fff;border-radius:28px;padding:28px 34px;box-shadow:0 10px 30px rgba(30,43,92,.08)}
+.cap b{color:var(--peri)}
+.src{position:absolute;left:72px;top:1452px;font-family:Literata,serif;font-style:italic;font-size:28px;color:var(--muted)}
+.say{font-family:Literata,serif;font-style:italic;font-size:96px;line-height:1.1;position:absolute;left:72px}
+.chip{display:inline-flex;align-items:center;gap:16px;font-weight:900;font-size:60px;letter-spacing:.06em;padding:22px 46px 22px 24px;border-radius:999px}
+.chip i{font-style:normal;width:70px;height:70px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:38px}
+.mito{background:var(--coral)}.mito i{background:var(--ink);color:var(--coral)}
+.bar{position:absolute;left:72px;width:936px;height:96px;border-radius:999px;background:var(--sunk)}
+.fill{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:28px;font-weight:900;font-size:52px;min-width:0}
+.lbl{position:absolute;left:72px;font-weight:800;font-size:34px;color:var(--muted)}
+.card{position:absolute;width:100px;height:120px;border-radius:20px;background:var(--sunk);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:56px;color:#fff;overflow:hidden}
+.card s{position:absolute;left:0;top:0;bottom:0;background:var(--teal);text-decoration:none}
+.card b{position:relative}
+.lim{position:absolute;left:72px;right:72px;display:flex;gap:30px;align-items:center;font-weight:700;font-size:42px;line-height:1.3}
+.lim .ic{flex:0 0 120px;height:120px;border-radius:30px;background:var(--coral-soft);display:flex;align-items:center;justify-content:center}
+.cta{background:var(--peri);color:#fff}
+.btn{display:inline-block;background:#fff;color:var(--ink);font-weight:900;font-size:44px;padding:32px 56px;border-radius:999px}
+#prog{position:absolute;left:72px;right:72px;top:300px;height:8px;border-radius:4px;background:rgba(30,43,92,.08);z-index:50}
+#prog i{display:block;height:100%;border-radius:4px;background:var(--peri);width:0}
+</style></head><body>
+<style>
+.row20{position:absolute;left:72px;right:72px;display:grid;grid-template-columns:repeat(20,1fr);gap:8px}
+.row20 i{display:block;height:110px;border-radius:14px;background:var(--peri-soft)}
+.mk{position:absolute;top:-110px;display:flex;flex-direction:column;align-items:center;gap:6px;transform:translateX(-50%)}
+.mk b{background:var(--coral);color:#fff;font-weight:900;font-size:40px;border-radius:999px;padding:10px 26px;white-space:nowrap}
+.mk span{width:6px;height:150px;background:var(--coral);border-radius:3px}
+.pc{position:absolute;left:72px;right:72px;background:#fff;border-radius:28px;padding:26px 34px;display:flex;gap:28px;align-items:center;box-shadow:0 10px 30px rgba(30,43,92,.08)}
+.pc .n{flex:0 0 84px;height:84px;border-radius:50%;background:var(--teal-soft);color:var(--teal-text);font-weight:900;font-size:44px;display:flex;align-items:center;justify-content:center}
+.pc p{font-weight:700;font-size:36px;line-height:1.25;color:var(--muted)}
+.pc p b{display:block;color:var(--ink);font-weight:900;font-size:44px;margin-bottom:4px}
+</style>
+</head><body>
+<div class="cap" id="gcap" style="top:1180px;z-index:40;opacity:0"></div>
+<div id="prog"><i id="progi"></i></div>
+
+<!-- 1 hook -->
+<div class="sc" id="a1">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <svg style="position:absolute;left:64px;top:420px" width="952" height="520" viewBox="0 0 952 560">
+    <g id="a1st">
+      <g><rect x="70" y="450" width="166" height="70" rx="16" fill="#A8E6DD"/><text x="153" y="494" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="25" fill="#0F6F6F">ascoltare</text></g>
+      <g><rect x="230" y="380" width="166" height="140" rx="16" fill="#7FD3C8"/><text x="313" y="424" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="25" fill="#0F6F6F">riscontro</text></g>
+      <g><rect x="390" y="310" width="166" height="210" rx="16" fill="#AAB3DD"/><text x="473" y="354" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="25" fill="#1E2B5C">motivare</text></g>
+      <g><rect x="550" y="240" width="166" height="280" rx="16" fill="#8B93E8"/><text x="633" y="284" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="25" fill="#FFFFFF">decidere</text></g>
+      <g><rect x="710" y="170" width="166" height="350" rx="16" fill="#4A5BE8"/><text x="793" y="214" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="25" fill="#FFFFFF">guidare</text></g>
+    </g>
+    <path id="a1p" d="M153 424 L313 354 L473 284 L633 214 L793 144" fill="none" stroke="#F09B7C" stroke-width="7" stroke-linecap="round" stroke-dasharray="720" stroke-dashoffset="720"/>
+    <g id="a1f" opacity="0"><line x1="793" y1="170" x2="793" y2="50" stroke="#1E2B5C" stroke-width="7" stroke-linecap="round"/><path d="M793 50 L871 70 L793 92Z" fill="#F09B7C"/></g>
+  </svg>
+  <div class="say" id="a1x" style="top:990px;font-size:76px">«Leader si nasce.»<span id="a1s" style="position:absolute;left:0;top:54%;height:10px;border-radius:5px;background:#F09B7C;width:0"></span></div>
+</div>
+
+<!-- 2 research -->
+<div class="sc" id="a2">
+  <div class="kick">La ricerca</div>
+  <div class="h" id="a2n" style="top:430px;font-size:300px;color:var(--teal-text)">0</div>
+  <div class="h" id="a2l" style="top:780px;font-size:60px">studi sui corsi di leadership</div>
+  <div class="h" id="a2m" style="top:900px;font-size:44px;font-weight:800;color:var(--muted)">1951 → 2014 · <span style="color:var(--peri)">26.573 persone</span> al lavoro</div>
+  <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
+</div>
+
+<!-- 3 how to read -->
+<div class="sc" id="a3">
+  <div class="kick">Come leggere i numeri</div>
+  <div class="h" id="a3h" style="top:420px;font-size:60px">In fila, chi <span style="color:var(--peri)">non</span> ha fatto il corso: dal risultato più basso al più alto.</div>
+  <div class="row20" id="a3r" style="top:860px"></div>
+  <div class="mk" id="a3m" style="top:750px;left:540px"><b id="a3mb">50%</b><span></span></div>
+  <div class="lbl" id="a3l" style="top:1000px">a metà fila (50%) = il corso non serve</div>
+  <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
+</div>
+
+<!-- 4 four outcomes -->
+<div class="sc" id="a4">
+  <div class="kick">Che cosa è cambiato</div>
+  <div class="lbl" style="top:400px">Gradimento</div><div class="bar" style="top:448px;height:80px"><div class="fill" id="a4a" style="background:var(--teal-soft);color:var(--teal-text)"></div></div>
+  <div class="lbl" style="top:570px">Apprendimento</div><div class="bar" style="top:618px;height:80px"><div class="fill" id="a4b" style="background:var(--teal-soft);color:var(--teal-text)"></div></div>
+  <div class="lbl" style="top:740px;color:var(--coral-text)">Nella pratica, al lavoro</div><div class="bar" style="top:788px;height:80px"><div class="fill" id="a4c" style="background:var(--coral);color:#fff"></div></div>
+  <div class="lbl" style="top:910px">Risultati per organizzazione e collaboratori</div><div class="bar" style="top:958px;height:80px"><div class="fill" id="a4d" style="background:var(--teal-soft);color:var(--teal-text)"></div></div>
+  <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
+</div>
+
+<!-- 5 94% -->
+<div class="sc" id="a5">
+  <div class="kick">Raramente un fallimento</div>
+  <svg style="position:absolute;left:240px;top:400px" width="600" height="600" viewBox="0 0 600 600">
+    <circle cx="300" cy="300" r="230" fill="none" stroke="#F3EEE8" stroke-width="54"/>
+    <circle id="a5r" cx="300" cy="300" r="230" fill="none" stroke="#1E9E9E" stroke-width="54" stroke-linecap="round" stroke-dasharray="1445" stroke-dashoffset="1445" transform="rotate(-90 300 300)"/>
+    <text id="a5n" x="300" y="300" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="150" fill="#0F6F6F">0%</text>
+    <text x="300" y="370" text-anchor="middle" font-family="Nunito" font-weight="800" font-size="38" fill="#5A6488">113 risultati su 120</text>
+  </svg>
+  <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
+</div>
+
+<!-- 6 for HR -->
+<div class="sc" id="a6">
+  <div class="kick" style="color:var(--peri)">Per chi organizza i corsi</div>
+  <div class="pc" id="a6a" style="top:420px"><span class="n">1</span><p><b>Formatore interno o esterno?</b>Nessuna differenza di efficacia.</p></div>
+  <div class="pc" id="a6b" style="top:660px"><span class="n">2</span><p><b>Corso da seguire da soli?</b>È risultato meno efficace.</p></div>
+  <div class="pc" id="a6c" style="top:900px"><span class="n">3</span><p><b>Feedback a 360 gradi?</b>Cautela prima di spenderci di più.</p></div>
+  <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
+</div>
+
+<!-- 7 myth -->
+<div class="sc" id="a7" style="background:var(--coral-soft)">
+  <div class="kick" style="color:var(--coral-text)">Mito o realtà?</div>
+  <div class="say" id="a7q" style="top:430px;right:72px;font-size:80px;line-height:1.25">«Leader si nasce: o hai il talento, o niente.»</div>
+  <div style="position:absolute;left:72px;top:760px"><span class="chip mito" id="a7m"><i>✕</i>MITO</span></div>
+  <div class="h" id="a7t" style="top:930px;font-size:60px">Guidare è anche un insieme di <span style="color:var(--teal-text)">abilità che si allenano</span>.</div>
+</div>
+
+<!-- 8 limits -->
+<div class="sc" id="a8">
+  <div class="kick" style="color:var(--coral-text)">I limiti</div>
+  <div class="h" id="a8h" style="top:410px;font-size:64px">Che cosa la ricerca non dice</div>
+  <div class="lim" id="a8a" style="top:600px"><div class="ic"><svg width="80" height="80" viewBox="0 0 80 80"><circle cx="26" cy="40" r="18" fill="none" stroke="#A64A30" stroke-width="6"/><circle cx="56" cy="40" r="18" fill="none" stroke="#A64A30" stroke-width="6" stroke-dasharray="7 7"/></svg></div><div>In <b>208 studi su 335</b> mancava un gruppo di confronto.</div></div>
+  <div class="lim" id="a8b" style="top:780px"><div class="ic"><svg width="80" height="80" viewBox="0 0 80 80"><rect x="8" y="44" width="14" height="28" rx="4" fill="#A64A30"/><rect x="33" y="20" width="14" height="52" rx="4" fill="#A64A30"/><rect x="58" y="34" width="14" height="38" rx="4" fill="#A64A30"/></svg></div><div><b>Medie</b> su corsi molto diversi tra loro.</div></div>
+  <div class="lim" id="a8c" style="top:960px"><div class="ic"><svg width="80" height="80" viewBox="0 0 80 80"><rect x="8" y="24" width="64" height="46" rx="8" fill="none" stroke="#A64A30" stroke-width="6"/><path d="M28 24v-8h24v8" fill="none" stroke="#A64A30" stroke-width="6"/></svg></div><div>Riguarda persone <b>al lavoro</b>.</div></div>
+  <div class="src">Lacerenza et al., 2017 · J. Appl. Psychol.</div>
+</div>
+
+<!-- 9 opinion -->
+<div class="sc" id="a9" style="background:var(--peri-soft)">
+  <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+  <div class="h" id="a9h" style="top:420px;font-size:64px">Il mio punto di vista</div>
+  <div class="h" id="a9n" style="top:510px;font-size:34px;font-weight:600;color:var(--muted)">Il fondatore di WeSelf · un'opinione personale, non un risultato dello studio.</div>
+  <svg style="position:absolute;left:140px;top:600px" width="800" height="560" viewBox="0 0 800 600">
+    <circle id="q1" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/><circle id="q2" cx="400" cy="300" r="120" fill="none" stroke="#1E9E9E" stroke-width="4"/><circle id="q3" cx="400" cy="300" r="120" fill="none" stroke="#4A5BE8" stroke-width="4"/>
+    <circle cx="400" cy="300" r="58" fill="#4A5BE8"/><circle cx="400" cy="300" r="20" fill="#F09B7C"/>
+  </svg>
+</div>
+
+<!-- 10 CTA -->
+<div class="sc cta" id="a10">
+  <svg style="position:absolute;left:64px;top:360px" width="952" height="330" viewBox="0 0 952 560">
+    <path id="a10p" d="M153 424 L313 354 L473 284 L633 214 L793 144" fill="none" stroke="#fff" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="720" stroke-dashoffset="720"/>
+    <g id="a10f" opacity="0"><line x1="793" y1="144" x2="793" y2="30" stroke="#fff" stroke-width="10" stroke-linecap="round"/><path d="M793 30 L881 52 L793 76Z" fill="#F09B7C"/></g>
+  </svg>
+  <div class="h" id="a10t" style="top:730px;font-size:80px">Guidare si impara, un passo alla volta.</div>
+  <div class="h" id="a10b" style="top:960px;font-size:42px;font-weight:600;line-height:1.35;opacity:.95">Con WeSelf trasformi un'abilità che vuoi allenare in piccole azioni già in agenda, in un piccolo gruppo dove ci si sostiene.</div>
+  <div style="position:absolute;left:72px;top:1220px" id="a10btn"><span class="btn">Link nel primo commento</span></div>
+  <div class="brand" style="top:1420px;color:#fff"><img src="weself-mark.png" style="background:#fff;border-radius:12px;padding:4px"><span style="color:#fff">WeSelf</span></div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+const cl=x=>Math.max(0,Math.min(1,x));
+const eo=x=>{x=cl(x);return 1-Math.pow(1-x,3)};
+const back=x=>{x=cl(x);const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+function pop(el,t,s,d=.5){const k=eo((t-s)/d),b=back((t-s)/d);el.style.opacity=k;el.style.transform=`translateY(${(1-b)*50}px)`}
+const COLS=[['#A8E6DD','#DDE0FB'],['#DDE0FB','#FBE3D8'],['#FBE3D8','#A8E6DD']];
+const BL=[];document.querySelectorAll('.sc').forEach((sc,i)=>{if(sc.classList.contains('cta'))return;const s=document.createElementNS('http://www.w3.org/2000/svg','svg');s.setAttribute('class','blobs');s.setAttribute('width','1080');s.setAttribute('height','1920');const c=COLS[i%3];s.innerHTML=`<circle r="300" fill="${c[0]}" opacity=".35"/><circle r="220" fill="${c[1]}" opacity=".45"/>`;sc.insertBefore(s,sc.firstChild);BL.push([s,i])});
+let r='';for(let i=0;i<20;i++)r+='<i></i>';$('a3r').innerHTML=r;const BX=[...$('a3r').children];
+const STEPS=[...$('a1st').children];
+const T={a1:0,a2:6,a3:13.5,a4:27,a5:34.5,a6:40.5,a7:53,a8:59,a9:66.5,a10:80.5}, END=87;
+const CAPS=[[0.5,5.9,"«Manager si diventa, leader si nasce.» Molti la pensano così. Una grande ricerca dice altro."],
+[6.3,13.3,"Ha messo insieme <b>335 studi</b> sui corsi di leadership, dal 1951 al 2014: più di <b>26.000 persone</b> al lavoro."],
+[13.8,19.6,"Immagina di mettere in fila chi non ha fatto il corso, dal risultato più basso al più alto."],
+[19.6,26.8,"Nella pratica al lavoro, chi l'ha fatto si è collocato in media più in alto del <b>79%</b>. Senza effetto, sarebbe al <b>50%</b>."],
+[27.3,34.3,"E sono migliorati anche gradimento, apprendimento e risultati per l'organizzazione e i collaboratori."],
+[34.8,40.3,"Su 120 risultati calcolati, <b>113</b> hanno mostrato un miglioramento: il <b>94%</b>."],
+[40.8,45.2,"Per chi organizza la formazione: tra formatori interni ed esterni, <b>nessuna differenza</b>."],
+[45.2,48.8,"I corsi da seguire da soli sono risultati <b>meno efficaci</b>."],
+[48.8,52.8,"E sul feedback a 360 gradi, gli autori invitano alla <b>cautela</b>."],
+[53.3,58.8,"Quindi, leader si nasce? È un <b>mito</b>: guidare è anche un insieme di abilità che si allenano."],
+[59.3,66.3,"Certo, in molti studi mancava un gruppo di confronto, e sono medie su corsi molto diversi tra loro."]];
+window.render=function(t){
+  const ids=Object.keys(T);ids.forEach((id,i)=>{const a=T[id],b=i<ids.length-1?T[ids[i+1]]:END+0.2;const vis=t>=a-0.25&&t<b+0.3;$(id).style.opacity=vis?(a===0?1:cl((t-(a-0.25))/0.3)):0;$(id).style.zIndex=i+1;});
+  $('progi').style.width=(cl(t/END)*100)+'%'; $('prog').style.opacity=t<T.a10?1:0;
+  {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on)el.style.opacity=0;}
+  BL.forEach(([s,i])=>{const c=s.children;c[0].setAttribute('cx',900+80*Math.sin(t*0.4+i));c[0].setAttribute('cy',1650+60*Math.cos(t*0.35+i));c[1].setAttribute('cx',120+70*Math.cos(t*0.3+i*2));c[1].setAttribute('cy',260+50*Math.sin(t*0.45+i))});
+  let u;
+  // 1
+  u=t-T.a1; STEPS.forEach((g,i)=>{const k=back((u-0.2-i*0.18)/.5);g.setAttribute('transform',`translate(0 ${520*(1-Math.max(0,k))})`);g.setAttribute('opacity',eo((u-0.2-i*0.18)/.3))});
+  $('a1p').setAttribute('stroke-dashoffset',720*(1-eo((u-1.4)/1.4))); $('a1f').setAttribute('opacity',eo((u-2.8)/.4));
+  pop($('a1x'),u,0.6); $('a1s').style.width=(eo((u-3.6)/.5)*100)+'%'; $('a1x').style.color=u>3.8?'#9AA0B8':'var(--ink)';
+  // 2
+  u=t-T.a2; $('a2n').textContent=Math.round(335*eo((u-0.3)/2.2)); pop($('a2l'),u,1.2); pop($('a2m'),u,3.0);
+  // 3
+  u=t-T.a3; pop($('a3h'),u,0.2); BX.forEach((b,i)=>{const k=back((u-0.8-i*0.06)/.4);b.style.transform=`scaleY(${Math.max(0,k)})`});
+  const mv=eo((u-6.6)/2.2), pos=50+29*mv; $('a3m').style.left=(72+936*pos/100)+'px'; $('a3mb').textContent=(u<6.6?'50%':'chi ha fatto il corso: '+Math.round(pos)+'%');
+  $('a3mb').style.transform=`translateX(${-36*mv}%)`; $('a3m').style.opacity=eo((u-2.2)/.4); BX.forEach((b,i)=>{b.style.background=(i+0.5)/20*100<pos&&u>6.6?'var(--teal-soft)':'var(--peri-soft)'}); pop($('a3l'),u,2.6);
+  // 4
+  u=t-T.a4; [['a4a',0.4,74],['a4b',0.8,77],['a4c',1.2,79],['a4d',1.6,76]].forEach(([id,s,v])=>{const b=back((u-s)/1.2),k=eo((u-s)/1.2);$(id).style.width=Math.max(0,v*b)+'%';$(id).textContent=k>0.15?Math.round(v*k)+'%':''});
+  // 5
+  u=t-T.a5; const k5=eo((u-0.4)/2.4); $('a5r').setAttribute('stroke-dashoffset',1445*(1-0.94*k5)); $('a5n').textContent=Math.round(94*k5)+'%';
+  // 6
+  u=t-T.a6; pop($('a6a'),u,0.3); pop($('a6b'),u,4.7); pop($('a6c'),u,8.3);
+  // 7
+  u=t-T.a7; pop($('a7q'),u,0.2); const m=back((u-2.0)/.45),mo=eo((u-2.0)/.3); const sh=u>2.3&&u<2.8?Math.sin((u-2.3)*60)*6*(1-(u-2.3)/.5):0;
+  $('a7m').style.opacity=mo; $('a7m').style.transform=`scale(${2-m}) rotate(${-8*mo+sh}deg)`; pop($('a7t'),u,2.8);
+  // 8
+  u=t-T.a8; pop($('a8h'),u,0.2); pop($('a8a'),u,0.6); pop($('a8b'),u,3.6); pop($('a8c'),u,5.2);
+  // 9
+  u=t-T.a9; pop($('a9h'),u,0.3); pop($('a9n'),u,0.9); ['q1','q2','q3'].forEach((id,j)=>{const ph=((u+j*1.4)%4.2)/4.2;$(id).setAttribute('r',120+170*ph);$(id).setAttribute('opacity',u>0?(1-ph)*0.8:0)});
+  // 10
+  u=t-T.a10; $('a10p').setAttribute('stroke-dashoffset',720*(1-eo((u-0.1)/1.2))); $('a10f').setAttribute('opacity',eo((u-1.3)/.3));
+  pop($('a10t'),u,0.5); pop($('a10b'),u,1.8); pop($('a10btn'),u,3.0);
+};
+render(0);
+</script></body></html>

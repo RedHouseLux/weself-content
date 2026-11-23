@@ -25,9 +25,16 @@ This folder holds WeSelf's **LinkedIn** content. The root `CLAUDE.md` still appl
 
 Avoid on LinkedIn: clinical topics (anxiety as a disorder, addiction), politics, local news, men-vs-women framing.
 
-## Formats
+## Weekly Reels (main format, agreed 23 Nov 2026)
 
-1. **Carousel as PDF document** (the main format)
+- **3 Reels a week**, one theme per weekday; publishing days rotate (every other day, starting one day later each week). Themes, rotation and calendar: `linkedin/piano-reel-linkedin.md` (keep its calendar up to date).
+- Built like the Instagram animated Reels (root `CLAUDE.md`, «Animated Reels»): 1080×1920 HTML page with `window.render(t)`, `node tools/render-video.cjs`, founder voice-over, on-screen text = subtitles, a 14-second «Il mio punto di vista» slot for the founder. LinkedIn crops vertical video to 4:5 in the feed: keep all text between 300 and 1480 px from the top.
+- One folder per Reel: `linkedin/reel-NN-<name>/` with `reel.html`, the MP4 and `kit-linkedin-reel-<name>.md` (voice script with timings, post text, first comment, alt text, reliability notes).
+- Posting times: weekdays 8:30 (or 12:30), weekends 10:00. This replaces the old «Tuesday–Thursday, at most 2–3 posts a week» rule.
+
+## Other formats
+
+1. **Carousel as PDF document**
    - Build it like an Instagram carousel (`templates/carousel/head.html`, `node tools/render.cjs linkedin/<name> weself-li-<name>`), 1080×1350, usually **8–12 slides**.
    - Combine the slides with `python3 tools/pdf.py linkedin/<name> weself-li-<name> linkedin/<name>/weself-li-<name>.pdf`.
    - Give the document a short title (shown above the PDF on LinkedIn).
@@ -44,7 +51,7 @@ Avoid on LinkedIn: clinical topics (anxiety as a disorder, addiction), politics,
 - **«Un'onestà necessaria»**: one sentence saying the study is not about WeSelf, as always.
 - **Hashtags:** 3–5 at the end, in Italian where they exist (#leadership #benesserealavoro #abitudini #WeSelf).
 - **Alt text:** add it to every image; for PDFs, describe the document in the post or in the first comment.
-- **When to post:** Tuesday–Thursday, 8:00–9:30 or 12:30–13:30. At most 2–3 posts a week.
+- **When to post:** see «Weekly Reels» above.
 
 ## Kit for each post
 
@@ -62,4 +69,5 @@ Send the founder the PDF (or image) and the kit. Offer the Claude editor (`tools
 
 | Content | Folder | State |
 |---|---|---|
-| Leadership / leader non si nasce: si impara — Lacerenza et al. 2017 (PDF carousel, 12 pages, adapted from Instagram + slide «Per chi progetta i corsi») | `linkedin/leadership/` | Proposed, waiting for the founder (Tue 24 Nov, 8:30) |
+| Leadership — Lacerenza et al. 2017 (PDF carousel, 12 pages) | `linkedin/leadership/` | Not published: replaced by Reel #1 (founder's choice) |
+| Reel #1 · Leader non si nasce: si impara — Lacerenza et al. 2017 (Tuesday, performance; 87 s) | `linkedin/reel-01-leadership/` | Video ready, waiting for the founder's voice-over (Tue 24 Nov, 12:30) |
