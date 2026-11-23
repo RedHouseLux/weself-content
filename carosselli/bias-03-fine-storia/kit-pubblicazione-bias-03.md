@@ -2,7 +2,7 @@
 
 **Rubrica:** «Il bias della settimana», tema giallo. **Immagini:** `weself-bias-03-01.png` … `weself-bias-03-10.png` (1080×1350). Su Instagram e Facebook come carosello; su TikTok in modalità foto.
 
-**Fonte letta per intero:** l'articolo su *Science* (PDF fornito dal fondatore), con i materiali supplementari. Visual senza persone.
+**Fonte letta per intero:** l'articolo su *Science* (PDF fornito dal fondatore), con i materiali supplementari. Copertina: foto di stock scelta dal fondatore nella libreria di Canva (sagome di teste in carta, dal grigio ai colori; nessuna persona reale), esportata dal design Canva e salvata come `foto-canva.jpg`; i fumetti sono nostri. Non è un'immagine generata con l'IA: non serve l'«Etichetta IA». Se la foto è «Pro», serve l'abbonamento Canva attivo (Content License Agreement: https://www.canva.com/trust/legal/). Le altre slide restano senza persone.
 
 **Data consigliata:** **sabato 28 novembre 2026**, tra le 10:00 e le 11:30.
 
@@ -52,7 +52,7 @@ L'effetto è stato ritrovato anche in studi successivi, per esempio negli Stati 
 
 ## Testo alternativo (una per slide)
 
-1. Una linea del tempo: dieci anni fa una linea che sale e scende molto, fino a «oggi»; da oggi in avanti una linea piatta con la scritta «Ormai sono così.» e, più chiara, una linea che continua a muoversi. Titolo: «Il bias della settimana #3 · L'illusione della fine della storia».
+1. Copertina gialla. Foto: tante sagome di teste in carta stropicciata, tutte di profilo: a sinistra grigie e uguali, con il fumetto «Ormai sono così.»; a destra colorate, con il fumetto «Quanto sono cambiato!». Titolo: «Il bias della settimana #3 · L'illusione della fine della storia». Sotto: «Molte persone pensano di essere cambiate tanto finora, e che d'ora in poi cambieranno poco.»
 2. «Ormai sono fatto così.» Guardando indietro vediamo quanto siamo cambiati; guardando avanti ci immaginiamo uguali.
 3. Lo studio: più di 19.000 persone dai 18 ai 68 anni, sei studi; previsioni dei prossimi dieci anni confrontate con i ricordi di chi ha dieci anni in più; carattere, valori e gusti.
 4. Chi ha 20 anni prevede di cambiare poco; chi ne ha 30 ricorda di essere cambiato parecchio. A tutte le età. Barre illustrative.
