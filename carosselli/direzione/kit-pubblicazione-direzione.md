@@ -59,7 +59,7 @@ Esplorare (su di sé e sui lavori): nessun effetto rilevabile (d tra 0,07 e 0,13
 
 ## Testo alternativo (una per slide)
 
-1. Su fondo lilla pieno, una linea che gira in tondo tra punti interrogativi, poi si apre e sale verso una bandierina; un'etichetta «20 minuti a settimana, per 4 settimane». Titolo: «Scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno».
+1. Una linea che gira in tondo tra punti interrogativi, poi si apre e sale verso una bandierina; un'etichetta «20 minuti a settimana, per 4 settimane». Titolo: «Scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno».
 2. «Che cosa voglio fare della mia vita?» Molte persone ci pensano di continuo verso la fine degli studi, ma la risposta non arriva.
 3. Due modi di pensarci: esplorare (cercare risposte, una linea che avanza) e rimuginare (girare in tondo, un nodo).
 4. La ricerca: 486 studenti divisi a caso in tre gruppi: A scrive del lavoro futuro, B di altri progetti, C non scrive; questionari prima, subito dopo, dopo 1 e 3 mesi.
