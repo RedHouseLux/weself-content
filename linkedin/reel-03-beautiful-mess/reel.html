@@ -57,14 +57,14 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
 
 <!-- 1 hook -->
 <div class="sc" id="a1" style="background:var(--sun)">
-  <div class="rub"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Il bias della settimana</div>
-  <svg style="position:absolute;left:190px;top:440px" width="700" height="500" viewBox="0 0 700 500">
-    <ellipse cx="350" cy="440" rx="250" ry="26" fill="#1E2B5C" opacity=".12"/>
-    <path id="a1bowl" d="M80 150 Q350 200 620 150 Q600 420 350 430 Q100 420 80 150Z" fill="#4A5BE8"/>
-    <ellipse cx="350" cy="150" rx="270" ry="50" fill="#8B93E8"/>
-    <path id="a1crack" d="M230 180 L270 250 L240 300 L300 360 L280 425" fill="none" stroke="#FFF6D6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="320" stroke-dashoffset="320"/>
-    <path id="a1crack2" d="M460 175 L430 230 L480 290" fill="none" stroke="#FFF6D6" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="180" stroke-dashoffset="180"/>
-  </svg>
+  <div class="rub" style="background:#fff"><svg width="40" height="40" viewBox="0 0 40 40"><circle cx="17" cy="17" r="11" fill="none" stroke="#1E2B5C" stroke-width="5"/><path d="M25 25l10 10" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/></svg>Il bias della settimana</div>
+  <div id="a1card" style="position:absolute;left:72px;right:72px;top:450px;background:#fff;border-radius:34px;padding:30px 36px;box-shadow:0 14px 40px rgba(30,43,92,.12)">
+    <div style="display:flex;align-items:center;gap:16px;font-weight:800;font-size:30px;color:var(--muted)"><span style="width:56px;height:56px;border-radius:50%;background:var(--peri-soft);display:inline-flex;align-items:center;justify-content:center;color:var(--peri);font-weight:900">✉</span>A: Responsabile</div>
+    <div id="a1msg" style="margin-top:22px;background:var(--peri);color:#fff;border-radius:28px 28px 8px 28px;padding:24px 30px;font-weight:800;font-size:46px;line-height:1.25;margin-left:90px">Ho sbagliato io. Rimedio subito.<span id="a1cur" style="display:inline-block;width:4px;height:44px;background:#fff;margin-left:6px;vertical-align:-6px"></span></div>
+    <div id="a1send" style="margin-top:14px;text-align:right;font-weight:800;font-size:26px;color:var(--teal-text)">✓✓ Inviato</div>
+  </div>
+  <div id="a1tagA" style="position:absolute;left:72px;top:840px;background:var(--coral-soft);color:var(--coral-text);border:4px dashed var(--coral);border-radius:999px;padding:12px 30px;font-weight:900;font-size:40px">debolezza?</div>
+  <div id="a1tagB" style="position:absolute;right:72px;top:840px;background:var(--teal-soft);color:var(--teal-text);border-radius:999px;padding:16px 34px;font-weight:900;font-size:40px">coraggio?</div>
   <div class="h" id="a1t" style="top:990px;font-size:62px">L'effetto «beautiful mess»</div>
 </div>
 
@@ -120,11 +120,11 @@ body{width:1080px;height:1920px;overflow:hidden;background:var(--surface);font-f
   <svg style="position:absolute;left:72px;top:420px" width="936" height="420" viewBox="0 0 936 420">
     <g id="a6l"><rect x="0" y="0" width="440" height="360" rx="30" fill="#FBE3D8"/>
       <circle cx="220" cy="170" r="120" fill="#fff" stroke="#A64A30" stroke-width="10"/><path d="M300 250 L380 330" stroke="#A64A30" stroke-width="18" stroke-linecap="round"/>
-      <path d="M170 100 L215 165 L185 205 L240 250" fill="none" stroke="#4A5BE8" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="220" y="215" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="130" fill="#A64A30">!</text>
       <text x="220" y="410" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="34" fill="#A64A30">io: i dettagli</text></g>
     <g id="a6r"><rect x="496" y="0" width="440" height="360" rx="30" fill="#A8E6DD"/>
-      <path d="M586 140 Q716 165 846 140 Q836 280 716 285 Q596 280 586 140Z" fill="#4A5BE8"/><ellipse cx="716" cy="140" rx="130" ry="24" fill="#8B93E8"/>
-      <path d="M666 160 L686 195 L671 220 L698 250" fill="none" stroke="#FFF6D6" stroke-width="6" stroke-linecap="round"/>
+      <rect x="556" y="70" width="320" height="200" rx="26" fill="#fff"/><rect x="586" y="110" width="260" height="56" rx="20" fill="#4A5BE8"/><rect x="586" y="186" width="170" height="20" rx="10" fill="#DDE0FB"/><rect x="586" y="220" width="210" height="20" rx="10" fill="#DDE0FB"/>
+      <path d="M906 50 l8 18 18 8 -18 8 -8 18 -8 -18 -18 -8 18 -8z" fill="#FFD23F"/>
       <text x="716" y="410" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="34" fill="#0F6F6F">gli altri: il quadro</text></g>
   </svg>
   <div class="h" id="a6x" style="top:930px;font-size:42px;color:var(--muted)">Di noi vediamo i dettagli concreti, soprattutto quelli negativi; degli altri, il quadro generale.</div>
@@ -206,8 +206,8 @@ window.render=function(t){
   {const el=$('gcap');let on=false;for(const [a,b,h] of CAPS){if(t>=a&&t<b){if(el.dataset.k!==String(a)){el.innerHTML=h;el.dataset.k=String(a)}const k=Math.min(eo((t-a)/.3),eo((b-t)/.2));el.style.opacity=k;el.style.transform=`translateY(${(1-eo((t-a)/.3))*24}px)`;on=true}}if(!on)el.style.opacity=0;}
   BL.forEach(([s,i])=>{const c=s.children;c[0].setAttribute('cx',900+80*Math.sin(t*0.4+i));c[0].setAttribute('cy',1650+60*Math.cos(t*0.35+i));c[1].setAttribute('cx',120+70*Math.cos(t*0.3+i*2));c[1].setAttribute('cy',260+50*Math.sin(t*0.45+i))});
   let u;
-  u=t-T.a1; $('a1crack').setAttribute('stroke-dashoffset',320*(1-eo((u-1.0)/1.2))); $('a1crack2').setAttribute('stroke-dashoffset',180*(1-eo((u-1.6)/1.0)));
-  const g=eo((u-3.2)/1.0); ['a1crack','a1crack2'].forEach(id=>$(id).setAttribute('stroke',g>0.5?'#E0A800':'#FFF6D6')); pop($('a1t'),u,3.6);
+  u=t-T.a1; pop($('a1card'),u,0.1,.6); { const full='Ho sbagliato io. Rimedio subito.'; const n=Math.round(full.length*cl((u-0.6)/1.4)); const m=$('a1msg'); m.firstChild.textContent=full.slice(0,Math.max(1,n)); $('a1cur').style.opacity=(u<2.2&&Math.floor(t*3)%2==0)?1:0; }
+  $('a1send').style.opacity=eo((u-2.3)/.3); pop($('a1tagA'),u,2.8); pop($('a1tagB'),u,3.6); pop($('a1t'),u,4.2);
   u=t-T.a2; $('a2n').textContent=Math.round(101*eo((u-0.3)/1.6)); pop($('a2l'),u,1.0); pop($('a2a'),u,4.6);
   u=t-T.a3; pop($('a3h'),u,0.2); $('a3s').style.opacity=eo((u-0.6)/.4); pop($('a3p1'),u,2.0); pop($('a3p2'),u,4.6); $('a3p1').style.transform+=' translateX(calc(-100% + 3px))'; $('a3p2').style.transform+=' translateX(-3px)'; pop($('a3x'),u,5.4);
   u=t-T.a4; const k4=eo((u-0.4)/2.4); $('a4r').setAttribute('stroke-dashoffset',1445*(1-0.66*k4)); $('a4n').textContent=Math.round(66*k4)+'%'; pop($('a4x'),u,4.6);
