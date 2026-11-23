@@ -37,7 +37,7 @@ Poi si ricomincia da A. Quando l'ultimo giorno di una settimana e il primo della
 | Data | Tema | Reel (studio) | Stato |
 |---|---|---|---|
 | Mar 24 nov | Performance | Leader non si nasce: si impara · Lacerenza et al. 2017 | Video pronto, manca la voce |
-| Gio 26 nov | Relazioni | «Come stai, davvero?» · Kardas, Kumar & Epley 2022 (già verificato, `carosselli/come-stai/`) | Proposto |
+| Gio 26 nov | Relazioni | «Come stai, davvero?» · Kardas, Kumar & Epley 2022 (`linkedin/reel-02-come-stai/`) | Video pronto, manca la voce |
 | Sab 28 nov | Bias | Effetto riflettore · Gilovich, Medvec & Savitsky 2000 (già verificato, `carosselli/bias-01-riflettore/`) | Proposto |
 | Mer 2 dic | Abitudini | Il «se… allora…» · Gollwitzer & Sheeran 2006 (`carosselli/se-allora/`) | Proposto |
 | Ven 4 dic | Benessere | Staccare dal lavoro · Karabinski et al. 2021 (`carosselli/stress/`) | Proposto |
