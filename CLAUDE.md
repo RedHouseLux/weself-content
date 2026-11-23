@@ -78,14 +78,15 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Curiosità · invidia, perché la proviamo — Ramachandran & Jalal 2017 | `carosselli/invidia-perche/` | Not published (founder's choice) |
 | Il bias della settimana #1 · effetto riflettore — Gilovich, Medvec & Savitsky 2000 | `carosselli/bias-01-riflettore/` | Published |
 | Il bias della settimana #2 · liking gap — Boothby et al. 2018 (percentages computed from the authors' public OSF data) | `carosselli/bias-02-liking-gap/` | Published (real Canva photo on the cover) |
-| Il bias della settimana #3 · illusione della fine della storia — Quoidbach, Gilbert & Wilson 2013 | `carosselli/bias-03-fine-storia/` | Ready, not published (Sat 28 Nov) |
+| Il bias della settimana #3 · illusione della fine della storia — Quoidbach, Gilbert & Wilson 2013 | `carosselli/bias-03-fine-storia/` | Published (real Canva photo on the cover) |
 | Leadership / leader non si nasce: si impara — Lacerenza et al. 2017 (first Leadership post) | `carosselli/leadership/` | Ready, not published (Sun 15 Nov) |
 | Abitudini / un buon proposito regge meglio con un «se… allora…» — Gollwitzer & Sheeran 2006 | `carosselli/se-allora/` | Published |
 | Schermi / due settimane senza internet sul telefono hanno migliorato umore e attenzione — Castelo et al. 2025 | `carosselli/senza-internet/` | Published |
 | Relazioni / molti uomini pensano che agli amici non interessi come stanno, non è così — Kardas, Kumar & Epley 2022 (Giornata internazionale dell'uomo) | `carosselli/come-stai/` | Published (Wed 18 Nov) |
 | Reel animato «Dove sentiamo le emozioni» — Volynets et al. 2020 (bodily maps, stylised bodies, founder opinion) | `video/mappe-emozioni/` | Published (Mon 16 Nov, 115 s, founder voice-over) |
 | Reel animato «Dal volere al fare, in quattro passi» (WOOP) — Wang, Wang & Gai 2021 (founder opinion on the «why») | `video/woop/` | Ready, voice-over to record (99 s) |
-| Direzione / scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno — Sun & Yang 2026 (three-arm RCT, 486 students) | `carosselli/direzione/` | Ready, not published (Tue 24 Nov) |
+| Direzione / scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno — Sun & Yang 2026 (three-arm RCT, 486 students) | `carosselli/direzione/` | Published |
+| Solitudine / qualche telefonata ha fatto sentire meno sole persone che uscivano poco di casa — Kahlon et al. 2021 (RCT, 240 adults, young volunteer callers) | `carosselli/telefonata/` | Ready, not published (Tue 24 Nov) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
