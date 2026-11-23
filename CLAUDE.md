@@ -78,6 +78,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Curiosità · invidia, perché la proviamo — Ramachandran & Jalal 2017 | `carosselli/invidia-perche/` | Not published (founder's choice) |
 | Il bias della settimana #1 · effetto riflettore — Gilovich, Medvec & Savitsky 2000 | `carosselli/bias-01-riflettore/` | Published |
 | Il bias della settimana #2 · liking gap — Boothby et al. 2018 (percentages computed from the authors' public OSF data) | `carosselli/bias-02-liking-gap/` | Published (real Canva photo on the cover) |
+| Il bias della settimana #3 · illusione della fine della storia — Quoidbach, Gilbert & Wilson 2013 | `carosselli/bias-03-fine-storia/` | Ready, not published (Sat 28 Nov) |
 | Leadership / leader non si nasce: si impara — Lacerenza et al. 2017 (first Leadership post) | `carosselli/leadership/` | Ready, not published (Sun 15 Nov) |
 | Abitudini / un buon proposito regge meglio con un «se… allora…» — Gollwitzer & Sheeran 2006 | `carosselli/se-allora/` | Published |
 | Schermi / due settimane senza internet sul telefono hanno migliorato umore e attenzione — Castelo et al. 2025 | `carosselli/senza-internet/` | Published |

@@ -1,0 +1,213 @@
+<style>
+.cmpb{display:flex;flex-direction:column;gap:14px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:30px 34px}
+.cmpb .lb2{font-weight:800;font-size:29px}
+.cmpb .tr{height:64px;border-radius:999px;background:var(--sunk)}
+.cmpb .fl{height:100%;border-radius:999px;display:flex;align-items:center;justify-content:flex-end;padding-right:22px;font-weight:900;font-size:38px}
+.row{display:flex;gap:30px;align-items:center}
+.facts{display:flex;flex-direction:column;gap:16px}
+.facts div{background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 26px;font-weight:600;font-size:30px;line-height:1.35}
+.facts b{font-weight:900}
+.lim{display:flex;flex-direction:column;gap:22px}
+.lim div{font-weight:600;font-size:33px;line-height:1.35;padding-left:34px;position:relative}
+.lim div::before{content:"";position:absolute;left:0;top:18px;width:14px;height:14px;border-radius:50%;background:var(--coral)}
+.lim b{font-weight:900}
+.big2{font-weight:900;font-size:120px;line-height:.95;letter-spacing:-.04em;color:var(--coral-text)}
+
+.anc{display:grid;grid-template-columns:70px 1fr;gap:18px;background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:26px 30px}
+.anc .axis{display:flex;flex-direction:column;justify-content:space-between;font-weight:800;font-size:22px;color:var(--muted);border-right:4px solid var(--line);padding-right:10px}
+.anc .steps{display:flex;flex-direction:column;gap:8px}
+.anc .st{border-radius:20px;padding:14px 22px;display:grid;grid-template-columns:170px 1fr;gap:16px;align-items:center}
+.anc .st b{font-weight:900;font-size:40px;line-height:1}
+.anc .st span{font-weight:600;font-size:26px;line-height:1.3}
+.anc .s1{background:var(--sun)}.anc .s1 b{font-size:28px}
+.anc .s2{background:var(--coral-soft)}.anc .s2 b{color:var(--coral-text)}
+.anc .s3{background:var(--teal-soft)}.anc .s3 b{color:var(--teal-text)}
+.anc .arrow{font-weight:900;font-size:28px;color:var(--ink);padding-left:22px}
+.anc .arrow em{font-family:'Literata',serif;font-weight:400;font-size:26px;color:var(--muted)}
+.anc .gap em{color:var(--coral-text)}
+.clue{background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:26px 32px;display:flex;flex-direction:column;gap:8px}
+.clue small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.clue b{font-weight:900;font-size:64px;line-height:1;color:var(--ink)}
+.clue p{font-weight:600;font-size:31px;line-height:1.35}
+.clue p b{font-size:inherit}
+
+.qs{display:flex;flex-direction:column;gap:12px}
+.qs div{background:var(--raised);border:3px solid var(--line);border-radius:20px;padding:16px 24px;font-weight:700;font-size:29px;line-height:1.3}
+.qs div small{display:block;font-weight:800;font-size:20px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri);margin-bottom:4px}
+.tl{display:flex;flex-direction:column;gap:16px}
+.tl div{display:grid;grid-template-columns:250px 1fr;gap:20px;align-items:center;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:18px 26px}
+.tl b{font-weight:900;font-size:34px;line-height:1.1;color:var(--ink)}
+.tl span{font-weight:600;font-size:28px;line-height:1.35}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vs div{border-radius:24px;padding:22px 26px;display:flex;flex-direction:column;gap:8px}
+.vs small{font-weight:800;font-size:21px;letter-spacing:.12em;text-transform:uppercase}
+.vs p{font-family:'Literata',serif;font-style:italic;font-size:29px;line-height:1.35}
+.vs .me{background:var(--coral-soft)}.vs .me small{color:var(--coral-text)}
+.vs .you{background:var(--teal-soft)}.vs .you small{color:var(--teal-text)}
+.ill{position:relative;margin-top:24px;align-self:center;width:952px;height:635px;border-radius:40px;overflow:hidden;box-shadow:0 10px 30px rgba(30,43,92,.18)}
+.ill img{width:100%;height:100%;object-fit:cover;display:block}
+.ill svg{position:absolute;left:0;top:0}
+
+.pair{display:flex;flex-direction:column;gap:18px}
+.pair .p{background:var(--raised);border:3px solid var(--line);border-radius:26px;padding:24px 30px;display:flex;flex-direction:column;gap:10px}
+.pair small{font-weight:800;font-size:22px;letter-spacing:.14em;text-transform:uppercase;color:var(--peri)}
+.pair q{font-family:'Literata',serif;font-style:italic;font-size:36px;line-height:1.3;quotes:none}
+.pair .tr{height:40px;border-radius:999px;background:var(--sunk)}
+.pair .tr i{display:block;height:100%;border-radius:999px}
+.pair .note{font-weight:700;font-size:23px;color:var(--muted)}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chips span{background:var(--sun-soft);border:3px solid var(--sun);border-radius:999px;padding:12px 22px;font-weight:800;font-size:28px}
+.money{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.money div{border-radius:26px;padding:26px 28px;display:flex;flex-direction:column;gap:8px}
+.money .a{background:var(--sunk)}.money .b{background:var(--sun)}
+.money small{font-weight:800;font-size:22px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.money .b small{color:var(--ink)}
+.money b{font-weight:900;font-size:84px;line-height:1}
+.money span{font-weight:600;font-size:25px;line-height:1.3}
+.why{display:flex;flex-direction:column;gap:16px}
+.why div{display:grid;grid-template-columns:60px 1fr;gap:18px;align-items:start;background:var(--raised);border:3px solid var(--line);border-radius:22px;padding:20px 24px}
+.why .n{width:54px;height:54px;border-radius:50%;background:var(--sun);font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center}
+.why b{display:block;font-weight:900;font-size:32px;line-height:1.2}
+.why span{display:block;font-weight:600;font-size:27px;line-height:1.35;color:var(--muted)}
+</style>
+
+<section class="slide biascover" id="s1">
+  <div class="top"><div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div><div class="count">1/10</div></div>
+  <div class="ill"><svg width="952" height="560" viewBox="0 0 952 560">
+<rect width="952" height="560" rx="40" fill="#FFF6D6"/>
+<line x1="60" y1="470" x2="900" y2="470" stroke="#1E2B5C" stroke-width="5" stroke-linecap="round"/>
+<text x="60" y="515" font-family="Nunito" font-weight="800" font-size="26" fill="#5A6488">10 anni fa</text>
+<text x="476" y="515" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="28" fill="#1E2B5C">oggi</text>
+<text x="900" y="515" text-anchor="end" font-family="Nunito" font-weight="800" font-size="26" fill="#5A6488">tra 10 anni</text>
+<path d="M70 410 C 120 220 170 430 230 270 S 330 190 380 360 S 450 240 476 290" stroke="#4A5BE8" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M476 290 L 890 292" stroke="#F09B7C" stroke-width="12" fill="none" stroke-linecap="round" stroke-dasharray="4 26"/>
+<path d="M476 290 C 560 190 640 400 720 240 S 840 340 890 200" stroke="#1E9E9E" stroke-width="8" fill="none" stroke-linecap="round" opacity=".55" stroke-dasharray="18 16"/>
+<circle cx="476" cy="290" r="20" fill="#1E2B5C"/>
+<g><rect x="520" y="40" width="330" height="88" rx="30" fill="#fff" stroke="#F09B7C" stroke-width="4"/><text x="685" y="96" text-anchor="middle" font-family="Literata" font-style="italic" font-size="34" fill="#A64A30">«Ormai sono così.»</text></g>
+<g><rect x="50" y="40" width="390" height="88" rx="30" fill="#fff" stroke="#4A5BE8" stroke-width="4"/><text x="245" y="96" text-anchor="middle" font-family="Literata" font-style="italic" font-size="32" fill="#4A5BE8">«Quanto sono cambiato!»</text></g>
+</svg></div>
+  <div style="margin-top:auto;gap:22px" class="stack">
+    <div class="rub"><svg class="lens" viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg><div class="rt"><span class="rn">Il bias della settimana · <em>#3</em></span><span class="rs">Le scorciatoie della mente</span></div></div>
+    <p class="occ">Quando pensiamo a chi saremo tra dieci anni</p>
+    <h1 style="font-size:80px">L'illusione della <span class="hl">fine della storia</span>.</h1>
+    <p class="mid muted">Molte persone pensano di essere cambiate tanto finora, e che d'ora in poi cambieranno poco.</p>
+  </div>
+</section>
+
+<section class="slide" id="s2">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #3 · Succede a molti</p><div class="count">2/10</div></div>
+  <div class="stack" style="margin-top:80px;gap:36px">
+    <h2 style="font-size:62px">«Ormai sono fatto così.»</h2>
+    <p class="mid">Guardando indietro, quasi tutti vedono quanto sono cambiati: gusti, amicizie, idee, carattere. Guardando avanti, invece, molte persone si immaginano più o meno uguali a oggi.</p>
+    <p class="mid">Nel 2013 tre psicologi di Harvard e dell'Università della Virginia hanno chiamato questo errore <b>«illusione della fine della storia»</b>: come se la propria storia personale finisse proprio oggi.</p>
+  </div>
+  <p class="next">Come l'hanno misurato? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide" id="s3">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #3 · Lo studio</p><div class="count">3/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:22px">
+    <p class="big2" style="color:var(--ink)">19.000+</p>
+    <p class="mid" style="font-size:36px;font-weight:800">persone, dai 18 ai 68 anni, in sei studi.</p>
+    <p class="mid" style="font-size:30px">A metà è stato chiesto di <b>prevedere</b> quanto sarebbero cambiate nei dieci anni successivi; all'altra metà di <b>ricordare</b> quanto erano cambiate nei dieci anni precedenti.</p>
+    <p class="mid" style="font-size:30px">Poi i ricercatori hanno confrontato, per esempio, le previsioni di chi aveva 20 anni con i ricordi di chi ne aveva 30: lo stesso decennio, visto da prima e da dopo. Hanno misurato tre cose: <b>carattere</b>, <b>valori</b> e <b>gusti</b>.</p>
+  </div>
+  <p class="next">Che cosa è emerso? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide" id="s4">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #3 · I numeri, tradotti</p><div class="count">4/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:22px">
+    <h2 style="font-size:52px">Si è previsto di cambiare <span class="hl">meno</span> di quanto si cambia davvero.</h2>
+    <div class="pair">
+      <div class="p"><small>Chi ha 20 anni, guardando avanti</small><q>«Nei prossimi dieci anni cambierò poco.»</q><div class="tr"><i style="width:35%;background:var(--coral-soft)"></i></div></div>
+      <div class="p"><small>Chi ha 30 anni, guardando indietro</small><q>«Negli ultimi dieci anni sono cambiato parecchio.»</q><div class="tr"><i style="width:75%;background:var(--sun)"></i></div></div>
+      <p class="note">Barre illustrative: mostrano la direzione del risultato, non i valori.</p>
+    </div>
+    <p class="mid" style="font-size:29px">È successo per il carattere, per i valori e per i gusti, e a <b>tutte le età</b> studiate, anche oltre i 50 anni.</p>
+  </div>
+  <p class="next">E se fosse solo la memoria a sbagliare? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide" id="s5">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #3 · Non è la memoria</p><div class="count">5/10</div></div>
+  <div class="stack" style="margin-top:44px;gap:24px">
+    <h2 style="font-size:52px">A sbagliare è la <span class="hl">previsione</span>, non il ricordo.</h2>
+    <p class="mid" style="font-size:30px">I ricercatori hanno confrontato quanto le persone dicevano di essere cambiate con il cambiamento reale di altri 3.808 adulti, misurato due volte a distanza di circa dieci anni: i ricordi si sono rivelati quasi esatti. Le previsioni, invece, erano troppo prudenti.</p>
+    <p class="mid" style="font-size:30px">Ed è successo anche con le cose più semplici: chi ricordava di aver cambiato in dieci anni</p>
+    <div class="chips"><span>musica preferita</span><span>vacanza preferita</span><span>cibo preferito</span><span>hobby</span><span>migliore amico</span></div>
+    <p class="mid" style="font-size:30px">si aspettava, per il futuro, di tenerli più o meno uguali.</p>
+  </div>
+  <p class="next">E che cosa ci costa? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide" id="s6">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #3 · Quanto costa</p><div class="count">6/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:52px">Si è disposti a pagare il <span class="hl">61% in più</span> per i gusti di oggi.</h2>
+    <div class="money">
+      <div class="b"><small>Il gruppo preferito di oggi, in concerto tra 10 anni</small><b>129 $</b><span>quanto si pagherebbe oggi</span></div>
+      <div class="a"><small>Il gruppo preferito di 10 anni fa, in concerto la prossima settimana</small><b>80 $</b><span>quanto si pagherebbe oggi</span></div>
+    </div>
+    <p class="mid" style="font-size:29px">In un esperimento con 170 persone, chi pensava al proprio gruppo preferito di oggi era disposto a pagare molto di più per sentirlo tra dieci anni. Come se i gusti di oggi dovessero restare per sempre.</p>
+  </div>
+  <p class="next">Ma perché succede? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide" id="s7">
+  <div class="top"><p class="ep"><svg  viewBox="0 0 84 84"><circle cx="36" cy="36" r="25" fill="#FBF8F5" stroke="#F09B7C" stroke-width="8"/><path d="M26 32 a12 12 0 0 1 12 -10" fill="none" stroke="#A8E6DD" stroke-width="6" stroke-linecap="round"/><line x1="55" y1="55" x2="74" y2="74" stroke="#4A5BE8" stroke-width="10" stroke-linecap="round"/></svg>Bias #3 · Perché succede</p><div class="count">7/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:52px">Due possibili spiegazioni, secondo gli autori.</h2>
+    <div class="why">
+      <div><span class="n">1</span><p><b>Ci piace chi siamo oggi.</b><span>Molte persone trovano buoni il proprio carattere, i propri valori e i propri gusti, e amano pensare di conoscersi bene: l'idea di cambiare potrebbe mettere a disagio.</span></p></div>
+      <div><span class="n">2</span><p><b>Immaginare è più difficile che ricordare.</b><span>Il passato lo ricostruiamo, il futuro dobbiamo costruirlo da zero. Così si scambierebbe la fatica di immaginare un cambiamento con la sua improbabilità.</span></p></div>
+    </div>
+    <p class="mid" style="font-size:27px;color:var(--muted)">Sono ipotesi: lo studio mostra l'errore, ma non ne dimostra la causa.</p>
+  </div>
+  <p class="next">Quindi, mito o realtà? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide warmbg" id="s8">
+  <div class="top"><p class="kicker warm">Mito o realtà?</p><div class="count">8/10</div></div>
+  <div class="stack" style="margin-top:90px;gap:36px">
+    <p class="quote">«Dopo i trent'anni si è quello che si è: non si cambia più.»</p>
+    <span class="badge mito"><i>✕</i>MITO</span>
+    <p class="body">In questo studio le persone di ogni età, fino ai 68 anni, hanno raccontato di essere <span class="hl">cambiate nel decennio precedente</span>. Con l'età si cambia meno, ma si continua a cambiare.</p>
+  </div>
+  <p class="next">Prima di concludere, i limiti →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide" id="s9">
+  <div class="top"><p class="kicker warm">I limiti</p><div class="count">9/10</div></div>
+  <div class="stack" style="margin-top:50px;gap:26px">
+    <h2 style="font-size:58px">Che cosa lo studio <span class="hl">non dice</span></h2>
+    <div class="lim">
+      <div>Quasi tutti i partecipanti sono arrivati dal sito di un <b>programma televisivo</b>, e circa l'80% erano donne.</div>
+      <div>Si basa su <b>risposte a questionari</b>; e quasi sempre confronta persone diverse, non le stesse persone nel tempo.</div>
+      <div>L'esperimento sul concerto è piccolo (<b>170 persone</b>) e chiedeva quanto si <b>pagherebbe</b>, non quanto si è pagato davvero.</div>
+      <div>Per valori e gusti l'illusione è risultata <b>più debole</b> con l'età, pur restando presente.</div>
+    </div>
+  </div>
+  <p class="next">E allora, che cosa ce ne facciamo? →</p>
+  <div class="src"><b>FONTE</b><span><em>Quoidbach, Gilbert &amp; Wilson, 2013</em> · Science</span></div>
+</section>
+
+<section class="slide cta" id="s10">
+  <div class="top"><p class="kicker">Il trucco</p><div class="count">10/10</div></div>
+  <div class="stack" style="margin-top:60px;gap:30px">
+    <div class="trucco"><small>Il trucco</small><b>Chi sei oggi non è chi sarai. Se non sai che direzione prendere, non serve indovinare tutto adesso: prova, un piccolo esperimento alla volta.</b></div>
+    <p class="body" style="opacity:.92">Con WeSelf l'obiettivo «capire che cosa mi interessa» diventa una settimana di piccoli esperimenti, già in agenda, insieme a chi ha il tuo stesso obiettivo.</p>
+    <span class="btn">Scopri WeSelf · link in bio</span>
+  </div>
+  <div class="ctafoot">
+    <div class="brand"><img src="weself-mark.png"><span><span class="we">We</span><span class="self">Self</span></span></div>
+    <small>Fonte completa nel primo commento</small>
+  </div>
+</section></body></html>
