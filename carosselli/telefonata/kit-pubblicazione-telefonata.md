@@ -21,7 +21,7 @@ Una ricerca del 2021 ha coinvolto 240 adulti in Texas che ricevevano i pasti a d
 
 Dopo quattro settimane, chi era stato chiamato si è sentito meno solo, con meno sintomi d'ansia e di umore giù, rispetto all'altro gruppo. L'88% si è detto soddisfatto.
 
-Mito o realtà? «Per aiutare chi si sente solo bisogna essere esperti.» In questo studio, mito: contava ascoltare con attenzione, con regolarità. Per i problemi seri, però, serve un professionista.
+Mito o realtà? «Per aiutare chi si sente solo bisogna essere esperti.» In questo studio, mito: contava ascoltare con attenzione, con regolarità. Per i problemi più seri legati alla solitudine, però, serve un professionista.
 
 I limiti: lo studio è durato quattro settimane e non sappiamo se i benefici siano durati; non si può distinguere l'effetto di ricevere una chiamata da quello del modo di farla; riguarda persone negli Stati Uniti, durante la pandemia; uno dei due questionari sulla solitudine non ha mostrato una differenza certa.
 
@@ -58,7 +58,7 @@ Non è un «37% di solitudine in meno». Con la seconda scala sulla solitudine (
 8. Ascoltare, non consigliare: non c'erano terapia, copione o esperti; c'erano attenzione, domande e regolarità.
 9. Mito o realtà? «Per aiutare chi si sente solo bisogna essere esperti.» Mito.
 10. I limiti: quattro settimane; chiamata o modo di farla; Stati Uniti, pandemia; questionari.
-11. Prova così: scegli una persona; dieci minuti, tante domande; un appuntamento fisso.
+11. Prova così: scegli una persona; dieci minuti, poche domande; un appuntamento fisso.
 12. Un piccolo gesto a settimana, già in agenda. Scopri WeSelf, link in bio. Supporto: medico di base, Telefono Amico Italia, 112.
 
 ## Note di affidabilità
