@@ -58,6 +58,17 @@ Agreed with the founder (Nov 2026) for papers with no data of their own to trans
 
 Agreed with the founder (Nov 2026): one carousel every week (Saturday), bright yellow theme (`--sun` #FFD23F: full-yellow cover, light-yellow inner slides, yellow pills/highlights, peri CTA with yellow button), built with `cat head.html bias.html body.html > slides.html` (`templates/bias/bias.html`: lens icon, `.rub`, `.occ`, `.ep`, `.trucco`). Cover: «Il bias della settimana · #N», subtitle «Le scorciatoie della mente», an occhiello with the everyday situation, then the bias name. Slides: Succede a molti → lo studio → i numeri, tradotti → perché succede → Mito o realtà? → I limiti → Il trucco + WeSelf. All editorial rules apply; only replicated biases; tone curious, never «you are irrational». Bias bank: `piano/piano-editoriale-weself.md`, section 3quater.
 
+## «Meme» format (Umorismo pillar)
+
+Agreed with the founder (24 Nov 2026). A light, shareable post built on one verified study, like every other post.
+
+- **Shape:** one single image (1080×1350) for Instagram/Facebook, plus an optional short animated loop (1080×1920, 8–15 s, no voice-over) for Reels/TikTok, built like the animated Reels (`window.render(t)` + `tools/render-video.cjs`). Folder `meme/<name>/`.
+- **Voice:** first person «io» is allowed for small, harmless self-irony («io quando…», «io a marzo / io a novembre»). We laugh at the situation, never at people or groups.
+- **Look:** our own meme structures (chats, calendars, expectation vs reality, «nessuno: / io:») drawn in brand style, or a Canva stock photo chosen by the founder (it may show people; real photo, not AI; check the Pro licence). No famous meme templates or screenshots of other creators.
+- **Science:** the image carries one verified fact from the study and a short source line («Fonte: Autore, anno · rivista»). Because there is only one image, «Mito o realtà?», «I limiti» and «Un'onestà necessaria» go in the caption; full citation + DOI in the first comment, as usual.
+- **Never** on loneliness, anxiety, grief, addiction or other sensitive topics; never on 25 November or other awareness days; no political or local-news jokes.
+- **Frequency:** about one a week.
+
 Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal = Self, peri = We, coral = one warm accent per asset; Nunito + Literata). Logos in `brand/logo/`. Full design system: https://claude.ai/artifact/214XU3j96pZnVaHHELpgBa
 
 ## Status (9 November 2026)
@@ -89,6 +100,7 @@ Brand: colours and type are in the CSS of `templates/carousel/head.html` (teal =
 | Direzione / scrivere del proprio lavoro futuro ha aiutato a rimuginare di meno — Sun & Yang 2026 (three-arm RCT, 486 students) | `carosselli/direzione/` | Published |
 | Solitudine / qualche telefonata ha fatto sentire meno sole persone che uscivano poco di casa — Kahlon et al. 2021 (RCT, 240 adults, young volunteer callers) | `carosselli/telefonata/` | Ready, not published (Tue 24 Nov) |
 | Etica / molte persone oneste sono rimaste accanto a chi mentiva per loro («ethical free riding») — Gross, Leib, Offerman & Shalvi 2018 | `carosselli/mani-pulite/` | Ready, not published (Wed 25 Nov) |
+| Meme «Dobbiamo vederci!» — Hall 2019 (first «Meme» post: single image + 16 s animated Reel) | `meme/dobbiamo-vederci/` | Ready, not published (Thu 26 Nov) |
 | Video YouTube + Reel kit on Dunedin | `video/dunedin/` | Ready, not produced yet |
 | Reel animato Dunedin (no face, voice-over by the founder) | `video/dunedin/animato/` | Published (53 s, founder voice-over and opinion) |
 
