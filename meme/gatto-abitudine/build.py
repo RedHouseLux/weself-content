@@ -42,34 +42,56 @@ def bubble(x,y,w,h,lines,fs=24,tail_left=True,think=False):
 def emo(x,y,e,fs=50): return f'<text x="{x}" y="{y}" font-family="Noto Color Emoji" font-size="{fs}">{e}</text>'
 W,H=470,500
 def panel(inner,label,bg): return f'<div class="pnl" style="background:{bg}"><span class="time">{label}</span><svg width="{W}" height="{H}" viewBox="0 0 {W} {H}">{inner}</svg></div>'
-ground='<rect x="0" y="440" width="470" height="60" fill="#A8E6DD"/>'
-clock=('<g transform="translate(395 120)"><circle r="46" fill="#fff" stroke="#1E2B5C" stroke-width="5"/><circle cx="-34" cy="-40" r="14" fill="#D9592A" stroke="#1E2B5C" stroke-width="4"/><circle cx="34" cy="-40" r="14" fill="#D9592A" stroke="#1E2B5C" stroke-width="4"/>'
-       '<text y="12" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="30" fill="#1E2B5C">5:00</text>'
-       '<path d="M-64 -10 l-14 -6 M-64 8 l-16 2 M64 -10 l14 -6 M64 8 l16 2" stroke="#1E2B5C" stroke-width="4" stroke-linecap="round"/></g>')
-p1=panel(ground+clock+cat(200,350,1.0,band=True,stars=True)+emo(300,330,"🥦",48)+emo(60,330,"👟",48)
-         +bubble(24,56,290,110,["Nuovo me.","Sveglia alle 5!!!"],30,tail_left=False),"GIORNO 1","#FFF6EC")
-trophy=('<g transform="translate(335 300)"><path d="M-40 -60 h80 v30 a40 40 0 0 1 -80 0z" fill="#FFD23F" stroke="#1E2B5C" stroke-width="5"/>'
-        '<rect x="-10" y="10" width="20" height="40" fill="#FFD23F" stroke="#1E2B5C" stroke-width="5"/><rect x="-70" y="50" width="140" height="28" rx="6" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="4"/>'
-        '<text y="68" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="15" fill="#fff">GATTO DELL\'ANNO</text>'
-        '<text x="0" y="-26" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="24" fill="#1E2B5C">21</text></g>')
-p2=panel(ground+cat(170,350,1.0,face="smug",band=True)+trophy+emo(40,250,"🎉",44)
-         +bubble(20,56,430,110,["21 giorni: abitudine","SBLOCCATA. 🏆"],30,tail_left=True),"GIORNO 21","#FFF6EC")
-sofa=('<rect x="40" y="330" width="390" height="110" rx="30" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="6"/>'
-      '<rect x="20" y="290" width="60" height="150" rx="26" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="6"/><rect x="390" y="290" width="60" height="150" rx="26" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="6"/>')
-pizza='<g transform="translate(330 300) rotate(-8)"><rect x="-50" y="-14" width="100" height="22" rx="4" fill="#E8D3B0" stroke="#1E2B5C" stroke-width="4"/><text x="0" y="3" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="13" fill="#A64A30">PIZZA</text></g>'
-p3=panel(sofa+melted(220,330)+pizza+emo(70,300,"👟",40)
-         +bubble(24,60,300,100,["Oggi faccio","riposo attivo."],30,tail_left=True),"GIORNO 22","#DDE0FB")
-sadsofa=('<g>'
-  '<rect x="34" y="362" width="200" height="76" rx="22" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="5"/>'
-  '<rect x="20" y="330" width="44" height="108" rx="18" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="5"/><rect x="204" y="330" width="44" height="108" rx="18" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="5"/>'
-  '<rect x="64" y="318" width="140" height="56" rx="18" fill="#6B79EE" stroke="#1E2B5C" stroke-width="5"/>'
-  '<circle cx="112" cy="394" r="7" fill="#fff"/><circle cx="156" cy="394" r="7" fill="#fff"/><circle cx="112" cy="396" r="3" fill="#1E2B5C"/><circle cx="156" cy="396" r="3" fill="#1E2B5C"/>'
-  '<path d="M118 424 q16 -12 32 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>'
-  '<path d="M104 404 q-6 12 0 18 q6 -6 0 -18z" fill="#7FD3EE" stroke="#1E2B5C" stroke-width="2"/>'
-  '</g>')
-p4=panel(ground+sadsofa+cat(360,350,0.9,face="run",band=True)+emo(250,300,"💨",44)
-         +bubble(40,200,170,70,["Torna…"],28,tail_left=True)
-         +bubble(220,56,230,100,["Ah, ecco.","ORA lo è."],28,tail_left=False,think=True)
+WALL="#FFF6EC"; FLOOR='<rect x="0" y="440" width="470" height="60" fill="#E8D3B0"/><line x1="0" y1="440" x2="470" y2="440" stroke="#1E2B5C" stroke-width="4"/>'
+def window(x,y,kind):
+    inner={'moon':'<rect x="0" y="0" width="110" height="110" fill="#1E2B5C"/><circle cx="72" cy="36" r="16" fill="#FFF3C4"/><circle cx="64" cy="30" r="15" fill="#1E2B5C"/><circle cx="24" cy="24" r="3" fill="#FFF3C4"/><circle cx="40" cy="70" r="2.5" fill="#FFF3C4"/>',
+           'rain':'<rect x="0" y="0" width="110" height="110" fill="#AAB3DD"/>'+''.join(f'<path d="M{a} {b} l-8 16" stroke="#fff" stroke-width="4" stroke-linecap="round"/>' for a,b in [(20,10),(52,30),(86,8),(34,60),(70,66),(96,48),(18,86),(60,92)]),
+           'sun':'<rect x="0" y="0" width="110" height="110" fill="#A8E6DD"/><circle cx="56" cy="50" r="22" fill="#FFD23F"/>'}[kind]
+    return (f'<g transform="translate({x} {y})">{inner}<rect x="0" y="0" width="110" height="110" fill="none" stroke="#1E2B5C" stroke-width="6"/>'
+            f'<line x1="55" y1="0" x2="55" y2="110" stroke="#1E2B5C" stroke-width="4"/><line x1="0" y1="55" x2="110" y2="55" stroke="#1E2B5C" stroke-width="4"/></g>')
+def sofa(x,y,mood,s=1.0):
+    eyes={'neutral':'<circle cx="-30" cy="18" r="8" fill="#fff"/><circle cx="30" cy="18" r="8" fill="#fff"/><circle cx="-28" cy="20" r="4" fill="#1E2B5C"/><circle cx="32" cy="20" r="4" fill="#1E2B5C"/><path d="M-14 42 h28" stroke="#fff" stroke-width="5" stroke-linecap="round"/>',
+          'happy':'<path d="M-40 20 q10 -12 20 0 M20 20 q10 -12 20 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M-16 36 q16 16 32 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/>',
+          'sad':'<circle cx="-30" cy="18" r="8" fill="#fff"/><circle cx="30" cy="18" r="8" fill="#fff"/><circle cx="-30" cy="22" r="4" fill="#1E2B5C"/><circle cx="30" cy="22" r="4" fill="#1E2B5C"/><path d="M-40 4 l16 6 M40 4 l-16 6" stroke="#fff" stroke-width="4" stroke-linecap="round"/><path d="M-14 46 q14 -12 28 0" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="round"/><path d="M-36 30 q-6 12 0 18 q6 -6 0 -18z" fill="#7FD3EE" stroke="#1E2B5C" stroke-width="2"/>'}[mood]
+    return (f'<g transform="translate({x} {y}) scale({s})">'
+      '<rect x="-130" y="-60" width="260" height="70" rx="22" fill="#6B79EE" stroke="#1E2B5C" stroke-width="5"/>'
+      '<rect x="-150" y="0" width="300" height="76" rx="24" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="5"/>'
+      '<rect x="-170" y="-30" width="48" height="106" rx="20" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="5"/><rect x="122" y="-30" width="48" height="106" rx="20" fill="#4A5BE8" stroke="#1E2B5C" stroke-width="5"/>'
+      f'{eyes}</g>')
+def shoe(x,y): return f'<g transform="translate({x} {y})"><path d="M0 0 q20 -18 40 -4 l22 6 q10 4 6 14 h-68z" fill="#D9592A" stroke="#1E2B5C" stroke-width="4"/><path d="M0 16 h68" stroke="#fff" stroke-width="5"/></g>'
+# 1 · bedroom at 5:00
+bed=('<rect x="20" y="360" width="250" height="80" rx="14" fill="#7FD3C8" stroke="#1E2B5C" stroke-width="5"/>'
+     '<rect x="20" y="320" width="40" height="120" rx="10" fill="#1E9E9E" stroke="#1E2B5C" stroke-width="5"/>'
+     '<path d="M70 360 q90 -40 200 0" fill="#A8E6DD" stroke="#1E2B5C" stroke-width="5"/>')
+night=('<g transform="translate(390 400)"><rect x="-36" y="0" width="72" height="40" rx="6" fill="#E8D3B0" stroke="#1E2B5C" stroke-width="4"/></g>'
+       '<g transform="translate(390 366)"><circle r="30" fill="#fff" stroke="#1E2B5C" stroke-width="4"/><circle cx="-22" cy="-26" r="9" fill="#D9592A" stroke="#1E2B5C" stroke-width="3"/><circle cx="22" cy="-26" r="9" fill="#D9592A" stroke="#1E2B5C" stroke-width="3"/>'
+       '<text y="8" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="20" fill="#1E2B5C">5:00</text>'
+       '<path d="M-42 -6 l-12 -4 M-42 8 l-12 4 M42 -6 l12 -4 M42 8 l12 4" stroke="#1E2B5C" stroke-width="4" stroke-linecap="round"/></g>')
+p1=panel(f'<rect width="470" height="500" fill="{WALL}"/>'+window(330,150,'moon')+FLOOR+bed+night
+         +cat(190,300,0.85,band=True,stars=True)+shoe(140,410)+shoe(230,418)
+         +bubble(20,52,300,110,["Sveglia alle 5.","Corsa e insalata!"],27,tail_left=True),"GIORNO 1 · 5:00","#FFF6EC")
+# 2 · living room, selfie post
+phone=('<g transform="translate(340 250) rotate(6)"><rect x="-60" y="-100" width="120" height="200" rx="18" fill="#1E2B5C"/><rect x="-50" y="-82" width="100" height="160" rx="8" fill="#fff"/>'
+       '<text x="0" y="-48" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="15" fill="#1E2B5C">21 GIORNI</text>'
+       '<text x="0" y="-28" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="15" fill="#1E2B5C">DI CORSA!</text>'
+       '<text x="0" y="14" text-anchor="middle" font-family="Noto Color Emoji" font-size="34">🏆</text>'
+       '<text x="0" y="58" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="15" fill="#D9592A">#nuovome</text></g>')
+p2=panel(f'<rect width="470" height="500" fill="{WALL}"/>'+window(30,150,'sun')+FLOOR+sofa(235,400,'neutral',0.72)
+         +cat(170,330,0.85,face="smug",band=True)+phone
+         +bubble(20,52,300,90,["Ormai è un'abitudine."],26,tail_left=True),"GIORNO 21","#FFF6EC")
+# 3 · rain, cat melts on the happy sofa
+p3=panel(f'<rect width="470" height="500" fill="#EEF0FD"/>'+window(330,140,'rain')+FLOOR+sofa(235,400,'happy',1.0)
+         +melted(230,330)+shoe(40,424)
+         +bubble(20,52,240,90,["Piove.","Riposo attivo."],26,tail_left=False)
+         +bubble(300,280,150,60,["Bentornato!"],21,tail_left=False),"GIORNO 22","#EEF0FD")
+# 4 · rain again, the cat goes out anyway, the sofa is sad
+door=('<rect x="330" y="200" width="120" height="240" rx="6" fill="#AAB3DD" stroke="#1E2B5C" stroke-width="6"/>'
+      +''.join(f'<path d="M{a} {b} l-8 16" stroke="#fff" stroke-width="4" stroke-linecap="round"/>' for a,b in [(350,220),(390,250),(430,230),(360,300),(410,320),(440,280),(370,370),(420,390)]))
+umb=('<g transform="translate(400 250)"><path d="M-60 0 a60 50 0 0 1 120 0z" fill="#D9592A" stroke="#1E2B5C" stroke-width="5"/><path d="M0 0 v70 q0 12 -12 12" fill="none" stroke="#1E2B5C" stroke-width="5"/></g>')
+p4=panel(f'<rect width="470" height="500" fill="{WALL}"/>'+door+FLOOR+sofa(150,376,'sad',0.72)
+         +cat(395,345,0.7,face="run",band=True)+umb
+         +bubble(20,48,250,84,["Piove? Vado","lo stesso."],24,tail_left=False)
+         +bubble(30,220,170,60,["E noi…?"],24,tail_left=True)
          +'<rect x="20" y="452" width="430" height="40" rx="10" fill="#D9592A"/><text x="235" y="479" text-anchor="middle" font-family="Nunito" font-weight="900" font-size="21" fill="#fff">Di solito ci sono voluti 59–66 giorni</text>',"GIORNO 66","#FFF6EC")
 body=f'''<style>
 .slide{{background:#1E9E9E;color:#fff}}
