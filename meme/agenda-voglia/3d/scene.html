@@ -45,6 +45,7 @@ function eye(parent,p,r,look=[0.04,-0.02]){add(new THREE.SphereGeometry(r,32,32)
   add(new THREE.SphereGeometry(r*0.1,12,12),M('#ffffff',0.05),[p[0]+look[0]-r*0.18,p[1]+look[1]-r*0.2,p[2]+r*0.95],parent);}
 // ---------- AGENDA
 function agenda(o){const g=new THREE.Group();g.position.set(...o.pos);if(o.ry)g.rotation.y=o.ry;sc.add(g);const s=o.s||1;g.scale.setScalar(s);
+  if(o.headphones){add(new THREE.TorusGeometry(1.0,0.07,12,48,Math.PI),INK,[0,2.45,0],g);for(const x of [-0.98,0.98]) add(new THREE.CylinderGeometry(0.26,0.26,0.22,24),M('#4A5BE8',0.4),[x,2.45,0],g,[0,0,Math.PI/2]);}
   const AL=M('#1E9E9E',0.55);
   add(new RoundedBoxGeometry(1.7,2.3,0.6,6,0.22),M('#7FD3C8'),[0,1.95,0],g);
   add(new RoundedBoxGeometry(0.32,2.32,0.64,6,0.14),M('#1E9E9E'),[-0.78,1.95,0],g);
@@ -60,12 +61,15 @@ function agenda(o){const g=new THREE.Group();g.position.set(...o.pos);if(o.ry)g.
     else arc(g,[0.1,2.0,0.32],0.16,false,0.04);}
   for(const x of [-0.6,0.8]) add(new THREE.SphereGeometry(0.12,24,24),M('#F7B9A2',0.6),[x,2.02,0.31],g);
   // legs
-  for(const x of [-0.35,0.35]){limb(g,[x,0.85,0],[x,0.3,0],0.14,AL);sneaker(g,x+(x<0?-0.05:0.05));}
+  if(o.sit){for(const x of [-0.38,0.38]){limb(g,[x,0.85,0.2],[x,0.85,1.0],0.14,AL);limb(g,[x,0.85,1.0],[x,0.0,1.05],0.14,AL);const sn=sneaker(g,x,1.1);sn.position.y=-0.3;}}
+  else{for(const x of [-0.35,0.35]){limb(g,[x,0.85,0],[x,0.3,0],0.14,AL);sneaker(g,x+(x<0?-0.05:0.05));}}
   // arms
   const L=[-0.85,1.9,0],R=[0.85,1.9,0];const a=o.arm||'down';
   const eL=[-1.25,1.2,0.15];limb(g,L,eL,0.12,AL);hand(g,eL,AL);
   let eR=[1.25,1.2,0.15];
   if(a==='point') eR=[1.4,2.55,0.25];
+  if(a==='up') eR=[1.45,2.7,0.3];
+  if(a==='chin') eR=[0.55,1.85,0.75];
   if(a==='watch') eR=[1.3,2.3,0.45];
   if(a==='pen') eR=[1.3,1.75,0.55];
   limb(g,R,eR,0.12,AL);hand(g,eR,AL);
@@ -185,19 +189,20 @@ function cabinet(pos){const g=new THREE.Group();g.position.set(...pos);sc.add(g)
 sofa([-0.6,0,-2.1]);cabinet([3.0,0,-2.5]);
 tv([3.0,2.2,-2.5],{'1':'','2':'EPISODIO 1','3':'EPISODIO 7','4':''}[P],0.95);
 if(P==='1'){cam.position.set(0,3.8,15.5);cam.lookAt(0,2.75,0);
-  agenda({pos:[-1.5,0,0.9],ry:0.25,face:'calm',arm:'point'});
+  agenda({pos:[-1.5,0,0.9],ry:0.25,face:'smile',arm:'point'});
   voglia({pos:[1.6,0,0.9],ry:-0.25,face:'excited',arms:'up'});}
 if(P==='2'){cam.position.set(0,3.8,15.5);cam.lookAt(0,2.75,0);
-  voglia({pos:[0.6,0,0.9],ry:0.45,face:'hypno',arms:'down'});
-  bell({pos:[-1.6,3.2,0.8],s:0.85,rz:-0.25});}
+  agenda({pos:[-1.9,0,0.9],ry:0.35,face:'flat',arm:'chin',s:0.95});
+  voglia({pos:[0.9,0,0.9],ry:0.35,face:'hypno',arms:'down'});
+  bell({pos:[-0.4,3.6,0.6],s:0.75,rz:-0.25});}
 if(P==='3'){cam.position.set(0,3.8,15.5);cam.lookAt(0,2.75,0);
-  voglia({pos:[-0.6,0.55,-1.95],face:'guilty',arms:'lazy',sit:true,s:0.9});
-  popcorn([-2.0,0.9,-1.8]);pizza([0.9,0.06,0.2],0.6);cup([-1.6,0,0.4]);
-  agenda({pos:[-2.6,0,1.2],ry:0.45,face:'flat',arm:'watch',s:0.85});}
+  agenda({pos:[-1.75,0.1,-1.95],face:'smile',arm:'down',sit:true,s:0.85});
+  voglia({pos:[0.45,0.55,-1.95],face:'happy',arms:'lazy',sit:true,s:0.9});
+  popcorn([-0.7,0.9,-1.7]);pizza([0.9,0.06,0.2],0.6);cup([-1.4,0,0.4]);}
 if(P==='4'){cam.position.set(0,3.8,15.5);cam.lookAt(0,2.75,0);
-  agenda({pos:[-1.8,0,0.9],ry:0.3,face:'smile',arm:'pen',s:0.9});
+  agenda({pos:[-1.6,0,0.9],ry:0.3,face:'smile',arm:'up',s:0.9,headphones:true});
   voglia({pos:[1.6,0,0.9],ry:-0.3,face:'happy',arms:'walk',headphones:true,s:0.95});
-  bell({pos:[2.9,3.0,0.4],s:0.5,rz:-0.2});}
+  bell({pos:[3.0,3.0,0.4],s:0.5,rz:-0.2});}
 const comp=new EffectComposer(r);comp.addPass(new RenderPass(sc,cam));const ao=new GTAOPass(sc,cam,W,H);ao.updateGtaoMaterial({radius:0.6,distanceExponent:1.5,thickness:1,scale:1.2});ao.blendIntensity=1.0;comp.addPass(ao);comp.addPass(new OutputPass());
 document.fonts.load('900 54px Nunito').finally(()=>{comp.render();window.done=true;});
 </script></body></html>
