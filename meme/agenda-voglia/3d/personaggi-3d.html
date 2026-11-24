@@ -1,0 +1,40 @@
+<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#FFF6EC}</style>
+<script type="importmap">{"imports":{"three":"./node_modules/three/build/three.module.js","three/addons/":"./node_modules/three/examples/jsm/"}}</script></head><body>
+<script type="module">
+import * as THREE from 'three';
+import { RoundedBoxGeometry } from 'three/addons/geometries/RoundedBoxGeometry.js';
+const W=900,H=600;
+const r=new THREE.WebGLRenderer({antialias:true,preserveDrawingBuffer:true});r.setSize(W,H);r.shadowMap.enabled=true;r.shadowMap.type=THREE.PCFSoftShadowMap;
+r.outputColorSpace=THREE.SRGBColorSpace;r.toneMapping=THREE.ACESFilmicToneMapping;r.toneMappingExposure=1.05;
+document.body.appendChild(r.domElement);
+const sc=new THREE.Scene();sc.background=new THREE.Color('#FFF6EC');
+const cam=new THREE.PerspectiveCamera(30,W/H,0.1,100);cam.position.set(0,2.2,12);cam.lookAt(0,1.4,0);
+sc.add(new THREE.HemisphereLight(0xffffff,0xE8D3B0,1.6));
+const d=new THREE.DirectionalLight(0xffffff,2.2);d.position.set(4,8,6);d.castShadow=true;d.shadow.mapSize.set(2048,2048);d.shadow.radius=6;
+Object.assign(d.shadow.camera,{left:-8,right:8,top:8,bottom:-8});sc.add(d);
+const ground=new THREE.Mesh(new THREE.PlaneGeometry(40,40),new THREE.ShadowMaterial({opacity:0.22}));ground.rotation.x=-Math.PI/2;ground.receiveShadow=true;sc.add(ground);
+const M=(c,ro=0.55)=>new THREE.MeshStandardMaterial({color:c,roughness:ro,metalness:0});
+const add=(g,m,p,parent=sc,rot)=>{const o=new THREE.Mesh(g,m);o.position.set(...p);if(rot)o.rotation.set(...rot);o.castShadow=true;o.receiveShadow=true;parent.add(o);return o;};
+const INK=M('#1E2B5C',0.4);
+// ---- AGENDA
+const A=new THREE.Group();A.position.set(-2.2,0,0);sc.add(A);
+add(new RoundedBoxGeometry(1.7,2.3,0.6,6,0.18),M('#7FD3C8'),[0,1.95,0],A);
+add(new RoundedBoxGeometry(0.32,2.32,0.64,6,0.12),M('#1E9E9E'),[-0.78,1.95,0],A);
+for(const x of [-0.45,-0.1,0.25,0.6]) add(new THREE.TorusGeometry(0.13,0.045,16,32),M('#ffffff',0.3),[x,3.12,0],A);
+for(const x of [-0.25,0.45]){add(new THREE.TorusGeometry(0.27,0.05,16,40),INK,[x,2.45,0.33],A);add(new THREE.CircleGeometry(0.25,32),M('#ffffff',0.2),[x,2.45,0.31],A);add(new THREE.SphereGeometry(0.09,24,24),INK,[x+0.03,2.43,0.36],A);}
+add(new THREE.CylinderGeometry(0.03,0.03,0.2,12),INK,[0.1,2.45,0.33],A,[0,0,Math.PI/2]);
+add(new THREE.TorusGeometry(0.18,0.04,12,32,Math.PI),INK,[0.1,2.0,0.32],A,[0,0,Math.PI]);
+for(const x of [-0.35,0.35]){add(new THREE.CylinderGeometry(0.06,0.06,0.8,12),INK,[x,0.4,0],A);add(new RoundedBoxGeometry(0.34,0.14,0.3,4,0.05),INK,[x+(x<0?-0.08:0.08),0.05,0.05],A);}
+for(const s of [-1,1]) add(new THREE.CapsuleGeometry(0.06,0.7,8,16),INK,[s*1.05,1.75,0],A,[0,0,s*0.5]);
+// ---- VOGLIA
+const V=new THREE.Group();V.position.set(2.0,0,0);sc.add(V);
+add(new THREE.SphereGeometry(1.05,64,64),M('#F09B7C',0.5),[0,1.95,0],V);
+const fl=M('#E86F45',0.5);
+for(const [x,y,sx,sy,rz] of [[-0.3,3.0,0.26,0.5,0.45],[0.05,3.15,0.3,0.62,0.05],[0.4,2.98,0.24,0.46,-0.5]]){const o=add(new THREE.SphereGeometry(1,32,32),fl,[x,y,0],V,[0,0,rz]);o.scale.set(sx,sy,sx);}
+for(const x of [-0.35,0.35]){add(new THREE.SphereGeometry(0.27,32,32),M('#ffffff',0.2),[x,2.15,0.85],V);add(new THREE.SphereGeometry(0.12,24,24),INK,[x+0.06,2.12,1.08],V);add(new THREE.SphereGeometry(0.04,12,12),M('#ffffff',0.1),[x+0.1,2.17,1.18],V);}
+const mouth=add(new THREE.SphereGeometry(0.28,32,32,0,Math.PI*2,Math.PI/2,Math.PI/2),M('#7A2A1A',0.6),[0,1.68,0.88],V,[-0.3,0,0]);
+for(const x of [-0.6,0.6]) add(new THREE.SphereGeometry(0.13,24,24),M('#F7B9A2',0.6),[x,1.8,0.82],V);
+for(const x of [-0.35,0.35]){add(new THREE.CylinderGeometry(0.06,0.06,0.95,12),INK,[x,0.5,0],V);add(new RoundedBoxGeometry(0.34,0.14,0.3,4,0.05),INK,[x+(x<0?-0.08:0.08),0.05,0.05],V);}
+add(new THREE.CapsuleGeometry(0.06,0.7,8,16),INK,[-1.25,1.65,0],V,[0,0,-0.6]);add(new THREE.CapsuleGeometry(0.06,0.7,8,16),INK,[1.25,1.65,0],V,[0,0,0.6]);
+r.render(sc,cam);window.done=true;
+</script></body></html>
